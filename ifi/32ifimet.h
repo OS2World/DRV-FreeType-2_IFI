@@ -108,8 +108,9 @@ typedef struct _IFIMETRICS    /* ifim */
   SHORT   cKerningPairs;       /*Number of kerning pairs in pair table     I */
   ULONG   ulFontClass;         /*IBM font classification                   B */
 #if 1
-  ULONG   ulReserved;          /*Unknown, possibly additional flags          */
-  BYTE    panose[10];          /*Panose table -- does this work?             */
+  /* The remaining fields are used for IFIMETRICS2 */
+  ULONG   ulMetricsLength;     /*Should be set to size of structure?         */
+  BYTE    panose[12];          /*Panose table                                */
 #endif
 } IFIMETRICS;
 typedef IFIMETRICS FAR *PIFIMETRICS;

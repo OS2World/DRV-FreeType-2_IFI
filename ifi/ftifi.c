@@ -171,7 +171,7 @@ FDHEADER   fdhdr =
    "OS/2 FONT DRIVER",                  /* do not change */
    "TrueType (Using FreeType Engine)",  /* description up to 40 chars */
    IFI_VERSION20,                       /* version */
-   0,                                   /* reserved */
+   1,                                   /* 1 enables IFIMETRICS2 fields */
    &fdisp
 };
 
@@ -2230,10 +2230,13 @@ LONG _System QueryFaces( HFF          hff,
 
           /* The following fixup, if enabled, changes the face name to always
            * take the format <familyname> <style> if the style is one of "Bold",
-           * "Italic", or "Bold Italic", or to <familyname> if the style is
-           * "Regular", "Reg" or "Roman".  This is a workaround for OpenOffice,
-           * which (for whatever reason) cannot print properly when the font
-           * styles in use don't follow rigid naming conventions.
+           * "Italic", "Bold Italic", "Medium", or "Medium Italic"; or to just
+           * <familyname> if the style is "Regular", "Reg" or "Roman".  (It is
+           * left unchanged if none of these patterns apply.)
+           *
+           * This is a workaround for OpenOffice, which (for whatever reason)
+           * cannot print properly when the font styles in use don't follow
+           * rigid naming conventions.
            */
 
           if (( !strcmp( style, "Bold Italic") &&
@@ -2255,31 +2258,74 @@ LONG _System QueryFaces( HFF          hff,
               fsTrunc |= ((name_len + style_len + 1) > FACESIZE ) ?
                          IFIMETRICS_FACETRUNC : 0;
           }
-          else if (( pOS2->usWeightClass > 6 ) &&
-                    !strcmp( style, "Medium") &&
+          /* For a style name of "Medium" we check the weight class to find
+           * out what the best equivalent is: regular if < 500, bold if > 600,
+           * or just keep it as "Medium" otherwise (but apply the family name
+           * fixup regardless).
+           */
+          else if ( !strcmp( style, "Medium") &&
                     !strstr( ifi.szFamilyname, " Medium"))
           {
-              strncpy( ifi.szFacename, ifi.szFamilyname, FACESIZE );
-              strncat( ifi.szFacename, " Bold", FACESIZE );
-              fsTrunc |= ((name_len + 5) > FACESIZE ) ?
-                         IFIMETRICS_FACETRUNC : 0;
+              if ( pOS2->usWeightClass > 600 ) {
+                  strncpy( ifi.szFacename, ifi.szFamilyname, FACESIZE );
+                  strncat( ifi.szFacename, " Bold", FACESIZE );
+                  fsTrunc |= ((name_len + 5) > FACESIZE ) ?
+                             IFIMETRICS_FACETRUNC : 0;
+              }
+              else if ( pOS2->usWeightClass < 500 ) {
+                  strncpy( ifi.szFacename, ifi.szFamilyname, FACESIZE );
+                  fsTrunc |= (name_len > FACESIZE ) ? IFIMETRICS_FACETRUNC : 0;
+              }
+              else {
+                  strncpy( ifi.szFacename, ifi.szFamilyname, FACESIZE );
+                  strncat( ifi.szFacename, " Medium", FACESIZE );
+                  fsTrunc |= ((name_len + 7) > FACESIZE ) ?
+                             IFIMETRICS_FACETRUNC : 0;
+              }
           }
-          else if (( pOS2->usWeightClass > 6 ) &&
-                    !strcmp( style, "Medium Italic") &&
+          else if ( !strcmp( style, "Medium Italic") &&
                     !strstr( ifi.szFamilyname, " Medium Italic"))
           {
-              strncpy( ifi.szFacename, ifi.szFamilyname, FACESIZE );
-              strncat( ifi.szFacename, " Bold Italic", FACESIZE );
-              fsTrunc |= ((name_len + 12) > FACESIZE ) ?
-                         IFIMETRICS_FACETRUNC : 0;
+              if ( pOS2->usWeightClass > 600 ) {
+                  strncpy( ifi.szFacename, ifi.szFamilyname, FACESIZE );
+                  strncat( ifi.szFacename, " Bold Italic", FACESIZE );
+                  fsTrunc |= ((name_len + 12) > FACESIZE ) ?
+                             IFIMETRICS_FACETRUNC : 0;
+              }
+              else if ( pOS2->usWeightClass < 500 ) {
+                  strncpy( ifi.szFacename, ifi.szFamilyname, FACESIZE );
+                  strncat( ifi.szFacename, " Italic", FACESIZE );
+                  fsTrunc |= ((name_len + 7) > FACESIZE ) ?
+                             IFIMETRICS_FACETRUNC : 0;
+              }
+              else {
+                  strncpy( ifi.szFacename, ifi.szFamilyname, FACESIZE );
+                  strncat( ifi.szFacename, " Medium Italic", FACESIZE );
+                  fsTrunc |= ((name_len + 14) > FACESIZE ) ?
+                             IFIMETRICS_FACETRUNC : 0;
+              }
           }
           else if ( !strcmp( style, "Medium Oblique") &&
                     !strstr( ifi.szFamilyname, " Medium Oblique"))
           {
-              strncpy( ifi.szFacename, ifi.szFamilyname, FACESIZE );
-              strncat( ifi.szFacename, " Bold Oblique", FACESIZE );
-              fsTrunc |= ((name_len + 13) > FACESIZE ) ?
-                         IFIMETRICS_FACETRUNC : 0;
+              if ( pOS2->usWeightClass > 600 ) {
+                  strncpy( ifi.szFacename, ifi.szFamilyname, FACESIZE );
+                  strncat( ifi.szFacename, " Bold Oblique", FACESIZE );
+                  fsTrunc |= ((name_len + 13) > FACESIZE ) ?
+                             IFIMETRICS_FACETRUNC : 0;
+              }
+              else if ( pOS2->usWeightClass < 500 ) {
+                  strncpy( ifi.szFacename, ifi.szFamilyname, FACESIZE );
+                  strncat( ifi.szFacename, " Oblique", FACESIZE );
+                  fsTrunc |= ((name_len + 8) > FACESIZE ) ?
+                             IFIMETRICS_FACETRUNC : 0;
+              }
+              else {
+                  strncpy( ifi.szFacename, ifi.szFamilyname, FACESIZE );
+                  strncat( ifi.szFacename, " Medium Oblique", FACESIZE );
+                  fsTrunc |= ((name_len + 15) > FACESIZE ) ?
+                             IFIMETRICS_FACETRUNC : 0;
+              }
           }
           else if ( !strcmp( style, "Regular") ||
                     !strcmp( style, "Normal") ||
@@ -2482,6 +2528,7 @@ LONG _System QueryFaces( HFF          hff,
       /* Set the LICENSED flag for Restricted, P&P or Editable licenses */
       ifi.fsType              = (pOS2->fsType & 0xE) ? IFIMETRICS_LICENSED : 0;
 #else
+      /* Imitate TRUETYPE.DLL behaviour */
       ifi.fsType              = (pOS2->fsType) ? IFIMETRICS_LICENSED : 0;
 #endif
       ifi.fsDefn              = IFIMETRICS_OUTLINE;  /* always with TrueType  */
@@ -2577,10 +2624,8 @@ LONG _System QueryFaces( HFF          hff,
             ifi.fsCapabilities |= IFIMETRICS_DBCS_KOREA;
       }
 
-#if 1
-      ifi.ulReserved = 0xFE;     /* TRUETYPE seems to set this, thus we shall */
+      ifi.ulMetricsLength = sizeof(IFIMETRICS);
       memcpy( ifi.panose, pOS2->panose, 10 );
-#endif
 
       /* report support for kerning if font supports it */
       if (pface->directory.nTables != 0 &&
@@ -4473,6 +4518,7 @@ static  char*  LookupName(TT_Face face,  int index )
       /* Quick check to make sure it's not actually a mis-identified Unicode
        * string (workaround for RF Gothic etc.)
        */
+#if 1
       if ( !CheckDBCSEnc( string, string_len ))
       {
           TT_Get_Name_ID( face, found, &platform, &encoding, &language, &id );
@@ -4520,6 +4566,7 @@ static  char*  LookupName(TT_Face face,  int index )
                 return name_buffer;
           }
       }
+#endif
 #endif
 
       for (i=0, j=0; ( i<string_len ) && ( j < LONGFACESIZE - 1 ); i++)
