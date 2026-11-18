@@ -73,7 +73,7 @@
 #endif
 
 #define IFI_DRIVER          /* checked for by some of our extensions */
-//#define KERN_TABLE_SUPPORT  /* support for our KERN table parser */
+#define KERN_TABLE_SUPPORT  /* support for our KERN table parser */
 
 #define INCL_WINSHELLDATA   /* for accessing OS2.INI */
 #define INCL_DOSMISC
@@ -112,7 +112,7 @@
 #include "ft2debug.h"       /* debugging routines           */
 
 #define  ALLOC( p, size )  safe_alloc( (void**)&(p), (size) )
-#define  FREE( p )         safe_free( (void**)&(p) )
+#define  FREE( p )         ( safe_free( (void*)(p) ), (p) = NULL )   /* upstream passed the address of the pointer, so nothing was ever freed */
 
 extern FT_BASE_DEF( FT_Error ) FT_Stream_Open( FT_Stream stream, const char*  filepathname );
 
@@ -2939,10 +2939,10 @@ LONG _System FdQueryFaces( HFF          hff,
              pifi2 = (PIFIMETRICS) (((PBYTE) pifiMetrics) + ifiCount);
              memcpy( pifi2, &ifi,
                      ifimet_len > cMetricLen ? cMetricLen : ifimet_len );
-             strncpy(pifi2->szFamilyname + 1, ifi.szFamilyname, FACESIZE);
+             strncpy(pifi2->szFamilyname + 1, ifi.szFamilyname, FACESIZE - 1);  /* not FACESIZE: it would run into szFacename */
              pifi2->szFamilyname[ FACESIZE - 1 ] = '\0';
              pifi2->szFamilyname[0] = '@';
-             strncpy(pifi2->szFacename + 1, ifi.szFacename, FACESIZE);
+             strncpy(pifi2->szFacename + 1, ifi.szFacename, FACESIZE - 1);  /* not FACESIZE: the zero padding would clear szGlyphlistName[0] */
              pifi2->szFacename[ FACESIZE - 1 ] = '\0';
              pifi2->szFacename[0] = '@';
              ifiCount += cMetricLen;
@@ -3301,7 +3301,7 @@ LONG _System FdQueryFaceAttr( HFC     hfc,
         COPY("[FdQueryFaceAttr] QUERY_KERNINGPAIRS, "); CATI((int) count);
         CAT("\r\n"); WRITE;
 
-        if ( !face->directory || face->directory->nPairs )
+        if ( !face->directory || !face->directory->nPairs )   /* (upstream had the second test inverted) */
             return 0;   /* no kerning info provided */
         pKerning = face->directory;
 

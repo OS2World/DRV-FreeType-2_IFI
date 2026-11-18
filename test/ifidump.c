@@ -68,6 +68,10 @@ static int process(FILE *f, const char *file, int quick)
                 memset(kern, 0, sizeof(kern));
                 r = D->FdQueryFaceAttr(hfc, FD_QUERY_KERNINGPAIRS, kern, cnt * sizeof(FD_KERNINGPAIRS), NULL, 0);
                 if (!quick) fprintf(f, "   kern rc=%ld n=%d sum=%08lx\n", r, cnt, hash(kern, cnt * sizeof(FD_KERNINGPAIRS)));
+                if (!quick && getenv("IFIDUMP_KERNLIST")) {
+                    int k, nk = atoi(getenv("IFIDUMP_KERNLIST")); FD_KERNINGPAIRS *kp = (FD_KERNINGPAIRS *) kern;
+                    for (k = 0; k < nk && k < cnt; k++) fprintf(f, "    pair %lu %lu %ld\n", (unsigned long) kp[k].giFirst, (unsigned long) kp[k].giSecond, (long) kp[k].eKerningAmount);
+                }
             }
             for (g = 0; g < 8; g++) {
                 CHARATTR ca; BITMAPMETRICS bmm; int mode;
@@ -99,6 +103,38 @@ static int process(FILE *f, const char *file, int quick)
     return 1;
 }
 
+
+static int artgi = -1;
+
+/* print an ASCII picture of one glyph of face 0 (usage: ifidump <list> <out> art <glyph index>) */
+static void art(FILE *f, const char *file)
+{
+    HFF hff; HFC hfc; CONTEXTINFO ci; CHARATTR ca; BITMAPMETRICS bmm; LONG r; static IFIMETRICS im; int i, j, bw;
+    hff = D->FdLoadFontFile((PSZ) file);
+    fprintf(f, "FILE %s\n", file);
+    if (hff == (HFF) -1) { fprintf(f, "  load failed\n"); return; }
+    D->FdQueryFaces(hff, &im, sizeof(im), 1, 0);
+    fprintf(f, "  %.32s / %.32s\n", im.szFamilyname, im.szFacename);
+    hfc = D->FdOpenFontContext(hff, 0);
+    if (hfc == (HFC) -1) { fprintf(f, "  open context failed\n"); D->FdUnloadFontFile(hff); return; }
+    ci.cb = sizeof(ci); ci.fl = 0; ci.sizlPPM.cx = 3622; ci.sizlPPM.cy = 3622; ci.pfxSpot.x = 46340; ci.pfxSpot.y = 46340;
+    ci.matXform.eM11 = 1536; ci.matXform.eM12 = 0; ci.matXform.eM21 = 0; ci.matXform.eM22 = 1536;
+    D->FdSetFontContext(hfc, &ci);
+    memset(buf, 0, sizeof(buf)); memset(&bmm, 0, sizeof(bmm));
+    ca.cb = sizeof(ca); ca.fl = 0; ca.gi = artgi; ca.pBuffer = buf; ca.cbLen = sizeof(buf); ca.iQuery = FD_QUERY_BITMAPMETRICS | FD_QUERY_CHARIMAGE;
+    r = D->FdQueryCharAttr(hfc, &ca, &bmm);
+    fprintf(f, "  glyph %d rc=%ld ext=%ld,%ld\n", artgi, r, bmm.sizlExtent.cx, bmm.sizlExtent.cy);
+    if (r > 0 && bmm.sizlExtent.cx > 0 && bmm.sizlExtent.cx < 200) {
+        bw = ((bmm.sizlExtent.cx + 31) & -32) / 8;
+        for (i = 0; i < bmm.sizlExtent.cy; i++) {
+            fputs("  ", f);
+            for (j = 0; j < bmm.sizlExtent.cx; j++) fputc((buf[i * bw + j / 8] & (1 << (7 - (j % 8)))) ? '#' : '.', f);
+            fputc(10, f);
+        }
+    }
+    D->FdCloseFontContext(hfc); D->FdUnloadFontFile(hff);
+}
+
 int main(int argc, char **argv)
 {
     FILE *lst, *f; char line[300]; static char names[400][260]; int n = 0, i, soak = 0;
@@ -115,9 +151,12 @@ int main(int argc, char **argv)
     f = fopen(argv[2], "w");
     if (!f) return 1;
     if (getenv("IFIDUMP_UNBUF")) setvbuf(f, NULL, _IONBF, 0);
+    if (argc > 4 && !strcmp(argv[3], "art")) artgi = atoi(argv[4]);
     if (argc > 3 && !strcmp(argv[3], "hex")) hexmode = 1;
     if (argc > 4 && !strcmp(argv[3], "soak")) soak = atoi(argv[4]);
-    if (!soak) {
+    if (artgi >= 0) {
+        for (i = 0; i < n; i++) art(f, names[i]);
+    } else if (!soak) {
         for (i = 0; i < n; i++) process(f, names[i], 0);
         fprintf(f, "END %d files\n", n);
     } else {

@@ -1040,9 +1040,10 @@ FILE C:\Home\martin\Downloads\DaveGnukem_1-0-3\DaveGnukem_1-0-3r2\data\fonts\pix
   fullfaces rc=1 len=56 cnt=0 sum=072f8805
 FILE C:\Home\martin\Downloads\Enigma_1-30\share\enigma\fonts\DejaVuSansCondensed.ttf
   faces=1
-  face 0 rc=1 fam='DejaVu Sans Condensed' face='DejaVu Sans Condensed' gl='UNICODE' len=254 sum=4ccb9837 kern=0 first=0 last=65535 def=0
+  face 0 rc=1 fam='DejaVu Sans Condensed' face='DejaVu Sans Condensed' gl='UNICODE' len=254 sum=7812da32 kern=2637 first=0 last=65535 def=0
   size 0 set=0
    abc rc=256 sum=2d9431b9
+   kern rc=2637 n=2637 sum=08468c6c
    g0 bitmap rc=84 ext=11,21 sum=1128e663 bm=6e2dbdf7
    g0 outline rc=112 sum=afb66ccb
    g3 bitmap rc=84 ext=11,21 sum=1128e663 bm=6e2dbdf7
@@ -1080,9 +1081,10 @@ FILE C:\Home\martin\Downloads\Enigma_1-30\share\enigma\fonts\DejaVuSansCondensed
   fullfaces rc=1 len=56 cnt=0 sum=072f8805
 FILE C:\Home\martin\Downloads\Enigma_1-30\share\enigma\fonts\vera_sans.ttf
   faces=1
-  face 0 rc=1 fam='Bitstream Vera Sans' face='Bitstream Vera Sans' gl='UNICODE' len=254 sum=4e13c92d kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='Bitstream Vera Sans' face='Bitstream Vera Sans' gl='UNICODE' len=254 sum=53fcce4c kern=1940 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=9734a022
+   kern rc=1940 n=1940 sum=5027f2f8
    g0 bitmap rc=84 ext=12,21 sum=4eb41153 bm=3a54ec58
    g0 outline rc=112 sum=7218a34f
    g3 bitmap rc=84 ext=12,21 sum=4eb41153 bm=3a54ec58
@@ -2280,9 +2282,10 @@ FILE C:\OS2\ARCHIVES\03\DESKTOP\element\fonts\Nunito\Nunito-SemiBold.bca2d7f.ttf
   fullfaces rc=1 len=44 cnt=0 sum=04ab9885
 FILE C:\OS2\MDOS\WINOS2\SYSTEM\ARIAL.TTF
   faces=1
-  face 0 rc=1 fam='Arial' face='Arial' gl='UNICODE' len=254 sum=c969ceb0 kern=0 first=0 last=8729 def=0
+  face 0 rc=1 fam='Arial' face='Arial' gl='UNICODE' len=254 sum=e25b269c kern=104 first=0 last=8729 def=0
   size 0 set=0
    abc rc=256 sum=fa18dce0
+   kern rc=104 n=104 sum=6645fca1
    g0 bitmap rc=64 ext=12,16 sum=36255083 bm=01f58014
    g0 outline rc=112 sum=c52e0e35
    g3 bitmap rc=64 ext=12,16 sum=36255083 bm=01f58014
@@ -2320,9 +2323,10 @@ FILE C:\OS2\MDOS\WINOS2\SYSTEM\ARIAL.TTF
   fullfaces rc=1 len=24 cnt=0 sum=5b48b405
 FILE C:\OS2\MDOS\WINOS2\SYSTEM\ARIALBD.TTF
   faces=1
-  face 0 rc=1 fam='Arial' face='Arial Bold' gl='UNICODE' len=254 sum=72a66187 kern=0 first=0 last=8729 def=0
+  face 0 rc=1 fam='Arial' face='Arial Bold' gl='UNICODE' len=254 sum=3392d990 kern=101 first=0 last=8729 def=0
   size 0 set=0
    abc rc=256 sum=3db7f4da
+   kern rc=101 n=101 sum=6f4ba834
    g0 bitmap rc=64 ext=12,16 sum=36255083 bm=01f58014
    g0 outline rc=112 sum=c52e0e35
    g3 bitmap rc=64 ext=12,16 sum=36255083 bm=01f58014
@@ -2360,9 +2364,10 @@ FILE C:\OS2\MDOS\WINOS2\SYSTEM\ARIALBD.TTF
   fullfaces rc=1 len=28 cnt=0 sum=78dd2e85
 FILE C:\OS2\MDOS\WINOS2\SYSTEM\ARIALBI.TTF
   faces=1
-  face 0 rc=1 fam='Arial' face='Arial Bold Italic' gl='UNICODE' len=254 sum=265bb34b kern=0 first=0 last=8729 def=0
+  face 0 rc=1 fam='Arial' face='Arial Bold Italic' gl='UNICODE' len=254 sum=01ef9612 kern=99 first=0 last=8729 def=0
   size 0 set=0
    abc rc=256 sum=922da511
+   kern rc=99 n=99 sum=9432f4b2
    g0 bitmap rc=64 ext=12,16 sum=36255083 bm=01f58014
    g0 outline rc=112 sum=c52e0e35
    g3 bitmap rc=64 ext=12,16 sum=36255083 bm=01f58014
@@ -2400,9 +2405,10 @@ FILE C:\OS2\MDOS\WINOS2\SYSTEM\ARIALBI.TTF
   fullfaces rc=1 len=36 cnt=0 sum=e6d1e385
 FILE C:\OS2\MDOS\WINOS2\SYSTEM\ARIALI.TTF
   faces=1
-  face 0 rc=1 fam='Arial' face='Arial Italic' gl='UNICODE' len=254 sum=90f63e47 kern=0 first=0 last=8729 def=0
+  face 0 rc=1 fam='Arial' face='Arial Italic' gl='UNICODE' len=254 sum=f9ddd66d kern=98 first=0 last=8729 def=0
   size 0 set=0
    abc rc=256 sum=8b594423
+   kern rc=98 n=98 sum=e99e47f1
    g0 bitmap rc=64 ext=12,16 sum=36255083 bm=01f58014
    g0 outline rc=112 sum=c52e0e35
    g3 bitmap rc=64 ext=12,16 sum=36255083 bm=01f58014
@@ -2640,9 +2646,10 @@ FILE C:\OS2\MDOS\WINOS2\SYSTEM\SYMBOL.TTF
   fullfaces rc=1 len=24 cnt=0 sum=5b48b405
 FILE C:\OS2\MDOS\WINOS2\SYSTEM\TIMES.TTF
   faces=1
-  face 0 rc=1 fam='Times New Roman' face='Times New Roman' gl='UNICODE' len=254 sum=d217d93f kern=0 first=0 last=8729 def=0
+  face 0 rc=1 fam='Times New Roman' face='Times New Roman' gl='UNICODE' len=254 sum=f317d0d4 kern=113 first=0 last=8729 def=0
   size 0 set=0
    abc rc=256 sum=ece7c1b5
+   kern rc=113 n=113 sum=09450300
    g0 bitmap rc=64 ext=13,16 sum=0428d023 bm=ce1cae75
    g0 outline rc=112 sum=41b844b9
    g3 bitmap rc=64 ext=13,16 sum=0428d023 bm=ce1cae75
@@ -2680,9 +2687,10 @@ FILE C:\OS2\MDOS\WINOS2\SYSTEM\TIMES.TTF
   fullfaces rc=1 len=44 cnt=0 sum=04ab9885
 FILE C:\OS2\MDOS\WINOS2\SYSTEM\TIMESBD.TTF
   faces=1
-  face 0 rc=1 fam='Times New Roman' face='Times New Roman Bold' gl='UNICODE' len=254 sum=162cdce6 kern=0 first=0 last=8729 def=0
+  face 0 rc=1 fam='Times New Roman' face='Times New Roman Bold' gl='UNICODE' len=254 sum=01ddfeff kern=117 first=0 last=8729 def=0
   size 0 set=0
    abc rc=256 sum=5efe4b74
+   kern rc=117 n=117 sum=1c127da5
    g0 bitmap rc=64 ext=13,16 sum=0428d023 bm=ce1cae75
    g0 outline rc=112 sum=41b844b9
    g3 bitmap rc=64 ext=13,16 sum=0428d023 bm=ce1cae75
@@ -2720,9 +2728,10 @@ FILE C:\OS2\MDOS\WINOS2\SYSTEM\TIMESBD.TTF
   fullfaces rc=1 len=48 cnt=0 sum=2a1e5305
 FILE C:\OS2\MDOS\WINOS2\SYSTEM\TIMESBI.TTF
   faces=1
-  face 0 rc=1 fam='Times New Roman' face='Times New Roman Bold Italic' gl='UNICODE' len=254 sum=1b2bbc0f kern=0 first=0 last=8729 def=0
+  face 0 rc=1 fam='Times New Roman' face='Times New Roman Bold Italic' gl='UNICODE' len=254 sum=fece3e7f kern=108 first=0 last=8729 def=0
   size 0 set=0
    abc rc=256 sum=137ca794
+   kern rc=108 n=108 sum=5d1d9f9b
    g0 bitmap rc=64 ext=13,16 sum=0428d023 bm=ce1cae75
    g0 outline rc=112 sum=41b844b9
    g3 bitmap rc=64 ext=13,16 sum=0428d023 bm=ce1cae75
@@ -2760,9 +2769,10 @@ FILE C:\OS2\MDOS\WINOS2\SYSTEM\TIMESBI.TTF
   fullfaces rc=1 len=56 cnt=0 sum=072f8805
 FILE C:\OS2\MDOS\WINOS2\SYSTEM\TIMESI.TTF
   faces=1
-  face 0 rc=1 fam='Times New Roman' face='Times New Roman Italic' gl='UNICODE' len=254 sum=0805faf0 kern=0 first=0 last=8729 def=0
+  face 0 rc=1 fam='Times New Roman' face='Times New Roman Italic' gl='UNICODE' len=254 sum=b659a7e4 kern=112 first=0 last=8729 def=0
   size 0 set=0
    abc rc=256 sum=16964cb3
+   kern rc=112 n=112 sum=497a14c6
    g0 bitmap rc=64 ext=13,16 sum=0428d023 bm=ce1cae75
    g0 outline rc=112 sum=41b844b9
    g3 bitmap rc=64 ext=13,16 sum=0428d023 bm=ce1cae75
@@ -2920,9 +2930,10 @@ FILE C:\Programs\vlc2\usr\local\share\vlc\skins2\fonts\FreeSansBold.ttf
   fullfaces rc=1 len=36 cnt=0 sum=e6d1e385
 FILE C:\PSFONTS\BOOKMNB.TTF
   faces=1
-  face 0 rc=1 fam='URW Bookman L' face='URW Bookman L Bold' gl='UNICODE' len=254 sum=bdae0ff9 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='URW Bookman L' face='URW Bookman L Bold' gl='UNICODE' len=254 sum=d270f371 kern=977 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=23b1251b
+   kern rc=977 n=977 sum=9080c55b
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -2960,9 +2971,10 @@ FILE C:\PSFONTS\BOOKMNB.TTF
   fullfaces rc=1 len=44 cnt=0 sum=04ab9885
 FILE C:\PSFONTS\BOOKMNBI.TTF
   faces=1
-  face 0 rc=1 fam='URW Bookman L' face='URW Bookman L Bold Italic' gl='UNICODE' len=254 sum=4bfd8ee7 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='URW Bookman L' face='URW Bookman L Bold Italic' gl='UNICODE' len=254 sum=4e27a74a kern=988 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=b71bb433
+   kern rc=988 n=988 sum=37e4ed65
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -3000,9 +3012,10 @@ FILE C:\PSFONTS\BOOKMNBI.TTF
   fullfaces rc=1 len=52 cnt=0 sum=e76a4d85
 FILE C:\PSFONTS\BOOKMNL.TTF
   faces=1
-  face 0 rc=1 fam='URW Bookman L' face='URW Bookman L' gl='UNICODE' len=254 sum=42a312a4 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='URW Bookman L' face='URW Bookman L' gl='UNICODE' len=254 sum=94c36b41 kern=982 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=f1132f38
+   kern rc=982 n=982 sum=1f16b756
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -3040,9 +3053,10 @@ FILE C:\PSFONTS\BOOKMNL.TTF
   fullfaces rc=1 len=40 cnt=0 sum=fc721e05
 FILE C:\PSFONTS\BOOKMNLI.TTF
   faces=1
-  face 0 rc=1 fam='URW Bookman L' face='URW Bookman L Italic' gl='UNICODE' len=254 sum=81b854f8 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='URW Bookman L' face='URW Bookman L Italic' gl='UNICODE' len=254 sum=33ec2d21 kern=994 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=050fdb6c
+   kern rc=994 n=994 sum=37ff9b3e
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -3080,9 +3094,10 @@ FILE C:\PSFONTS\BOOKMNLI.TTF
   fullfaces rc=1 len=48 cnt=0 sum=2a1e5305
 FILE C:\PSFONTS\BTCHARB.TTF
   faces=1
-  face 0 rc=1 fam='Bitstream Charter' face='Bitstream Charter Bold' gl='UNICODE' len=254 sum=d6794953 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='Bitstream Charter' face='Bitstream Charter Bold' gl='UNICODE' len=254 sum=b323e661 kern=361 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=109b4f17
+   kern rc=361 n=361 sum=a495b33e
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -3120,9 +3135,10 @@ FILE C:\PSFONTS\BTCHARB.TTF
   fullfaces rc=1 len=52 cnt=0 sum=e76a4d85
 FILE C:\PSFONTS\BTCHARBI.TTF
   faces=1
-  face 0 rc=1 fam='Bitstream Charter' face='Bitstream Charter Bold Italic' gl='UNICODE' len=254 sum=0bd31676 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='Bitstream Charter' face='Bitstream Charter Bold Italic' gl='UNICODE' len=254 sum=85eea835 kern=378 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=6fb85672
+   kern rc=378 n=378 sum=2c701a40
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -3160,9 +3176,10 @@ FILE C:\PSFONTS\BTCHARBI.TTF
   fullfaces rc=1 len=60 cnt=0 sum=a40e0285
 FILE C:\PSFONTS\BTCHARI.TTF
   faces=1
-  face 0 rc=1 fam='Bitstream Charter' face='Bitstream Charter Italic' gl='UNICODE' len=254 sum=c887a66b kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='Bitstream Charter' face='Bitstream Charter Italic' gl='UNICODE' len=254 sum=5caea688 kern=280 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=31f622f8
+   kern rc=280 n=280 sum=1852d781
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -3200,9 +3217,10 @@ FILE C:\PSFONTS\BTCHARI.TTF
   fullfaces rc=1 len=56 cnt=0 sum=072f8805
 FILE C:\PSFONTS\BTCHARR.TTF
   faces=1
-  face 0 rc=1 fam='Bitstream Charter' face='Bitstream Charter' gl='UNICODE' len=254 sum=dc23d0f4 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='Bitstream Charter' face='Bitstream Charter' gl='UNICODE' len=254 sum=683c3168 kern=271 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=b77e9176
+   kern rc=271 n=271 sum=f508caf7
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -3240,9 +3258,10 @@ FILE C:\PSFONTS\BTCHARR.TTF
   fullfaces rc=1 len=48 cnt=0 sum=2a1e5305
 FILE C:\PSFONTS\CENSCHB.TTF
   faces=1
-  face 0 rc=1 fam='Century Schoolbook L' face='Century Schoolbook L Bold' gl='UNICODE' len=254 sum=cc42b765 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='Century Schoolbook L' face='Century Schoolbook L Bold' gl='UNICODE' len=254 sum=6e59503c kern=976 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=76499555
+   kern rc=976 n=976 sum=4d4988d3
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -3280,9 +3299,10 @@ FILE C:\PSFONTS\CENSCHB.TTF
   fullfaces rc=1 len=60 cnt=0 sum=a40e0285
 FILE C:\PSFONTS\CENSCHBI.TTF
   faces=1
-  face 0 rc=1 fam='Century Schoolbook L' face='Century Schoolbook L Bold Itali' gl='UNICODE' len=254 sum=adab5729 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='Century Schoolbook L' face='Century Schoolbook L Bold Itali' gl='UNICODE' len=254 sum=8510c57c kern=972 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=936d089f
+   kern rc=972 n=972 sum=6be2a87a
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -3320,9 +3340,10 @@ FILE C:\PSFONTS\CENSCHBI.TTF
   fullfaces rc=1 len=68 cnt=0 sum=4f96b785
 FILE C:\PSFONTS\CENSCHR.TTF
   faces=1
-  face 0 rc=1 fam='Century Schoolbook L' face='Century Schoolbook L' gl='UNICODE' len=254 sum=7a5d550e kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='Century Schoolbook L' face='Century Schoolbook L' gl='UNICODE' len=254 sum=7c876d71 kern=988 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=79ac4c5a
+   kern rc=988 n=988 sum=4d0ae636
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -3360,9 +3381,10 @@ FILE C:\PSFONTS\CENSCHR.TTF
   fullfaces rc=1 len=56 cnt=0 sum=072f8805
 FILE C:\PSFONTS\CENSCHRI.TTF
   faces=1
-  face 0 rc=1 fam='Century Schoolbook L' face='Century Schoolbook L Italic' gl='UNICODE' len=254 sum=5350d1ac kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='Century Schoolbook L' face='Century Schoolbook L Italic' gl='UNICODE' len=254 sum=dabfffc5 kern=978 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=e613dc06
+   kern rc=978 n=978 sum=ee823dd5
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -3520,9 +3542,10 @@ FILE C:\PSFONTS\DroidSans.ttf
   fullfaces rc=1 len=32 cnt=0 sum=e92ae905
 FILE C:\PSFONTS\DroidSansCombined.ttf
   faces=2
-  face 0 rc=1 fam='Droid Sans Combined' face='Droid Sans Combined' gl='UNICODE' len=254 sum=7acf41ae kern=0 first=0 last=65533 def=0
+  face 0 rc=1 fam='Droid Sans Combined' face='Droid Sans Combined' gl='UNICODE' len=254 sum=d97a9393 kern=767 first=0 last=65533 def=0
   size 0 set=0
    abc rc=256 sum=a46f9043
+   kern rc=767 n=767 sum=06cad677
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=8 ext=1,2 sum=7bb34a05 bm=8cb41c8b
@@ -3557,9 +3580,10 @@ FILE C:\PSFONTS\DroidSansCombined.ttf
    g150 outline rc=112 sum=e6d30bbf
    g400 bitmap rc=16 ext=2,4 sum=bdcb7f05 bm=739abf91
    g400 outline rc=112 sum=e6d30bbf
-  face 1 rc=1 fam='@Droid Sans Combined' face='@Droid Sans Combined' gl='' len=254 sum=57b86fb9 kern=0 first=0 last=65533 def=0
+  face 1 rc=1 fam='@Droid Sans Combined' face='@Droid Sans Combined' gl='UNICODE' len=254 sum=114e1213 kern=767 first=0 last=65533 def=0
   size 0 set=0
    abc rc=256 sum=a46f9043
+   kern rc=767 n=767 sum=06cad677
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=8 ext=1,2 sum=7bb34a05 bm=8cb41c8b
@@ -3797,9 +3821,10 @@ FILE C:\PSFONTS\DroidSerif-Regular.ttf
   fullfaces rc=1 len=36 cnt=0 sum=e6d1e385
 FILE C:\PSFONTS\GOTHLBK.TTF
   faces=1
-  face 0 rc=1 fam='URW Gothic L' face='URW Gothic L' gl='UNICODE' len=254 sum=949e02d2 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='URW Gothic L' face='URW Gothic L' gl='UNICODE' len=254 sum=596aa610 kern=983 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=ae3746c3
+   kern rc=983 n=983 sum=d399c7f1
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -3837,9 +3862,10 @@ FILE C:\PSFONTS\GOTHLBK.TTF
   fullfaces rc=1 len=40 cnt=0 sum=fc721e05
 FILE C:\PSFONTS\GOTHLBKO.TTF
   faces=1
-  face 0 rc=1 fam='URW Gothic L' face='URW Gothic L Oblique' gl='UNICODE' len=254 sum=700366bc kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='URW Gothic L' face='URW Gothic L Oblique' gl='UNICODE' len=254 sum=1ca42aff kern=956 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=0237f009
+   kern rc=956 n=956 sum=91c198de
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -3877,9 +3903,10 @@ FILE C:\PSFONTS\GOTHLBKO.TTF
   fullfaces rc=1 len=48 cnt=0 sum=2a1e5305
 FILE C:\PSFONTS\GOTHLDB.TTF
   faces=1
-  face 0 rc=1 fam='URW Gothic L' face='URW Gothic L Bold' gl='UNICODE' len=254 sum=2c440798 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='URW Gothic L' face='URW Gothic L Bold' gl='UNICODE' len=254 sum=4106eb10 kern=977 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=b7adfd39
+   kern rc=977 n=977 sum=88653b90
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -3917,9 +3944,10 @@ FILE C:\PSFONTS\GOTHLDB.TTF
   fullfaces rc=1 len=44 cnt=0 sum=04ab9885
 FILE C:\PSFONTS\GOTHLDBO.TTF
   faces=1
-  face 0 rc=1 fam='URW Gothic L' face='URW Gothic L Bold Oblique' gl='UNICODE' len=254 sum=d194498a kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='URW Gothic L' face='URW Gothic L Bold Oblique' gl='UNICODE' len=254 sum=cbafc244 kern=979 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=65bb7199
+   kern rc=979 n=979 sum=fca393ca
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -3957,9 +3985,10 @@ FILE C:\PSFONTS\GOTHLDBO.TTF
   fullfaces rc=1 len=52 cnt=0 sum=e76a4d85
 FILE C:\PSFONTS\Heuristica-Bold.ttf
   faces=1
-  face 0 rc=1 fam='Heuristica' face='Heuristica Bold' gl='UNICODE' len=254 sum=597e8b73 kern=0 first=0 last=64260 def=0
+  face 0 rc=1 fam='Heuristica' face='Heuristica Bold' gl='UNICODE' len=254 sum=7b0f7b43 kern=5463 first=0 last=64260 def=0
   size 0 set=0
    abc rc=256 sum=512aaad5
+   kern rc=4000 n=4000 sum=d602092a
    g0 bitmap rc=36 ext=6,9 sum=bd3adc49 bm=deec0e7e
    g0 outline rc=232 sum=ef46733f
    g3 bitmap rc=36 ext=6,9 sum=bd3adc49 bm=deec0e7e
@@ -3997,9 +4026,10 @@ FILE C:\PSFONTS\Heuristica-Bold.ttf
   fullfaces rc=1 len=40 cnt=0 sum=fc721e05
 FILE C:\PSFONTS\Heuristica-BoldItalic.ttf
   faces=1
-  face 0 rc=1 fam='Heuristica' face='Heuristica Bold Italic' gl='UNICODE' len=254 sum=4e7bce38 kern=0 first=0 last=64260 def=0
+  face 0 rc=1 fam='Heuristica' face='Heuristica Bold Italic' gl='UNICODE' len=254 sum=66e76418 kern=5192 first=0 last=64260 def=0
   size 0 set=0
    abc rc=256 sum=0a5878f1
+   kern rc=4000 n=4000 sum=4f3ea5b1
    g0 bitmap rc=36 ext=6,9 sum=22853a19 bm=e141371f
    g0 outline rc=232 sum=37590dab
    g3 bitmap rc=36 ext=6,9 sum=22853a19 bm=e141371f
@@ -4037,9 +4067,10 @@ FILE C:\PSFONTS\Heuristica-BoldItalic.ttf
   fullfaces rc=1 len=44 cnt=0 sum=04ab9885
 FILE C:\PSFONTS\Heuristica-Italic.ttf
   faces=1
-  face 0 rc=1 fam='Heuristica' face='Heuristica Italic' gl='UNICODE' len=254 sum=a2752f61 kern=0 first=0 last=64260 def=0
+  face 0 rc=1 fam='Heuristica' face='Heuristica Italic' gl='UNICODE' len=254 sum=db9601cc kern=5394 first=0 last=64260 def=0
   size 0 set=0
    abc rc=256 sum=f3e714be
+   kern rc=4000 n=4000 sum=f3f07527
    g0 bitmap rc=36 ext=6,9 sum=22853a19 bm=e141371f
    g0 outline rc=232 sum=37590dab
    g3 bitmap rc=36 ext=6,9 sum=22853a19 bm=e141371f
@@ -4077,9 +4108,10 @@ FILE C:\PSFONTS\Heuristica-Italic.ttf
   fullfaces rc=1 len=40 cnt=0 sum=fc721e05
 FILE C:\PSFONTS\Heuristica-Regular.ttf
   faces=1
-  face 0 rc=1 fam='Heuristica' face='Heuristica Regular' gl='UNICODE' len=254 sum=6951c2b5 kern=0 first=0 last=64260 def=0
+  face 0 rc=1 fam='Heuristica' face='Heuristica Regular' gl='UNICODE' len=254 sum=f9db4699 kern=6503 first=0 last=64260 def=0
   size 0 set=0
    abc rc=256 sum=2ab32a8c
+   kern rc=4000 n=4000 sum=2dafc4d9
    g0 bitmap rc=36 ext=6,9 sum=bd3adc49 bm=deec0e7e
    g0 outline rc=232 sum=ef46733f
    g3 bitmap rc=36 ext=6,9 sum=bd3adc49 bm=deec0e7e
@@ -4117,9 +4149,10 @@ FILE C:\PSFONTS\Heuristica-Regular.ttf
   fullfaces rc=1 len=40 cnt=0 sum=fc721e05
 FILE C:\PSFONTS\midori.ttf
   faces=1
-  face 0 rc=1 fam='Midori Sans' face='Midori Sans' gl='UNICODE' len=254 sum=12ff3f3c kern=0 first=0 last=9675 def=0
+  face 0 rc=1 fam='Midori Sans' face='Midori Sans' gl='UNICODE' len=254 sum=8f1b9ed7 kern=183 first=0 last=9675 def=0
   size 0 set=0
    abc rc=256 sum=628188cf
+   kern rc=183 n=183 sum=c68be5a7
    g0 bitmap rc=40 ext=6,10 sum=3aa9a31d bm=eb21345f
    g0 outline rc=112 sum=f95772e5
    g3 bitmap rc=40 ext=6,10 sum=3aa9a31d bm=eb21345f
@@ -4157,9 +4190,10 @@ FILE C:\PSFONTS\midori.ttf
   fullfaces rc=1 len=36 cnt=0 sum=e6d1e385
 FILE C:\PSFONTS\midorib.ttf
   faces=1
-  face 0 rc=1 fam='Midori Sans' face='Midori Sans Bold' gl='UNICODE' len=254 sum=7120b201 kern=0 first=0 last=9675 def=0
+  face 0 rc=1 fam='Midori Sans' face='Midori Sans Bold' gl='UNICODE' len=254 sum=82036a44 kern=95 first=0 last=9675 def=0
   size 0 set=0
    abc rc=256 sum=bacb4279
+   kern rc=95 n=95 sum=b6f134af
    g0 bitmap rc=40 ext=6,10 sum=3aa9a31d bm=eb21345f
    g0 outline rc=112 sum=54a4305b
    g3 bitmap rc=40 ext=6,10 sum=3aa9a31d bm=eb21345f
@@ -4234,7 +4268,7 @@ FILE C:\PSFONTS\mtsansdj.ttf
    g150 outline rc=112 sum=ac7b09fd
    g400 bitmap rc=288 ext=36,36 sum=d657b96d bm=20c84b37
    g400 outline rc=112 sum=ac7b09fd
-  face 1 rc=1 fam='@Monotype Sans Duospace WT J' face='@Monotype Sans Duospace WT J' gl='' len=254 sum=7612cc48 kern=0 first=0 last=65533 def=0
+  face 1 rc=1 fam='@Monotype Sans Duospace WT J' face='@Monotype Sans Duospace WT J' gl='UNICODE' len=254 sum=d0fd1cbd kern=0 first=0 last=65533 def=0
   size 0 set=0
    abc rc=256 sum=5264da0d
    g0 bitmap rc=72 ext=18,18 sum=c81b2d41 bm=e34ae25e
@@ -4314,9 +4348,10 @@ FILE C:\PSFONTS\mtsans_w.ttf
   fullfaces rc=1 len=48 cnt=0 sum=2a1e5305
 FILE C:\PSFONTS\NSANSCB.TTF
   faces=1
-  face 0 rc=1 fam='Nimbus Sans L Condensed' face='Nimbus Sans L Condensed Bold' gl='UNICODE' len=254 sum=7fa6f72a kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='Nimbus Sans L Condensed' face='Nimbus Sans L Condensed Bold' gl='UNICODE' len=254 sum=ff07859a kern=969 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=132a1fd1
+   kern rc=969 n=969 sum=b704017c
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -4354,9 +4389,10 @@ FILE C:\PSFONTS\NSANSCB.TTF
   fullfaces rc=1 len=64 cnt=0 sum=28a5bd05
 FILE C:\PSFONTS\NSANSCBI.TTF
   faces=1
-  face 0 rc=1 fam='Nimbus Sans L Condensed' face='Nimbus Sans L Condensed Bold It' gl='UNICODE' len=254 sum=8cb944fb kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='Nimbus Sans L Condensed' face='Nimbus Sans L Condensed Bold It' gl='UNICODE' len=254 sum=6c2d52f7 kern=981 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=7afd16c7
+   kern rc=981 n=981 sum=6d52ef08
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -4394,9 +4430,10 @@ FILE C:\PSFONTS\NSANSCBI.TTF
   fullfaces rc=1 len=72 cnt=0 sum=2380f205
 FILE C:\PSFONTS\NSANSCR.TTF
   faces=1
-  face 0 rc=1 fam='Nimbus Sans L Condensed' face='Nimbus Sans L Condensed' gl='UNICODE' len=254 sum=ffa8763a kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='Nimbus Sans L Condensed' face='Nimbus Sans L Condensed' gl='UNICODE' len=254 sum=8717a453 kern=978 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=284b0f0b
+   kern rc=978 n=978 sum=68641864
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -4434,9 +4471,10 @@ FILE C:\PSFONTS\NSANSCR.TTF
   fullfaces rc=1 len=60 cnt=0 sum=a40e0285
 FILE C:\PSFONTS\NSANSCRI.TTF
   faces=1
-  face 0 rc=1 fam='Nimbus Sans L Condensed' face='Nimbus Sans L Condensed Italic' gl='UNICODE' len=254 sum=022007bd kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='Nimbus Sans L Condensed' face='Nimbus Sans L Condensed Italic' gl='UNICODE' len=254 sum=6ee7cb18 kern=980 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=9854cbc3
+   kern rc=980 n=980 sum=e61c88cf
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -5791,7 +5829,7 @@ FILE C:\PSFONTS\tnrwt_j.ttf
    g150 outline rc=112 sum=5676bc33
    g400 bitmap rc=120 ext=24,30 sum=8add1f9b bm=48086340
    g400 outline rc=112 sum=5676bc33
-  face 1 rc=1 fam='@Times New Roman WT J' face='@Times New Roman WT J' gl='' len=254 sum=f8aa8e06 kern=0 first=0 last=65533 def=0
+  face 1 rc=1 fam='@Times New Roman WT J' face='@Times New Roman WT J' gl='UNICODE' len=254 sum=5394de7b kern=0 first=0 last=65533 def=0
   size 0 set=0
    abc rc=256 sum=83a8f359
    g0 bitmap rc=60 ext=12,15 sum=c72d81f3 bm=f5c05a12
@@ -5831,9 +5869,10 @@ FILE C:\PSFONTS\tnrwt_j.ttf
   fullfaces rc=2 len=112 cnt=0 sum=25b3fb05
 FILE C:\PSFONTS\UCHANCMI.TTF
   faces=1
-  face 0 rc=1 fam='URW Chancery L' face='URW Chancery L' gl='UNICODE' len=254 sum=7fb3a536 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='URW Chancery L' face='URW Chancery L' gl='UNICODE' len=254 sum=e46cc8e8 kern=971 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=38edb8c8
+   kern rc=971 n=971 sum=1467ec3a
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -5871,9 +5910,10 @@ FILE C:\PSFONTS\UCHANCMI.TTF
   fullfaces rc=1 len=40 cnt=0 sum=fc721e05
 FILE C:\PSFONTS\UPALLAB.TTF
   faces=1
-  face 0 rc=1 fam='URW Palladio L' face='URW Palladio L Bold' gl='UNICODE' len=254 sum=b443bfd7 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='URW Palladio L' face='URW Palladio L Bold' gl='UNICODE' len=254 sum=d11542f8 kern=986 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=60088292
+   kern rc=986 n=986 sum=4836eee4
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -5911,9 +5951,10 @@ FILE C:\PSFONTS\UPALLAB.TTF
   fullfaces rc=1 len=48 cnt=0 sum=2a1e5305
 FILE C:\PSFONTS\UPALLABI.TTF
   faces=1
-  face 0 rc=1 fam='URW Palladio L' face='URW Palladio L Bold Italic' gl='UNICODE' len=254 sum=ef5df716 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='URW Palladio L' face='URW Palladio L Bold Italic' gl='UNICODE' len=254 sum=a40d5b02 kern=965 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=ab9157f8
+   kern rc=965 n=965 sum=6697b0d2
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -5951,9 +5992,10 @@ FILE C:\PSFONTS\UPALLABI.TTF
   fullfaces rc=1 len=52 cnt=0 sum=e76a4d85
 FILE C:\PSFONTS\UPALLAR.TTF
   faces=1
-  face 0 rc=1 fam='URW Palladio L' face='URW Palladio L' gl='UNICODE' len=254 sum=5a94ee42 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='URW Palladio L' face='URW Palladio L' gl='UNICODE' len=254 sum=42179be7 kern=990 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=39e165d5
+   kern rc=990 n=990 sum=6ee5b98f
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -5991,9 +6033,10 @@ FILE C:\PSFONTS\UPALLAR.TTF
   fullfaces rc=1 len=40 cnt=0 sum=fc721e05
 FILE C:\PSFONTS\UPALLARI.TTF
   faces=1
-  face 0 rc=1 fam='URW Palladio L' face='URW Palladio L Italic' gl='UNICODE' len=254 sum=4e3af605 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='URW Palladio L' face='URW Palladio L Italic' gl='UNICODE' len=254 sum=1b1638ec kern=992 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=baf7a875
+   kern rc=992 n=992 sum=6a67fcb2
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -6031,9 +6074,10 @@ FILE C:\PSFONTS\UPALLARI.TTF
   fullfaces rc=1 len=48 cnt=0 sum=2a1e5305
 FILE C:\PSFONTS\wpsu.ttf
   faces=1
-  face 0 rc=1 fam='Workplace Sans' face='Workplace Sans' gl='UNICODE' len=254 sum=e434ea4e kern=0 first=0 last=65535 def=0
+  face 0 rc=1 fam='Workplace Sans' face='Workplace Sans' gl='UNICODE' len=254 sum=8a79f799 kern=103 first=0 last=65535 def=0
   size 0 set=0
    abc rc=256 sum=32570dc9
+   kern rc=103 n=103 sum=cb30bee8
    g0 bitmap rc=24 ext=5,6 sum=434b5215 bm=ee256e38
    g0 outline rc=112 sum=a683ba7b
    g3 bitmap rc=24 ext=5,6 sum=434b5215 bm=ee256e38
@@ -6071,9 +6115,10 @@ FILE C:\PSFONTS\wpsu.ttf
   fullfaces rc=1 len=40 cnt=0 sum=fc721e05
 FILE C:\PSFONTS\wpsub.ttf
   faces=1
-  face 0 rc=1 fam='Workplace Sans' face='Workplace Sans Bold' gl='UNICODE' len=254 sum=fd256f91 kern=0 first=0 last=65535 def=0
+  face 0 rc=1 fam='Workplace Sans' face='Workplace Sans Bold' gl='UNICODE' len=254 sum=95c8c94d kern=56 first=0 last=65535 def=0
   size 0 set=0
    abc rc=256 sum=c2a0da4f
+   kern rc=56 n=56 sum=14ca3d82
    g0 bitmap rc=24 ext=5,6 sum=434b5215 bm=ee256e38
    g0 outline rc=112 sum=8c8354e3
    g3 bitmap rc=24 ext=5,6 sum=434b5215 bm=ee256e38
@@ -6111,9 +6156,10 @@ FILE C:\PSFONTS\wpsub.ttf
   fullfaces rc=1 len=48 cnt=0 sum=2a1e5305
 FILE C:\qt6\apps\local_test\share\tuxpaint\fonts\default_font.ttf
   faces=1
-  face 0 rc=1 fam='DejaVu Sans' face='DejaVu Sans' gl='UNICODE' len=254 sum=df44107d kern=0 first=0 last=65535 def=0
+  face 0 rc=1 fam='DejaVu Sans' face='DejaVu Sans' gl='UNICODE' len=254 sum=9cd61f5d kern=2578 first=0 last=65535 def=0
   size 0 set=0
    abc rc=256 sum=60807698
+   kern rc=2578 n=2578 sum=a83d194d
    g0 bitmap rc=84 ext=12,21 sum=4eb41153 bm=3a54ec58
    g0 outline rc=112 sum=78efe095
    g3 bitmap rc=84 ext=12,21 sum=4eb41153 bm=3a54ec58
@@ -6508,7 +6554,7 @@ FILE C:\qt6\apps\local_test\share\tuxpaint\fonts\FreeSerif.ttf
    g150 outline rc=112 sum=cee58e15
    g400 bitmap rc=64 ext=8,16 sum=8d847791 bm=ccae754e
    g400 outline rc=112 sum=cee58e15
-  face 1 rc=1 fam='@FreeSerif' face='@Free Serif' gl='' len=254 sum=2e340577 kern=0 first=0 last=65533 def=0
+  face 1 rc=1 fam='@FreeSerif' face='@Free Serif' gl='UNICODE' len=254 sum=891e55ec kern=0 first=0 last=65533 def=0
   size 0 set=0
    abc rc=256 sum=8ffbca93
    g0 bitmap rc=32 ext=5,8 sum=e1bad225 bm=043a917a
@@ -6668,9 +6714,10 @@ FILE C:\qt6\apps\local_test\share\tuxpaint\fonts\FreeSerifItalic.ttf
   fullfaces rc=1 len=40 cnt=0 sum=fc721e05
 FILE C:\qt6\apps\local_test\share\tuxpaint\fonts\locale\ar.ttf
   faces=1
-  face 0 rc=1 fam='ae_Nice' face='ae_Nice' gl='UNICODE' len=254 sum=8e3f74c6 kern=0 first=0 last=65276 def=0
+  face 0 rc=1 fam='ae_Nice' face='ae_Nice' gl='UNICODE' len=254 sum=b7c897e1 kern=1490 first=0 last=65276 def=0
   size 0 set=0
    abc rc=256 sum=88bef0ca
+   kern rc=1490 n=1490 sum=889a90f8
    g0 bitmap rc=84 ext=12,21 sum=4eb41153 bm=3a54ec58
    g0 outline rc=112 sum=78efe095
    g3 bitmap rc=84 ext=12,21 sum=4eb41153 bm=3a54ec58
@@ -6748,9 +6795,10 @@ FILE C:\qt6\apps\local_test\share\tuxpaint\fonts\locale\bo.ttf
   fullfaces rc=1 len=44 cnt=0 sum=04ab9885
 FILE C:\qt6\apps\local_test\share\tuxpaint\fonts\locale\el.ttf
   faces=1
-  face 0 rc=1 fam='Thryomanes' face='Thryomanes' gl='UNICODE' len=254 sum=a9b1bb26 kern=0 first=0 last=64258 def=0
+  face 0 rc=1 fam='Thryomanes' face='Thryomanes' gl='UNICODE' len=254 sum=11fd56ec kern=2 first=0 last=64258 def=0
   size 0 set=0
    abc rc=256 sum=9885bbb3
+   kern rc=2 n=2 sum=d342f05b
    g0 bitmap rc=80 ext=9,20 sum=fa5a0295 bm=c9aa3bb7
    g0 outline rc=112 sum=c6d696a9
    g3 bitmap rc=80 ext=9,20 sum=fa5a0295 bm=c9aa3bb7
@@ -6948,9 +6996,10 @@ FILE C:\qt6\apps\local_test\share\tuxpaint\fonts\locale\ja.ttf
   fullfaces rc=1 len=48 cnt=0 sum=2a1e5305
 FILE C:\qt6\apps\local_test\share\tuxpaint\fonts\locale\ka.ttf
   faces=1
-  face 0 rc=1 fam='TuxPaint Georgian' face='TuxPaint Georgian' gl='UNICODE' len=254 sum=5a39b3d5 kern=0 first=0 last=8482 def=0
+  face 0 rc=1 fam='TuxPaint Georgian' face='TuxPaint Georgian' gl='UNICODE' len=254 sum=c2854f9b kern=2 first=0 last=8482 def=0
   size 0 set=0
    abc rc=256 sum=0ebe87bf
+   kern rc=2 n=2 sum=d342f05b
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -7028,9 +7077,10 @@ FILE C:\qt6\apps\local_test\share\tuxpaint\fonts\locale\ta.ttf
   fullfaces rc=1 len=32 cnt=0 sum=e92ae905
 FILE C:\qt6\apps\local_test\share\tuxpaint\fonts\locale\te.ttf
   faces=1
-  face 0 rc=1 fam='Vemana2000' face='Vemana2000' gl='UNICODE' len=254 sum=403ae24c kern=0 first=0 last=8205 def=0
+  face 0 rc=1 fam='Vemana2000' face='Vemana2000' gl='UNICODE' len=254 sum=1b32c8b3 kern=3 first=0 last=8205 def=0
   size 0 set=0
    abc rc=256 sum=00059847
+   kern rc=3 n=3 sum=e3127a40
    g0 bitmap rc=32 ext=7,8 sum=b1d9c8b1 bm=a1333f7e
    g0 outline rc=928 sum=7a3b0b42
    g3 bitmap rc=32 ext=7,8 sum=b1d9c8b1 bm=a1333f7e
@@ -7468,9 +7518,10 @@ FILE C:\usr\share\doc\qt5\global\template\style\icomoon.ttf
   fullfaces rc=1 len=28 cnt=0 sum=78dd2e85
 FILE C:\usr\share\ghostscript\9.18\Resource\CIDFSubst\DroidSansFallback.ttf
   faces=2
-  face 0 rc=1 fam='Droid Sans Fallback' face='Droid Sans Fallback' gl='UNICODE' len=254 sum=e1a3e884 kern=0 first=0 last=65510 def=0
+  face 0 rc=1 fam='Droid Sans Fallback' face='Droid Sans Fallback' gl='UNICODE' len=254 sum=57bdde8b kern=768 first=0 last=65510 def=0
   size 0 set=0
    abc rc=256 sum=00e51642
+   kern rc=768 n=768 sum=7a18cc57
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=8 ext=1,2 sum=7bb34a05 bm=8cb41c8b
@@ -7505,9 +7556,10 @@ FILE C:\usr\share\ghostscript\9.18\Resource\CIDFSubst\DroidSansFallback.ttf
    g150 outline rc=112 sum=e6d30bbf
    g400 bitmap rc=16 ext=2,4 sum=bdcb7f05 bm=739abf91
    g400 outline rc=112 sum=e6d30bbf
-  face 1 rc=1 fam='@Droid Sans Fallback' face='@Droid Sans Fallback' gl='' len=254 sum=be2d52cf kern=0 first=0 last=65510 def=0
+  face 1 rc=1 fam='@Droid Sans Fallback' face='@Droid Sans Fallback' gl='UNICODE' len=254 sum=8f31994b kern=768 first=0 last=65510 def=0
   size 0 set=0
    abc rc=256 sum=00e51642
+   kern rc=768 n=768 sum=7a18cc57
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
    g0 outline rc=0 sum=00000000
    g3 bitmap rc=8 ext=1,2 sum=7bb34a05 bm=8cb41c8b
@@ -7582,7 +7634,7 @@ FILE C:\Home\martin\Downloads\Enigma_1-30\share\enigma\fonts\MicroHei\wqy-microh
    g150 outline rc=112 sum=ee45d08f
    g400 bitmap rc=136 ext=20,34 sum=8ba7049d bm=58945e2b
    g400 outline rc=112 sum=ee45d08f
-  face 1 rc=1 fam='@WenQuanYi Micro Hei' face='@WenQuanYi Micro Hei' gl='' len=254 sum=a782a907 kern=0 first=0 last=65535 def=0
+  face 1 rc=1 fam='@WenQuanYi Micro Hei' face='@WenQuanYi Micro Hei' gl='UNICODE' len=254 sum=026cf97c kern=0 first=0 last=65535 def=0
   size 0 set=0
    abc rc=256 sum=6eadc5c6
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
@@ -7656,7 +7708,7 @@ FILE C:\Home\martin\Downloads\Enigma_1-30\share\enigma\fonts\MicroHei\wqy-microh
    g150 outline rc=112 sum=ee45d08f
    g400 bitmap rc=136 ext=20,34 sum=8ba7049d bm=58945e2b
    g400 outline rc=112 sum=ee45d08f
-  face 3 rc=1 fam='@WenQuanYi Micro Hei Mono' face='@WenQuanYi Micro Hei Mono' gl='' len=254 sum=6d4f4c79 kern=0 first=0 last=65535 def=0
+  face 3 rc=1 fam='@WenQuanYi Micro Hei Mono' face='@WenQuanYi Micro Hei Mono' gl='UNICODE' len=254 sum=c8399cee kern=0 first=0 last=65535 def=0
   size 0 set=0
    abc rc=256 sum=896b1c04
    g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985

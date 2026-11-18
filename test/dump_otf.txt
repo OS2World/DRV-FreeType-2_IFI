@@ -1,0 +1,1401 @@
+FILE C:\usr\share\fonts\urw-base35\C059-BdIta.otf
+  faces=1
+  face 0 rc=1 fam='C059' face='C059-BdIta' gl='UNICODE' len=254 sum=59a0f95d kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=6d92fca0
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=48 ext=7,12 sum=4fc2d0df bm=cd5d8602
+   g36 outline rc=816 sum=68f8a036
+   g37 bitmap rc=36 ext=9,9 sum=1844ddbf bm=436199a1
+   g37 outline rc=888 sum=ed05a112
+   g68 bitmap rc=36 ext=10,9 sum=cd2e9436 bm=720d803f
+   g68 outline rc=564 sum=2ad0322c
+   g100 bitmap rc=36 ext=8,9 sum=1978e98e bm=74e5429f
+   g100 outline rc=632 sum=fc3ab6ac
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=6d92fca0
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=88 ext=13,22 sum=2d2f5541 bm=105c183b
+   g36 outline rc=816 sum=687e0f1b
+   g37 bitmap rc=68 ext=19,17 sum=4a7e596e bm=9e92997b
+   g37 outline rc=888 sum=e1a05a59
+   g68 bitmap rc=68 ext=20,17 sum=1ee3a782 bm=cd3e8019
+   g68 outline rc=552 sum=ca27bbcb
+   g100 bitmap rc=68 ext=16,17 sum=a51b8e2f bm=37c7e5b7
+   g100 outline rc=632 sum=2aa4de26
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=28 cnt=0 sum=78dd2e85
+FILE C:\usr\share\fonts\urw-base35\C059-Bold.otf
+  faces=1
+  face 0 rc=1 fam='C059' face='C059-Bold' gl='UNICODE' len=254 sum=8a0752eb kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=d3fecb60
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=48 ext=7,12 sum=a4aa062b bm=cd5d8602
+   g36 outline rc=884 sum=23a55eb0
+   g37 bitmap rc=36 ext=10,9 sum=d515024f bm=0d339f61
+   g37 outline rc=888 sum=1ae3f17f
+   g68 bitmap rc=36 ext=9,9 sum=eace763c bm=410c7100
+   g68 outline rc=512 sum=ad41b48b
+   g100 bitmap rc=36 ext=8,9 sum=ed81b6a4 bm=74e5429f
+   g100 outline rc=416 sum=93a4a540
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=d3fecb60
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=88 ext=12,22 sum=13571b2b bm=468a127b
+   g36 outline rc=884 sum=2bae34c8
+   g37 bitmap rc=68 ext=19,17 sum=e6dcfe57 bm=9c3d70da
+   g37 outline rc=888 sum=c69f543f
+   g68 bitmap rc=68 ext=19,17 sum=3a63d9a3 bm=9c3d70da
+   g68 outline rc=500 sum=7d17860c
+   g100 bitmap rc=68 ext=14,17 sum=ef1834ad bm=a1ceb196
+   g100 outline rc=416 sum=26fee1ce
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=28 cnt=0 sum=78dd2e85
+FILE C:\usr\share\fonts\urw-base35\C059-Italic.otf
+  faces=1
+  face 0 rc=1 fam='C059' face='C059-Italic' gl='UNICODE' len=254 sum=5e9a6ad7 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=6b64a0de
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=44 ext=6,11 sum=d0550445 bm=f50131c0
+   g36 outline rc=904 sum=d3e71ca5
+   g37 bitmap rc=36 ext=9,9 sum=4ed3a466 bm=410c7100
+   g37 outline rc=900 sum=30e36b96
+   g68 bitmap rc=36 ext=10,9 sum=b7e71e36 bm=720d803f
+   g68 outline rc=568 sum=f2a6a1ac
+   g100 bitmap rc=36 ext=7,9 sum=c22a0575 bm=a8be143e
+   g100 outline rc=656 sum=c6d07d87
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=6b64a0de
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=88 ext=13,22 sum=f831423a bm=105c183b
+   g36 outline rc=928 sum=6341fd6d
+   g37 bitmap rc=68 ext=18,17 sum=ffa4710a bm=d26b6b1a
+   g37 outline rc=888 sum=9f45dbbe
+   g68 bitmap rc=68 ext=18,17 sum=aeda47dc bm=34f02357
+   g68 outline rc=568 sum=06c8fd79
+   g100 bitmap rc=68 ext=14,17 sum=905d0fb1 bm=9f7988f5
+   g100 outline rc=656 sum=cd665e57
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=32 cnt=0 sum=e92ae905
+FILE C:\usr\share\fonts\urw-base35\C059-Roman.otf
+  faces=1
+  face 0 rc=1 fam='C059' face='C059-Roman' gl='UNICODE' len=254 sum=0c9a0e44 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=49553859
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=44 ext=6,11 sum=bb47ab0d bm=f50131c0
+   g36 outline rc=880 sum=ffabe657
+   g37 bitmap rc=36 ext=9,9 sum=4ed3a466 bm=410c7100
+   g37 outline rc=900 sum=98d3b122
+   g68 bitmap rc=36 ext=9,9 sum=56240a4c bm=410c7100
+   g68 outline rc=484 sum=e6a1b508
+   g100 bitmap rc=36 ext=7,9 sum=55f889e3 bm=a8be143e
+   g100 outline rc=496 sum=3c8f0135
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=49553859
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=88 ext=11,22 sum=84156ba3 bm=7a62e41a
+   g36 outline rc=880 sum=8bd193d8
+   g37 bitmap rc=68 ext=18,17 sum=fa47075a bm=d26b6b1a
+   g37 outline rc=888 sum=3e9e551c
+   g68 bitmap rc=68 ext=16,17 sum=c1a5bdfc bm=3a1d0e58
+   g68 outline rc=484 sum=13abd6ad
+   g100 bitmap rc=68 ext=12,17 sum=d48ce8e0 bm=098054d4
+   g100 outline rc=496 sum=ab379342
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=28 cnt=0 sum=78dd2e85
+FILE C:\usr\share\fonts\urw-base35\D050000L.otf
+  faces=1
+  face 0 rc=1 fam='D050000L' face='D050000L' gl='UNICODE' len=254 sum=b31da5a6 kern=0 first=0 last=254 def=0
+  size 0 set=0
+   abc rc=256 sum=850b7da3
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=32 ext=11,8 sum=97ab8d83 bm=cd25a7c0
+   g36 outline rc=2332 sum=4cfd2077
+   g37 bitmap rc=20 ext=8,5 sum=f8369485 bm=4410aad9
+   g37 outline rc=1352 sum=f76a9a8a
+   g68 bitmap rc=36 ext=9,9 sum=bdf6ee62 bm=410c7100
+   g68 outline rc=744 sum=7ec482c3
+   g100 bitmap rc=32 ext=8,8 sum=74eebdd2 bm=68b01c9d
+   g100 outline rc=812 sum=1244008a
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=850b7da3
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=64 ext=21,16 sum=dafcdda3 bm=2aabd03b
+   g36 outline rc=2284 sum=f4b3b1e8
+   g37 bitmap rc=40 ext=15,10 sum=207b04de bm=1881d64c
+   g37 outline rc=1340 sum=bc0e3c3a
+   g68 bitmap rc=68 ext=17,17 sum=3494a83d bm=06443cb9
+   g68 outline rc=744 sum=10219f51
+   g100 bitmap rc=64 ext=14,16 sum=1a08f483 bm=95998b94
+   g100 outline rc=800 sum=39409e05
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=32 cnt=0 sum=e92ae905
+FILE C:\usr\share\fonts\urw-base35\NimbusMonoPS-Bold.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Mono PS' face='NimbusMonoPS-Bold' gl='UNICODE' len=254 sum=904c5656 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=f69ecbc1
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=36 ext=5,9 sum=78099b0d bm=12c4dffc
+   g36 outline rc=1068 sum=ee024085
+   g37 bitmap rc=28 ext=5,7 sum=875ca075 bm=fa5a9419
+   g37 outline rc=680 sum=3984c993
+   g68 bitmap rc=28 ext=7,7 sum=1d29a29f bm=9053c83a
+   g68 outline rc=444 sum=4f5403d2
+   g100 bitmap rc=28 ext=7,7 sum=35dcdec3 bm=9053c83a
+   g100 outline rc=700 sum=240165c5
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=f69ecbc1
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=72 ext=10,18 sum=e2a36ae2 bm=7fbc4652
+   g36 outline rc=1068 sum=5f10f8a9
+   g37 bitmap rc=56 ext=10,14 sum=23e33e48 bm=4ee7aead
+   g37 outline rc=680 sum=58dba5b2
+   g68 bitmap rc=52 ext=13,13 sum=c181afd9 bm=a27dc28c
+   g68 outline rc=420 sum=9b3e5ddb
+   g100 bitmap rc=56 ext=13,14 sum=65ebd3dc bm=b108112f
+   g100 outline rc=688 sum=571ca231
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=44 cnt=0 sum=04ab9885
+FILE C:\usr\share\fonts\urw-base35\NimbusMonoPS-BoldItalic.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Mono PS' face='NimbusMonoPS-BoldItalic' gl='UNICODE' len=254 sum=6db560b2 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=bfb19bb5
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=36 ext=6,9 sum=79ffa705 bm=deec0e5d
+   g36 outline rc=1068 sum=ce20ea93
+   g37 bitmap rc=28 ext=6,7 sum=8ce68f61 bm=c681c27a
+   g37 outline rc=680 sum=e861913b
+   g68 bitmap rc=28 ext=7,7 sum=a618bbf1 bm=9053c83a
+   g68 outline rc=500 sum=836fd15f
+   g100 bitmap rc=28 ext=7,7 sum=e266c745 bm=92a8f0db
+   g100 outline rc=672 sum=05e01833
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=bfb19bb5
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=72 ext=12,18 sum=857ee3e7 bm=180aa314
+   g36 outline rc=1068 sum=368cef9b
+   g37 bitmap rc=56 ext=11,14 sum=3b225508 bm=1d6405af
+   g37 outline rc=680 sum=c6430879
+   g68 bitmap rc=52 ext=15,13 sum=b40bef8b bm=3acc1f4e
+   g68 outline rc=476 sum=5dffb5a3
+   g100 bitmap rc=56 ext=14,14 sum=ea73f717 bm=7f846831
+   g100 outline rc=660 sum=8813ab51
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=52 cnt=0 sum=e76a4d85
+FILE C:\usr\share\fonts\urw-base35\NimbusMonoPS-Italic.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Mono PS' face='NimbusMonoPS-Italic' gl='UNICODE' len=254 sum=6d163147 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=ab1129fe
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=36 ext=6,9 sum=db9a1785 bm=deec0e5d
+   g36 outline rc=1080 sum=f5269ece
+   g37 bitmap rc=28 ext=6,7 sum=d8cb2a15 bm=c681c27a
+   g37 outline rc=680 sum=37e9f59c
+   g68 bitmap rc=28 ext=7,7 sum=ad74a0a5 bm=9053c83a
+   g68 outline rc=468 sum=6630bb48
+   g100 bitmap rc=28 ext=7,7 sum=9c313157 bm=92a8f0db
+   g100 outline rc=472 sum=3dfdfb1e
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=ab1129fe
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=68 ext=11,17 sum=87413f75 bm=42037773
+   g36 outline rc=1080 sum=defa064d
+   g37 bitmap rc=56 ext=11,14 sum=449c7693 bm=1d6405af
+   g37 outline rc=680 sum=286839a9
+   g68 bitmap rc=52 ext=13,13 sum=760a5253 bm=a4d2eb2d
+   g68 outline rc=456 sum=d689eb65
+   g100 bitmap rc=56 ext=13,14 sum=526f33a5 bm=b35d39d0
+   g100 outline rc=460 sum=8ccfe56b
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=48 cnt=0 sum=2a1e5305
+FILE C:\usr\share\fonts\urw-base35\NimbusMonoPS-Regular.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Mono PS' face='NimbusMonoPS-Regular' gl='UNICODE' len=254 sum=04d6e1ff kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=222b76ae
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=36 ext=5,9 sum=4b93e7dd bm=12c4dffc
+   g36 outline rc=916 sum=b43d9ad2
+   g37 bitmap rc=28 ext=5,7 sum=c5279a7d bm=fa5a9419
+   g37 outline rc=680 sum=afd0f957
+   g68 bitmap rc=28 ext=6,7 sum=312fe149 bm=c42c99d9
+   g68 outline rc=384 sum=426ccc32
+   g100 bitmap rc=28 ext=7,7 sum=ea3aa25b bm=9053c83a
+   g100 outline rc=472 sum=47e21c65
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=222b76ae
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=68 ext=10,17 sum=171debbe bm=73872071
+   g36 outline rc=916 sum=b5e2e005
+   g37 bitmap rc=56 ext=10,14 sum=94021ef6 bm=4ee7aead
+   g37 outline rc=680 sum=b613bed0
+   g68 bitmap rc=52 ext=11,13 sum=7aba3b05 bm=0c848e6b
+   g68 outline rc=372 sum=778013f8
+   g100 bitmap rc=56 ext=13,14 sum=3218533d bm=b108112f
+   g100 outline rc=472 sum=871d87fc
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=48 cnt=0 sum=2a1e5305
+FILE C:\usr\share\fonts\urw-base35\NimbusRoman-Bold.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Roman' face='NimbusRoman-Bold' gl='UNICODE' len=254 sum=71a59f20 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=ed975d81
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=6,10 sum=6c2d6f81 bm=e8cc0bbe
+   g36 outline rc=648 sum=f4a4cfe5
+   g37 bitmap rc=32 ext=9,8 sum=c1a8ee81 bm=372c739f
+   g37 outline rc=904 sum=e24257e4
+   g68 bitmap rc=32 ext=8,8 sum=7d7f1755 bm=68b01c9d
+   g68 outline rc=380 sum=3f191b3a
+   g100 bitmap rc=32 ext=6,8 sum=f49252d5 bm=d061bfdb
+   g100 outline rc=484 sum=abfa7789
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=ed975d81
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=80 ext=10,20 sum=d68db995 bm=95d169d6
+   g36 outline rc=648 sum=63c61515
+   g37 bitmap rc=64 ext=18,16 sum=1d525979 bm=cae0965a
+   g37 outline rc=904 sum=d3ec3743
+   g68 bitmap rc=64 ext=16,16 sum=1706f026 bm=2b92bfb5
+   g68 outline rc=368 sum=c68f6116
+   g100 bitmap rc=64 ext=12,16 sum=25d8517f bm=fd4b2ed2
+   g100 outline rc=460 sum=437fe501
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=44 cnt=0 sum=04ab9885
+FILE C:\usr\share\fonts\urw-base35\NimbusRoman-BoldItalic.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Roman' face='NimbusRoman-BoldItalic' gl='UNICODE' len=254 sum=608cd4dd kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=5e629f45
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=6,10 sum=6180c0b1 bm=e8cc0bbe
+   g36 outline rc=700 sum=546c1f31
+   g37 bitmap rc=32 ext=9,8 sum=e3e511a8 bm=34d74afe
+   g37 outline rc=876 sum=88c473e0
+   g68 bitmap rc=32 ext=9,8 sum=f449f020 bm=99b12bdc
+   g68 outline rc=448 sum=7cfc7253
+   g100 bitmap rc=36 ext=6,9 sum=a411ccb9 bm=dc96e5dd
+   g100 outline rc=632 sum=3826610b
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=5e629f45
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=76 ext=12,19 sum=860319ac bm=1f9577f5
+   g36 outline rc=700 sum=528126b5
+   g37 bitmap rc=64 ext=18,16 sum=47a7d2f2 bm=c6364518
+   g37 outline rc=876 sum=7c9722ed
+   g68 bitmap rc=64 ext=17,16 sum=55248e71 bm=5c93cef4
+   g68 outline rc=436 sum=b4646efd
+   g100 bitmap rc=68 ext=12,17 sum=fd529136 bm=072b2c33
+   g100 outline rc=608 sum=d273fe13
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=48 cnt=0 sum=2a1e5305
+FILE C:\usr\share\fonts\urw-base35\NimbusRoman-Italic.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Roman' face='NimbusRoman-Italic' gl='UNICODE' len=254 sum=ac6e6dd0 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=caec700d
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=6,10 sum=5e0437bd bm=e8cc0bbe
+   g36 outline rc=688 sum=e72c00a4
+   g37 bitmap rc=32 ext=8,8 sum=4799f09e bm=6b05453e
+   g37 outline rc=912 sum=9b5d8905
+   g68 bitmap rc=32 ext=8,8 sum=a121299a bm=68b01c9d
+   g68 outline rc=464 sum=a2586ed7
+   g100 bitmap rc=32 ext=6,8 sum=3dfd97f5 bm=d061bfdb
+   g100 outline rc=632 sum=791b5708
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=caec700d
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=76 ext=11,19 sum=9a5fb0c5 bm=55c37235
+   g36 outline rc=688 sum=d01a69e5
+   g37 bitmap rc=64 ext=17,16 sum=845b29e7 bm=fc643f58
+   g37 outline rc=912 sum=721d6cd6
+   g68 bitmap rc=64 ext=17,16 sum=1181a0af bm=f7b9ee16
+   g68 outline rc=464 sum=965b292b
+   g100 bitmap rc=64 ext=12,16 sum=26a2837f bm=faf60631
+   g100 outline rc=632 sum=7b0236ef
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=44 cnt=0 sum=04ab9885
+FILE C:\usr\share\fonts\urw-base35\NimbusRoman-Regular.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Roman' face='NimbusRoman-Regular' gl='UNICODE' len=254 sum=5de61f25 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=a7e8e9a4
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=5,10 sum=148da735 bm=1ca4dd5d
+   g36 outline rc=676 sum=3250626d
+   g37 bitmap rc=32 ext=8,8 sum=6ee346d8 bm=6b05453e
+   g37 outline rc=900 sum=2faa457d
+   g68 bitmap rc=32 ext=8,8 sum=114f1dc9 bm=68b01c9d
+   g68 outline rc=436 sum=e39f4beb
+   g100 bitmap rc=36 ext=6,9 sum=dd2c4469 bm=dc96e5dd
+   g100 outline rc=540 sum=d11888cc
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=a7e8e9a4
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=76 ext=10,19 sum=660d28fc bm=899c43d4
+   g36 outline rc=676 sum=16a0ed1f
+   g37 bitmap rc=64 ext=17,16 sum=6b9b2a5c bm=fa0f16b7
+   g37 outline rc=900 sum=4daf6021
+   g68 bitmap rc=64 ext=16,16 sum=a80ac70d bm=2b92bfb5
+   g68 outline rc=436 sum=f558e5ad
+   g100 bitmap rc=64 ext=11,16 sum=c9b5b247 bm=31240071
+   g100 outline rc=528 sum=22c2fb22
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=48 cnt=0 sum=2a1e5305
+FILE C:\usr\share\fonts\urw-base35\NimbusSans-Bold.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Sans' face='NimbusSans-Bold' gl='UNICODE' len=254 sum=a5cbe959 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=4b36d1a6
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=6,10 sum=38b07735 bm=e8cc0bbe
+   g36 outline rc=608 sum=0a039b3c
+   g37 bitmap rc=36 ext=10,9 sum=b2d528f2 bm=0d339f61
+   g37 outline rc=548 sum=b90cb761
+   g68 bitmap rc=36 ext=7,9 sum=a992e98b bm=ab133cdf
+   g68 outline rc=280 sum=8067a25b
+   g100 bitmap rc=36 ext=7,9 sum=2fe513db bm=a8be143e
+   g100 outline rc=364 sum=f9860a60
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=4b36d1a6
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=84 ext=11,21 sum=0be022bf bm=6e2dbe18
+   g36 outline rc=572 sum=ffb870cd
+   g37 bitmap rc=68 ext=19,17 sum=89513a8f bm=9e92997b
+   g37 outline rc=536 sum=d5900f18
+   g68 bitmap rc=68 ext=14,17 sum=ee9cb203 bm=a423da37
+   g68 outline rc=256 sum=501ac0e9
+   g100 bitmap rc=68 ext=12,17 sum=f2ea120e bm=098054d4
+   g100 outline rc=328 sum=a4f13b30
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=40 cnt=0 sum=fc721e05
+FILE C:\usr\share\fonts\urw-base35\NimbusSans-BoldItalic.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Sans' face='NimbusSans-BoldItalic' gl='UNICODE' len=254 sum=8406c342 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=096f9bba
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=6,10 sum=07d50dad bm=eb21345f
+   g36 outline rc=904 sum=33c689d1
+   g37 bitmap rc=36 ext=10,9 sum=a7c8263b bm=0f88c802
+   g37 outline rc=828 sum=5b881037
+   g68 bitmap rc=36 ext=8,9 sum=86fca8ce bm=773a6b40
+   g68 outline rc=308 sum=27e16d6d
+   g100 bitmap rc=36 ext=7,9 sum=dc765619 bm=ab133cdf
+   g100 outline rc=476 sum=b3390a92
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=096f9bba
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=84 ext=14,21 sum=e2137e55 bm=d2a3493b
+   g36 outline rc=868 sum=72133def
+   g37 bitmap rc=68 ext=18,17 sum=3e46657f bm=d715bc5c
+   g37 outline rc=816 sum=72b5cd4e
+   g68 bitmap rc=68 ext=16,17 sum=c3c91d11 bm=3c7236f9
+   g68 outline rc=284 sum=191fc588
+   g100 bitmap rc=68 ext=14,17 sum=30f1dfc9 bm=a423da37
+   g100 outline rc=440 sum=5774f251
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=44 cnt=0 sum=04ab9885
+FILE C:\usr\share\fonts\urw-base35\NimbusSans-Italic.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Sans' face='NimbusSans-Italic' gl='UNICODE' len=254 sum=da849e51 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=cf868043
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=6,10 sum=cec67645 bm=eb21345f
+   g36 outline rc=900 sum=2ef416d9
+   g37 bitmap rc=32 ext=10,8 sum=7836a8be bm=0353a200
+   g37 outline rc=716 sum=dec88680
+   g68 bitmap rc=36 ext=8,9 sum=deb60eae bm=773a6b40
+   g68 outline rc=336 sum=30e07a59
+   g100 bitmap rc=36 ext=7,9 sum=ca88a4ef bm=ab133cdf
+   g100 outline rc=504 sum=aa0e8e23
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=cf868043
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=84 ext=12,21 sum=7c61b5b8 bm=3caa151a
+   g36 outline rc=912 sum=2bc5c307
+   g37 bitmap rc=68 ext=18,17 sum=25f6316c bm=d715bc5c
+   g37 outline rc=704 sum=f97081da
+   g68 bitmap rc=68 ext=16,17 sum=e378413a bm=3c7236f9
+   g68 outline rc=336 sum=98945886
+   g100 bitmap rc=68 ext=13,17 sum=c581725f bm=d7fcabd6
+   g100 outline rc=504 sum=7d7a80a5
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=40 cnt=0 sum=fc721e05
+FILE C:\usr\share\fonts\urw-base35\NimbusSans-Regular.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Sans' face='NimbusSans-Regular' gl='UNICODE' len=254 sum=24ec756f kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=b0f8b603
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=6,10 sum=27127d1d bm=e8cc0bbe
+   g36 outline rc=680 sum=f5c4938e
+   g37 bitmap rc=32 ext=10,8 sum=73324d26 bm=00fe795f
+   g37 outline rc=548 sum=5abaaa09
+   g68 bitmap rc=36 ext=7,9 sum=a0ed2edf bm=ab133cdf
+   g68 outline rc=224 sum=608ea791
+   g100 bitmap rc=36 ext=6,9 sum=a61e6199 bm=dc96e5dd
+   g100 outline rc=336 sum=406dbddd
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=b0f8b603
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=84 ext=11,21 sum=2b2b457a bm=6e2dbe18
+   g36 outline rc=668 sum=70df1a7e
+   g37 bitmap rc=68 ext=19,17 sum=6e98d59c bm=9e92997b
+   g37 outline rc=548 sum=7c11111a
+   g68 bitmap rc=68 ext=14,17 sum=ecc98fbd bm=a423da37
+   g68 outline rc=212 sum=43f40930
+   g100 bitmap rc=68 ext=11,17 sum=2233e3e1 bm=3d592673
+   g100 outline rc=336 sum=2e8a364a
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=40 cnt=0 sum=fc721e05
+FILE C:\usr\share\fonts\urw-base35\NimbusSansNarrow-Bold.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Sans Narrow' face='NimbusSansNarrow-Bold' gl='UNICODE' len=254 sum=2e2da1c9 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=d33228ca
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=5,10 sum=11419e8d bm=1ca4dd5d
+   g36 outline rc=652 sum=6ed22c27
+   g37 bitmap rc=32 ext=8,8 sum=ff61223f bm=68b01c9d
+   g37 outline rc=548 sum=6b28fce8
+   g68 bitmap rc=36 ext=6,9 sum=e065110d bm=deec0e7e
+   g68 outline rc=252 sum=42adbd0e
+   g100 bitmap rc=36 ext=5,9 sum=784672cd bm=106fb77c
+   g100 outline rc=336 sum=e7402f27
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=d33228ca
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=84 ext=9,21 sum=3b3c93d1 bm=d5df6156
+   g36 outline rc=616 sum=9f370fb2
+   g37 bitmap rc=64 ext=16,16 sum=02203fc2 bm=2de7e856
+   g37 outline rc=536 sum=edc53bcf
+   g68 bitmap rc=68 ext=12,17 sum=f0dfa74f bm=098054d4
+   g68 outline rc=228 sum=813f407a
+   g100 bitmap rc=68 ext=10,17 sum=a73c9daa bm=7131f812
+   g100 outline rc=300 sum=885084d4
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=52 cnt=0 sum=e76a4d85
+FILE C:\usr\share\fonts\urw-base35\NimbusSansNarrow-BoldOblique.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Sans Narrow' face='NimbusSansNarrow-BoldOblique' gl='UNICODE' len=254 sum=c802dc51 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=5a985b36
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=5,10 sum=7c49b5f5 bm=1efa05fe
+   g36 outline rc=820 sum=ba243729
+   g37 bitmap rc=32 ext=8,8 sum=8d0a3f3c bm=6b05453e
+   g37 outline rc=772 sum=1b1a5fc3
+   g68 bitmap rc=36 ext=7,9 sum=3e2759cd bm=ab133cdf
+   g68 outline rc=308 sum=abdd5aff
+   g100 bitmap rc=36 ext=6,9 sum=03cacbfd bm=deec0e7e
+   g100 outline rc=364 sum=129d8d19
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=5a985b36
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=84 ext=11,21 sum=b87966fd bm=6e2dbe18
+   g36 outline rc=784 sum=265d932e
+   g37 bitmap rc=64 ext=14,16 sum=373ee24b bm=9a43dcd6
+   g37 outline rc=760 sum=17d6bdff
+   g68 bitmap rc=68 ext=14,17 sum=b02a263b bm=a1ceb196
+   g68 outline rc=284 sum=7684ed8f
+   g100 bitmap rc=68 ext=12,17 sum=c663e512 bm=0bd57d75
+   g100 outline rc=328 sum=229db06f
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=60 cnt=0 sum=a40e0285
+FILE C:\usr\share\fonts\urw-base35\NimbusSansNarrow-Oblique.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Sans Narrow' face='NimbusSansNarrow-Oblique' gl='UNICODE' len=254 sum=e68e98c9 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=957b7f32
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=5,10 sum=7c49b5f5 bm=1efa05fe
+   g36 outline rc=888 sum=074dc2db
+   g37 bitmap rc=32 ext=8,8 sum=55f861ff bm=6b05453e
+   g37 outline rc=772 sum=8cbb7c07
+   g68 bitmap rc=36 ext=6,9 sum=dbc6e015 bm=deec0e7e
+   g68 outline rc=280 sum=11ad7f1c
+   g100 bitmap rc=36 ext=5,9 sum=dc0aaa8d bm=12c4e01d
+   g100 outline rc=392 sum=58710679
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=957b7f32
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=84 ext=11,21 sum=dc1289d6 bm=6e2dbe18
+   g36 outline rc=876 sum=b1dfa756
+   g37 bitmap rc=64 ext=14,16 sum=090cd38f bm=9a43dcd6
+   g37 outline rc=772 sum=6f03f750
+   g68 bitmap rc=68 ext=14,17 sum=876f42b5 bm=a1ceb196
+   g68 outline rc=280 sum=f7f884bf
+   g100 bitmap rc=68 ext=12,17 sum=6cfebe74 bm=098054d4
+   g100 outline rc=404 sum=3707a0a9
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=56 cnt=0 sum=072f8805
+FILE C:\usr\share\fonts\urw-base35\NimbusSansNarrow-Regular.otf
+  faces=1
+  face 0 rc=1 fam='Nimbus Sans Narrow' face='NimbusSansNarrow-Regular' gl='UNICODE' len=254 sum=318ed92b kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=06b9a07a
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=5,10 sum=6c5b28b5 bm=1ca4dd5d
+   g36 outline rc=692 sum=c1700091
+   g37 bitmap rc=32 ext=8,8 sum=75a0b772 bm=68b01c9d
+   g37 outline rc=548 sum=ce97bc15
+   g68 bitmap rc=36 ext=6,9 sum=39ba4ac9 bm=deec0e7e
+   g68 outline rc=252 sum=7b2c0822
+   g100 bitmap rc=36 ext=5,9 sum=8000e3bd bm=106fb77c
+   g100 outline rc=364 sum=3ba15c80
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=06b9a07a
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=84 ext=10,21 sum=5d447c12 bm=9fb16716
+   g36 outline rc=692 sum=e6e96761
+   g37 bitmap rc=64 ext=15,16 sum=519622d2 bm=61c0b9f5
+   g37 outline rc=548 sum=3c6eb392
+   g68 bitmap rc=68 ext=12,17 sum=c96fb781 bm=098054d4
+   g68 outline rc=252 sum=cc69fb25
+   g100 bitmap rc=68 ext=9,17 sum=d991a1d0 bm=a50ac9b1
+   g100 outline rc=364 sum=78ede13b
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=56 cnt=0 sum=072f8805
+FILE C:\usr\share\fonts\urw-base35\P052-Bold.otf
+  faces=1
+  face 0 rc=1 fam='P052' face='P052-Bold' gl='UNICODE' len=254 sum=4be7beac kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=bae5d957
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=6,10 sum=21a8b1c5 bm=e8cc0bbe
+   g36 outline rc=800 sum=c897f00b
+   g37 bitmap rc=36 ext=9,9 sum=5eeda047 bm=436199a1
+   g37 outline rc=548 sum=2c6b9d7d
+   g68 bitmap rc=32 ext=9,8 sum=46ea2bec bm=34d74afe
+   g68 outline rc=628 sum=11ff0c08
+   g100 bitmap rc=36 ext=7,9 sum=89161ff3 bm=a8be143e
+   g100 outline rc=616 sum=9758a0e2
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=bae5d957
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=80 ext=10,20 sum=b4903559 bm=95d169b5
+   g36 outline rc=800 sum=86d34dd7
+   g37 bitmap rc=68 ext=18,17 sum=502e0a9d bm=d26b6b1a
+   g37 outline rc=548 sum=16acd6cc
+   g68 bitmap rc=64 ext=17,16 sum=f6e7a1e3 bm=fa0f16b7
+   g68 outline rc=640 sum=58e1d7e4
+   g100 bitmap rc=72 ext=13,18 sum=9a4f8e26 bm=e1dca937
+   g100 outline rc=604 sum=2e8d082c
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=28 cnt=0 sum=78dd2e85
+FILE C:\usr\share\fonts\urw-base35\P052-BoldItalic.otf
+  faces=1
+  face 0 rc=1 fam='P052' face='P052-BoldItalic' gl='UNICODE' len=254 sum=157c2af5 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=817acb99
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=6,10 sum=a2c78001 bm=e8cc0bbe
+   g36 outline rc=816 sum=c278cb07
+   g37 bitmap rc=36 ext=8,9 sum=7bd37387 bm=773a6b40
+   g37 outline rc=660 sum=c4f23afd
+   g68 bitmap rc=32 ext=9,8 sum=51f633ba bm=34d74afe
+   g68 outline rc=656 sum=5568fb0a
+   g100 bitmap rc=36 ext=7,9 sum=79aca55b bm=a8be143e
+   g100 outline rc=832 sum=01f2e895
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=817acb99
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=84 ext=11,21 sum=c4365cf9 bm=6bd89577
+   g36 outline rc=828 sum=718d810d
+   g37 bitmap rc=68 ext=18,17 sum=120d1143 bm=d26b6b1a
+   g37 outline rc=660 sum=f6bf4e73
+   g68 bitmap rc=64 ext=18,16 sum=7797228e bm=c3e11c77
+   g68 outline rc=656 sum=cac51a3a
+   g100 bitmap rc=68 ext=12,17 sum=58a56c2d bm=098054d4
+   g100 outline rc=820 sum=178ccb97
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=36 cnt=0 sum=e6d1e385
+FILE C:\usr\share\fonts\urw-base35\P052-Italic.otf
+  faces=1
+  face 0 rc=1 fam='P052' face='P052-Italic' gl='UNICODE' len=254 sum=cb611d2b kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=e58a2518
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=5,10 sum=8c5b81a5 bm=1ca4dd5d
+   g36 outline rc=772 sum=a8df2413
+   g37 bitmap rc=32 ext=9,8 sum=ac8bbada bm=372c739f
+   g37 outline rc=604 sum=e6896ee0
+   g68 bitmap rc=32 ext=9,8 sum=eff30647 bm=34d74afe
+   g68 outline rc=660 sum=b4336b79
+   g100 bitmap rc=36 ext=6,9 sum=1ce980c5 bm=dc96e5dd
+   g100 outline rc=748 sum=54a685c1
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=e58a2518
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=80 ext=11,20 sum=449e2e72 bm=5fa36f75
+   g36 outline rc=772 sum=759c194f
+   g37 bitmap rc=64 ext=17,16 sum=c0192b87 bm=fc643f58
+   g37 outline rc=592 sum=885cd68f
+   g68 bitmap rc=64 ext=18,16 sum=07a800ee bm=c3e11c77
+   g68 outline rc=660 sum=d0da770e
+   g100 bitmap rc=68 ext=11,17 sum=695c4900 bm=3b03fdd2
+   g100 outline rc=748 sum=8045ac36
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=32 cnt=0 sum=e92ae905
+FILE C:\usr\share\fonts\urw-base35\P052-Roman.otf
+  faces=1
+  face 0 rc=1 fam='P052' face='P052-Roman' gl='UNICODE' len=254 sum=a8979ad9 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=b23d72db
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=6,10 sum=7142d879 bm=e8cc0bbe
+   g36 outline rc=792 sum=1f6edb03
+   g37 bitmap rc=32 ext=10,8 sum=39dc1ac1 bm=00fe795f
+   g37 outline rc=548 sum=7ffda523
+   g68 bitmap rc=32 ext=9,8 sum=716c0b87 bm=34d74afe
+   g68 outline rc=616 sum=7b8f048b
+   g100 bitmap rc=36 ext=7,9 sum=76eb15a3 bm=a8be143e
+   g100 outline rc=664 sum=4df0e97a
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=b23d72db
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=80 ext=10,20 sum=16350a22 bm=95d169b5
+   g36 outline rc=792 sum=a695dbf9
+   g37 bitmap rc=64 ext=18,16 sum=5cf44b71 bm=c6364518
+   g37 outline rc=536 sum=df9b20dd
+   g68 bitmap rc=64 ext=18,16 sum=6fab1132 bm=c3e11c77
+   g68 outline rc=616 sum=a640099c
+   g100 bitmap rc=68 ext=13,17 sum=8320fb0f bm=d5a78335
+   g100 outline rc=676 sum=0948ce01
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=28 cnt=0 sum=78dd2e85
+FILE C:\usr\share\fonts\urw-base35\StandardSymbolsPS.otf
+  faces=1
+  face 0 rc=1 fam='Standard Symbols PS' face='Standard Symbols PS' gl='UNICODE' len=254 sum=acfcb5d1 kern=0 first=0 last=254 def=0
+  size 0 set=0
+   abc rc=256 sum=e7d78c52
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=32 ext=6,8 sum=81bb8a8d bm=d061bfdb
+   g36 outline rc=164 sum=a07e6601
+   g37 bitmap rc=32 ext=8,8 sum=1741d0ec bm=6b05453e
+   g37 outline rc=884 sum=f718465f
+   g68 bitmap rc=32 ext=7,8 sum=22f214a5 bm=9c88ee3c
+   g68 outline rc=136 sum=7f7b01e9
+   g100 bitmap rc=36 ext=6,9 sum=48e43f35 bm=dc96e5dd
+   g100 outline rc=696 sum=9216186c
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=e7d78c52
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=64 ext=11,16 sum=7035fb22 bm=2eced7d0
+   g36 outline rc=152 sum=dccb278f
+   g37 bitmap rc=64 ext=17,16 sum=51ed753e bm=fa0f16b7
+   g37 outline rc=872 sum=30bcaf3c
+   g68 bitmap rc=64 ext=14,16 sum=e79931e4 bm=934462f3
+   g68 outline rc=136 sum=af31486f
+   g100 bitmap rc=68 ext=10,17 sum=06f4a353 bm=7131f812
+   g100 outline rc=696 sum=0b013c91
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=52 cnt=0 sum=e76a4d85
+FILE C:\usr\share\fonts\urw-base35\URWBookman-Demi.otf
+  faces=1
+  face 0 rc=1 fam='URW Bookman' face='URWBookman-Demi' gl='UNICODE' len=254 sum=155535c0 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=5cba99fb
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=44 ext=7,11 sum=1fb2b0e5 bm=c1286021
+   g36 outline rc=676 sum=8e4f06e0
+   g37 bitmap rc=32 ext=11,8 sum=e360692e bm=cd25a7c0
+   g37 outline rc=548 sum=6a59f388
+   g68 bitmap rc=32 ext=9,8 sum=912f961b bm=34d74afe
+   g68 outline rc=432 sum=1e13bbb4
+   g100 bitmap rc=32 ext=7,8 sum=92f21317 bm=9c88ee3c
+   g100 outline rc=496 sum=f06771de
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=5cba99fb
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=88 ext=14,22 sum=ab0b634f bm=ded86f3d
+   g36 outline rc=664 sum=afbc3dd6
+   g37 bitmap rc=64 ext=22,16 sum=afc457f2 bm=f47dd5fb
+   g37 outline rc=536 sum=df1169e0
+   g68 bitmap rc=64 ext=18,16 sum=f522a9f7 bm=c3e11c77
+   g68 outline rc=420 sum=3a9ede6c
+   g100 bitmap rc=68 ext=14,17 sum=143483c8 bm=a1ceb196
+   g100 outline rc=472 sum=8a7db35f
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=40 cnt=0 sum=fc721e05
+FILE C:\usr\share\fonts\urw-base35\URWBookman-DemiItalic.otf
+  faces=1
+  face 0 rc=1 fam='URW Bookman' face='URWBookman-DemiItalic' gl='UNICODE' len=254 sum=4631d176 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=5215e789
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=48 ext=8,12 sum=38a83a31 bm=9984b463
+   g36 outline rc=692 sum=b5eea858
+   g37 bitmap rc=32 ext=10,8 sum=005a0c5c bm=0353a200
+   g37 outline rc=604 sum=fd0a75c3
+   g68 bitmap rc=32 ext=9,8 sum=14a18ed6 bm=34d74afe
+   g68 outline rc=488 sum=2a640084
+   g100 bitmap rc=32 ext=7,8 sum=2ca49d27 bm=9ede16dd
+   g100 outline rc=672 sum=da766760
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=5215e789
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=92 ext=15,23 sum=7a99e243 bm=b734c37f
+   g36 outline rc=668 sum=d9fb94d7
+   g37 bitmap rc=64 ext=19,16 sum=2e2c84f8 bm=94b29c1a
+   g37 outline rc=592 sum=e595994a
+   g68 bitmap rc=64 ext=19,16 sum=f1766c3e bm=90084ad8
+   g68 outline rc=476 sum=e0883119
+   g100 bitmap rc=68 ext=16,17 sum=b180345d bm=3a1d0e58
+   g100 outline rc=648 sum=5b7b6a6a
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=44 cnt=0 sum=04ab9885
+FILE C:\usr\share\fonts\urw-base35\URWBookman-Light.otf
+  faces=1
+  face 0 rc=1 fam='URW Bookman' face='URWBookman-Light' gl='UNICODE' len=254 sum=74fd39cc kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=db0e9484
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=44 ext=7,11 sum=f0544ad5 bm=c1286021
+   g36 outline rc=876 sum=3025b582
+   g37 bitmap rc=32 ext=10,8 sum=a2a68925 bm=00fe795f
+   g37 outline rc=632 sum=72191508
+   g68 bitmap rc=32 ext=9,8 sum=2545f40b bm=34d74afe
+   g68 outline rc=516 sum=f53812d3
+   g100 bitmap rc=36 ext=7,9 sum=14e0d1a3 bm=a8be143e
+   g100 outline rc=592 sum=ba8dbd2a
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=db0e9484
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=88 ext=13,22 sum=97673ace bm=12b140dc
+   g36 outline rc=876 sum=c8a26f1c
+   g37 bitmap rc=64 ext=19,16 sum=a0e1fde0 bm=925d7379
+   g37 outline rc=632 sum=4e049a11
+   g68 bitmap rc=64 ext=17,16 sum=39e17f67 bm=fa0f16b7
+   g68 outline rc=516 sum=0642f9ab
+   g100 bitmap rc=68 ext=13,17 sum=c8226765 bm=d5a78335
+   g100 outline rc=580 sum=267f6cf5
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=40 cnt=0 sum=fc721e05
+FILE C:\usr\share\fonts\urw-base35\URWBookman-LightItalic.otf
+  faces=1
+  face 0 rc=1 fam='URW Bookman' face='URWBookman-LightItalic' gl='UNICODE' len=254 sum=0aab1779 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=a282297d
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=6,10 sum=c760606d bm=eb21345f
+   g36 outline rc=1004 sum=4fa9e12f
+   g37 bitmap rc=32 ext=9,8 sum=f89ae98e bm=372c739f
+   g37 outline rc=716 sum=e546c3f9
+   g68 bitmap rc=32 ext=9,8 sum=4e5c0ce7 bm=34d74afe
+   g68 outline rc=488 sum=92667ed5
+   g100 bitmap rc=36 ext=7,9 sum=9cf3f82f bm=ab133cdf
+   g100 outline rc=684 sum=bb90ddd8
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=a282297d
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=80 ext=13,20 sum=6925ccf6 bm=fc9c1d9a
+   g36 outline rc=1016 sum=de9c1db8
+   g37 bitmap rc=64 ext=18,16 sum=1f0d74b5 bm=c6364518
+   g37 outline rc=716 sum=e3b273df
+   g68 bitmap rc=64 ext=18,16 sum=117132c2 bm=c3e11c77
+   g68 outline rc=488 sum=d7068c80
+   g100 bitmap rc=64 ext=15,16 sum=6019fd85 bm=61c0b9f5
+   g100 outline rc=684 sum=06ccc03b
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=44 cnt=0 sum=04ab9885
+FILE C:\usr\share\fonts\urw-base35\URWGothic-Book.otf
+  faces=1
+  face 0 rc=1 fam='URW Gothic' face='URWGothic-Book' gl='UNICODE' len=254 sum=ac2f52d7 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=a5e2cb84
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=44 ext=5,11 sum=94febce5 bm=2b2f2c00
+   g36 outline rc=536 sum=4a47ad58
+   g37 bitmap rc=36 ext=9,9 sum=eab0d011 bm=410c7100
+   g37 outline rc=548 sum=88e606e6
+   g68 bitmap rc=36 ext=7,9 sum=45aad5c7 bm=ab133cdf
+   g68 outline rc=336 sum=7c721219
+   g100 bitmap rc=36 ext=7,9 sum=86c11117 bm=a8be143e
+   g100 outline rc=336 sum=62d147da
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=a5e2cb84
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=80 ext=9,20 sum=03454ee4 bm=cbff6437
+   g36 outline rc=536 sum=77adaab5
+   g37 bitmap rc=68 ext=18,17 sum=94da81ae bm=d0164279
+   g37 outline rc=548 sum=18d39ae1
+   g68 bitmap rc=68 ext=15,17 sum=1730b597 bm=704b0898
+   g68 outline rc=324 sum=8b99071d
+   g100 bitmap rc=68 ext=14,17 sum=7f2adf6d bm=a1ceb196
+   g100 outline rc=336 sum=017aac05
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=36 cnt=0 sum=e6d1e385
+FILE C:\usr\share\fonts\urw-base35\URWGothic-BookOblique.otf
+  faces=1
+  face 0 rc=1 fam='URW Gothic' face='URWGothic-BookOblique' gl='UNICODE' len=254 sum=a6baa5f0 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=d7ffedaf
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=44 ext=6,11 sum=5eaa2031 bm=f7565a61
+   g36 outline rc=704 sum=553cd1fc
+   g37 bitmap rc=36 ext=8,9 sum=343521c0 bm=773a6b40
+   g37 outline rc=576 sum=163a60c0
+   g68 bitmap rc=36 ext=8,9 sum=45bb5568 bm=773a6b40
+   g68 outline rc=336 sum=dd35af41
+   g100 bitmap rc=36 ext=8,9 sum=7f63aff4 bm=773a6b40
+   g100 outline rc=336 sum=d2a8101b
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=d7ffedaf
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=80 ext=11,20 sum=0c7a0732 bm=66a2e99a
+   g36 outline rc=704 sum=64a7b067
+   g37 bitmap rc=68 ext=16,17 sum=7753b72c bm=3ec75f9a
+   g37 outline rc=564 sum=00c42850
+   g68 bitmap rc=68 ext=16,17 sum=e5365970 bm=3c7236f9
+   g68 outline rc=336 sum=8d30b5fe
+   g100 bitmap rc=68 ext=16,17 sum=ef6cc1c5 bm=3c7236f9
+   g100 outline rc=324 sum=080d62b0
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=44 cnt=0 sum=04ab9885
+FILE C:\usr\share\fonts\urw-base35\URWGothic-Demi.otf
+  faces=1
+  face 0 rc=1 fam='URW Gothic' face='URWGothic-Demi' gl='UNICODE' len=254 sum=b9bb85b2 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=5f350add
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=44 ext=5,11 sum=78b13bfd bm=2b2f2c00
+   g36 outline rc=548 sum=824d6871
+   g37 bitmap rc=36 ext=10,9 sum=f45bb922 bm=0d339f61
+   g37 outline rc=548 sum=30ddaa56
+   g68 bitmap rc=36 ext=7,9 sum=deef1617 bm=ab133cdf
+   g68 outline rc=348 sum=20cb6d76
+   g100 bitmap rc=36 ext=7,9 sum=2afb3293 bm=a8be143e
+   g100 outline rc=336 sum=7c22bde6
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=5f350add
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=88 ext=11,22 sum=a306dcfe bm=7a62e43b
+   g36 outline rc=536 sum=db555d35
+   g37 bitmap rc=68 ext=20,17 sum=2fc6ec4a bm=68649f3b
+   g37 outline rc=536 sum=4cc6898c
+   g68 bitmap rc=68 ext=13,17 sum=32c52fb9 bm=d7fcabd6
+   g68 outline rc=312 sum=8b78b52a
+   g100 bitmap rc=68 ext=13,17 sum=c1d3ed57 bm=d5a78335
+   g100 outline rc=300 sum=97af99c0
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=36 cnt=0 sum=e6d1e385
+FILE C:\usr\share\fonts\urw-base35\URWGothic-DemiOblique.otf
+  faces=1
+  face 0 rc=1 fam='URW Gothic' face='URWGothic-DemiOblique' gl='UNICODE' len=254 sum=a0627835 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=6a70a6a4
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=44 ext=6,11 sum=cecfcce1 bm=f7565a61
+   g36 outline rc=676 sum=0f83a456
+   g37 bitmap rc=36 ext=9,9 sum=0e8df741 bm=436199a1
+   g37 outline rc=548 sum=4d441afe
+   g68 bitmap rc=36 ext=8,9 sum=50a950ac bm=773a6b40
+   g68 outline rc=336 sum=f6f251fc
+   g100 bitmap rc=36 ext=8,9 sum=32584247 bm=773a6b40
+   g100 outline rc=336 sum=dde84f20
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=6a70a6a4
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=88 ext=11,22 sum=5ea1b30b bm=7cb80cdc
+   g36 outline rc=664 sum=4c429275
+   g37 bitmap rc=68 ext=17,17 sum=7a002da3 bm=0aee8dfb
+   g37 outline rc=536 sum=a41e441d
+   g68 bitmap rc=68 ext=15,17 sum=39d94ad5 bm=704b0898
+   g68 outline rc=312 sum=fc0fc3b6
+   g100 bitmap rc=68 ext=16,17 sum=2b0c2217 bm=3c7236f9
+   g100 outline rc=300 sum=47380ede
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=44 cnt=0 sum=04ab9885
+FILE C:\usr\share\fonts\urw-base35\Z003-MediumItalic.otf
+  faces=1
+  face 0 rc=1 fam='Z003' face='Z003-MediumItalic' gl='UNICODE' len=254 sum=13621839 kern=0 first=0 last=64260 def=0
+  size 0 set=0
+   abc rc=256 sum=90fcf1af
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=40 ext=6,10 sum=173e73f1 bm=e8cc0b9d
+   g36 outline rc=1032 sum=18e47ae5
+   g37 bitmap rc=28 ext=6,7 sum=fbf890b5 bm=c8d6eb1b
+   g37 outline rc=952 sum=bdfb5309
+   g68 bitmap rc=32 ext=8,8 sum=e57365d6 bm=6b05453e
+   g68 outline rc=596 sum=109b96d1
+   g100 bitmap rc=32 ext=7,8 sum=2eadcf49 bm=9ede16dd
+   g100 outline rc=760 sum=42fb8765
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  size 1 set=0
+   abc rc=256 sum=90fcf1af
+   g0 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g0 outline rc=0 sum=00000000
+   g3 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g3 outline rc=0 sum=00000000
+   g36 bitmap rc=72 ext=10,18 sum=c3f72878 bm=7d671db1
+   g36 outline rc=1032 sum=7ced6ab5
+   g37 bitmap rc=52 ext=13,13 sum=af706731 bm=abd26510
+   g37 outline rc=952 sum=1e2ae480
+   g68 bitmap rc=56 ext=16,14 sum=cd723974 bm=17d2c4f3
+   g68 outline rc=596 sum=6764c06e
+   g100 bitmap rc=60 ext=13,15 sum=10d5ab14 bm=bf925fd2
+   g100 outline rc=772 sum=478f757f
+   g150 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g150 outline rc=0 sum=00000000
+   g400 bitmap rc=0 ext=0,0 sum=00000000 bm=a5cd7985
+   g400 outline rc=0 sum=00000000
+  fullfaces rc=1 len=36 cnt=0 sum=e6d1e385
+END 35 files

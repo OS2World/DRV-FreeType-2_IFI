@@ -20,22 +20,37 @@ the clean-room ones of the parent directory (`IFI_CAPS_PANOSE` = 1 added from `d
 ## Changes to the upstream source
 
 - `ifi\ft2ifi.c`: compiler guard and dispatch table casts for Open Watcom (as in version 1).
-- `ifi\ft2ifi.c`, `FdQueryFullFaces`: a **bug of the upstream beta** is fixed. For DBCS fonts it measured `pszFaceName`, which is only set when the
-  entry is actually returned, so a size-only query (output count 0) read an uninitialized pointer and trapped. The release build crashed on
-  `DroidSansCombined.ttf`, the debug build happened to survive. The face name length is taken from the value computed earlier instead.
+- Bugs of the upstream beta found and fixed (all found by the comparison with the 1.3.6 driver):
+  1. `FdQueryFullFaces`, DBCS fonts: a size-only query (output count 0) measured `pszFaceName`, which is only set when the entry is returned: an uninitialized
+     pointer, a trap on `DroidSansCombined.ttf` (the debug build happened to survive). The face name length is taken from the value computed earlier.
+  2. `FdQueryFaces`, the `@` vertical faces of DBCS fonts: `strncpy(szFamilyname + 1, ..., FACESIZE)` and the same for `szFacename` copied one byte too many, and the zero padding
+     of the second one cleared `szGlyphlistName[0]`, so GPI could not use these faces and silently fell back to another font. Now `FACESIZE - 1` (as in version 1).
+  3. `FREE()` passed the address of the pointer to `SSFreeMem`, so **nothing was ever freed** (kerning directories, width and kerning index tables, file records): about 1.4 MB
+     of shared memory per round of loading 220 fonts. Now it frees the block and clears the pointer.
+  4. Kerning: `KERN_TABLE_SUPPORT` was commented out; it is enabled, and the query had its test inverted (`if (!directory || nPairs) return 0`), so it always returned 0 pairs.
 
 ## Results on the ArcaOS Dev VM (2026-11-18)
 
-- Loads and runs as the PM TrueType driver (registered as `FT2IFI.DLL` under `PM_Font_Drivers` / `TRUETYPE`): PM starts, the font engine lists the
-  same **112 outline fonts** as the shipped driver, no trap.
-- PM rendering (`test\fontrender`, `render_ft2ifi.txt` against `render_ship.txt`): 106 of the 448 samples are byte-identical; the others differ in
-  hinting/rounding only (pixel counts within -32% / +22%, mean +1%, text width equal for 109 of 112 fonts at 40 pt).
-- Different from the shipped driver (all three are properties of this beta, not yet investigated):
-  - the three `@` vertical-writing faces (`@Droid Sans Combined`, `@Times New Roman WT J`, `@Monotype Sans Duospace WT J`) render the same text box
-    (1174 pels at 40 pt) and the same pixel count: the vertical variant is not rendered like the FreeType 1 driver does;
-  - no kerning pairs are reported (`KERN_TABLE_SUPPORT` is commented out in `ft2ifi.c`; the FreeType 1 driver reports them for 54 faces);
-  - driver-level comparison (`test\dump_ft2ifi.txt` against `test\dump_reference.txt`): bitmaps, outlines, widths and metrics differ in most faces, as expected
-    from a different rasterizer and hinting; all 185 files and 194 faces load and render, with no trap.
-- Not done: OpenType/CFF fonts (none on the VM), soak and parallel runs, install via `UPDATE.CMD`, real hardware.
+Test fonts: the 185 TrueType files of the VM, plus 35 OpenType/CFF fonts (`C:\usr\share\fonts\urw-base35\*.otf`, URW base 35).
 
-Next steps (not started): review the differences above, then update the bundled FreeType to 2.15.0.
+- **PM**: registered as `FT2IFI.DLL` (`PM_Font_Drivers` / `TRUETYPE`) with three OpenType fonts added to `PM_Fonts`: PM starts, the font engine lists the 112 outline fonts of
+  the shipped driver plus the 3 OpenType fonts, which render (`render_ft2ifi.txt`). Against the shipped driver (`render_ship.txt`): text width equal for all 448 samples
+  (the `@` faces included), 107 samples byte-identical, the others differ in hinting only (pixel count -9% / +18%, mean +0.9%).
+- **OpenType/CFF**: all 35 fonts load and render at driver level (`test\art_otf.txt` has the letter A of each), no kerning reported (they carry GPOS, not a `kern` table).
+- **Driver level** (isolated copy of the DLL under another name, so the test does not share PM's instance; `test\dump_ft2ifi.txt` against `test\dump_reference.txt`):
+  all 220 files load and render; 182 of 185 TrueType files return the same full-face names; kerning is returned for 52 of the 54 faces that have it in 1.3.6 and 41 of those
+  have identical pairs (the others differ because FreeType 2 maps more glyphs to PM indexes than the 1.3.6 reverse lookup, which returns 0 beyond a point); bitmaps, outlines and
+  widths differ in most faces as expected from a different rasterizer.
+- **Memory**: 100 rounds of load/open/render/unload of the 220 fonts lose 0.4 MB of free memory (the 1.3.6 driver loses about 70 KB per round of 185 fonts), after the `FREE` fix.
+- **Concurrency**: three independent processes calling the driver at once crash it (the engine has no locking: in PM the GRE serializes the calls). A test of this kind is not valid for this driver.
+
+## Cautions when testing
+
+- A test program that links the registered DLL shares PM's instance of the driver (single shared data). Test an isolated copy: `wmake DLLNAME=FT2T`, copy `bin\FT2T.dll` to
+  `\OS2\DLL\FT2T.DLL`. A leak or crash in a test then cannot disturb PM. (A kernel trap and an out-of-memory failure of the compiler happened on the VM while an earlier build was
+  leaking shared memory and tests were running on PM's own instance.)
+- A DLL's internal module name must equal its file name (the build does this from `DLLNAME`).
+
+Not done: install via `UPDATE.CMD`-style replacement, real hardware, fonts with CFF2/variable data, vertical text with real CJK glyphs, the rest of FreeType 2.5 modules.
+
+Next step (not started): update the bundled FreeType from 2.5.0.1 to 2.15.0.

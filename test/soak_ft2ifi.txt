@@ -1,0 +1,13 @@
+round 0
+round 10
+round 20
+round 30
+round 40
+round 50
+round 60
+round 70
+round 80
+round 90
+SOAK rounds=100 files=220 ms=22164
+availmem before=3571126272 after=3570683904 delta=-442368
+maxshmem before=334233600 after=334233600 delta=0

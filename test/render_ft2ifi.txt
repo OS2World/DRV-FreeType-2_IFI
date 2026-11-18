@@ -1,3 +1,18 @@
+FONT NimbusSans-Regular
+   8 pt: box=1,-3..191,11 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=573 sum=175d0166
+  12 pt: box=1,-5..305,17 ave=10 maxasc=17 maxdesc=4 xh=8 pixels=1264 sum=7732a395
+  24 pt: box=3,-10..610,34 ave=20 maxasc=34 maxdesc=9 xh=16 pixels=4081 sum=299b47aa
+  40 pt: box=4,-16..1011,57 ave=33 maxasc=56 maxdesc=15 xh=27 pixels=7168 sum=777f0165
+FONT C059-Bold
+   8 pt: box=0,-4..221,12 ave=7 maxasc=11 maxdesc=3 xh=4 pixels=835 sum=361ad784
+  12 pt: box=0,-6..354,19 ave=11 maxasc=18 maxdesc=5 xh=7 pixels=1654 sum=7293be73
+  24 pt: box=1,-12..709,37 ave=22 maxasc=37 maxdesc=11 xh=15 pixels=5514 sum=1099b997
+  40 pt: box=1,-20..1174,62 ave=37 maxasc=62 maxdesc=19 xh=25 pixels=9768 sum=cd3989ed
+FONT C059-Roman
+   8 pt: box=0,-3..201,11 ave=6 maxasc=11 maxdesc=3 xh=4 pixels=598 sum=bb8521b3
+  12 pt: box=0,-5..322,18 ave=10 maxasc=17 maxdesc=4 xh=7 pixels=1273 sum=3d562032
+  24 pt: box=1,-10..644,36 ave=21 maxasc=35 maxdesc=9 xh=14 pixels=4139 sum=b96909ac
+  40 pt: box=2,-16..1067,59 ave=35 maxasc=59 maxdesc=16 xh=24 pixels=7096 sum=e812cd5d
 FONT URW Palladio L Italic
    8 pt: box=0,-3..182,9 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=474 sum=88732ba7
   12 pt: box=0,-4..291,15 ave=8 maxasc=14 maxdesc=4 xh=7 pixels=845 sum=c253a396
@@ -179,10 +194,10 @@ FONT Droid Sans Combined
   24 pt: box=3,-9..597,33 ave=31 maxasc=33 maxdesc=8 xh=17 pixels=3921 sum=9d3a826a
   40 pt: box=5,-14..988,55 ave=52 maxasc=55 maxdesc=14 xh=28 pixels=6816 sum=64d15fa5
 FONT @Droid Sans Combined
-   8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=2 xh=4 pixels=471 sum=93637aa8
-  12 pt: box=0,-5..355,14 ave=9 maxasc=13 maxdesc=4 xh=6 pixels=758 sum=b287e493
-  24 pt: box=1,-9..710,27 ave=19 maxasc=27 maxdesc=9 xh=13 pixels=2716 sum=7ff64dd1
-  40 pt: box=2,-16..1176,45 ave=31 maxasc=44 maxdesc=15 xh=22 pixels=4626 sum=64f1819f
+   8 pt: box=1,-3..186,10 ave=9 maxasc=10 maxdesc=2 xh=5 pixels=426 sum=12a6a7f7
+  12 pt: box=2,-4..298,17 ave=15 maxasc=16 maxdesc=4 xh=8 pixels=1016 sum=dd006a1d
+  24 pt: box=3,-9..597,33 ave=31 maxasc=33 maxdesc=8 xh=17 pixels=3921 sum=9d3a826a
+  40 pt: box=5,-14..988,55 ave=52 maxasc=55 maxdesc=14 xh=28 pixels=6816 sum=64d15fa5
 FONT Droid Sans Bold
    8 pt: box=1,-2..198,9 ave=6 maxasc=9 maxdesc=2 xh=5 pixels=477 sum=20fb7406
   12 pt: box=1,-4..318,15 ave=9 maxasc=14 maxdesc=3 xh=8 pixels=1525 sum=696c2a3e
@@ -389,20 +404,20 @@ FONT Monotype Sans Duospace WT J
   24 pt: box=2,-11..592,32 ave=16 maxasc=31 maxdesc=10 xh=15 pixels=2829 sum=892e5816
   40 pt: box=4,-18..980,53 ave=26 maxasc=52 maxdesc=18 xh=26 pixels=6115 sum=3a265c24
 FONT @Monotype Sans Duospace WT J
-   8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=2 xh=4 pixels=471 sum=93637aa8
-  12 pt: box=0,-5..355,14 ave=9 maxasc=13 maxdesc=4 xh=6 pixels=758 sum=b287e493
-  24 pt: box=1,-9..710,27 ave=19 maxasc=27 maxdesc=9 xh=13 pixels=2716 sum=7ff64dd1
-  40 pt: box=2,-16..1176,45 ave=31 maxasc=44 maxdesc=15 xh=22 pixels=4626 sum=64f1819f
+   8 pt: box=1,-3..185,10 ave=5 maxasc=9 maxdesc=3 xh=4 pixels=386 sum=4dc9db0f
+  12 pt: box=1,-5..296,16 ave=8 maxasc=15 maxdesc=5 xh=7 pixels=652 sum=e18bf521
+  24 pt: box=2,-11..592,32 ave=16 maxasc=31 maxdesc=10 xh=15 pixels=2829 sum=892e5816
+  40 pt: box=4,-18..980,53 ave=26 maxasc=52 maxdesc=18 xh=26 pixels=6115 sum=3a265c24
 FONT Times New Roman WT J
    8 pt: box=0,-5..182,12 ave=4 maxasc=11 maxdesc=5 xh=5 pixels=466 sum=3ec404bf
   12 pt: box=0,-8..291,19 ave=6 maxasc=18 maxdesc=8 xh=9 pixels=723 sum=0b4d2d34
   24 pt: box=1,-17..582,37 ave=12 maxasc=37 maxdesc=16 xh=18 pixels=3101 sum=145597a6
   40 pt: box=1,-28..963,62 ave=21 maxasc=61 maxdesc=28 xh=30 pixels=5556 sum=3f5cce89
 FONT @Times New Roman WT J
-   8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=2 xh=4 pixels=471 sum=93637aa8
-  12 pt: box=0,-5..355,14 ave=9 maxasc=13 maxdesc=4 xh=6 pixels=758 sum=b287e493
-  24 pt: box=1,-9..710,27 ave=19 maxasc=27 maxdesc=9 xh=13 pixels=2716 sum=7ff64dd1
-  40 pt: box=2,-16..1176,45 ave=31 maxasc=44 maxdesc=15 xh=22 pixels=4626 sum=64f1819f
+   8 pt: box=0,-5..182,12 ave=4 maxasc=11 maxdesc=5 xh=5 pixels=466 sum=3ec404bf
+  12 pt: box=0,-8..291,19 ave=6 maxasc=18 maxdesc=8 xh=9 pixels=723 sum=0b4d2d34
+  24 pt: box=1,-17..582,37 ave=12 maxasc=37 maxdesc=16 xh=18 pixels=3101 sum=145597a6
+  40 pt: box=1,-28..963,62 ave=21 maxasc=61 maxdesc=28 xh=30 pixels=5556 sum=3f5cce89
 FONT Wingdings
    8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=2 xh=4 pixels=471 sum=93637aa8
   12 pt: box=0,-5..355,14 ave=9 maxasc=13 maxdesc=4 xh=6 pixels=758 sum=b287e493
