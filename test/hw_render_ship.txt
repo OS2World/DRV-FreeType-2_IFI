@@ -1,0 +1,560 @@
+FONT URW Palladio L Italic
+   8 pt: box=0,-3..182,9 ave=6 maxasc=9 maxdesc=3 xh=5 pixels=410 sum=038c5e07
+  12 pt: box=0,-4..291,15 ave=9 maxasc=15 maxdesc=4 xh=8 pixels=790 sum=f038da13
+  24 pt: box=0,-9..582,30 ave=18 maxasc=30 maxdesc=9 xh=16 pixels=2775 sum=bfb39c28
+  40 pt: box=0,-15..963,50 ave=29 maxasc=50 maxdesc=15 xh=27 pixels=5479 sum=beb5d858
+FONT URW Palladio L
+   8 pt: box=0,-3..195,9 ave=6 maxasc=9 maxdesc=3 xh=5 pixels=475 sum=a1a0e0fc
+  12 pt: box=0,-5..312,15 ave=9 maxasc=15 maxdesc=5 xh=8 pixels=835 sum=9816cda4
+  24 pt: box=1,-9..624,30 ave=19 maxasc=30 maxdesc=9 xh=16 pixels=3559 sum=72b70b38
+  40 pt: box=1,-15..1034,50 ave=31 maxasc=50 maxdesc=15 xh=26 pixels=6307 sum=d8826504
+FONT URW Palladio L Bold Italic
+   8 pt: box=0,-3..192,9 ave=6 maxasc=9 maxdesc=3 xh=5 pixels=453 sum=dc51cf6e
+  12 pt: box=0,-4..308,15 ave=9 maxasc=15 maxdesc=4 xh=8 pixels=991 sum=4f358970
+  24 pt: box=0,-9..616,30 ave=19 maxasc=30 maxdesc=9 xh=16 pixels=4095 sum=fdb72b50
+  40 pt: box=-1,-14..1019,50 ave=31 maxasc=50 maxdesc=14 xh=27 pixels=7186 sum=ee20723f
+FONT URW Palladio L Bold
+   8 pt: box=0,-3..200,9 ave=6 maxasc=9 maxdesc=3 xh=5 pixels=473 sum=f4c31ff2
+  12 pt: box=1,-4..321,15 ave=10 maxasc=15 maxdesc=4 xh=8 pixels=1164 sum=d761fa61
+  24 pt: box=1,-9..641,30 ave=19 maxasc=30 maxdesc=9 xh=16 pixels=4688 sum=51c9a835
+  40 pt: box=2,-14..1062,50 ave=32 maxasc=50 maxdesc=14 xh=26 pixels=8460 sum=cf0d7d61
+FONT URW Gothic L Bold Oblique
+   8 pt: box=1,-3..202,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=564 sum=805cdba9
+  12 pt: box=1,-4..323,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=1545 sum=5e393542
+  24 pt: box=2,-8..645,32 ave=19 maxasc=32 maxdesc=8 xh=17 pixels=6035 sum=41c10d54
+  40 pt: box=4,-13..1068,53 ave=32 maxasc=53 maxdesc=13 xh=28 pixels=10493 sum=f3aed666
+FONT URW Gothic L Bold
+   8 pt: box=1,-3..201,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=513 sum=16de2f5a
+  12 pt: box=1,-4..321,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=1533 sum=f3dd2926
+  24 pt: box=2,-8..642,32 ave=19 maxasc=32 maxdesc=8 xh=16 pixels=5977 sum=881e5c32
+  40 pt: box=4,-13..1064,53 ave=32 maxasc=53 maxdesc=13 xh=27 pixels=10478 sum=486c810b
+FONT URW Gothic L Oblique
+   8 pt: box=1,-2..201,10 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=434 sum=179b1b1f
+  12 pt: box=1,-4..321,16 ave=9 maxasc=16 maxdesc=4 xh=8 pixels=890 sum=42cbdde7
+  24 pt: box=2,-7..642,31 ave=19 maxasc=31 maxdesc=7 xh=16 pixels=3586 sum=676e3fcf
+  40 pt: box=4,-12..1064,52 ave=31 maxasc=52 maxdesc=12 xh=27 pixels=6554 sum=9937f027
+FONT URW Gothic L
+   8 pt: box=1,-2..200,10 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=452 sum=5eebeb79
+  12 pt: box=1,-4..320,16 ave=9 maxasc=16 maxdesc=4 xh=8 pixels=853 sum=840c6b9e
+  24 pt: box=2,-8..639,31 ave=19 maxasc=31 maxdesc=8 xh=16 pixels=3396 sum=5b36a179
+  40 pt: box=4,-13..1059,52 ave=31 maxasc=52 maxdesc=13 xh=26 pixels=6630 sum=1024cc03
+FONT URW Chancery L
+   8 pt: box=0,-3..161,8 ave=5 maxasc=8 maxdesc=3 xh=5 pixels=408 sum=3322629d
+  12 pt: box=1,-4..257,13 ave=8 maxasc=13 maxdesc=4 xh=8 pixels=693 sum=b0196c5e
+  24 pt: box=1,-9..515,26 ave=16 maxasc=26 maxdesc=9 xh=16 pixels=2400 sum=a93ce265
+  40 pt: box=2,-14..853,44 ave=26 maxasc=44 maxdesc=14 xh=26 pixels=5294 sum=a7f59fcb
+FONT URW Bookman L Italic
+   8 pt: box=0,-2..205,9 ave=6 maxasc=9 maxdesc=2 xh=5 pixels=479 sum=52eb7f50
+  12 pt: box=0,-4..328,14 ave=10 maxasc=14 maxdesc=4 xh=8 pixels=998 sum=dd904a63
+  24 pt: box=1,-7..655,28 ave=19 maxasc=28 maxdesc=7 xh=15 pixels=3939 sum=99c3ea44
+  40 pt: box=1,-12..1085,47 ave=32 maxasc=47 maxdesc=12 xh=25 pixels=6482 sum=989535ff
+FONT URW Bookman L
+   8 pt: box=0,-2..210,9 ave=6 maxasc=9 maxdesc=2 xh=5 pixels=534 sum=30449f93
+  12 pt: box=0,-4..335,15 ave=10 maxasc=15 maxdesc=4 xh=7 pixels=1238 sum=302ec453
+  24 pt: box=1,-8..671,30 ave=20 maxasc=30 maxdesc=8 xh=15 pixels=3903 sum=97614170
+  40 pt: box=2,-13..1111,49 ave=33 maxasc=49 maxdesc=13 xh=25 pixels=6587 sum=903b451c
+FONT URW Bookman L Bold Italic
+   8 pt: box=0,-2..223,9 ave=6 maxasc=9 maxdesc=2 xh=5 pixels=646 sum=8f23a903
+  12 pt: box=0,-3..357,15 ave=10 maxasc=15 maxdesc=3 xh=8 pixels=1708 sum=0364ed81
+  24 pt: box=0,-7..714,30 ave=21 maxasc=30 maxdesc=7 xh=16 pixels=5895 sum=12800df8
+  40 pt: box=1,-12..1183,49 ave=34 maxasc=49 maxdesc=12 xh=26 pixels=10724 sum=8bcc4179
+FONT URW Bookman L Bold
+   8 pt: box=0,-2..222,9 ave=6 maxasc=9 maxdesc=2 xh=5 pixels=772 sum=58e55bd9
+  12 pt: box=0,-4..356,15 ave=10 maxasc=15 maxdesc=4 xh=8 pixels=1898 sum=97d25037
+  24 pt: box=1,-8..711,30 ave=21 maxasc=30 maxdesc=8 xh=16 pixels=6283 sum=f105768c
+  40 pt: box=1,-13..1178,49 ave=34 maxasc=49 maxdesc=13 xh=27 pixels=11440 sum=36888d95
+FONT Nimbus Sans L Condensed Italic
+   8 pt: box=1,-2..157,9 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=395 sum=99068f6c
+  12 pt: box=1,-4..252,15 ave=8 maxasc=15 maxdesc=4 xh=8 pixels=752 sum=482bf455
+  24 pt: box=2,-7..503,30 ave=15 maxasc=30 maxdesc=7 xh=15 pixels=3710 sum=5572fddb
+  40 pt: box=3,-12..833,50 ave=25 maxasc=50 maxdesc=12 xh=25 pixels=7131 sum=a22a135c
+FONT Nimbus Sans L Condensed
+   8 pt: box=1,-2..156,9 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=406 sum=64d06c53
+  12 pt: box=1,-4..250,15 ave=8 maxasc=15 maxdesc=4 xh=8 pixels=703 sum=9fc32610
+  24 pt: box=2,-7..501,30 ave=15 maxasc=30 maxdesc=7 xh=15 pixels=3028 sum=60020ec9
+  40 pt: box=3,-12..829,50 ave=25 maxasc=50 maxdesc=12 xh=25 pixels=7226 sum=ac443b27
+FONT Nimbus Sans L Condensed Bold It
+   8 pt: box=1,-2..167,10 ave=5 maxasc=10 maxdesc=2 xh=5 pixels=460 sum=a17169e1
+  12 pt: box=1,-4..267,16 ave=8 maxasc=16 maxdesc=4 xh=8 pixels=1298 sum=4a7e6e9f
+  24 pt: box=2,-7..534,32 ave=16 maxasc=32 maxdesc=7 xh=16 pixels=5100 sum=4d745401
+  40 pt: box=3,-12..884,52 ave=27 maxasc=52 maxdesc=12 xh=26 pixels=9932 sum=b93a5f61
+FONT Nimbus Sans L Condensed Bold
+   8 pt: box=1,-2..166,10 ave=5 maxasc=10 maxdesc=2 xh=5 pixels=444 sum=9d6ff691
+  12 pt: box=1,-4..266,16 ave=8 maxasc=16 maxdesc=4 xh=8 pixels=1317 sum=25ce088e
+  24 pt: box=2,-7..531,31 ave=16 maxasc=31 maxdesc=7 xh=16 pixels=5191 sum=8ed971b8
+  40 pt: box=3,-12..880,52 ave=27 maxasc=52 maxdesc=12 xh=26 pixels=10045 sum=5e6c93a6
+FONT Dingbats 
+   8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=3 xh=4 pixels=471 sum=93637aa8
+  12 pt: box=0,-5..355,14 ave=10 maxasc=14 maxdesc=5 xh=7 pixels=758 sum=b287e493
+  24 pt: box=1,-9..710,27 ave=19 maxasc=27 maxdesc=9 xh=14 pixels=2716 sum=7ff64dd1
+  40 pt: box=2,-16..1176,45 ave=32 maxasc=45 maxdesc=16 xh=23 pixels=4626 sum=64f1819f
+FONT Century Schoolbook L Italic
+   8 pt: box=0,-2..199,10 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=512 sum=88a048a5
+  12 pt: box=-1,-4..318,15 ave=10 maxasc=15 maxdesc=4 xh=8 pixels=1152 sum=f2ddb1a5
+  24 pt: box=-1,-7..637,31 ave=20 maxasc=31 maxdesc=7 xh=16 pixels=3838 sum=853ee27b
+  40 pt: box=-2,-12..1055,51 ave=33 maxasc=51 maxdesc=12 xh=26 pixels=6614 sum=7d446d73
+FONT Century Schoolbook L
+   8 pt: box=0,-2..201,10 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=540 sum=83506731
+  12 pt: box=0,-4..322,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=1185 sum=984ad7da
+  24 pt: box=1,-7..644,31 ave=20 maxasc=31 maxdesc=7 xh=16 pixels=3900 sum=fd436db1
+  40 pt: box=2,-12..1067,52 ave=33 maxasc=52 maxdesc=12 xh=26 pixels=6959 sum=8c336aa0
+FONT Century Schoolbook L Bold Itali
+   8 pt: box=0,-2..217,10 ave=7 maxasc=10 maxdesc=2 xh=5 pixels=730 sum=4a2a0a47
+  12 pt: box=-1,-4..348,16 ave=11 maxasc=16 maxdesc=4 xh=8 pixels=1604 sum=e6e04639
+  24 pt: box=-1,-7..695,32 ave=21 maxasc=32 maxdesc=7 xh=16 pixels=5547 sum=0bbc814c
+  40 pt: box=-2,-12..1152,53 ave=35 maxasc=53 maxdesc=12 xh=26 pixels=9507 sum=eb856a64
+FONT Century Schoolbook L Bold
+   8 pt: box=0,-2..221,10 ave=7 maxasc=10 maxdesc=2 xh=5 pixels=765 sum=c6a6c4a6
+  12 pt: box=0,-4..354,16 ave=11 maxasc=16 maxdesc=4 xh=8 pixels=1701 sum=04ff208e
+  24 pt: box=1,-7..709,32 ave=21 maxasc=32 maxdesc=7 xh=16 pixels=5719 sum=5a8032c8
+  40 pt: box=1,-12..1174,52 ave=35 maxasc=52 maxdesc=12 xh=27 pixels=9658 sum=6652f567
+FONT Heuristica Regular
+   8 pt: box=0,-2..191,9 ave=6 maxasc=10 maxdesc=3 xh=6 pixels=508 sum=37c9ea51
+  12 pt: box=1,-4..306,15 ave=9 maxasc=15 maxdesc=4 xh=9 pixels=1150 sum=89c54e7b
+  24 pt: box=1,-8..611,30 ave=18 maxasc=30 maxdesc=8 xh=18 pixels=3521 sum=d545021a
+  40 pt: box=2,-13..1012,50 ave=30 maxasc=50 maxdesc=13 xh=29 pixels=6657 sum=a0eb4bda
+FONT Heuristica Italic
+   8 pt: box=0,-2..189,9 ave=6 maxasc=10 maxdesc=3 xh=6 pixels=491 sum=e49412ac
+  12 pt: box=1,-4..303,15 ave=9 maxasc=15 maxdesc=4 xh=9 pixels=1115 sum=2d10371c
+  24 pt: box=1,-8..605,30 ave=19 maxasc=30 maxdesc=8 xh=18 pixels=3522 sum=1e26714f
+  40 pt: box=2,-13..1003,50 ave=31 maxasc=50 maxdesc=13 xh=29 pixels=6663 sum=de854578
+FONT Heuristica Bold Italic
+   8 pt: box=0,-2..195,9 ave=6 maxasc=10 maxdesc=3 xh=6 pixels=645 sum=36c0a26e
+  12 pt: box=1,-4..312,15 ave=10 maxasc=15 maxdesc=4 xh=9 pixels=1518 sum=eef9f56b
+  24 pt: box=1,-8..625,30 ave=19 maxasc=30 maxdesc=8 xh=18 pixels=5183 sum=c71ba090
+  40 pt: box=2,-13..1035,50 ave=32 maxasc=50 maxdesc=13 xh=30 pixels=9307 sum=78882b7c
+FONT Heuristica Bold
+   8 pt: box=0,-2..197,9 ave=6 maxasc=10 maxdesc=3 xh=6 pixels=721 sum=928dd10a
+  12 pt: box=1,-4..315,15 ave=10 maxasc=15 maxdesc=4 xh=9 pixels=1265 sum=71d459ea
+  24 pt: box=1,-8..630,30 ave=19 maxasc=30 maxdesc=8 xh=18 pixels=5369 sum=f7d25ff2
+  40 pt: box=2,-13..1044,50 ave=32 maxasc=50 maxdesc=13 xh=30 pixels=9468 sum=1b101811
+FONT Bitstream Charter
+   8 pt: box=0,-2..188,10 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=502 sum=c90f5c53
+  12 pt: box=1,-4..300,15 ave=9 maxasc=15 maxdesc=4 xh=8 pixels=828 sum=48596531
+  24 pt: box=1,-8..601,31 ave=18 maxasc=31 maxdesc=8 xh=15 pixels=3337 sum=2ba0fbc2
+  40 pt: box=2,-13..995,51 ave=29 maxasc=51 maxdesc=13 xh=25 pixels=5777 sum=b533c3ca
+FONT Bitstream Charter Italic
+   8 pt: box=0,-2..181,10 ave=5 maxasc=10 maxdesc=2 xh=5 pixels=443 sum=ebb83bfc
+  12 pt: box=0,-4..289,16 ave=9 maxasc=16 maxdesc=4 xh=8 pixels=845 sum=1a896fb6
+  24 pt: box=-1,-8..578,31 ave=17 maxasc=31 maxdesc=8 xh=16 pixels=3175 sum=af1f7a18
+  40 pt: box=-1,-13..957,52 ave=29 maxasc=52 maxdesc=13 xh=26 pixels=5736 sum=e4b9334d
+FONT Bitstream Charter Bold Italic
+   8 pt: box=0,-2..193,10 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=508 sum=9b522af1
+  12 pt: box=0,-4..309,16 ave=9 maxasc=16 maxdesc=4 xh=8 pixels=1172 sum=69323d29
+  24 pt: box=-1,-8..619,31 ave=18 maxasc=31 maxdesc=8 xh=16 pixels=4688 sum=29a94155
+  40 pt: box=-1,-13..1025,51 ave=30 maxasc=51 maxdesc=13 xh=26 pixels=8001 sum=81c7619a
+FONT Bitstream Charter Bold
+   8 pt: box=0,-2..197,10 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=517 sum=ffdb64ae
+  12 pt: box=0,-4..316,15 ave=9 maxasc=15 maxdesc=4 xh=8 pixels=1235 sum=7c4e8334
+  24 pt: box=1,-8..631,31 ave=18 maxasc=31 maxdesc=8 xh=15 pixels=4871 sum=282ecb38
+  40 pt: box=2,-13..1046,51 ave=30 maxasc=51 maxdesc=13 xh=25 pixels=8079 sum=573e36a0
+FONT Droid Serif Bold Italic
+   8 pt: box=0,-3..213,11 ave=6 maxasc=11 maxdesc=3 xh=5 pixels=601 sum=8b3963f2
+  12 pt: box=0,-5..341,17 ave=10 maxasc=17 maxdesc=5 xh=8 pixels=1505 sum=1fd1237a
+  24 pt: box=-1,-9..683,34 ave=21 maxasc=34 maxdesc=9 xh=17 pixels=5523 sum=043b82d4
+  40 pt: box=-1,-16..1131,57 ave=34 maxasc=57 maxdesc=16 xh=28 pixels=9801 sum=3dd78f22
+FONT Droid Serif Italic
+   8 pt: box=0,-3..198,11 ave=6 maxasc=11 maxdesc=3 xh=5 pixels=456 sum=0c40fccd
+  12 pt: box=0,-5..317,17 ave=10 maxasc=17 maxdesc=5 xh=8 pixels=1063 sum=16c4d3f8
+  24 pt: box=-1,-9..634,34 ave=19 maxasc=34 maxdesc=9 xh=17 pixels=4223 sum=350b7510
+  40 pt: box=-1,-16..1051,57 ave=32 maxasc=57 maxdesc=16 xh=28 pixels=7172 sum=531b6c19
+FONT Droid Serif Bold
+   8 pt: box=0,-3..214,11 ave=6 maxasc=11 maxdesc=3 xh=5 pixels=647 sum=3597b2f8
+  12 pt: box=0,-5..342,17 ave=10 maxasc=17 maxdesc=5 xh=9 pixels=1483 sum=abcfc86c
+  24 pt: box=1,-9..683,34 ave=21 maxasc=34 maxdesc=9 xh=17 pixels=5634 sum=116d732f
+  40 pt: box=1,-16..1132,57 ave=34 maxasc=57 maxdesc=16 xh=28 pixels=9980 sum=f7321e11
+FONT Droid Serif
+   8 pt: box=0,-3..202,11 ave=6 maxasc=11 maxdesc=3 xh=5 pixels=453 sum=f011bdee
+  12 pt: box=1,-5..324,17 ave=10 maxasc=17 maxdesc=5 xh=8 pixels=1064 sum=a8a7460d
+  24 pt: box=1,-9..648,34 ave=19 maxasc=34 maxdesc=9 xh=17 pixels=4106 sum=2555bb97
+  40 pt: box=2,-16..1073,57 ave=32 maxasc=57 maxdesc=16 xh=28 pixels=7129 sum=f1fc3c72
+FONT Droid Sans Mono
+   8 pt: box=0,-2..222,9 ave=6 maxasc=9 maxdesc=2 xh=5 pixels=425 sum=f7b4c782
+  12 pt: box=0,-4..355,15 ave=10 maxasc=15 maxdesc=4 xh=8 pixels=997 sum=cbbdd00e
+  24 pt: box=0,-8..711,30 ave=19 maxasc=30 maxdesc=8 xh=17 pixels=3521 sum=e88fecda
+  40 pt: box=0,-12..1177,49 ave=32 maxasc=49 maxdesc=13 xh=28 pixels=6454 sum=5a81a613
+FONT Droid Sans Combined
+   8 pt: box=1,-3..186,10 ave=10 maxasc=10 maxdesc=3 xh=6 pixels=420 sum=03480af9
+  12 pt: box=2,-4..298,17 ave=16 maxasc=17 maxdesc=4 xh=10 pixels=1016 sum=a91a729d
+  24 pt: box=3,-9..597,33 ave=32 maxasc=33 maxdesc=9 xh=20 pixels=3931 sum=86db56bc
+  40 pt: box=5,-14..988,55 ave=52 maxasc=55 maxdesc=14 xh=33 pixels=6815 sum=9290a470
+FONT @Droid Sans Combined
+   8 pt: box=1,-3..186,10 ave=10 maxasc=10 maxdesc=3 xh=6 pixels=420 sum=03480af9
+  12 pt: box=2,-4..298,17 ave=16 maxasc=17 maxdesc=4 xh=10 pixels=1016 sum=a91a729d
+  24 pt: box=3,-9..597,33 ave=32 maxasc=33 maxdesc=9 xh=20 pixels=3931 sum=86db56bc
+  40 pt: box=5,-14..988,55 ave=52 maxasc=55 maxdesc=14 xh=33 pixels=6815 sum=9290a470
+FONT Droid Sans Bold
+   8 pt: box=1,-2..198,9 ave=6 maxasc=9 maxdesc=2 xh=5 pixels=477 sum=20fb7406
+  12 pt: box=1,-4..318,15 ave=10 maxasc=15 maxdesc=4 xh=9 pixels=1524 sum=df77fd29
+  24 pt: box=3,-8..635,30 ave=20 maxasc=30 maxdesc=8 xh=17 pixels=6100 sum=5c3e4b29
+  40 pt: box=5,-12..1052,49 ave=33 maxasc=49 maxdesc=13 xh=28 pixels=10432 sum=9c6b5865
+FONT Droid Sans
+   8 pt: box=1,-2..186,9 ave=6 maxasc=9 maxdesc=2 xh=5 pixels=408 sum=550c139d
+  12 pt: box=2,-4..298,15 ave=9 maxasc=15 maxdesc=4 xh=8 pixels=941 sum=8de7ef16
+  24 pt: box=3,-8..596,30 ave=18 maxasc=30 maxdesc=8 xh=17 pixels=3879 sum=ba340bf8
+  40 pt: box=5,-12..987,49 ave=30 maxasc=49 maxdesc=13 xh=28 pixels=7033 sum=b47e5b52
+FONT Source Serif Pro Semibold
+   8 pt: box=0,-3..193,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=556 sum=633e7041
+  12 pt: box=1,-5..309,17 ave=9 maxasc=17 maxdesc=5 xh=8 pixels=1178 sum=452f6f27
+  24 pt: box=1,-11..617,33 ave=18 maxasc=33 maxdesc=11 xh=16 pixels=4609 sum=adb114fa
+  40 pt: box=2,-18..1022,55 ave=30 maxasc=55 maxdesc=18 xh=27 pixels=8287 sum=eb2e76d0
+FONT Source Serif Pro Light
+   8 pt: box=1,-3..189,10 ave=5 maxasc=10 maxdesc=3 xh=5 pixels=461 sum=4cf3b2f6
+  12 pt: box=1,-5..302,17 ave=9 maxasc=17 maxdesc=5 xh=8 pixels=803 sum=02cfcf84
+  24 pt: box=2,-11..605,33 ave=18 maxasc=33 maxdesc=11 xh=16 pixels=2218 sum=a5fa5497
+  40 pt: box=3,-18..1002,55 ave=29 maxasc=55 maxdesc=18 xh=26 pixels=4199 sum=c7b2de18
+FONT Source Serif Pro ExtraLight
+   8 pt: box=1,-3..189,10 ave=5 maxasc=10 maxdesc=3 xh=5 pixels=450 sum=ff47e32f
+  12 pt: box=1,-5..302,17 ave=9 maxasc=17 maxdesc=5 xh=8 pixels=770 sum=5c79840f
+  24 pt: box=2,-11..604,33 ave=18 maxasc=33 maxdesc=11 xh=15 pixels=1685 sum=e507ccde
+  40 pt: box=3,-18..1000,55 ave=29 maxasc=55 maxdesc=18 xh=26 pixels=3173 sum=efda750e
+FONT Source Serif Pro Black
+   8 pt: box=0,-3..199,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=708 sum=12a9bf19
+  12 pt: box=0,-5..318,17 ave=9 maxasc=17 maxdesc=5 xh=8 pixels=1642 sum=492d0517
+  24 pt: box=1,-11..635,33 ave=19 maxasc=33 maxdesc=11 xh=17 pixels=6173 sum=dc3179a6
+  40 pt: box=1,-18..1053,55 ave=31 maxasc=55 maxdesc=18 xh=27 pixels=11548 sum=a6cffb11
+FONT Source Serif Pro
+   8 pt: box=0,-3..190,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=489 sum=fb76c362
+  12 pt: box=1,-5..304,17 ave=9 maxasc=17 maxdesc=5 xh=8 pixels=989 sum=5be358c6
+  24 pt: box=1,-11..608,33 ave=18 maxasc=33 maxdesc=11 xh=16 pixels=3759 sum=37630c80
+  40 pt: box=2,-18..1007,55 ave=29 maxasc=55 maxdesc=18 xh=27 pixels=6248 sum=c34db56d
+FONT Source Serif Pro Bold
+   8 pt: box=0,-3..196,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=603 sum=10adab5c
+  12 pt: box=1,-5..314,17 ave=9 maxasc=17 maxdesc=5 xh=8 pixels=1458 sum=80d7f1df
+  24 pt: box=1,-11..627,33 ave=18 maxasc=33 maxdesc=11 xh=16 pixels=5538 sum=30899baf
+  40 pt: box=2,-18..1039,55 ave=30 maxasc=55 maxdesc=18 xh=27 pixels=9992 sum=0fb0644d
+FONT Source Code Pro Semibold Italic
+   8 pt: box=0,-3..222,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=446 sum=4979789b
+  12 pt: box=0,-4..355,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=1031 sum=78cac618
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=9 xh=17 pixels=3896 sum=41406abd
+  40 pt: box=0,-14..1177,52 ave=32 maxasc=52 maxdesc=14 xh=28 pixels=7040 sum=adc42d45
+FONT Source Code Pro Semibold
+   8 pt: box=0,-3..222,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=464 sum=46e57215
+  12 pt: box=0,-4..355,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=1099 sum=5f33c24c
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=9 xh=17 pixels=4070 sum=cf357e83
+  40 pt: box=0,-14..1177,52 ave=32 maxasc=52 maxdesc=14 xh=28 pixels=7357 sum=92aafb46
+FONT Source Code Pro Medium Italic
+   8 pt: box=0,-3..222,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=427 sum=33c47d0c
+  12 pt: box=0,-4..355,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=934 sum=f885dfc3
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=9 xh=17 pixels=3196 sum=1c39a951
+  40 pt: box=0,-14..1177,52 ave=32 maxasc=52 maxdesc=14 xh=28 pixels=5861 sum=d3137bce
+FONT Source Code Pro Medium
+   8 pt: box=0,-3..222,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=437 sum=950a87fe
+  12 pt: box=0,-4..355,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=999 sum=3e3adc18
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=9 xh=17 pixels=3393 sum=fb66c93a
+  40 pt: box=0,-14..1177,52 ave=32 maxasc=52 maxdesc=14 xh=28 pixels=6347 sum=4bfad0cc
+FONT Source Code Pro Light Italic
+   8 pt: box=0,-3..222,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=392 sum=d7b1ae2d
+  12 pt: box=0,-4..355,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=694 sum=f11d3fb3
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=9 xh=17 pixels=1618 sum=1b84a87f
+  40 pt: box=0,-14..1177,52 ave=32 maxasc=52 maxdesc=14 xh=28 pixels=2949 sum=b2b45e4e
+FONT Source Code Pro Light
+   8 pt: box=0,-3..222,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=372 sum=a6cf3149
+  12 pt: box=0,-4..355,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=703 sum=325f93b0
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=9 xh=17 pixels=1659 sum=cd7eff3c
+  40 pt: box=0,-14..1177,52 ave=32 maxasc=52 maxdesc=14 xh=28 pixels=3006 sum=64cf09db
+FONT Source Code Pro ExtraLight Ital
+   8 pt: box=0,-3..222,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=388 sum=9c92dc99
+  12 pt: box=0,-4..355,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=663 sum=11f1f808
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=9 xh=17 pixels=1317 sum=f3fa354e
+  40 pt: box=0,-14..1177,52 ave=32 maxasc=52 maxdesc=14 xh=28 pixels=1922 sum=3c5c44cf
+FONT Source Code Pro ExtraLight
+   8 pt: box=0,-3..222,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=369 sum=520dda4a
+  12 pt: box=0,-4..355,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=682 sum=52d80cf7
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=9 xh=17 pixels=1316 sum=c2379319
+  40 pt: box=0,-14..1177,52 ave=32 maxasc=52 maxdesc=14 xh=28 pixels=2062 sum=96f094cb
+FONT Source Code Pro Black Italic
+   8 pt: box=0,-3..222,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=590 sum=89ca7ccb
+  12 pt: box=0,-4..355,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=1537 sum=8eab913a
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=9 xh=17 pixels=5328 sum=a0ed7875
+  40 pt: box=0,-14..1177,52 ave=32 maxasc=52 maxdesc=14 xh=28 pixels=9731 sum=7f212ca4
+FONT Source Code Pro Black
+   8 pt: box=0,-3..222,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=561 sum=e15f468a
+  12 pt: box=0,-4..355,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=1646 sum=a2ddbe0b
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=9 xh=17 pixels=5550 sum=b5ad06ab
+  40 pt: box=0,-14..1177,52 ave=32 maxasc=52 maxdesc=14 xh=28 pixels=10173 sum=ba8726e6
+FONT Source Code Pro
+   8 pt: box=0,-3..222,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=417 sum=974de3ba
+  12 pt: box=0,-4..355,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=891 sum=9234f59c
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=9 xh=17 pixels=2948 sum=1145a219
+  40 pt: box=0,-14..1177,52 ave=32 maxasc=52 maxdesc=14 xh=28 pixels=5620 sum=334bd609
+FONT Source Code Pro Italic
+   8 pt: box=0,-3..222,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=418 sum=f14c39cf
+  12 pt: box=0,-4..355,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=829 sum=03c49846
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=9 xh=17 pixels=2850 sum=af1b160f
+  40 pt: box=0,-14..1177,52 ave=32 maxasc=52 maxdesc=14 xh=28 pixels=5365 sum=3820e03e
+FONT Source Code Pro Bold Italic
+   8 pt: box=0,-3..222,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=521 sum=c38beda2
+  12 pt: box=0,-4..355,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=1403 sum=2ed5d59c
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=9 xh=17 pixels=4874 sum=13080857
+  40 pt: box=0,-14..1177,52 ave=32 maxasc=52 maxdesc=14 xh=28 pixels=8516 sum=26999459
+FONT Source Code Pro Bold
+   8 pt: box=0,-3..222,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=530 sum=88d3fb5f
+  12 pt: box=0,-4..355,16 ave=10 maxasc=16 maxdesc=4 xh=8 pixels=1492 sum=863272a9
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=9 xh=17 pixels=5065 sum=9a0ec1c2
+  40 pt: box=0,-14..1177,52 ave=32 maxasc=52 maxdesc=14 xh=28 pixels=8877 sum=cbafddd6
+FONT Source Sans Pro Semibold Italic
+   8 pt: box=0,-3..171,10 ave=5 maxasc=10 maxdesc=3 xh=5 pixels=420 sum=a0840d79
+  12 pt: box=1,-4..274,16 ave=8 maxasc=16 maxdesc=4 xh=8 pixels=1022 sum=5cc6397b
+  24 pt: box=1,-9..548,31 ave=15 maxasc=31 maxdesc=9 xh=16 pixels=4237 sum=b9331556
+  40 pt: box=2,-14..908,52 ave=26 maxasc=52 maxdesc=14 xh=26 pixels=8034 sum=1419b38f
+FONT Source Sans Pro Semibold
+   8 pt: box=1,-3..177,10 ave=5 maxasc=10 maxdesc=3 xh=5 pixels=438 sum=a8d5e653
+  12 pt: box=1,-4..283,16 ave=9 maxasc=16 maxdesc=4 xh=8 pixels=1222 sum=e2e2a5c3
+  24 pt: box=3,-9..567,31 ave=17 maxasc=31 maxdesc=9 xh=16 pixels=4480 sum=6b5c4445
+  40 pt: box=4,-14..939,52 ave=29 maxasc=52 maxdesc=14 xh=26 pixels=8419 sum=ee609a04
+FONT Source Sans Pro Light Italic
+   8 pt: box=0,-3..160,10 ave=5 maxasc=10 maxdesc=3 xh=5 pixels=340 sum=f4f0e0e9
+  12 pt: box=1,-4..256,16 ave=7 maxasc=16 maxdesc=4 xh=8 pixels=618 sum=a2f35497
+  24 pt: box=1,-9..512,31 ave=15 maxasc=31 maxdesc=9 xh=15 pixels=1726 sum=4064e97b
+  40 pt: box=2,-14..848,52 ave=24 maxasc=52 maxdesc=14 xh=25 pixels=3564 sum=5b082981
+FONT Source Sans Pro Light
+   8 pt: box=1,-3..166,10 ave=5 maxasc=10 maxdesc=3 xh=5 pixels=354 sum=fd929b8f
+  12 pt: box=2,-4..265,16 ave=8 maxasc=16 maxdesc=4 xh=8 pixels=651 sum=3237a30c
+  24 pt: box=3,-9..530,31 ave=16 maxasc=31 maxdesc=9 xh=15 pixels=1772 sum=d380cd01
+  40 pt: box=5,-14..879,52 ave=27 maxasc=52 maxdesc=14 xh=25 pixels=3767 sum=41ed2608
+FONT Source Sans Pro ExtraLight Ital
+   8 pt: box=0,-3..158,10 ave=4 maxasc=10 maxdesc=3 xh=5 pixels=337 sum=03664d6a
+  12 pt: box=1,-4..253,16 ave=7 maxasc=16 maxdesc=4 xh=8 pixels=598 sum=a2455cf3
+  24 pt: box=1,-9..505,31 ave=14 maxasc=31 maxdesc=9 xh=15 pixels=1374 sum=89ce737b
+  40 pt: box=2,-14..837,52 ave=24 maxasc=52 maxdesc=14 xh=25 pixels=2365 sum=31fb4206
+FONT Source Sans Pro ExtraLight
+   8 pt: box=1,-3..163,10 ave=5 maxasc=10 maxdesc=3 xh=5 pixels=334 sum=6fed56eb
+  12 pt: box=2,-4..262,16 ave=8 maxasc=16 maxdesc=4 xh=7 pixels=613 sum=c36649ae
+  24 pt: box=3,-9..523,31 ave=16 maxasc=31 maxdesc=9 xh=15 pixels=1417 sum=00808062
+  40 pt: box=5,-14..866,52 ave=26 maxasc=52 maxdesc=14 xh=25 pixels=2495 sum=3c7da530
+FONT Source Sans Pro Black Italic
+   8 pt: box=0,-3..180,10 ave=5 maxasc=10 maxdesc=3 xh=5 pixels=556 sum=aa6099a1
+  12 pt: box=0,-4..288,16 ave=8 maxasc=16 maxdesc=4 xh=8 pixels=1452 sum=dbedf8a1
+  24 pt: box=1,-9..577,31 ave=16 maxasc=31 maxdesc=9 xh=16 pixels=5845 sum=d57e8efe
+  40 pt: box=1,-14..955,52 ave=27 maxasc=52 maxdesc=14 xh=27 pixels=10916 sum=f98b4259
+FONT Source Sans Pro Black
+   8 pt: box=1,-3..186,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=568 sum=d05e453d
+  12 pt: box=1,-4..298,16 ave=9 maxasc=16 maxdesc=4 xh=8 pixels=1578 sum=3aa870b7
+  24 pt: box=2,-9..596,31 ave=18 maxasc=31 maxdesc=9 xh=16 pixels=6227 sum=bd973994
+  40 pt: box=4,-14..987,52 ave=30 maxasc=52 maxdesc=14 xh=27 pixels=11338 sum=f0b4dd37
+FONT Source Sans Pro
+   8 pt: box=1,-3..172,10 ave=5 maxasc=10 maxdesc=3 xh=5 pixels=398 sum=da1696eb
+  12 pt: box=1,-4..275,16 ave=8 maxasc=16 maxdesc=4 xh=8 pixels=883 sum=c4fd3d54
+  24 pt: box=3,-9..550,31 ave=17 maxasc=31 maxdesc=9 xh=15 pixels=3266 sum=cd3c6e0f
+  40 pt: box=5,-14..911,52 ave=28 maxasc=52 maxdesc=14 xh=26 pixels=6162 sum=56f0971f
+FONT Source Sans Pro Italic
+   8 pt: box=0,-3..166,10 ave=5 maxasc=10 maxdesc=3 xh=5 pixels=376 sum=ead8359d
+  12 pt: box=1,-4..266,16 ave=8 maxasc=16 maxdesc=4 xh=8 pixels=758 sum=4f23d8f3
+  24 pt: box=1,-9..532,31 ave=15 maxasc=31 maxdesc=9 xh=15 pixels=3077 sum=87c8e04e
+  40 pt: box=2,-14..880,52 ave=25 maxasc=52 maxdesc=14 xh=26 pixels=5866 sum=30ef0c57
+FONT Source Sans Pro Bold Italic
+   8 pt: box=0,-3..176,10 ave=5 maxasc=10 maxdesc=3 xh=5 pixels=499 sum=69059934
+  12 pt: box=0,-4..282,16 ave=8 maxasc=16 maxdesc=4 xh=8 pixels=1304 sum=4acd50bd
+  24 pt: box=1,-9..564,31 ave=16 maxasc=31 maxdesc=9 xh=16 pixels=5075 sum=ea6f8954
+  40 pt: box=1,-14..934,52 ave=26 maxasc=52 maxdesc=14 xh=27 pixels=9582 sum=cde9690b
+FONT Source Sans Pro Bold
+   8 pt: box=1,-3..182,10 ave=6 maxasc=10 maxdesc=3 xh=5 pixels=505 sum=c9f4b272
+  12 pt: box=1,-4..291,16 ave=9 maxasc=16 maxdesc=4 xh=8 pixels=1409 sum=2388a3fa
+  24 pt: box=2,-9..583,31 ave=18 maxasc=31 maxdesc=9 xh=16 pixels=5611 sum=8d62b14c
+  40 pt: box=4,-14..965,52 ave=29 maxasc=52 maxdesc=14 xh=27 pixels=10164 sum=88a6f329
+FONT Midori Sans Bold
+   8 pt: box=1,-2..175,9 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=497 sum=e83c27aa
+  12 pt: box=1,-3..279,15 ave=8 maxasc=15 maxdesc=3 xh=7 pixels=1358 sum=e408ed8b
+  24 pt: box=3,-6..559,30 ave=16 maxasc=30 maxdesc=6 xh=15 pixels=5113 sum=29072db2
+  40 pt: box=4,-10..925,50 ave=27 maxasc=50 maxdesc=10 xh=25 pixels=9599 sum=58d9b290
+FONT Midori Sans
+   8 pt: box=1,-2..166,9 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=374 sum=8e461713
+  12 pt: box=1,-3..266,15 ave=8 maxasc=15 maxdesc=3 xh=7 pixels=899 sum=c5e4a464
+  24 pt: box=3,-6..531,30 ave=15 maxasc=30 maxdesc=6 xh=15 pixels=3414 sum=ae9563b3
+  40 pt: box=5,-11..880,50 ave=26 maxasc=50 maxdesc=11 xh=25 pixels=6752 sum=e19d9cc5
+FONT Workplace Sans Bold
+   8 pt: box=1,-2..164,10 ave=5 maxasc=10 maxdesc=2 xh=5 pixels=453 sum=914cf26e
+  12 pt: box=1,-3..262,16 ave=8 maxasc=16 maxdesc=3 xh=8 pixels=1193 sum=36069042
+  24 pt: box=2,-6..525,31 ave=16 maxasc=31 maxdesc=6 xh=16 pixels=4590 sum=f4500f6b
+  40 pt: box=4,-11..869,52 ave=27 maxasc=52 maxdesc=11 xh=26 pixels=9091 sum=45408644
+FONT Workplace Sans
+   8 pt: box=1,-2..156,10 ave=5 maxasc=10 maxdesc=2 xh=5 pixels=368 sum=e7b7fb15
+  12 pt: box=1,-3..250,16 ave=8 maxasc=16 maxdesc=3 xh=8 pixels=727 sum=028c3e28
+  24 pt: box=3,-6..500,31 ave=15 maxasc=31 maxdesc=6 xh=15 pixels=2939 sum=7b2bfefc
+  40 pt: box=4,-11..828,52 ave=25 maxasc=52 maxdesc=11 xh=25 pixels=5941 sum=a58857de
+FONT Times New Roman MT 30
+   8 pt: box=0,-5..182,12 ave=4 maxasc=12 maxdesc=5 xh=6 pixels=465 sum=fd9c898a
+  12 pt: box=0,-8..291,19 ave=6 maxasc=19 maxdesc=8 xh=9 pixels=719 sum=a5d536a0
+  24 pt: box=1,-17..582,37 ave=13 maxasc=37 maxdesc=17 xh=19 pixels=3106 sum=ed18100f
+  40 pt: box=1,-28..963,62 ave=21 maxasc=62 maxdesc=28 xh=31 pixels=5559 sum=8533e268
+FONT Monotype Sans WT
+   8 pt: box=1,-4..182,11 ave=4 maxasc=11 maxdesc=4 xh=5 pixels=396 sum=cdcdaea1
+  12 pt: box=1,-6..291,17 ave=7 maxasc=17 maxdesc=6 xh=8 pixels=647 sum=9a4a0a18
+  24 pt: box=3,-12..583,34 ave=14 maxasc=34 maxdesc=12 xh=17 pixels=3745 sum=6060cb5a
+  40 pt: box=4,-19..965,56 ave=23 maxasc=56 maxdesc=19 xh=28 pixels=7152 sum=f7f5abb5
+FONT Monotype Sans Duospace WT J
+   8 pt: box=1,-3..185,10 ave=5 maxasc=10 maxdesc=3 xh=5 pixels=386 sum=4dc9db0f
+  12 pt: box=1,-5..296,16 ave=8 maxasc=16 maxdesc=5 xh=8 pixels=652 sum=6beaca81
+  24 pt: box=2,-11..592,32 ave=16 maxasc=32 maxdesc=11 xh=16 pixels=2846 sum=614a931b
+  40 pt: box=4,-18..980,53 ave=27 maxasc=53 maxdesc=18 xh=26 pixels=6118 sum=0e817c43
+FONT @Monotype Sans Duospace WT J
+   8 pt: box=1,-3..185,10 ave=5 maxasc=10 maxdesc=3 xh=5 pixels=386 sum=4dc9db0f
+  12 pt: box=1,-5..296,16 ave=8 maxasc=16 maxdesc=5 xh=8 pixels=652 sum=6beaca81
+  24 pt: box=2,-11..592,32 ave=16 maxasc=32 maxdesc=11 xh=16 pixels=2846 sum=614a931b
+  40 pt: box=4,-18..980,53 ave=27 maxasc=53 maxdesc=18 xh=26 pixels=6118 sum=0e817c43
+FONT Times New Roman WT J
+   8 pt: box=0,-5..182,12 ave=4 maxasc=12 maxdesc=5 xh=6 pixels=465 sum=fd9c898a
+  12 pt: box=0,-8..291,19 ave=6 maxasc=19 maxdesc=8 xh=9 pixels=719 sum=a5d536a0
+  24 pt: box=1,-17..582,37 ave=13 maxasc=37 maxdesc=17 xh=19 pixels=3106 sum=ed18100f
+  40 pt: box=1,-28..963,62 ave=21 maxasc=62 maxdesc=28 xh=31 pixels=5559 sum=8533e268
+FONT @Times New Roman WT J
+   8 pt: box=0,-5..182,12 ave=4 maxasc=12 maxdesc=5 xh=6 pixels=465 sum=fd9c898a
+  12 pt: box=0,-8..291,19 ave=6 maxasc=19 maxdesc=8 xh=9 pixels=719 sum=a5d536a0
+  24 pt: box=1,-17..582,37 ave=13 maxasc=37 maxdesc=17 xh=19 pixels=3106 sum=ed18100f
+  40 pt: box=1,-28..963,62 ave=21 maxasc=62 maxdesc=28 xh=31 pixels=5559 sum=8533e268
+FONT Wingdings
+   8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=3 xh=4 pixels=471 sum=93637aa8
+  12 pt: box=0,-5..355,14 ave=10 maxasc=14 maxdesc=5 xh=7 pixels=758 sum=b287e493
+  24 pt: box=1,-9..710,27 ave=19 maxasc=27 maxdesc=9 xh=14 pixels=2716 sum=7ff64dd1
+  40 pt: box=2,-16..1176,45 ave=32 maxasc=45 maxdesc=16 xh=23 pixels=4626 sum=64f1819f
+FONT Symbol
+   8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=3 xh=4 pixels=471 sum=93637aa8
+  12 pt: box=0,-5..355,14 ave=10 maxasc=14 maxdesc=5 xh=7 pixels=758 sum=b287e493
+  24 pt: box=1,-9..710,27 ave=19 maxasc=27 maxdesc=9 xh=14 pixels=2716 sum=7ff64dd1
+  40 pt: box=2,-16..1176,45 ave=32 maxasc=45 maxdesc=16 xh=23 pixels=4626 sum=64f1819f
+FONT Courier New Italic
+   8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=3 xh=4 pixels=456 sum=f45cfe4d
+  12 pt: box=0,-4..355,13 ave=10 maxasc=13 maxdesc=4 xh=6 pixels=777 sum=03a4a3c2
+  24 pt: box=0,-9..711,25 ave=19 maxasc=25 maxdesc=9 xh=13 pixels=1405 sum=3beaaa06
+  40 pt: box=0,-15..1177,42 ave=32 maxasc=42 maxdesc=15 xh=21 pixels=3129 sum=7d5c1b72
+FONT Courier New Bold Italic
+   8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=3 xh=4 pixels=499 sum=cce76694
+  12 pt: box=0,-5..355,13 ave=10 maxasc=13 maxdesc=5 xh=7 pixels=1186 sum=c364832f
+  24 pt: box=0,-10..711,26 ave=19 maxasc=26 maxdesc=10 xh=13 pixels=4114 sum=1831bf1f
+  40 pt: box=0,-16..1177,44 ave=32 maxasc=44 maxdesc=16 xh=22 pixels=7550 sum=8d6662fb
+FONT Courier New Bold
+   8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=3 xh=4 pixels=493 sum=d34c1a56
+  12 pt: box=0,-5..355,13 ave=10 maxasc=13 maxdesc=5 xh=7 pixels=1166 sum=d7a8908b
+  24 pt: box=0,-10..711,27 ave=19 maxasc=27 maxdesc=10 xh=13 pixels=3984 sum=9facaaf5
+  40 pt: box=0,-16..1177,44 ave=32 maxasc=44 maxdesc=16 xh=22 pixels=7363 sum=282bff64
+FONT Courier New
+   8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=3 xh=4 pixels=428 sum=41591621
+  12 pt: box=0,-4..355,13 ave=10 maxasc=13 maxdesc=4 xh=6 pixels=747 sum=c3594f4c
+  24 pt: box=0,-9..711,25 ave=19 maxasc=25 maxdesc=9 xh=13 pixels=1357 sum=3211b7d6
+  40 pt: box=0,-15..1177,42 ave=32 maxasc=42 maxdesc=15 xh=21 pixels=3155 sum=b2c548f4
+FONT Arial Italic
+   8 pt: box=0,-2..191,9 ave=4 maxasc=9 maxdesc=2 xh=4 pixels=450 sum=fa340caf
+  12 pt: box=1,-3..306,14 ave=7 maxasc=14 maxdesc=3 xh=7 pixels=779 sum=946bdecc
+  24 pt: box=1,-7..612,29 ave=14 maxasc=29 maxdesc=7 xh=14 pixels=4378 sum=d33c2527
+  40 pt: box=2,-11..1014,47 ave=23 maxasc=47 maxdesc=11 xh=24 pixels=7932 sum=839432f1
+FONT Arial Bold Italic
+   8 pt: box=0,-2..203,9 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=458 sum=f11d6277
+  12 pt: box=1,-3..325,14 ave=8 maxasc=14 maxdesc=3 xh=7 pixels=1474 sum=1f35f30f
+  24 pt: box=1,-7..650,29 ave=15 maxasc=29 maxdesc=7 xh=14 pixels=5521 sum=fb6b558a
+  40 pt: box=2,-11..1076,48 ave=25 maxasc=48 maxdesc=11 xh=24 pixels=9475 sum=e557b884
+FONT Arial Bold
+   8 pt: box=1,-2..203,9 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=532 sum=eace8609
+  12 pt: box=1,-3..324,14 ave=8 maxasc=14 maxdesc=3 xh=7 pixels=1493 sum=21b495de
+  24 pt: box=2,-7..649,29 ave=15 maxasc=29 maxdesc=7 xh=14 pixels=5370 sum=15615e47
+  40 pt: box=4,-11..1075,48 ave=25 maxasc=48 maxdesc=11 xh=24 pixels=9330 sum=d7dd6e5f
+FONT Arial
+   8 pt: box=1,-2..191,9 ave=4 maxasc=9 maxdesc=2 xh=4 pixels=437 sum=9163103e
+  12 pt: box=1,-3..306,14 ave=7 maxasc=14 maxdesc=3 xh=7 pixels=740 sum=15cd0999
+  24 pt: box=3,-7..611,29 ave=14 maxasc=29 maxdesc=7 xh=14 pixels=4347 sum=b44929bc
+  40 pt: box=4,-11..1013,48 ave=23 maxasc=48 maxdesc=11 xh=24 pixels=7475 sum=3ee12574
+FONT Times New Roman Italic
+   8 pt: box=0,-3..175,9 ave=4 maxasc=9 maxdesc=3 xh=4 pixels=410 sum=d63f3247
+  12 pt: box=0,-5..279,15 ave=6 maxasc=15 maxdesc=5 xh=7 pixels=722 sum=0cfae8ff
+  24 pt: box=-1,-11..559,30 ave=13 maxasc=30 maxdesc=11 xh=14 pixels=2670 sum=59e7e22b
+  40 pt: box=-1,-17..926,49 ave=21 maxasc=49 maxdesc=17 xh=23 pixels=5221 sum=6b15ba0e
+FONT Tms Rmn Italic
+   8 pt: box=0,-3..175,9 ave=4 maxasc=9 maxdesc=3 xh=4 pixels=410 sum=d63f3247
+  12 pt: box=0,-5..279,15 ave=6 maxasc=15 maxdesc=5 xh=7 pixels=722 sum=0cfae8ff
+  24 pt: box=-1,-11..559,30 ave=13 maxasc=30 maxdesc=11 xh=14 pixels=2670 sum=59e7e22b
+  40 pt: box=-1,-17..926,49 ave=21 maxasc=49 maxdesc=17 xh=23 pixels=5221 sum=6b15ba0e
+FONT Times New Roman Bold Italic
+   8 pt: box=0,-3..183,9 ave=4 maxasc=9 maxdesc=3 xh=5 pixels=444 sum=88222b91
+  12 pt: box=-1,-5..293,15 ave=7 maxasc=15 maxdesc=5 xh=7 pixels=1083 sum=16ccaedc
+  24 pt: box=-1,-11..586,30 ave=13 maxasc=30 maxdesc=11 xh=14 pixels=4159 sum=5ad0c9d0
+  40 pt: box=-2,-17..970,49 ave=22 maxasc=49 maxdesc=17 xh=24 pixels=7683 sum=6ac62804
+FONT Tms Rmn Bold Italic
+   8 pt: box=0,-3..183,9 ave=4 maxasc=9 maxdesc=3 xh=5 pixels=444 sum=88222b91
+  12 pt: box=-1,-5..293,15 ave=7 maxasc=15 maxdesc=5 xh=7 pixels=1083 sum=16ccaedc
+  24 pt: box=-1,-11..586,30 ave=13 maxasc=30 maxdesc=11 xh=14 pixels=4159 sum=5ad0c9d0
+  40 pt: box=-2,-17..970,49 ave=22 maxasc=49 maxdesc=17 xh=24 pixels=7683 sum=6ac62804
+FONT Times New Roman Bold
+   8 pt: box=0,-3..190,9 ave=4 maxasc=9 maxdesc=3 xh=5 pixels=429 sum=ae9b8dd6
+  12 pt: box=0,-5..304,15 ave=7 maxasc=15 maxdesc=5 xh=7 pixels=1154 sum=f2c7eacf
+  24 pt: box=1,-11..608,30 ave=14 maxasc=30 maxdesc=11 xh=15 pixels=4317 sum=552ba766
+  40 pt: box=1,-17..1008,49 ave=23 maxasc=49 maxdesc=17 xh=24 pixels=7921 sum=284d4a8a
+FONT Tms Rmn Bold
+   8 pt: box=0,-3..190,9 ave=4 maxasc=9 maxdesc=3 xh=5 pixels=429 sum=ae9b8dd6
+  12 pt: box=0,-5..304,15 ave=7 maxasc=15 maxdesc=5 xh=7 pixels=1154 sum=f2c7eacf
+  24 pt: box=1,-11..608,30 ave=14 maxasc=30 maxdesc=11 xh=15 pixels=4317 sum=552ba766
+  40 pt: box=1,-17..1008,49 ave=23 maxasc=49 maxdesc=17 xh=24 pixels=7921 sum=284d4a8a
+FONT Times New Roman
+   8 pt: box=0,-3..182,9 ave=4 maxasc=9 maxdesc=3 xh=4 pixels=446 sum=b1dcb9fb
+  12 pt: box=0,-5..291,15 ave=6 maxasc=15 maxdesc=5 xh=7 pixels=724 sum=d0a1b6e9
+  24 pt: box=1,-11..582,30 ave=13 maxasc=30 maxdesc=11 xh=14 pixels=3229 sum=62002cc6
+  40 pt: box=1,-17..963,49 ave=21 maxasc=49 maxdesc=17 xh=24 pixels=5520 sum=5d74d395
+FONT Tms Rmn
+   8 pt: box=0,-3..182,9 ave=4 maxasc=9 maxdesc=3 xh=4 pixels=446 sum=b1dcb9fb
+  12 pt: box=0,-5..291,15 ave=6 maxasc=15 maxdesc=5 xh=7 pixels=724 sum=d0a1b6e9
+  24 pt: box=1,-11..582,30 ave=13 maxasc=30 maxdesc=11 xh=14 pixels=3229 sum=62002cc6
+  40 pt: box=1,-17..963,49 ave=21 maxasc=49 maxdesc=17 xh=24 pixels=5520 sum=5d74d395
+FONT Symbol Set
+   8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=3 xh=4 pixels=471 sum=93637aa8
+  12 pt: box=0,-5..355,14 ave=10 maxasc=14 maxdesc=5 xh=7 pixels=758 sum=b287e493
+  24 pt: box=1,-9..710,27 ave=19 maxasc=27 maxdesc=9 xh=14 pixels=2716 sum=7ff64dd1
+  40 pt: box=2,-16..1176,45 ave=32 maxasc=45 maxdesc=16 xh=23 pixels=4626 sum=64f1819f
+FONT Courier Italic
+   8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=3 xh=4 pixels=443 sum=f52b0d1c
+  12 pt: box=0,-5..355,14 ave=10 maxasc=14 maxdesc=5 xh=7 pixels=772 sum=29fcca79
+  24 pt: box=1,-9..710,27 ave=19 maxasc=27 maxdesc=9 xh=14 pixels=2780 sum=61668d51
+  40 pt: box=1,-16..1176,45 ave=32 maxasc=45 maxdesc=16 xh=23 pixels=4760 sum=123978dd
+FONT Courier Bold Italic
+   8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=3 xh=5 pixels=447 sum=4ad4d810
+  12 pt: box=0,-5..355,14 ave=10 maxasc=14 maxdesc=5 xh=7 pixels=814 sum=af06980b
+  24 pt: box=1,-9..710,27 ave=19 maxasc=27 maxdesc=9 xh=14 pixels=3819 sum=699b244c
+  40 pt: box=1,-16..1176,45 ave=32 maxasc=45 maxdesc=16 xh=24 pixels=6884 sum=6e7378f9
+FONT Courier Bold
+   8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=3 xh=5 pixels=475 sum=2cdca01c
+  12 pt: box=0,-5..355,14 ave=10 maxasc=14 maxdesc=5 xh=7 pixels=815 sum=d4ee88a0
+  24 pt: box=1,-9..710,27 ave=19 maxasc=27 maxdesc=9 xh=14 pixels=3873 sum=ed2adf1a
+  40 pt: box=1,-16..1176,45 ave=32 maxasc=45 maxdesc=16 xh=24 pixels=7092 sum=26d49f29
+FONT Courier
+   8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=3 xh=4 pixels=471 sum=93637aa8
+  12 pt: box=0,-5..355,14 ave=10 maxasc=14 maxdesc=5 xh=7 pixels=758 sum=b287e493
+  24 pt: box=1,-9..710,27 ave=19 maxasc=27 maxdesc=9 xh=14 pixels=2716 sum=7ff64dd1
+  40 pt: box=2,-16..1176,45 ave=32 maxasc=45 maxdesc=16 xh=23 pixels=4626 sum=64f1819f
+FONT Helvetica Italic
+   8 pt: box=1,-3..192,9 ave=4 maxasc=9 maxdesc=3 xh=5 pixels=404 sum=f25e6ec9
+  12 pt: box=1,-5..307,15 ave=7 maxasc=15 maxdesc=5 xh=8 pixels=767 sum=eccf8970
+  24 pt: box=3,-10..613,30 ave=14 maxasc=30 maxdesc=10 xh=17 pixels=3945 sum=77613ae2
+  40 pt: box=4,-17..1016,50 ave=23 maxasc=50 maxdesc=17 xh=28 pixels=6833 sum=ff96e54a
+FONT Helv Italic
+   8 pt: box=1,-3..192,9 ave=4 maxasc=9 maxdesc=3 xh=5 pixels=404 sum=f25e6ec9
+  12 pt: box=1,-5..307,15 ave=7 maxasc=15 maxdesc=5 xh=8 pixels=767 sum=eccf8970
+  24 pt: box=3,-10..613,30 ave=14 maxasc=30 maxdesc=10 xh=17 pixels=3945 sum=77613ae2
+  40 pt: box=4,-17..1016,50 ave=23 maxasc=50 maxdesc=17 xh=28 pixels=6833 sum=ff96e54a
+FONT Helvetica Bold Italic
+   8 pt: box=1,-3..203,9 ave=5 maxasc=9 maxdesc=3 xh=5 pixels=436 sum=16be6ac9
+  12 pt: box=1,-5..326,15 ave=8 maxasc=15 maxdesc=5 xh=9 pixels=1528 sum=be48729d
+  24 pt: box=2,-10..651,30 ave=15 maxasc=30 maxdesc=10 xh=17 pixels=5864 sum=ccab7b6d
+  40 pt: box=4,-17..1078,50 ave=25 maxasc=50 maxdesc=17 xh=29 pixels=10040 sum=574af77d
+FONT Helv Bold Italic
+   8 pt: box=1,-3..203,9 ave=5 maxasc=9 maxdesc=3 xh=5 pixels=436 sum=16be6ac9
+  12 pt: box=1,-5..326,15 ave=8 maxasc=15 maxdesc=5 xh=9 pixels=1528 sum=be48729d
+  24 pt: box=2,-10..651,30 ave=15 maxasc=30 maxdesc=10 xh=17 pixels=5864 sum=ccab7b6d
+  40 pt: box=4,-17..1078,50 ave=25 maxasc=50 maxdesc=17 xh=29 pixels=10040 sum=574af77d
+FONT Helvetica Bold
+   8 pt: box=1,-3..202,9 ave=5 maxasc=9 maxdesc=3 xh=5 pixels=409 sum=bd06bfd2
+  12 pt: box=1,-5..324,15 ave=8 maxasc=15 maxdesc=5 xh=9 pixels=1461 sum=856cf65e
+  24 pt: box=2,-10..648,30 ave=15 maxasc=30 maxdesc=10 xh=17 pixels=5708 sum=54739001
+  40 pt: box=4,-17..1073,50 ave=25 maxasc=50 maxdesc=17 xh=29 pixels=9904 sum=77271995
+FONT Helv Bold
+   8 pt: box=1,-3..202,9 ave=5 maxasc=9 maxdesc=3 xh=5 pixels=409 sum=bd06bfd2
+  12 pt: box=1,-5..324,15 ave=8 maxasc=15 maxdesc=5 xh=9 pixels=1461 sum=856cf65e
+  24 pt: box=2,-10..648,30 ave=15 maxasc=30 maxdesc=10 xh=17 pixels=5708 sum=54739001
+  40 pt: box=4,-17..1073,50 ave=25 maxasc=50 maxdesc=17 xh=29 pixels=9904 sum=77271995
+FONT Helvetica
+   8 pt: box=1,-3..191,9 ave=4 maxasc=9 maxdesc=3 xh=5 pixels=421 sum=dfe4142e
+  12 pt: box=1,-5..305,15 ave=7 maxasc=15 maxdesc=5 xh=8 pixels=746 sum=368550b7
+  24 pt: box=3,-10..610,30 ave=14 maxasc=30 maxdesc=10 xh=17 pixels=4009 sum=ce684ca2
+  40 pt: box=4,-17..1011,50 ave=23 maxasc=50 maxdesc=17 xh=28 pixels=6645 sum=fa98d9de
+FONT Helv
+   8 pt: box=1,-3..191,9 ave=4 maxasc=9 maxdesc=3 xh=5 pixels=421 sum=dfe4142e
+  12 pt: box=1,-5..305,15 ave=7 maxasc=15 maxdesc=5 xh=8 pixels=746 sum=368550b7
+  24 pt: box=3,-10..610,30 ave=14 maxasc=30 maxdesc=10 xh=17 pixels=4009 sum=ce684ca2
+  40 pt: box=4,-17..1011,50 ave=23 maxasc=50 maxdesc=17 xh=28 pixels=6645 sum=fa98d9de

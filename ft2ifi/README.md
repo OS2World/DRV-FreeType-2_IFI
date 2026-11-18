@@ -48,6 +48,20 @@ Test fonts: the 185 TrueType files of the VM plus 35 OpenType/CFF fonts (`C:\usr
 
 Not done: replacing the installed driver the way a user would (`repmod`), real hardware, CFF2 and variable fonts (GX variations are switched off), vertical text with real CJK glyphs, a release.
 
+## Real hardware, SMP (ArcaMiix, 2026-11-18)
+
+ArcaOS 5.1 with the SMP kernel (IBM 14.204_SMP, ACPI.PSD), the shipped FreeType/2 1.3.6 as the reference. The DLLs were copied next to the shipped one under other names
+(`FT2IFI.DLL`; `FT2U.DLL` and `FTS.DLL` for the isolated driver-level tests); the shipped `FREETYPE.DLL` was never touched. After the tests the PC was put back on the shipped driver.
+
+- **PM, new driver registered** (`TRUETYPE` = `FT2IFI.DLL`, reboot): PM starts normally, `FT2IFI.DLL` is loaded (locked), the font engine lists 112 outline fonts, no popup, no trap
+  (`test\hw_render_new.txt`). Against the shipped driver on the same machine (`hw_render_ship.txt`): text width equal for all 448 samples, 104 samples byte-identical, pixel counts -9% / +18%, mean +1%:
+  the same numbers as on the Dev VM.
+- **OpenType fonts in PM**: with three URW OpenType fonts added to `PM_Fonts` (`C059-Roman`, `C059-Bold`, `NimbusSans-Regular`), the engine lists 115 outline fonts and they render (`hw_render_new2.txt`).
+- **Driver level** (129 TrueType/OpenType files on the PC, both drivers through the dispatch table, no PM): the shipped driver cannot load 35 of them (the OpenType/CFF ones), the new one loads all 129;
+  kerning is returned for the same 46 faces; 94 of 129 files return the same full-face names.
+- **Soak**: 100 rounds over the 129 files, both drivers finish; the new driver loses 0.56 MB of free memory (the shipped one 1.27 MB) and takes 134 s against 40 s for the shipped driver (it loads 35 more files, including large CFF fonts,
+  and FreeType 2 is slower than FreeType 1).
+
 ## Cautions when testing
 
 - A test program that links the registered DLL shares PM's instance of the driver (single shared data). Test an isolated copy: `wmake DLLNAME=FT2T`, copy `bin\FT2T.dll` to
