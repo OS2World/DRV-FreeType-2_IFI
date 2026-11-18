@@ -5,6 +5,9 @@ rem   compile_wat.cmd clean   remove bin\ and compile.log
 set WATCOM=C:\WATCOM
 set PATH=%WATCOM%\BINP;%WATCOM%\BINW;%PATH%
 set EDPATH=%WATCOM%\EDDAT
+rem the Toolkit resource and help compilers need their message files
+set DPATH=C:\os2tk45\msg;C:\os2tk45\help;C:\os2tk45\book;C:\OS2\SYSTEM;C:\OS2;%DPATH%
+set BEGINLIBPATH=C:\os2tk45\dll;%BEGINLIBPATH%
 
 if not exist "%WATCOM%\BINP\WMAKE.EXE" goto missing_wmake
 if "%1"=="clean" goto clean
@@ -17,6 +20,15 @@ echo OK: bin\FreeType.dll
 dir bin\FreeType.dll
 echo OK: bin\libttf.lib
 dir bin\libttf.lib
+if not exist bin\ftconfig.exe goto missing_output
+echo OK: bin\ftconfig.exe
+dir bin\ftconfig.exe
+if not exist bin\ftmem.exe goto missing_output
+echo OK: bin\ftmem.exe
+dir bin\ftmem.exe
+if not exist bin\ftconfig.hlp goto missing_output
+echo OK: bin\ftconfig.hlp
+dir bin\ftconfig.hlp
 echo Build log: compile.log
 exit 0
 

@@ -30,7 +30,7 @@ LIBOBJ = $(OBJ_DIR)\freetype.obj
 TTF = $(BIN_DIR)\libttf.lib
 DLL = $(BIN_DIR)\FreeType.dll
 
-all: $(DLL)
+all: $(DLL) $(BIN_DIR)\ftconfig.exe $(BIN_DIR)\ftmem.exe $(BIN_DIR)\ftconfig.hlp
 
 $(DLL): $(OBJ_DIR)\ftifi.obj $(TTF) $(IFI_DIR)\FreeType.def
 	$(LINK) @<<
@@ -77,6 +77,51 @@ $(OBJ_DIR)\ftxwidth.obj: $(LIB_DIR)\extend\ftxwidth.c
 
 $(OBJ_DIR)\ftxsbit.obj: $(LIB_DIR)\extend\ftxsbit.c
 	$(CC) $(LIBFLAGS) -fo=$@ $(LIB_DIR)\extend\ftxsbit.c
+
+
+# ---- configuration tool, memory viewer and help file ------------------------------------------
+CFG_DIR = $(PROJ_ROOT)\src\config
+RC = $(TK)\bin\rc.exe
+IPFC = $(TK)\bin\ipfc.exe
+APPFLAGS = -zq -4r -zp1 -s -w1 -I$(CFG_DIR) -I$(IFI_DIR) -I$(WATCOM)\h -I$(TK)\h
+
+$(BIN_DIR)\ftconfig.exe: $(OBJ_DIR)\ft2conf.obj $(OBJ_DIR)\resource.res
+	$(LINK) @<<
+name $(BIN_DIR)\ftconfig.exe
+system os2v2_pm
+option quiet,caseexact,map=$(BIN_DIR)\ftconfig.map
+file $(OBJ_DIR)\ft2conf.obj
+library $(TK)\lib\os2386.lib
+<<
+	$(RC) -x -n $(OBJ_DIR)\resource.res $(BIN_DIR)\ftconfig.exe
+
+$(OBJ_DIR)\ft2conf.obj: $(CFG_DIR)\ft2conf.c $(CFG_DIR)\ft2conf.h $(CFG_DIR)\resource.h
+	@if not exist $(BIN_DIR) mkdir $(BIN_DIR)
+	@if not exist $(OBJ_DIR) mkdir $(OBJ_DIR)
+	$(CC) $(APPFLAGS) -fo=$@ $(CFG_DIR)\ft2conf.c
+
+$(OBJ_DIR)\resource.res: $(CFG_DIR)\resource.rc $(CFG_DIR)\resource.dlg $(CFG_DIR)\resource.h $(CFG_DIR)\ft2gui.ICO $(CFG_DIR)\ftsplash.bmp
+	@if not exist $(BIN_DIR) mkdir $(BIN_DIR)
+	@if not exist $(OBJ_DIR) mkdir $(OBJ_DIR)
+	$(RC) -r -n -i $(CFG_DIR) -i $(TK)\h $(CFG_DIR)\resource.rc $@
+
+$(BIN_DIR)\ftconfig.hlp: $(CFG_DIR)\ftconfig_en.ipf
+	@if not exist $(BIN_DIR) mkdir $(BIN_DIR)
+	$(IPFC) $(CFG_DIR)\ftconfig_en.ipf $@
+
+$(BIN_DIR)\ftmem.exe: $(OBJ_DIR)\ftmem.obj
+	$(LINK) @<<
+name $(BIN_DIR)\ftmem.exe
+system os2v2_pm
+option quiet,caseexact,stack=32k
+file $(OBJ_DIR)\ftmem.obj
+library $(TK)\lib\os2386.lib
+<<
+
+$(OBJ_DIR)\ftmem.obj: $(IFI_DIR)\ftmem.c
+	@if not exist $(BIN_DIR) mkdir $(BIN_DIR)
+	@if not exist $(OBJ_DIR) mkdir $(OBJ_DIR)
+	$(CC) $(APPFLAGS) -fo=$@ $(IFI_DIR)\ftmem.c
 
 clean: .SYMBOLIC
 	@if exist $(BIN_DIR) rmdir /s /q $(BIN_DIR)
