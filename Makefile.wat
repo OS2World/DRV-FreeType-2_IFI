@@ -30,14 +30,14 @@ LIBOBJ = $(OBJ_DIR)\freetype.obj
 TTF = $(BIN_DIR)\libttf.lib
 DLL = $(BIN_DIR)\FreeType.dll
 
-all: $(DLL) $(BIN_DIR)\ftconfig.exe $(BIN_DIR)\ftmem.exe $(BIN_DIR)\ftconfig.hlp
+all: $(DLL) $(BIN_DIR)\ftconfig.exe $(BIN_DIR)\ftmem.exe $(BIN_DIR)\ftconfig.hlp $(BIN_DIR)\ftconfde.hlp $(BIN_DIR)\ftconfes.hlp
 
 $(DLL): $(OBJ_DIR)\ftifi.obj $(TTF) $(IFI_DIR)\FreeType.def
 	$(LINK) @<<
 name $(DLL)
 system os2v2_dll initinstance terminstance
 option quiet,caseexact,map=$(BIN_DIR)\FreeType.map
-option description '@#Necasek/Seo/KO/Taylor et al:1.3.4#@FreeType/2 installable font interface driver'
+option description '@#Necasek/Seo/KO/Taylor et al:1.3.6#@FreeType/2 installable font interface driver'
 file $(OBJ_DIR)\ftifi.obj
 library $(TTF)
 library $(WATCOM)\lib386\os2\clib3r.lib
@@ -100,7 +100,7 @@ $(OBJ_DIR)\ft2conf.obj: $(CFG_DIR)\ft2conf.c $(CFG_DIR)\ft2conf.h $(CFG_DIR)\res
 	@if not exist $(OBJ_DIR) mkdir $(OBJ_DIR)
 	$(CC) $(APPFLAGS) -fo=$@ $(CFG_DIR)\ft2conf.c
 
-$(OBJ_DIR)\resource.res: $(CFG_DIR)\resource.rc $(CFG_DIR)\resource.dlg $(CFG_DIR)\resource.h $(CFG_DIR)\ft2gui.ICO $(CFG_DIR)\ftsplash.bmp
+$(OBJ_DIR)\resource.res: $(CFG_DIR)\resource.rc $(CFG_DIR)\resource.dlg $(CFG_DIR)\resource.h $(CFG_DIR)\ft2gui.ICO $(CFG_DIR)\ftifi.bmp
 	@if not exist $(BIN_DIR) mkdir $(BIN_DIR)
 	@if not exist $(OBJ_DIR) mkdir $(OBJ_DIR)
 	$(RC) -r -n -i $(CFG_DIR) -i $(TK)\h $(CFG_DIR)\resource.rc $@
@@ -108,6 +108,14 @@ $(OBJ_DIR)\resource.res: $(CFG_DIR)\resource.rc $(CFG_DIR)\resource.dlg $(CFG_DI
 $(BIN_DIR)\ftconfig.hlp: $(CFG_DIR)\ftconfig_en.ipf
 	@if not exist $(BIN_DIR) mkdir $(BIN_DIR)
 	$(IPFC) $(CFG_DIR)\ftconfig_en.ipf $@
+
+$(BIN_DIR)\ftconfde.hlp: $(CFG_DIR)\ftconfig_de.ipf
+	@if not exist $(BIN_DIR) mkdir $(BIN_DIR)
+	$(IPFC) $(CFG_DIR)\ftconfig_de.ipf $@
+
+$(BIN_DIR)\ftconfes.hlp: $(CFG_DIR)\ftconfig_es.ipf
+	@if not exist $(BIN_DIR) mkdir $(BIN_DIR)
+	$(IPFC) $(CFG_DIR)\ftconfig_es.ipf $@
 
 $(BIN_DIR)\ftmem.exe: $(OBJ_DIR)\ftmem.obj
 	$(LINK) @<<

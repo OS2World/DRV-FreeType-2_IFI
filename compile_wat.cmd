@@ -29,6 +29,12 @@ dir bin\ftmem.exe
 if not exist bin\ftconfig.hlp goto missing_output
 echo OK: bin\ftconfig.hlp
 dir bin\ftconfig.hlp
+if not exist bin\ftconfde.hlp goto missing_output
+echo OK: bin\ftconfde.hlp
+dir bin\ftconfde.hlp
+if not exist bin\ftconfes.hlp goto missing_output
+echo OK: bin\ftconfes.hlp
+dir bin\ftconfes.hlp
 echo Build log: compile.log
 exit 0
 
