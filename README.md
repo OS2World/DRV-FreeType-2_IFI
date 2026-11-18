@@ -25,9 +25,15 @@ Prints `OK: bin\FreeType.dll` (and the other outputs) with sizes, or `FAILED:`; 
 
 ## Install
 
-Original scripts in `install\` (`INSTALL.CMD`, `UPDATE.CMD`, `UNINST.CMD`, `QUERY.CMD`; see `install\readme.txt`
-and `install\FAQ`). They copy the DLL to `\OS2\DLL` and register it in `OS2.INI`. Back up `OS2.INI` and the existing
-`FREETYPE.DLL` first; ArcaOS already ships FreeType/2 1.3.6.
+ArcaOS already has FreeType/2 1.3.6 installed, so this release is an update. In the release zip `FREETYPE.DLL` and the scripts are in one folder:
+
+1. Back up the current driver: `copy C:\OS2\DLL\FREETYPE.DLL` to a safe folder, and make an OS/2 desktop/INI archive if you can.
+2. Run `UPDATE.CMD` from that folder. It replaces the loaded `FREETYPE.DLL` with `repmod` (the ArcaOS copy is in `C:\sys\apps\ftifi`; put that folder in the PATH if `repmod` is not found). Reboot.
+3. `QUERY.CMD` shows the registered TrueType driver; `ftconfig.exe` is the settings program.
+4. To go back: run `repmod <backup>\FREETYPE.DLL C:\os2\dll\FREETYPE.DLL` and reboot.
+
+A first installation on a system without FreeType/2 uses `INSTALL.CMD` instead (copies the DLL, creates the settings object, registers the driver in `OS2.INI`); it was not tested with this build. If PM does not start after a bad driver: Alt+F1 at boot, F2 (command line), rename the DLL, reboot, and restore the `PM_Font_Drivers` / `TRUETYPE` key.
+See also `readme.txt` and `FAQ` (the original package documentation).
 
 ## Parameters and boot messages
 
