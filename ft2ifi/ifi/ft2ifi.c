@@ -12,7 +12,7 @@
 /*       Copyright (C) 1997, 1998 David Turner <dturner@cybercable.fr>     */
 /*       Copyright (C) 1997, 1999 International Business Machines          */
 /*                                                                         */
-/*       Version: 2.0.0                                                    */
+/*       Version: 2.15.0a1 (FreeType 2.15.0; upstream beta was 2.0.0)      */
 /*                                                                         */
 /* This source is to be compiled with IBM VisualAge C++ 3.0.               */
 /* Other compilers may actually work too but don't forget this is NOT a    */

@@ -63,7 +63,7 @@ option quiet,caseexact,map=$(BIN)\$(DLLNAME).map
 option start=_DLL_InitTerm
 option modname=$(DLLNAME)
 segment type data shared
-option description '@#Alexander Taylor:2.0.0r1#@FT2IFI - OpenType PM font driver based on FreeType 2'
+option description '@#Alexander Taylor:2.15.0a1#@FT2IFI - OpenType PM font driver based on FreeType 2'
 file $(OBJ)\ft2ifi.obj
 file $(OBJ)\ft2kern.obj
 file { $(FTOBJS) }
