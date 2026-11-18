@@ -1,8 +1,31 @@
 # FT2IFI: FreeType 2 based driver, Open Watcom build (work in progress)
 
 Branch `ft2ifi`. This directory is the upstream `ft2ifi/` tree (https://github.com/altsan/os2-freetype-ifi, tag `v2.0.0-beta.1`: FreeType/2 IFI 2.0.0 public beta 1),
-**updated to FreeType 2.15.0**, with fixes and an Open Watcom 2 build. The version 1 driver (FreeType 1.3.1, release 1.3.6r2) is in the top-level directory and is not touched.
+**updated to FreeType 2.15.0** (release 2.15.0a1), with fixes and an Open Watcom 2 build. The version 1 driver (FreeType 1.3.1, release 1.3.6r2) is in the top-level directory and is not touched.
 `lib\freetype-2.15.0` is FreeType 2.15.0 reduced to the needed modules plus the OS/2 additions; see `lib\RESYNC.md`.
+
+## Release 2.15.0a1
+
+| Field | Details |
+|---|---|
+| Version | 2.15.0a1: alpha 1 of the FreeType/2 IFI driver built on FreeType 2.15.0 (BLDLEVEL `@#Alexander Taylor:2.15.0a1#@`). The upstream project's own version of this code is 2.0.0 beta 1. |
+| Status | Alpha. Works on the ArcaOS 5.1.1 Dev VM and on a real PC with an SMP kernel: loads as the PM TrueType driver, renders TrueType and OpenType/CFF fonts, widths equal to the shipped FreeType/2 1.3.6. Not tested on other hardware, with the configuration program (not included) or with CFF2/variable fonts. |
+| License | FreeType Project License (`lib\freetype-2.15.0\FTL.TXT`; FreeType itself is also available under the GPL v2), see `lib\freetype-2.15.0\LICENSE.TXT`. The driver code is by Alexander Taylor and others, see `ifi\ft2ifi.c`. The IFI headers are clean-room replacements. |
+| Authors | Alexander Taylor (FT2IFI 2.0 beta), Michal Necasek, Seo Hyun-Tae, KO Myung-Hun (FreeType/2 1.x); the FreeType Project (FreeType 2.15.0); OS2World (Open Watcom build, bug fixes, FreeType 2.15 update, tests) |
+| Original source | https://github.com/altsan/os2-freetype-ifi (`ft2ifi/` at tag `v2.0.0-beta.1`), https://gitlab.freedesktop.org/freetype/freetype (tag VER-2-15-0) |
+| Build tools | Open Watcom 2.0, OS/2 Toolkit 4.5 (headers and import libraries); `compile_wat.cmd` |
+
+### Install (release zip)
+
+FT2IFI is installed next to the FreeType/2 1.3.6 that ArcaOS ships; it does not replace `FREETYPE.DLL`.
+
+1. Make an OS/2 desktop/INI archive if you can, and know the recovery steps below.
+2. From the folder with `FT2IFI.DLL` run `INSTALL.CMD` and answer `yes`: it copies `FT2IFI.DLL` to `\OS2\DLL` and registers it as the TrueType driver (`PM_Font_Drivers` / `TRUETYPE` in `OS2.INI`). Reboot.
+3. To add OpenType fonts, install them like TrueType fonts (the driver accepts `.OTF`); on a test system you can add them to `PM_Fonts` by hand.
+4. To go back: run `UNINST.CMD` (it restores `FREETYPE.DLL`, or `TRUETYPE.DLL` if there is no FreeType/2) and reboot.
+5. If PM does not start after a bad driver: press Alt+F1 right after the boot logo, F2 (command line), rename `C:\OS2\DLL\FT2IFI.DLL`, reboot, then put the key `PM_Font_Drivers` / `TRUETYPE` back to `\OS2\DLL\FREETYPE.DLL`.
+
+`INSTALL.CMD` and `UNINST.CMD` are the upstream scripts; they were not run in the tests below, the same registration was done with a small REXX program.
 
 ## Build
 
@@ -61,6 +84,14 @@ ArcaOS 5.1 with the SMP kernel (IBM 14.204_SMP, ACPI.PSD), the shipped FreeType/
   kerning is returned for the same 46 faces; 94 of 129 files return the same full-face names.
 - **Soak**: 100 rounds over the 129 files, both drivers finish; the new driver loses 0.56 MB of free memory (the shipped one 1.27 MB) and takes 134 s against 40 s for the shipped driver (it loads 35 more files, including large CFF fonts,
   and FreeType 2 is slower than FreeType 1).
+
+## Known issues
+
+- Alpha: see the status above. The configuration program of upstream (`config\`) is not built, so options (fake bold, alias names ...) can only be changed in `OS2.INI` by hand.
+- Blank glyphs of OpenType fonts (the notdef glyph and unmapped codes) come back as a 1x1 empty bitmap in later test runs and as a 0x0 bitmap in earlier ones, with the same driver code; the cause is not found
+  (it depends on the state of the test machine, not on the build). The result is a blank glyph either way.
+- The engine has no locking; it relies on the PM GRE to serialize calls. Do not call the driver from several processes at once.
+- FreeType's GX variations, SVG, Mac font formats, zlib/LZW/BDF/PCF are switched off (see `lib\RESYNC.md`).
 
 ## Cautions when testing
 
