@@ -7,8 +7,8 @@ TrueType fonts through the FreeType library; it replaces IBM's `TRUETYPE.DLL`. I
 | Field | Details |
 |---|---|
 | Version | 1.3.6 (BLDLEVEL `@#Necasek/Seo/KO/Taylor et al:1.3.6#@`) |
-| Status | Builds with Open Watcom 2 and works as the PM TrueType driver on the Dev VM: renders all 112 outline fonts with output identical to the shipped `FREETYPE.DLL`. Not tested on real hardware; the install scripts were not run with this build. |
-| Tested on | ArcaOS 5.1.1 Dev VM (VirtualBox), 2026-11-18, as a test copy next to the shipped DLL. No real hardware. |
+| Status | Builds with Open Watcom 2 and works as the PM TrueType driver on the Dev VM: renders all 112 outline fonts with output identical to the shipped `FREETYPE.DLL`. Installed over the shipped DLL with the package's `UPDATE.CMD` (`repmod`) and rolled back successfully on the Dev VM. Not tested on real hardware; `INSTALL.CMD`, `UNINST.CMD` and `ftconfig.exe` not tested. |
+| Tested on | ArcaOS 5.1.1 Dev VM (VirtualBox), 2026-11-18, side-by-side copy, then installed with `UPDATE.CMD` and rolled back. No real hardware. |
 | License | FreeType Project License, see [LICENSE](LICENSE). The four IFI headers `src\ifi\32*.h` are clean-room replacements (see `doc/CHANGES.md`). |
 | Authors | Michal Necasek, Seo, KO Myung-Hun, Alex Taylor and others (see `src\ifi\ftifi.c`); FreeType 1.3.1 by David Turner, Robert Wilhelm, Werner Lemberg |
 | Original source | https://github.com/altsan/os2-freetype-ifi (`legacy/`, tag v1.3.6); git tag `upstream-original` = the earlier 1.3.4 snapshot |

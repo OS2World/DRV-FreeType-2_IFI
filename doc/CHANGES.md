@@ -63,3 +63,15 @@ Problems found on the way (all fixed):
   `IFIEXTRA="-DFTIFI_TRACE -za99"` builds a trace version (`\FTIFI.LOG`, `\FTIFIP.LOG` per process) which can hang the Workplace Shell.
 - If PM hangs after a bad driver: reset the VM, press Alt+F1 right after the reset, F2 (command line), rename the DLL registered under
   `TRUETYPE`, reboot, restore the key.
+
+## Install test with the package scripts (ArcaOS Dev VM, 2026-11-18)
+
+- Backed up the shipped `C:\OS2\DLL\FREETYPE.DLL` (82,402 bytes, 1.3.6 from 2020-03-23) to `C:\FTBACKUP`, staged our `FREETYPE.DLL`
+  (built with the default `MODNAME = FREETYPE`) with the `install\*.CMD` scripts, and ran the package's own `UPDATE.CMD`
+  (it calls `repmod`, which replaces the locked DLL; the ArcaOS copy of `repmod.exe` is in `C:\sys\apps\ftifi`).
+- After the reboot: `C:\OS2\DLL\FREETYPE.DLL` is our 101,469 byte build, `QUERY.CMD` reports `\OS2\DLL\FREETYPE.DLL` as the TrueType
+  driver, PM starts normally, and `test\fontrender.exe` gives output byte-identical to the shipped DLL (112 outline fonts).
+- Rollback: `repmod FREETYPE.DLL C:\os2\dll\FREETYPE.DLL` from `C:\FTBACKUP`, reboot: the shipped DLL is back and renders as before.
+- `INSTALL.CMD` (first install: copies the DLL, creates the settings object, writes the `TRUETYPE` key) was not run: the
+  key already points to `FREETYPE.DLL` on ArcaOS, and `copy` cannot overwrite the loaded DLL. `ftconfig.exe` was started
+  from an ssh session but no window could be seen, so the configuration tool is untested. `UNINST.CMD` not run.
