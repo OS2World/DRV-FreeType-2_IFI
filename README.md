@@ -5,9 +5,9 @@ TrueType fonts through the FreeType library; it replaces IBM's `TRUETYPE.DLL`. I
 (ring 3), not a `.SYS` driver.
 
 
-> **FreeType 2 based driver.** This branch (`master`) is the FreeType 1.3.6 driver (release 1.3.6r2). A newer driver based on **FreeType 2.15.0** (OpenType/CFF support, kerning, more
-> fixes) is on the `ft2ifi` branch and in the release **2.15.0a1** (alpha): https://github.com/OS2World/DRV-FreeType-2_IFI/releases/tag/2.15.0a1, see `ft2ifi\README.md` on that branch.
-> It installs next to this one (as `FT2IFI.DLL`) and can be switched back with `UNINST.CMD`.
+> **FreeType 2 based driver.** The top level of this branch is the FreeType 1.3.6 driver (release 1.3.6r2, as on `master`). The driver based on **FreeType 2.15.0**
+> (OpenType/CFF support, kerning, more fixes) is in the `ft2ifi\` directory of this branch; see `ft2ifi\README.md`. Release **2.15.0a1** (alpha) with the zip:
+> https://github.com/OS2World/DRV-FreeType-2_IFI/releases/tag/2.15.0a1. It installs next to the version 1 driver (as `FT2IFI.DLL`) and `UNINST.CMD` switches back.
 
 | Field | Details |
 |---|---|
