@@ -23,3 +23,17 @@ unchanged into the standard layout (commit "Import FreeType/2 1.3.6 from upstrea
 ## Documentation
 
 - `README.md` rewritten to the project template; `LICENSE` is the FreeType Project License (`install\FTL.TXT`).
+
+## Clean-room replacement of the IBM IFI headers
+
+- `src\ifi\32pmifi.h`, `32fdstrc.h`, `32ifimet.h`, `32fddef.h` (IBM/Microsoft copyright) are rewritten from scratch by an
+  agent that did not read the originals. Sources: `doc\IFI32.PDF`, the way `ftifi.c` uses the identifiers, and the
+  layout facts (offsets, sizes, flag values) read from the metrics dumps `arial_*.hex` and from immediates of a built
+  `FreeType.dll`. Where the documentation is wrong or silent the header says so.
+- Layout checked: IFIMETRICS 254 bytes (compile-time asserts), FDHEADER 72, FDDISPATCH 11 slots. `FreeType.dll` is
+  built with the new headers: same size (101,469 bytes), 0 errors.
+- After the rewrite the maintainer compared the doubtful values with the old headers (verification only): one value was
+  wrong (`IFIMETRICS_MBCS` is 0x18) and was corrected; `panose` is 10 bytes plus 2 reserved bytes, same layout as the
+  original 12-byte field.
+- Remaining doubts: `IFIMETRICS_ITALIC`, `_UDC`, `_ANTI_ALIAS`, `_NO_CACHE`, `_ATOM_NAMES` and `FD_CHARATTR_*` are not
+  defined because nothing uses them. The old headers stay in the git history (tag `upstream-original`).

@@ -1,161 +1,113 @@
-/*********************************************************************\
-* Module Name: 32FDSTRC.H
-*
-* OS/2 Intelligent Font Interface
-*
-* Copyright (c) 1989,1994  IBM Corporation
-* Copyright (c) 1989  Microsoft Corporation
-*
-\*********************************************************************/
-#ifndef     __32FDSTRC_H__
-#define     __32FDSTRC_H__
+/*
+ * 32fdstrc.h - data structures exchanged between the Graphics Engine (GRE)
+ *              and an OS/2 32-bit font driver (IFI, version 20/21).
+ *
+ * Clean-room replacement written from the public IFI documentation (IFI32.PDF)
+ * and from the way FreeType/2 (ftifi.c) uses these types.
+ * Written for the OS2World FreeType/2 project; this file may be used under the
+ * same terms as the project (FreeType Project License).
+ *
+ * Binary layout is part of the ABI shared with the Graphics Engine; do not
+ * reorder fields.  Constants not given in the documentation were taken from
+ * the observed behaviour of a working driver build.
+ */
+#ifndef FT2IFI_FDSTRC_H
+#define FT2IFI_FDSTRC_H
 
-#define FACESIZE 32
-#define GLYPHNAMESIZE 16
+/* os2.h (LONG, ULONG, FIXED, SIZEL, PBYTE ...) must be included first */
 
-/* Error codes defined to be returned by IFI */
-/* NOTE:  The actual values are subject to change */
+/* ---- handles and glyph indices ------------------------------------------ */
 
-/*#define PMERR_BUFFER_TOO_SMALL          23003L*/
-#define PMERR_FACENAME_NOT_FOUND        23004L
-#define PMERR_FD_ALREADY_INSTALLED      23005L
-#define PMERR_INVALID_CONTEXTINFO       23006L
-#define PMERR_NOT_A_FONT_FILE           23007L
-#define PMERR_INVALID_FONT_SELECTION    23008L
-#define PMERR_INVALID_FORMAT            23009L
-#define PMERR_BUSY_HFC                  230010L
-#define PMERR_INVALID_HFC               230011L
-#define PMERR_INVALID_INDEX             230012L
-#define PMERR_INVALID_QUERY_TYPE        230013L
-#define PMERR_CONTEXT_NOT_SET           230014L
+typedef LHANDLE HFF;            /* font file handle (0 invalid, -1 error)   */
+typedef LHANDLE HFC;            /* font context handle (0 invalid, -1 error)*/
+typedef ULONG   GLYPH;          /* glyph index, 4 bytes in the structures   */
+typedef GLYPH  *PGLYPH;
 
-/* Query faces subfunction */
-#define FD_QUERY_CONTEXTMETRICS 1L
-#define FD_QUERY_ABC_WIDTHS     2L
-#define FD_QUERY_KERNINGPAIRS   3L
+/* ---- FdQueryFaceAttr: iQuery values (compared with ==) ------------------ */
+#define FD_QUERY_ABC_WIDTHS       2
+#define FD_QUERY_KERNINGPAIRS     3
 
-/* Query char subfunction */
-#define FD_QUERY_CHARIMAGE      1L
-#define FD_QUERY_OUTLINE        2L
-#define FD_QUERY_BITMAPMETRICS  4L
+/* ---- FdQueryCharAttr: iQuery bit flags ---------------------------------- */
+#define FD_QUERY_CHARIMAGE        0x00000001UL
+#define FD_QUERY_OUTLINE          0x00000002UL
+#define FD_QUERY_BITMAPMETRICS    0x00000004UL
 
-#define FD_CHARATTR_ALIGNED_8           0x00000001
-#define FD_CHARATTR_ALIGNED_16          0x00000002
-#define FD_CHARATTR_ALIGNED_32          0x00000004
-#define FD_CHARATTR_NO_CACHE            0x00000010
+/* ---- outline records ---------------------------------------------------- */
+#define FD_POLYGON_TYPE           24    /* POLYGONHEADER.iType              */
+#define FD_PRIM_LINE              1     /* PRIMLINE.iType                   */
+#define FD_PRIM_SPLINE            3     /* PRIMSPLINE.iType (cubic)         */
 
-typedef struct _ABC_TRIPLETS /*abc*/
-{
-   LONG  lA;
-   ULONG ulB;
-   LONG  lC;
-} ABC_TRIPLETS;
-typedef ABC_TRIPLETS *PABC_TRIPLETS;
+#pragma pack(push, 4)
 
-// THIS STRUCTURE NOW RESIDES IN PMDDI.H FOR CRUISER WORLD
-// BUT IFI FONT DRIVER DOES NOT INCLUDE PMDDI.H
+/* POINTFX (two FIXED values, x and y) is declared by the Toolkit (pmgpi.h). */
 
-#ifndef INCL_IFI
-typedef struct _POINTFX { /* ptfx */
-    FIXED x;
-    FIXED y;
-} POINTFX;
-typedef POINTFX *PPOINTFX;
-#endif
+/* 2x2 notional-to-device transform:  x' = x*eM11 + y*eM21,
+ *                                    y' = x*eM12 + y*eM22                   */
+typedef struct _MAT2 {
+    FIXED eM11;
+    FIXED eM12;
+    FIXED eM21;
+    FIXED eM22;
+} MAT2, *PMAT2;
 
-typedef struct _BITMAPMETRICS /* bmm */
-{
-     SIZEL     sizlExtent;
-     ULONG     cyAscent;
-#ifdef OLD_DRIVER
-     POINTFX *ppfxOrigin;     /* Return character origin. */
-#else
-     POINTFX    pfxOrigin;    /* Return character origin. */
-#endif
-} BITMAPMETRICS;
-typedef BITMAPMETRICS *PBITMAPMETRICS;
+/* font context description passed to FdSetFontContext */
+typedef struct _CONTEXTINFO {
+    ULONG   cb;                 /* length of this structure                 */
+    ULONG   fl;                 /* flags, reserved                          */
+    SIZEL   sizlPPM;            /* device resolution, pels per metre        */
+    POINTFX pfxSpot;            /* spot size in pels                        */
+    MAT2    matXform;           /* notional to device transform             */
+} CONTEXTINFO, *PCONTEXTINFO;
 
-typedef struct _MAT2 /* mat */
-{
-     FIXED eM11;
-     FIXED eM12;
-     FIXED eM21;
-     FIXED eM22;
-} MAT2;
+/* request block of FdQueryCharAttr (24 bytes for a version 21 driver) */
+typedef struct _CHARATTR {
+    ULONG cb;                   /* length of this structure                 */
+    ULONG iQuery;               /* FD_QUERY_* bit flags                     */
+    GLYPH gi;                   /* glyph index                              */
+    PBYTE pBuffer;              /* bitmap / outline buffer                  */
+    ULONG cbLen;                /* size of the buffer in bytes              */
+    ULONG fl;                   /* alignment / caching flags (version 21)   */
+} CHARATTR, *PCHARATTR;
 
-typedef struct _FD_KERNINGPAIRS  /* krnpr */
-{
-     GLYPH     giFirst;
-     GLYPH     giSecond;
-     LONG      eKerningAmount;
-} FD_KERNINGPAIRS;
+/* geometry of the bitmap returned by FdQueryCharAttr */
+typedef struct _BITMAPMETRICS {
+    SIZEL   sizlExtent;         /* real width and height in pels            */
+    ULONG   cyAscent;           /* reserved, zero                           */
+    POINTFX pfxOrigin;          /* top-left of bitmap relative to origin    */
+} BITMAPMETRICS, *PBITMAPMETRICS;
 
-typedef struct _CONTEXTINFO /* ci */
-{
-     ULONG     cb;        /* Length in bytes of this structure. */
-     ULONG     fl;        /* Flags. */
-     SIZEL     sizlPPM;   /* Device resolution in pels/meter. */
-     POINTFX   pfxSpot;   /* Spot size in pels. */
-     MAT2      matXform;  /* Notional to Device transform. */
-} CONTEXTINFO;
-typedef CONTEXTINFO *PCONTEXTINFO;
+/* FD_QUERY_ABC_WIDTHS output record (notional units) */
+typedef struct _ABC_TRIPLETS {
+    LONG  lA;
+    ULONG ulB;
+    LONG  lC;
+} ABC_TRIPLETS, *PABC_TRIPLETS;
 
-typedef struct _CHARATTR  /* ca */
-{
-    ULONG     cb;
-    ULONG     iQuery;   /* Query type. */
-    GLYPH     gi;       /* Glyph index in font. */
-    PBYTE     pBuffer;  /* Bitmap buffer. */
-    ULONG     cbLen;    /* Size of buffer in bytes. */
-} CHARATTR;
-typedef CHARATTR *PCHARATTR;
+/* FD_QUERY_KERNINGPAIRS output record (notional units) */
+typedef struct _FD_KERNINGPAIRS {
+    GLYPH giFirst;
+    GLYPH giSecond;
+    LONG  eKerningAmount;
+} FD_KERNINGPAIRS, *PFD_KERNINGPAIRS;
 
-typedef struct _CHARATTR2  /* ca2 */
-{
-    ULONG     cb;
-    ULONG     iQuery;   /* Query type. */
-    GLYPH     gi;       /* Glyph index in font. */
-    PBYTE     pBuffer;  /* Bitmap buffer. */
-    ULONG     cbLen;    /* Size of buffer in bytes. */
-    ULONG     fl;       /* Flags */
-} CHARATTR2;
-typedef CHARATTR2 *PCHARATTR2;
-
-typedef struct _CONTEXTMETRICS
-{
-    SIZEL   sizlMax;
-    ULONG   cyMaxAscent;
-    ULONG   cyMaxDescent;
-    ULONG   cxTotal;
-    ULONG   cGlyphs;
-} CONTEXTMETRICS;
-typedef CONTEXTMETRICS * PCONTEXTMETRICS;
-
+/* outline output: a POLYGONHEADER followed by PRIMLINE / PRIMSPLINE records */
 typedef struct _POLYGONHEADER {
-  ULONG cb;
-  ULONG iType;  /*  Must be FD_POLYGON_TYPE */
-} POLYGONHEADER;
-typedef POLYGONHEADER *PPOLYGONHEADER;
+    ULONG cb;                   /* size of the whole polygon record         */
+    ULONG iType;                /* FD_POLYGON_TYPE                          */
+} POLYGONHEADER, *PPOLYGONHEADER;
 
 typedef struct _PRIMLINE {
-  ULONG iType;  /* Must be FD_PRIM_LINE */
-  POINTFX pte;
-} PRIMLINE;
-typedef PRIMLINE *PPRIMLINE;
+    ULONG   iType;              /* FD_PRIM_LINE                             */
+    POINTFX pte;                /* starting vertex                          */
+} PRIMLINE, *PPRIMLINE;
 
 typedef struct _PRIMSPLINE {
-  ULONG iType;  /* Must be FD_PRIM_SPLINE */
-  POINTFX pte[3];
-} PRIMSPLINE;
-typedef PRIMSPLINE *PPRIMSPLINE;
+    ULONG   iType;              /* FD_PRIM_SPLINE                           */
+    POINTFX pte[3];             /* starting vertex and two control points   */
+} PRIMSPLINE, *PPRIMSPLINE;
 
-/*
- * The names of these were changed to avoid conflict with PRIM_LINE
- * which is defined ion some other header file.
- */
-#define FD_POLYGON_TYPE 24
-#define FD_PRIM_LINE    1
-#define FD_PRIM_SPLINE  3
+#pragma pack(pop)
 
-#endif
+/* Note: the FFDESCS2 record of FdQueryFullFaces is declared by ftifi.c itself. */
 
+#endif /* FT2IFI_FDSTRC_H */
