@@ -1,5 +1,17 @@
 # Changes from the original FreeType/2
 
+Summary of version 1.3.6r2 (released 2026-11-18, git tag `1.3.6r2`) against FreeType/2 1.3.6 as shipped with ArcaOS:
+
+- Same source (upstream `legacy/` 1.3.6), built with Open Watcom 2 instead of IBM VisualAge (`compile_wat.cmd`, `Makefile.wat`).
+- The four IBM/Microsoft IFI headers (`src\ifi\32*.h`) are clean-room replacements.
+- Source changes: compiler guard and dispatch table casts in `ftifi.c`; the code page range 2 masks in `ftifi.h` are 0 as with the
+  VisualAge build (see "Verification" below); `ftconfig.exe` is bound with `rc -n`.
+- Link settings that matter: entry point `_DLL_InitTerm`, data object shared plus the "single data" module flag (`tools\lxdata.c`),
+  and the internal module name equal to the file name (`MODNAME`).
+- Tested on the ArcaOS Dev VM: output identical to the shipped DLL (112 outline fonts in PM, 185 font files at driver level), soak and
+  parallel runs clean, installed with `UPDATE.CMD` and rolled back. Not tested: real hardware, `INSTALL.CMD`, `UNINST.CMD`, saving
+  settings and the help files of `ftconfig.exe`.
+
 Original state: tag `upstream-original` (FreeType/2 1.3.4 snapshot). The tree was then re-based on the
 upstream project, https://github.com/altsan/os2-freetype-ifi (`legacy/` at tag v1.3.6, 2020-03-23), imported
 unchanged into the standard layout (commit "Import FreeType/2 1.3.6 from upstream").
@@ -14,8 +26,8 @@ unchanged into the standard layout (commit "Import FreeType/2 1.3.6 from upstrea
   `Makefile.wat` (`FONT_DRIVER_DISPATCH_TABLE.1=_fdhdr`). No logic change.
 - Flags: `-4r -zp1 -bd -zc -s`, `-D_ULS_CALLCONV_ -DCALLCONV=_System`. The build still needs the OS/2 Toolkit 4.5
   headers and libraries (`os2386.lib` for SSAllocMem, `libconv.lib` for Uni*).
-- BLDLEVEL `@#Necasek/Seo/KO/Taylor et al:1.3.6#@FreeType/2 installable font interface driver`.
-- Result on the Dev VM: all outputs built, 0 compile errors; `FreeType.dll` 101,469 bytes (the shipped ArcaOS DLL
+- BLDLEVEL `@#Necasek/Seo/KO/Taylor et al:1.3.6r2#@FreeType/2 installable font interface driver`.
+- Result on the Dev VM: all outputs built, 0 compile errors; `FreeType.dll` about 101 KB (the shipped ArcaOS DLL
   is 82,402 bytes, built with VisualAge and exepack). Same imports (DOSCALLS, uconv, PMSHAPI, NLS, PMGRE) and the
   same single export (ordinal 1, `FONT_DRIVER_DISPATCH_TABLE`).
 - Install test: see the section below.
@@ -31,7 +43,7 @@ unchanged into the standard layout (commit "Import FreeType/2 1.3.6 from upstrea
   layout facts (offsets, sizes, flag values) read from the metrics dumps `arial_*.hex` and from immediates of a built
   `FreeType.dll`. Where the documentation is wrong or silent the header says so.
 - Layout checked: IFIMETRICS 254 bytes (compile-time asserts), FDHEADER 72, FDDISPATCH 11 slots. `FreeType.dll` is
-  built with the new headers: same size (101,469 bytes), 0 errors.
+  built with the new headers: same size as with the old ones, 0 errors.
 - After the rewrite the maintainer compared the doubtful values with the old headers (verification only): one value was
   wrong (`IFIMETRICS_MBCS` is 0x18) and was corrected; `panose` is 10 bytes plus 2 reserved bytes, same layout as the
   original 12-byte field.

@@ -7,9 +7,9 @@ TrueType fonts through the FreeType library; it replaces IBM's `TRUETYPE.DLL`. I
 | Field | Details |
 |---|---|
 | Version | 1.3.6r2 (BLDLEVEL `@#Necasek/Seo/KO/Taylor et al:1.3.6r2#@`) |
-| Status | Builds with Open Watcom 2 and works as the PM TrueType driver on the Dev VM: renders all 112 outline fonts with output identical to the shipped `FREETYPE.DLL`; a driver-level comparison over 185 font files (metrics, widths, kerning, bitmaps, outlines) is identical too, and a 300-round soak and 3 parallel processes ran without a problem. Installed over the shipped DLL with the package's `UPDATE.CMD` (`repmod`) and rolled back successfully on the Dev VM. Not tested on real hardware; `INSTALL.CMD`, `UNINST.CMD`, saving settings in `ftconfig.exe` and the help files not tested (`ftconfig.exe` starts). |
+| Status | Working: builds with Open Watcom 2 and, on the ArcaOS Dev VM, behaves exactly like the shipped `FREETYPE.DLL` (112 outline fonts in PM; metrics, widths, kerning, bitmaps and outlines of 185 font files identical; soak and parallel runs clean; installed with `UPDATE.CMD` and rolled back). **Not yet tested on real hardware.** |
 | Tested on | ArcaOS 5.1.1 Dev VM (VirtualBox), 2026-11-18, side-by-side copy, then installed with `UPDATE.CMD` and rolled back. No real hardware. |
-| License | FreeType Project License, see [LICENSE](LICENSE). The four IFI headers `src\ifi\32*.h` are clean-room replacements (see `doc/CHANGES.md`). |
+| License | FreeType Project License, see [LICENSE](LICENSE). The four IFI headers `src\ifi\32*.h` are clean-room replacements (see `doc/CHANGES.md`); the old IBM/Microsoft versions remain in the git history (they were already in the original repository, tag `upstream-original`). `doc\IFI32.PDF` and the other files in `doc\` come from the original package. |
 | Authors | Michal Necasek, Seo, KO Myung-Hun, Alex Taylor and others (see `src\ifi\ftifi.c`); FreeType 1.3.1 by David Turner, Robert Wilhelm, Werner Lemberg |
 | Original source | https://github.com/altsan/os2-freetype-ifi (`legacy/`, tag v1.3.6); git tag `upstream-original` = the earlier 1.3.4 snapshot |
 | Build tools | Open Watcom 2.0 + OS/2 Toolkit 4.5 (headers, `os2386.lib`, `libconv.lib`, `rc`, `ipfc`); build with `compile_wat.cmd` |
@@ -41,13 +41,24 @@ None: this is a user-mode DLL, it prints nothing at boot. Settings are made with
 
 ## Sample / test
 
-`test\iftest*.c` test the driver without PM; `test\fontrender.c` renders every outline font through PM and prints metrics and checksums (`render_ship.txt` = shipped DLL, `render_ow.txt` = this build, identical). `src\ifi\test.c` and `testconv.c` are the original test programs.
+- `test\ifidump.c` (build: `test\build_ifidump.cmd <dllname> <exename>`): driver-level comparison without PM. Calls the IFI dispatch table of a
+  DLL for every TrueType file in a list and writes a report (metrics, full faces, ABC widths, kerning, bitmaps, outlines);
+  `test\dump_reference.txt` is the report of the shipped 1.3.6 DLL and of this build (identical). `soak <n>` repeats everything n times and
+  prints the free memory before and after. `iftest.c`, `iftest2.c`, `iftest3.c`: small single-/two-process and DosLoadModule tests.
+- `test\fontrender.c`: renders every outline font through PM into a bitmap and prints metrics and checksums (`render_ship.txt` = shipped DLL,
+  `render_ow.txt` = this build, identical). `fontlist.c` lists the fonts.
+- `src\ifi\test.c` and `testconv.c` are the original test programs.
+- To test a DLL next to the installed one: its internal module name must equal its file name (`wmake MODNAME=NAME`), register it under
+  `PM_Font_Drivers` / `TRUETYPE` in `OS2.INI`, reboot.
 
 ## Known issues
 
-- Tested only as a side-by-side copy. The DLL's internal module name must equal its file name (`MODNAME` in `Makefile.wat`, default `FREETYPE`).
-- Only TrueType (and what FreeType 1.3.1 supports); OpenType/CFF needs the FreeType 2 based driver
-  (`ft2ifi` in the upstream repository), planned as a second phase.
+- Not tested on real hardware, and `INSTALL.CMD`, `UNINST.CMD`, saving settings in `ftconfig.exe` and the help files were not tested.
+- Only TrueType, as in the shipped driver. OpenType/CFF would need the FreeType 2 based driver (`ft2ifi` in the upstream repository), not ported.
+- The code page range 2 charset checks are disabled (as in the VisualAge build, by accident of an upstream overflow); the intended
+  values are noted in `src\ifi\ftifi.h`.
+- The driver leaks memory in the shared engine at the same rate as the shipped one (about 70 KB per round of loading all 185 test fonts).
+- `ftconfig.exe` must not be bound with `rc -x` (it then fails to start on ArcaOS).
 
 ## Links
 
@@ -58,5 +69,5 @@ None: this is a user-mode DLL, it prints nothing at boot. Settings are made with
 
 Newest first; details in [doc/CHANGES.md](doc/CHANGES.md).
 
-- 1.3.6r2: 1.3.6 re-based on upstream and built with Open Watcom 2 (`compile_wat.cmd`); clean-room IFI headers; output identical to the shipped driver.
+- 1.3.6r2 (2026-11-18): upstream 1.3.6 built with Open Watcom 2 (`compile_wat.cmd`); clean-room IFI headers; output identical to the shipped driver; BLDLEVEL 1.3.6r2.
 - 1.3.4: original state.
