@@ -9,7 +9,7 @@ TrueType fonts through the FreeType library; it replaces IBM's `TRUETYPE.DLL`. I
 | Version | 1.3.6 (BLDLEVEL `@#Necasek/Seo/KO/Taylor et al:1.3.6#@`) |
 | Status | Builds with Open Watcom 2 (all outputs). **Not yet tested as an installed driver.** |
 | Tested on | Build only: ArcaOS 5.1.1 Dev VM, 2026-11-17 |
-| License | FreeType Project License, see [LICENSE](LICENSE). The four IBM IFI headers in `src\ifi\32*.h` (IBM/Microsoft copyright) are still to be replaced clean-room. |
+| License | FreeType Project License, see [LICENSE](LICENSE). The four IFI headers `src\ifi\32*.h` are clean-room replacements (see `doc/CHANGES.md`). |
 | Authors | Michal Necasek, Seo, KO Myung-Hun, Alex Taylor and others (see `src\ifi\ftifi.c`); FreeType 1.3.1 by David Turner, Robert Wilhelm, Werner Lemberg |
 | Original source | https://github.com/altsan/os2-freetype-ifi (`legacy/`, tag v1.3.6); git tag `upstream-original` = the earlier 1.3.4 snapshot |
 | Build tools | Open Watcom 2.0 + OS/2 Toolkit 4.5 (headers, `os2386.lib`, `libconv.lib`, `rc`, `ipfc`); build with `compile_wat.cmd` |
@@ -42,7 +42,6 @@ None: this is a user-mode DLL, it prints nothing at boot. Settings are made with
 - Install test of the Open Watcom build not done yet.
 - Only TrueType (and what FreeType 1.3.1 supports); OpenType/CFF needs the FreeType 2 based driver
   (`ft2ifi` in the upstream repository), planned as a second phase.
-- IBM IFI headers pending clean-room replacement.
 
 ## Links
 
