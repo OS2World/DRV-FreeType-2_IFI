@@ -68,8 +68,8 @@
 /* generally notes in the comments when it's taking these into account.    */
 /*                                                                         */
 
-#ifndef  __IBMC__
-   #error "Please use IBM VisualAge C++ to compile FreeType/2"
+#if !defined(__IBMC__) && !defined(__WATCOMC__)
+   #error "Please use IBM VisualAge C++ or Open Watcom to compile FreeType/2"
 #endif
 
 #define IFI_DRIVER          /* checked for by some of our extensions */
@@ -129,21 +129,31 @@ extern FT_BASE_DEF( FT_Error ) FT_Stream_Open( FT_Stream stream, const char*  fi
 
 /* This is the exported function dispatch table.
  */
+/* Open Watcom reads the IBM (* _syscall PFx) pointer syntax differently from VisualAge, so the table
+ * entries need a cast there (the functions themselves are _System as before). */
+#ifdef __WATCOMC__
+#define FDFN(t) (t)
+#else
+#define FDFN(t)
+#endif
+
 FDDISPATCH fdisp = {
-    FdLoadFontFile,
-    FdQueryFaces,
-    FdUnloadFontFile,
-    FdOpenFontContext,
-    FdSetFontContext,
-    FdCloseFontContext,
-    FdQueryFaceAttr,
-    FdQueryCharAttr,
+    FDFN(PFDLFF) FdLoadFontFile,
+    FDFN(PFDQF) FdQueryFaces,
+    FDFN(PFDUFF) FdUnloadFontFile,
+    FDFN(PFDOFC) FdOpenFontContext,
+    FDFN(PFDSFC) FdSetFontContext,
+    FDFN(PFDCFC) FdCloseFontContext,
+    FDFN(PFDQFA) FdQueryFaceAttr,
+    FDFN(PFDQCA) FdQueryCharAttr,
     NULL,               /* no longer used, only the spec fails to mention it */
-    FdConvertFontFile,
-    FdQueryFullFaces
+    FDFN(PFDCFF) FdConvertFontFile,
+    FDFN(PFDQFF) FdQueryFullFaces
 };
 
+#ifdef __IBMC__
 #pragma export (fdhdr, "FONT_DRIVER_DISPATCH_TABLE", 1)
+#endif
 
 FDHEADER fdhdr = {
     sizeof(FDHEADER),                    /* Font driver Header           */
@@ -3822,6 +3832,7 @@ LONG _System FdQueryFullFaces( HFF     hff,          // font file handle
     for (faceIndex = 0; faceIndex < file->numFaces; faceIndex++)
     {
         cbEntry = 0;    // size of the current buffer item
+        pszFaceName = NULL;
 
         // get pointer to this face's data
         pface = &(file->faces[faceIndex]);
@@ -3884,7 +3895,9 @@ LONG _System FdQueryFullFaces( HFF     hff,          // font file handle
             cbFamily++;
             lOff = ( cbFamily + 3 ) & ( -4 );     // round up to nearest 4 bytes
             name2 = pszFaceName;
-            cbFace  = strlen( name2 ) + 2;
+            /* pszFaceName is only set if this call returns the entry (not for a size-only query), so do not
+             * measure it: the face name length is known from above (cbFace was strlen + 1). */
+            cbFace  = ( cbFace - 1 ) + 2;
             cbEntry = sizeof( FFDESCS2 ) + lOff + cbFace;
             cbEntry = ( cbEntry + 3 ) & ( -4 );   // round up to nearest 4 bytes
 
@@ -3896,7 +3909,7 @@ LONG _System FdQueryFullFaces( HFF     hff,          // font file handle
             CAT( "\r\n");
             WRITE;
 
-            if ( pffd && ( *cBufLen > 0 ) && ( lTotal >= cStart ) && ( lCount < *cFontCount )) {
+            if ( pffd && ( *cBufLen > 0 ) && ( lTotal >= cStart ) && ( lCount < *cFontCount ) && name2 ) {  /* name2 is NULL if the plain face was not returned */
                 if (( cbTotal + cbEntry ) > *cBufLen )
                     goto Fail;
                 pffd->cbLength = cbEntry;
@@ -3928,7 +3941,7 @@ LONG _System FdQueryFullFaces( HFF     hff,          // font file handle
             {
                 cbFamily--;                   // remove what we added for '@' above
                 lOff = ( cbFamily + 3 ) & ( -4 );     // round up to nearest 4 bytes
-                cbFace   = strlen( name2 ) + 6;
+                cbFace   = ( cbFace - 2 ) + 6;     /* face name length + " Bold" and the NUL */
                 cbEntry = sizeof( FFDESCS2 ) + lOff + cbFace;
                 cbEntry = ( cbEntry + 3 ) & ( -4 );   // round up to nearest 4 bytes
 

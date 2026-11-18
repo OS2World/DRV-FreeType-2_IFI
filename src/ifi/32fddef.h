@@ -19,6 +19,7 @@
 
 #define IFI_VERSION20   20      /* first 32-bit IFI version                 */
 #define IFI_VERSION21   21      /* adds bitmap fonts, new glyphlist names   */
+#define IFI_CAPS_PANOSE 1       /* ufDeviceCaps: IFIMETRICS carries the PANOSE table (IFI32_Errata.txt) */
 
 /* FdConvertFontFile return code: success (error is -1).  Defined here because
  * ftifi.c returns it by this name. */

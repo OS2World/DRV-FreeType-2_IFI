@@ -1,120 +1,112 @@
-/*********************************************************************\
-* Module Name: 32IFIMET.H
-*
-* OS/2 Intelligent Font Interface
-*
-* Copyright (c) 1989,1994  IBM Corporation
-* Copyright (c) 1989  Microsoft Corporation
-*
-* Definition and description of IFIMETRICS structure
-* This file is included by FDSTRUCS.H
-*
-\*********************************************************************/
-#ifndef     __32IFIMET_H__
-#define     __32IFIMET_H__
+/*
+ * 32ifimet.h - IFIMETRICS, the per-face metrics record of the OS/2 IFI.
+ *
+ * Clean-room replacement written from the public IFI documentation (IFI32.PDF)
+ * and from the way FreeType/2 (ftifi.c) uses these types.
+ * Written for the OS2World FreeType/2 project; this file may be used under the
+ * same terms as the project (FreeType Project License).
+ *
+ * The structure is byte packed (offsets are not naturally aligned) and its
+ * layout is an ABI shared with the Graphics Engine.  Differences between the
+ * documentation text and the layout used here (derived from a metrics dump of
+ * a working driver, src/ifi/arial_tt.hex, and from the built driver):
+ *   - szGlyphlistName is 16 bytes, not FACESIZE;
+ *   - there is no leading length field; the length is the ulMetricsLength
+ *     field near the end (the first 64 bytes are the two names);
+ *   - the atom fields of the documentation are not present in the 254-byte
+ *     record; ulReserved occupies the final two bytes.
+ */
+#ifndef FT2IFI_IFIMET_H
+#define FT2IFI_IFIMET_H
 
-#define FACESIZE 32
-#define GLYPHNAMESIZE 16
+#include "32fdstrc.h"           /* GLYPH */
 
-/* #defines for fsType in IFIMETRICS  */
+/* ---- fsType --------------------------------------------------------------*/
+#define IFIMETRICS_FIXED          0x0001  /* fixed pitch                    */
+#define IFIMETRICS_LICENSED       0x0002  /* subject of a licence agreement */
+#define IFIMETRICS_KERNING        0x0004  /* has kerning data               */
+#define IFIMETRICS_MBCS           0x0018  /* DBCS plus single byte; the DBCS bit is 0x0010 */
+#define IFIMETRICS_DBCS           0x0010  /* double byte charset            */
+#define IFIMETRICS_UNICODE        0x0040  /* font has the Unicode charset   */
+#define IFIMETRICS_FACETRUNC      0x1000  /* szFacename truncated           */
+#define IFIMETRICS_FAMTRUNC       0x2000  /* szFamilyname truncated         */
 
-#define IFIMETRICS_FIXED       0x0001   /*Fixed pitch */
-#define IFIMETRICS_LICENSED    0x0002   /*Font subject of licensing agreement */
-#define IFIMETRICS_KERNING     0x0004   /*Font has kerning data */
-#define IFIMETRICS_DBCS        0x0010   /*DBCS font */
-#define IFIMETRICS_MBCS        0x0018   /*MBCS (DBCS + SBCS) font */
-/* Reserved                    0x8000 */
-#define IFIMETRICS_ATOMS       0x4000   /*The atom name fields are valid */
-#define IFIMETRICS_FAMTRUNC    0x2000   /*Familyname field is truncated */
-#define IFIMETRICS_FACETRUNC   0x1000   /*Facename field is truncated */
-#define IFIMETRICS_ANTIALIASED 0x0020
-#define IFIMETRICS_UNICODE     0x0040
-#define IFIMETRICS_NO_CACHE    0x0080
+/* ---- fsDefn --------------------------------------------------------------*/
+#define IFIMETRICS_OUTLINE        0x0001  /* outline font (else bitmap)     */
 
-/* #defines for fsDefn in IFIMETRICS   */
+/* ---- fsSelection ---------------------------------------------------------*/
+#define IFIMETRICS_OVERSTRUCK     0x2000  /* strike-out                     */
+#define IFIMETRICS_UNDERSCORE     0x4000  /* underscore                     */
 
-#define IFIMETRICS_OUTLINE     0x0001   /*1 - Outline. 0 - Raster */
-/* Reserved                    0x0002 */
-/* Reserved                    0x0004 */
-/* Reserved                    0x8000 */
-#define IFIMETRICS_UDC_FONT    0x0010   /*User defined font */
-/* Reserved                           */
+/* The charset bits stored in fsCapabilities (IFIMETRICS_CHARSET_*,
+ * IFIMETRICS_DBCS_*) are defined in ftifi.h. */
 
-/* #defines for fsSelection in IFIMETRICS valid for bitmap or outline fonts  */
+#pragma pack(push, 1)
 
-#define IFIMETRICS_ITALIC      0x8000  /*Italic */
-#define IFIMETRICS_UNDERSCORE  0x4000  /*Underscored */
-#define IFIMETRICS_OVERSTRUCK  0x2000  /*Overstruck */
+typedef struct _IFIMETRICS {
+    CHAR    szFamilyname[32];       /* family name, e.g. "Times New Roman"  */
+    CHAR    szFacename[32];         /* face name, e.g. "Helvetica Bold"     */
+    CHAR    szGlyphlistName[16];    /* "PM383", "UNICODE", "PMJPN", ... or "" */
+    USHORT  idRegistry;             /* registration number, 0 if none       */
+    LONG    lCapEmHeight;           /* notional units from here on          */
+    LONG    lXHeight;
+    LONG    lMaxAscender;
+    LONG    lMaxDescender;
+    LONG    lLowerCaseAscent;
+    LONG    lLowerCaseDescent;
+    LONG    lInternalLeading;
+    LONG    lExternalLeading;
+    LONG    lAveCharWidth;
+    LONG    lMaxCharInc;
+    LONG    lEmInc;
+    LONG    lMaxBaselineExt;
+    FIXED   fxCharSlope;
+    FIXED   fxInlineDir;
+    FIXED   fxCharRot;
+    USHORT  usWeightClass;          /* 1 (ultra-light) .. 9 (ultra-bold)    */
+    USHORT  usWidthClass;           /* 1 (ultra-condensed) .. 9 (ultra-expanded) */
+    LONG    lEmSquareSizeX;
+    LONG    lEmSquareSizeY;
+    GLYPH   giFirstChar;
+    GLYPH   giLastChar;
+    GLYPH   giDefaultChar;
+    GLYPH   giBreakChar;
+    USHORT  usNominalPointSize;     /* decipoints                           */
+    USHORT  usMinimumPointSize;
+    USHORT  usMaximumPointSize;
+    USHORT  fsType;                 /* IFIMETRICS_FIXED, _LICENSED, ...     */
+    USHORT  fsDefn;                 /* IFIMETRICS_OUTLINE                   */
+    USHORT  fsSelection;
+    USHORT  fsCapabilities;         /* charset bits (see ftifi.h)           */
+    LONG    lSubscriptXSize;
+    LONG    lSubscriptYSize;
+    LONG    lSubscriptXOffset;
+    LONG    lSubscriptYOffset;
+    LONG    lSuperscriptXSize;
+    LONG    lSuperscriptYSize;
+    LONG    lSuperscriptXOffset;
+    LONG    lSuperscriptYOffset;
+    LONG    lUnderscoreSize;
+    LONG    lUnderscorePosition;
+    LONG    lStrikeoutSize;
+    LONG    lStrikeoutPosition;
+    SHORT   cKerningPairs;
+    ULONG   ulFontClass;            /* IBM font classification              */
+    ULONG   ulMetricsLength;        /* sizeof(IFIMETRICS), set by the driver */
+    UCHAR   panose[10];             /* PANOSE classification                */
+    USHORT  ulReserved;             /* last two bytes (type unverified)     */
+} IFIMETRICS, *PIFIMETRICS;
 
-/* #defines for fsSelection in IFIMETRICS valid for bitmap fonts */
+#pragma pack(pop)
 
-#define IFIMETRICS_NEGATIVE    0x1000   /*Negative image */
-#define IFIMETRICS_HOLLOW      0x0800   /*Outline (hollow) */
+/* Layout checks: a wrong size or offset gives a negative array size. */
+#define FT2IFI_OFS(t, m) ((unsigned long)&(((t *)0)->m))
+typedef char ft2ifi_chk_ifi_size   [(sizeof(IFIMETRICS) == 254)               ? 1 : -1];
+typedef char ft2ifi_chk_ifi_reg    [(FT2IFI_OFS(IFIMETRICS, idRegistry)      ==  80) ? 1 : -1];
+typedef char ft2ifi_chk_ifi_gifirst[(FT2IFI_OFS(IFIMETRICS, giFirstChar)     == 154) ? 1 : -1];
+typedef char ft2ifi_chk_ifi_fstype [(FT2IFI_OFS(IFIMETRICS, fsType)          == 176) ? 1 : -1];
+typedef char ft2ifi_chk_ifi_kern   [(FT2IFI_OFS(IFIMETRICS, cKerningPairs)   == 232) ? 1 : -1];
+typedef char ft2ifi_chk_ifi_len    [(FT2IFI_OFS(IFIMETRICS, ulMetricsLength) == 238) ? 1 : -1];
+typedef char ft2ifi_chk_ifi_panose [(FT2IFI_OFS(IFIMETRICS, panose)          == 242) ? 1 : -1];
 
-#if defined(__IBMCPP__) || defined(__IBMC__)
-    #pragma pack(1)
-#else
-    #pragma Align_members(1)
-#endif
-
-typedef struct _IFIMETRICS    /* ifim2 */
-{                                                                   /* UNITS */
-  UCHAR   szFamilyname[FACESIZE];          /*Font Family Name, e.g. Roman    */
-  UCHAR   szFacename[FACESIZE];            /*Face Name, e.g. Tms Rmn Bold    */
-  UCHAR   szGlyphlistName[GLYPHNAMESIZE];  /*e.g. PM316, Latin-2, Greek      */
-  USHORT  idRegistry;          /*IBM registration number (or zero).        I */
-  LONG    lCapEmHeight;        /*Height of uppercase M                     N */
-  LONG    lXHeight;            /*Nominal height of lowercase               N */
-  LONG    lMaxAscender;        /*Maximum height above baseline of any char N */
-  LONG    lMaxDescender;       /*Maximum depth below baseline of any char  N */
-  LONG    lLowerCaseAscent;    /*Maximum height above baseline of any a-z  N */
-  LONG    lLowerCaseDescent;   /*Maximum depth below basiline of any a-z   N */
-  LONG    lInternalLeading;    /*White space within character              N */
-  LONG    lExternalLeading;    /*White space between lines                 N */
-  LONG    lAveCharWidth;       /*Weighted average character width          N */
-  LONG    lMaxCharInc;         /*Maximum character increment               N */
-  LONG    lEmInc;              /*Increment for Capitals (typically 'M')    N */
-  LONG    lMaxBaselineExt;     /*Height of character cell                  N */
-  FIXED   fxCharSlope;         /*Slope angle, degrees, clockwise           D */
-  FIXED   fxInlineDir;         /*Drawing direction, degrees clockwise      D */
-  FIXED   fxCharRot;           /*Glyph rotation in cell, degrees clockwise D */
-  USHORT  usWeightClass;       /*Character weight, 1-9 (1=ultra-light)     I */
-  USHORT  usWidthClass;        /*Character width, 1-9 (1=ultra condensed)  I */
-  LONG    lEmSquareSizeX;      /*Em Square size, x-direction               N */
-  LONG    lEmSquareSizeY;      /*Em Square size, y-direction               N */
-  GLYPH   giFirstChar;         /*Number of first glyph in font             I */
-  GLYPH   giLastChar;          /*Number of last glyph in font              I */
-  GLYPH   giDefaultChar;       /*Glyph used if requested glyph invalid     I */
-  GLYPH   giBreakChar;         /*Space glyph                               I */
-  USHORT  usNominalPointSize;  /*Point size for which font was designed    N */
-  USHORT  usMinimumPointSize;  /*Minimum point size scaling for font       N */
-  USHORT  usMaximumPointSize;  /*Maximum point size scaling for font       N */
-  USHORT  fsType;              /*Type indicators  (see #defines)           B */
-  USHORT  fsDefn;              /*Font definition data (see #defines)       B */
-  USHORT  fsSelection;         /*Font selection flags (see #defines)       B */
-  USHORT  fsCapabilities;      /*Font capabilities must be 0               B */
-  LONG    lSubscriptXSize;     /*Size in x-direction of subscript          N */
-  LONG    lSubscriptYSize;     /*Size in y-direction of subscript          N */
-  LONG    lSubscriptXOffset;   /*Offset in x-direction of subscript        N */
-  LONG    lSubscriptYOffset;   /*Offset in y-direction of subscript        N */
-  LONG    lSuperscriptXSize;   /*Size in x-direction of superscript        N */
-  LONG    lSuperscriptYSize;   /*Size in y-direction of superscript        N */
-  LONG    lSuperscriptXOffset; /*Offset in x-direction of superscript      N */
-  LONG    lSuperscriptYOffset; /*Offset in y-direction of superscript      N */
-  LONG    lUnderscoreSize;     /*Underscore size                           N */
-  LONG    lUnderscorePosition; /*Underscore position                       N */
-  LONG    lStrikeoutSize;      /*Strikeout size                            N */
-  LONG    lStrikeoutPosition;  /*Strikeout position                        N */
-  SHORT   cKerningPairs;       /*Number of kerning pairs in pair table     I */
-  ULONG   ulFontClass;         /*IBM font classification                   B */
-  ULONG   ulMetricsLength;     /*Structure size                              */
-  PANOSE  panose;              /*Panose table                                */
-} IFIMETRICS;
-typedef IFIMETRICS FAR *PIFIMETRICS;
-#if defined(__IBMCPP__) || defined(__IBMC__)
-    #pragma pack()
-#else
-    #pragma Align_members()
-#endif
-
-#endif
+#endif /* FT2IFI_IFIMET_H */
