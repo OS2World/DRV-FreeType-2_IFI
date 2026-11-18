@@ -52,8 +52,9 @@ static int process(FILE *f, const char *file, int quick)
         hfc = D->FdOpenFontContext(hff, j);
         if (hfc == (HFC) -1) { if (!quick) fprintf(f, "  open context failed\n"); continue; }
         for (s = 0; s < 2; s++) {
-            CONTEXTINFO ci; static const int gis[] = { 0, 3, 36, 37, 68, 100, 150, 400 };
+            CONTEXTINFO ci; static int gis[256] = { 0, 3, 36, 37, 68, 100, 150, 400 }; static int ngis = 8;
             int g; LONG r;
+            if (ngis == 8 && getenv("IFIDUMP_GI")) { int lo = 33, hi = 126; sscanf(getenv("IFIDUMP_GI"), "%d-%d", &lo, &hi); ngis = 0; for (g = lo; g <= hi && ngis < 256; g++) gis[ngis++] = g; }
             ci.cb = sizeof(ci); ci.fl = 0; ci.sizlPPM.cx = 3622; ci.sizlPPM.cy = 3622;
             ci.pfxSpot.x = 46340; ci.pfxSpot.y = 46340;
             ci.matXform.eM11 = s ? 1536 : 768; ci.matXform.eM12 = 0; ci.matXform.eM21 = 0; ci.matXform.eM22 = s ? 1536 : 768;
@@ -73,7 +74,7 @@ static int process(FILE *f, const char *file, int quick)
                     for (k = 0; k < nk && k < cnt; k++) fprintf(f, "    pair %lu %lu %ld\n", (unsigned long) kp[k].giFirst, (unsigned long) kp[k].giSecond, (long) kp[k].eKerningAmount);
                 }
             }
-            for (g = 0; g < 8; g++) {
+            for (g = 0; g < ngis; g++) {
                 CHARATTR ca; BITMAPMETRICS bmm; int mode;
                 for (mode = 0; mode < 2; mode++) {
                     memset(buf, 0, sizeof(buf)); memset(&bmm, 0, sizeof(bmm));

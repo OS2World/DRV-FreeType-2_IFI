@@ -103,6 +103,7 @@
 #include FT_SFNT_NAMES_H
 #include FT_TRUETYPE_IDS_H
 #include FT_TRUETYPE_TABLES_H
+#include FT_MODULE_H
 
 /* Some private extensions */
 #include "ft2mem.h"         /* safe_alloc() and safe_free() */
@@ -114,7 +115,8 @@
 #define  ALLOC( p, size )  safe_alloc( (void**)&(p), (size) )
 #define  FREE( p )         ( safe_free( (void*)(p) ), (p) = NULL )   /* upstream passed the address of the pointer, so nothing was ever freed */
 
-extern FT_BASE_DEF( FT_Error ) FT_Stream_Open( FT_Stream stream, const char*  filepathname );
+/* internal FreeType function (replaced by builds/os2/ifisystem.c); FT_BASE_DEF can no longer be used like this in FreeType 2.15 */
+extern FT_Error FT_Stream_Open( FT_Stream stream, const char*  filepathname );
 
 
 /****************************************************************************
@@ -4112,6 +4114,12 @@ ULONG  FirstInit(void)
    error = FT_Init_FreeType(&library);
    if (error)
       return 0;     /* exit immediately */
+   /* FreeType 2.7 and later use the TrueType interpreter version 40 by default (hinting for LCD displays, no horizontal
+    * hinting). The IFI driver delivers hinted monochrome glyphs like FreeType 2.5 and 1.x did, which is version 35. */
+   {
+      FT_UInt  interpreter_version = 35;
+      FT_Property_Set( library, "truetype", "interpreter-version", &interpreter_version );
+   }
    COPY("[FirstInit] FreeType engine initialized.\r\n");  WRITE;
 
    if (LangInit())      /* initialize NLS */

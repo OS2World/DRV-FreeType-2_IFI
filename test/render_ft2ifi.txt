@@ -1,423 +1,423 @@
 FONT NimbusSans-Regular
-   8 pt: box=1,-3..191,11 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=573 sum=175d0166
-  12 pt: box=1,-5..305,17 ave=10 maxasc=17 maxdesc=4 xh=8 pixels=1264 sum=7732a395
-  24 pt: box=3,-10..610,34 ave=20 maxasc=34 maxdesc=9 xh=16 pixels=4081 sum=299b47aa
-  40 pt: box=4,-16..1011,57 ave=33 maxasc=56 maxdesc=15 xh=27 pixels=7168 sum=777f0165
+   8 pt: box=1,-3..191,11 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=479 sum=366a0150
+  12 pt: box=1,-5..305,17 ave=10 maxasc=17 maxdesc=4 xh=8 pixels=1041 sum=d2b4800a
+  24 pt: box=3,-10..610,34 ave=20 maxasc=34 maxdesc=9 xh=16 pixels=4082 sum=f16d647f
+  40 pt: box=4,-16..1011,57 ave=33 maxasc=56 maxdesc=15 xh=27 pixels=7173 sum=431bb5ae
 FONT C059-Bold
-   8 pt: box=0,-4..221,12 ave=7 maxasc=11 maxdesc=3 xh=4 pixels=835 sum=361ad784
-  12 pt: box=0,-6..354,19 ave=11 maxasc=18 maxdesc=5 xh=7 pixels=1654 sum=7293be73
-  24 pt: box=1,-12..709,37 ave=22 maxasc=37 maxdesc=11 xh=15 pixels=5514 sum=1099b997
-  40 pt: box=1,-20..1174,62 ave=37 maxasc=62 maxdesc=19 xh=25 pixels=9768 sum=cd3989ed
+   8 pt: box=0,-4..221,12 ave=7 maxasc=11 maxdesc=3 xh=4 pixels=736 sum=bac524a5
+  12 pt: box=0,-6..354,19 ave=11 maxasc=18 maxdesc=5 xh=7 pixels=1617 sum=4d481c0a
+  24 pt: box=1,-12..709,37 ave=22 maxasc=37 maxdesc=11 xh=15 pixels=5533 sum=1536bde6
+  40 pt: box=1,-20..1174,62 ave=37 maxasc=62 maxdesc=19 xh=25 pixels=9790 sum=48bbaa3b
 FONT C059-Roman
-   8 pt: box=0,-3..201,11 ave=6 maxasc=11 maxdesc=3 xh=4 pixels=598 sum=bb8521b3
-  12 pt: box=0,-5..322,18 ave=10 maxasc=17 maxdesc=4 xh=7 pixels=1273 sum=3d562032
-  24 pt: box=1,-10..644,36 ave=21 maxasc=35 maxdesc=9 xh=14 pixels=4139 sum=b96909ac
-  40 pt: box=2,-16..1067,59 ave=35 maxasc=59 maxdesc=16 xh=24 pixels=7096 sum=e812cd5d
+   8 pt: box=0,-3..201,11 ave=6 maxasc=11 maxdesc=3 xh=4 pixels=506 sum=9ca77a87
+  12 pt: box=0,-5..322,18 ave=10 maxasc=17 maxdesc=4 xh=7 pixels=1127 sum=f9d3a618
+  24 pt: box=1,-10..644,36 ave=21 maxasc=35 maxdesc=9 xh=14 pixels=4136 sum=375e2b2d
+  40 pt: box=2,-16..1067,59 ave=35 maxasc=59 maxdesc=16 xh=24 pixels=7097 sum=c6df5d72
 FONT URW Palladio L Italic
    8 pt: box=0,-3..182,9 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=474 sum=88732ba7
   12 pt: box=0,-4..291,15 ave=8 maxasc=14 maxdesc=4 xh=7 pixels=845 sum=c253a396
-  24 pt: box=0,-9..582,30 ave=17 maxasc=29 maxdesc=8 xh=15 pixels=2793 sum=1b2953a2
-  40 pt: box=0,-15..963,50 ave=29 maxasc=49 maxdesc=14 xh=25 pixels=5495 sum=943a8fc8
+  24 pt: box=0,-9..582,30 ave=17 maxasc=29 maxdesc=8 xh=15 pixels=2794 sum=8359a797
+  40 pt: box=0,-15..963,50 ave=29 maxasc=49 maxdesc=14 xh=25 pixels=5501 sum=01798c06
 FONT URW Palladio L
    8 pt: box=0,-3..195,9 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=510 sum=6dfe3b3b
   12 pt: box=0,-5..312,15 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=874 sum=9377db57
-  24 pt: box=1,-9..624,30 ave=18 maxasc=30 maxdesc=9 xh=15 pixels=3561 sum=6f69eb22
-  40 pt: box=1,-15..1034,50 ave=30 maxasc=49 maxdesc=15 xh=24 pixels=6309 sum=820e906e
+  24 pt: box=1,-9..624,30 ave=18 maxasc=30 maxdesc=9 xh=15 pixels=3573 sum=54a2ec5e
+  40 pt: box=1,-15..1034,50 ave=30 maxasc=49 maxdesc=15 xh=24 pixels=6328 sum=c48b8fbd
 FONT URW Palladio L Bold Italic
    8 pt: box=0,-3..192,9 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=516 sum=230ab539
   12 pt: box=0,-4..308,15 ave=9 maxasc=14 maxdesc=4 xh=7 pixels=1019 sum=3a253f3c
-  24 pt: box=0,-9..616,30 ave=18 maxasc=29 maxdesc=8 xh=15 pixels=4112 sum=d747eb95
-  40 pt: box=-1,-14..1019,50 ave=30 maxasc=49 maxdesc=14 xh=24 pixels=7208 sum=15dacfed
+  24 pt: box=0,-9..616,30 ave=18 maxasc=29 maxdesc=8 xh=15 pixels=4109 sum=4b7e4136
+  40 pt: box=-1,-14..1019,50 ave=30 maxasc=49 maxdesc=14 xh=24 pixels=7192 sum=f114f45d
 FONT URW Palladio L Bold
-   8 pt: box=0,-3..200,9 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=506 sum=10957607
+   8 pt: box=0,-3..200,9 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=505 sum=5673bfb2
   12 pt: box=1,-4..321,15 ave=9 maxasc=14 maxdesc=4 xh=7 pixels=1177 sum=202d4fd2
-  24 pt: box=1,-9..641,30 ave=19 maxasc=29 maxdesc=8 xh=15 pixels=4687 sum=f28dda40
-  40 pt: box=2,-14..1062,50 ave=31 maxasc=49 maxdesc=14 xh=24 pixels=8448 sum=95a60065
+  24 pt: box=1,-9..641,30 ave=19 maxasc=29 maxdesc=8 xh=15 pixels=4706 sum=be9515cf
+  40 pt: box=2,-14..1062,50 ave=31 maxasc=49 maxdesc=14 xh=24 pixels=8455 sum=53c703f8
 FONT URW Gothic L Bold Oblique
-   8 pt: box=1,-3..202,10 ave=5 maxasc=10 maxdesc=2 xh=5 pixels=570 sum=925aef87
+   8 pt: box=1,-3..202,10 ave=5 maxasc=10 maxdesc=2 xh=5 pixels=571 sum=f63f033c
   12 pt: box=1,-4..323,16 ave=9 maxasc=16 maxdesc=4 xh=8 pixels=1552 sum=2e9e7e15
-  24 pt: box=2,-8..645,32 ave=19 maxasc=32 maxdesc=8 xh=17 pixels=6039 sum=29a9a9c8
-  40 pt: box=4,-13..1068,53 ave=31 maxasc=53 maxdesc=13 xh=29 pixels=10491 sum=da54a05c
+  24 pt: box=2,-8..645,32 ave=19 maxasc=32 maxdesc=8 xh=17 pixels=6047 sum=1b5b0310
+  40 pt: box=4,-13..1068,53 ave=31 maxasc=53 maxdesc=13 xh=29 pixels=10496 sum=613c5305
 FONT URW Gothic L Bold
    8 pt: box=1,-3..201,10 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=515 sum=b424f584
   12 pt: box=1,-4..321,16 ave=9 maxasc=16 maxdesc=4 xh=8 pixels=1534 sum=bfaa661b
-  24 pt: box=2,-8..642,32 ave=19 maxasc=32 maxdesc=8 xh=17 pixels=5982 sum=082d271b
-  40 pt: box=4,-13..1064,53 ave=31 maxasc=53 maxdesc=13 xh=29 pixels=10478 sum=597c9c4b
+  24 pt: box=2,-8..642,32 ave=19 maxasc=32 maxdesc=8 xh=17 pixels=5990 sum=57caf203
+  40 pt: box=4,-13..1064,53 ave=31 maxasc=53 maxdesc=13 xh=29 pixels=10493 sum=3e47fea6
 FONT URW Gothic L Oblique
    8 pt: box=1,-2..201,10 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=457 sum=38b7d802
   12 pt: box=1,-4..321,16 ave=9 maxasc=15 maxdesc=3 xh=8 pixels=903 sum=bb5ff078
-  24 pt: box=2,-7..642,31 ave=18 maxasc=31 maxdesc=7 xh=17 pixels=3593 sum=8d788722
-  40 pt: box=4,-12..1064,52 ave=31 maxasc=51 maxdesc=12 xh=28 pixels=6559 sum=335126d0
+  24 pt: box=2,-7..642,31 ave=18 maxasc=31 maxdesc=7 xh=17 pixels=3598 sum=c84548eb
+  40 pt: box=4,-12..1064,52 ave=31 maxasc=51 maxdesc=12 xh=28 pixels=6566 sum=ff213963
 FONT URW Gothic L
    8 pt: box=1,-2..200,10 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=458 sum=3f198b37
   12 pt: box=1,-4..320,16 ave=9 maxasc=15 maxdesc=3 xh=8 pixels=862 sum=d2bcc2db
-  24 pt: box=2,-8..639,31 ave=18 maxasc=31 maxdesc=7 xh=17 pixels=3396 sum=42bc1ad9
-  40 pt: box=4,-13..1059,52 ave=31 maxasc=51 maxdesc=12 xh=28 pixels=6637 sum=f02461b6
+  24 pt: box=2,-8..639,31 ave=18 maxasc=31 maxdesc=7 xh=17 pixels=3410 sum=a47aeb7f
+  40 pt: box=4,-13..1059,52 ave=31 maxasc=51 maxdesc=12 xh=28 pixels=6654 sum=2096ac1b
 FONT URW Chancery L
    8 pt: box=0,-3..161,8 ave=4 maxasc=8 maxdesc=2 xh=4 pixels=430 sum=bf2a91ab
   12 pt: box=1,-4..257,13 ave=7 maxasc=13 maxdesc=4 xh=6 pixels=742 sum=ba1ccbe3
-  24 pt: box=1,-9..515,26 ave=15 maxasc=26 maxdesc=8 xh=13 pixels=2431 sum=965d9410
-  40 pt: box=2,-14..853,44 ave=26 maxasc=43 maxdesc=14 xh=21 pixels=5318 sum=6982fda3
+  24 pt: box=1,-9..515,26 ave=15 maxasc=26 maxdesc=8 xh=13 pixels=2426 sum=8ff857c7
+  40 pt: box=2,-14..853,44 ave=26 maxasc=43 maxdesc=14 xh=21 pixels=5306 sum=86b66aa7
 FONT URW Bookman L Italic
-   8 pt: box=0,-2..205,9 ave=6 maxasc=8 maxdesc=2 xh=4 pixels=520 sum=b992440d
+   8 pt: box=0,-2..205,9 ave=6 maxasc=8 maxdesc=2 xh=4 pixels=521 sum=c0e91fc2
   12 pt: box=0,-4..328,14 ave=9 maxasc=14 maxdesc=3 xh=7 pixels=1025 sum=bc1af57a
-  24 pt: box=1,-7..655,28 ave=19 maxasc=28 maxdesc=7 xh=15 pixels=3932 sum=ff2c4951
-  40 pt: box=1,-12..1085,47 ave=32 maxasc=46 maxdesc=11 xh=26 pixels=6499 sum=f66d88c4
+  24 pt: box=1,-7..655,28 ave=19 maxasc=28 maxdesc=7 xh=15 pixels=3940 sum=87ae5c59
+  40 pt: box=1,-12..1085,47 ave=32 maxasc=46 maxdesc=11 xh=26 pixels=6494 sum=99d72c1b
 FONT URW Bookman L
    8 pt: box=0,-2..210,9 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=554 sum=1312ed97
-  12 pt: box=0,-4..335,15 ave=9 maxasc=14 maxdesc=3 xh=7 pixels=1245 sum=a5adbf66
-  24 pt: box=1,-8..671,30 ave=19 maxasc=29 maxdesc=7 xh=15 pixels=3907 sum=82505d04
-  40 pt: box=2,-13..1111,49 ave=32 maxasc=48 maxdesc=12 xh=25 pixels=6595 sum=527f1624
+  12 pt: box=0,-4..335,15 ave=9 maxasc=14 maxdesc=3 xh=7 pixels=1245 sum=b273d606
+  24 pt: box=1,-8..671,30 ave=19 maxasc=29 maxdesc=7 xh=15 pixels=3918 sum=0ee948eb
+  40 pt: box=2,-13..1111,49 ave=32 maxasc=48 maxdesc=12 xh=25 pixels=6612 sum=bb211f49
 FONT URW Bookman L Bold Italic
-   8 pt: box=0,-2..223,9 ave=6 maxasc=9 maxdesc=2 xh=5 pixels=662 sum=f90569d3
+   8 pt: box=0,-2..223,9 ave=6 maxasc=9 maxdesc=2 xh=5 pixels=663 sum=bede5868
   12 pt: box=0,-3..357,15 ave=10 maxasc=14 maxdesc=3 xh=8 pixels=1719 sum=e04cc8c8
-  24 pt: box=0,-7..714,30 ave=20 maxasc=29 maxdesc=6 xh=16 pixels=5909 sum=c28d64be
-  40 pt: box=1,-12..1183,49 ave=34 maxasc=49 maxdesc=11 xh=27 pixels=10735 sum=4aa553e0
+  24 pt: box=0,-7..714,30 ave=20 maxasc=29 maxdesc=6 xh=16 pixels=5923 sum=69799f04
+  40 pt: box=1,-12..1183,49 ave=34 maxasc=49 maxdesc=11 xh=27 pixels=10739 sum=0dfade14
 FONT URW Bookman L Bold
    8 pt: box=0,-2..222,9 ave=6 maxasc=9 maxdesc=2 xh=5 pixels=777 sum=0b382482
-  12 pt: box=0,-4..356,15 ave=10 maxasc=14 maxdesc=3 xh=8 pixels=1902 sum=f5b30d0b
-  24 pt: box=1,-8..711,30 ave=20 maxasc=29 maxdesc=7 xh=16 pixels=6287 sum=a5589d40
-  40 pt: box=1,-13..1178,49 ave=34 maxasc=48 maxdesc=13 xh=26 pixels=11440 sum=07c86a75
+  12 pt: box=0,-4..356,15 ave=10 maxasc=14 maxdesc=3 xh=8 pixels=1904 sum=6e76a415
+  24 pt: box=1,-8..711,30 ave=20 maxasc=29 maxdesc=7 xh=16 pixels=6305 sum=45287f1a
+  40 pt: box=1,-13..1178,49 ave=34 maxasc=48 maxdesc=13 xh=26 pixels=11446 sum=6bfd47f3
 FONT Nimbus Sans L Condensed Italic
    8 pt: box=1,-2..157,9 ave=4 maxasc=9 maxdesc=2 xh=5 pixels=426 sum=39611317
   12 pt: box=1,-4..252,15 ave=7 maxasc=15 maxdesc=3 xh=8 pixels=764 sum=48188af1
-  24 pt: box=2,-7..503,30 ave=15 maxasc=30 maxdesc=7 xh=16 pixels=3722 sum=d1f60177
-  40 pt: box=3,-12..833,50 ave=25 maxasc=50 maxdesc=11 xh=27 pixels=7138 sum=ed96a14f
+  24 pt: box=2,-7..503,30 ave=15 maxasc=30 maxdesc=7 xh=16 pixels=3727 sum=528a3ec0
+  40 pt: box=3,-12..833,50 ave=25 maxasc=50 maxdesc=11 xh=27 pixels=7150 sum=6584e8eb
 FONT Nimbus Sans L Condensed
    8 pt: box=1,-2..156,9 ave=4 maxasc=9 maxdesc=2 xh=5 pixels=410 sum=87ff0ca7
   12 pt: box=1,-4..250,15 ave=7 maxasc=15 maxdesc=3 xh=8 pixels=713 sum=59202e82
-  24 pt: box=2,-7..501,30 ave=15 maxasc=30 maxdesc=7 xh=16 pixels=3029 sum=da241bbe
-  40 pt: box=3,-12..829,50 ave=25 maxasc=50 maxdesc=11 xh=27 pixels=7233 sum=8790da3a
+  24 pt: box=2,-7..501,30 ave=15 maxasc=30 maxdesc=7 xh=16 pixels=3033 sum=27399af2
+  40 pt: box=3,-12..829,50 ave=25 maxasc=50 maxdesc=11 xh=27 pixels=7251 sum=86777ad4
 FONT Nimbus Sans L Condensed Bold It
    8 pt: box=1,-2..167,10 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=470 sum=704cf633
   12 pt: box=1,-4..267,16 ave=8 maxasc=15 maxdesc=3 xh=8 pixels=1304 sum=c672b35d
-  24 pt: box=2,-7..534,32 ave=16 maxasc=31 maxdesc=7 xh=17 pixels=5104 sum=6135b515
-  40 pt: box=3,-12..884,52 ave=26 maxasc=52 maxdesc=12 xh=28 pixels=9934 sum=0d6b1aeb
+  24 pt: box=2,-7..534,32 ave=16 maxasc=31 maxdesc=7 xh=17 pixels=5110 sum=817a6033
+  40 pt: box=3,-12..884,52 ave=26 maxasc=52 maxdesc=12 xh=28 pixels=9939 sum=24263394
 FONT Nimbus Sans L Condensed Bold
    8 pt: box=1,-2..166,10 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=448 sum=331a8285
-  12 pt: box=1,-4..266,16 ave=8 maxasc=15 maxdesc=3 xh=8 pixels=1323 sum=e2a880ac
-  24 pt: box=2,-7..531,31 ave=16 maxasc=31 maxdesc=7 xh=17 pixels=5202 sum=f12a5cff
-  40 pt: box=3,-12..880,52 ave=26 maxasc=51 maxdesc=12 xh=28 pixels=10047 sum=f7f53330
+  12 pt: box=1,-4..266,16 ave=8 maxasc=15 maxdesc=3 xh=8 pixels=1324 sum=6b1cc5a1
+  24 pt: box=2,-7..531,31 ave=16 maxasc=31 maxdesc=7 xh=17 pixels=5205 sum=7794577e
+  40 pt: box=3,-12..880,52 ave=26 maxasc=51 maxdesc=12 xh=28 pixels=10059 sum=d2624fec
 FONT Dingbats
    8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=2 xh=4 pixels=471 sum=93637aa8
   12 pt: box=0,-5..355,14 ave=9 maxasc=13 maxdesc=4 xh=6 pixels=758 sum=b287e493
   24 pt: box=1,-9..710,27 ave=19 maxasc=27 maxdesc=9 xh=13 pixels=2716 sum=7ff64dd1
   40 pt: box=2,-16..1176,45 ave=31 maxasc=44 maxdesc=15 xh=22 pixels=4626 sum=64f1819f
 FONT Century Schoolbook L Italic
-   8 pt: box=0,-2..199,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=547 sum=3300bbc4
+   8 pt: box=0,-2..199,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=548 sum=3b5f8bf9
   12 pt: box=-1,-4..318,15 ave=9 maxasc=15 maxdesc=3 xh=7 pixels=1177 sum=4015c4d2
-  24 pt: box=-1,-7..637,31 ave=19 maxasc=30 maxdesc=7 xh=15 pixels=3847 sum=14aa1258
-  40 pt: box=-2,-12..1055,51 ave=32 maxasc=51 maxdesc=11 xh=24 pixels=6617 sum=315c6032
+  24 pt: box=-1,-7..637,31 ave=19 maxasc=30 maxdesc=7 xh=15 pixels=3850 sum=9c4b5a77
+  40 pt: box=-2,-12..1055,51 ave=32 maxasc=51 maxdesc=11 xh=24 pixels=6598 sum=b60a2163
 FONT Century Schoolbook L
    8 pt: box=0,-2..201,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=546 sum=9775d84f
   12 pt: box=0,-4..322,16 ave=9 maxasc=15 maxdesc=3 xh=7 pixels=1197 sum=52d4de76
-  24 pt: box=1,-7..644,31 ave=19 maxasc=31 maxdesc=7 xh=14 pixels=3904 sum=f1553f25
-  40 pt: box=2,-12..1067,52 ave=32 maxasc=51 maxdesc=11 xh=24 pixels=6961 sum=071549aa
+  24 pt: box=1,-7..644,31 ave=19 maxasc=31 maxdesc=7 xh=14 pixels=3915 sum=647c288c
+  40 pt: box=2,-12..1067,52 ave=32 maxasc=51 maxdesc=11 xh=24 pixels=6968 sum=0bb1521d
 FONT Century Schoolbook L Bold Itali
    8 pt: box=0,-2..217,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=757 sum=7069631e
   12 pt: box=-1,-4..348,16 ave=10 maxasc=15 maxdesc=3 xh=7 pixels=1635 sum=10b07f44
-  24 pt: box=-1,-7..695,32 ave=21 maxasc=31 maxdesc=7 xh=15 pixels=5567 sum=dc94b0d0
-  40 pt: box=-2,-12..1152,53 ave=35 maxasc=52 maxdesc=11 xh=25 pixels=9515 sum=0690518c
+  24 pt: box=-1,-7..695,32 ave=21 maxasc=31 maxdesc=7 xh=15 pixels=5561 sum=101d5592
+  40 pt: box=-2,-12..1152,53 ave=35 maxasc=52 maxdesc=11 xh=25 pixels=9517 sum=083fa636
 FONT Century Schoolbook L Bold
    8 pt: box=0,-2..221,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=768 sum=26232f45
   12 pt: box=0,-4..354,16 ave=10 maxasc=15 maxdesc=3 xh=7 pixels=1705 sum=a73d3b22
-  24 pt: box=1,-7..709,32 ave=21 maxasc=31 maxdesc=7 xh=15 pixels=5706 sum=81df84b7
-  40 pt: box=1,-12..1174,52 ave=35 maxasc=52 maxdesc=11 xh=25 pixels=9660 sum=ef9d5b71
+  24 pt: box=1,-7..709,32 ave=21 maxasc=31 maxdesc=7 xh=15 pixels=5731 sum=a02c1904
+  40 pt: box=1,-12..1174,52 ave=35 maxasc=52 maxdesc=11 xh=25 pixels=9674 sum=b8a0c617
 FONT Heuristica Regular
    8 pt: box=0,-2..191,9 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=511 sum=d4b94e70
-  12 pt: box=1,-4..306,15 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1116 sum=2bfd4e31
-  24 pt: box=1,-8..611,30 ave=18 maxasc=30 maxdesc=8 xh=15 pixels=3648 sum=1ced2cc5
-  40 pt: box=2,-13..1012,50 ave=30 maxasc=50 maxdesc=13 xh=25 pixels=6489 sum=ebb7c172
+  12 pt: box=1,-4..306,15 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1115 sum=0bd5b7bc
+  24 pt: box=1,-8..611,30 ave=18 maxasc=30 maxdesc=8 xh=15 pixels=3660 sum=4f293a41
+  40 pt: box=2,-13..1012,50 ave=30 maxasc=50 maxdesc=13 xh=25 pixels=6514 sum=bd9b6d1f
 FONT Heuristica Italic
    8 pt: box=0,-2..189,9 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=493 sum=646e2db6
   12 pt: box=1,-4..303,15 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1012 sum=8acc5e69
-  24 pt: box=1,-8..605,30 ave=18 maxasc=30 maxdesc=8 xh=15 pixels=3583 sum=f85aec10
-  40 pt: box=2,-13..1003,50 ave=31 maxasc=50 maxdesc=13 xh=25 pixels=6378 sum=d98b45b7
+  24 pt: box=1,-8..605,30 ave=18 maxasc=30 maxdesc=8 xh=15 pixels=3577 sum=c8f80112
+  40 pt: box=2,-13..1003,50 ave=31 maxasc=50 maxdesc=13 xh=25 pixels=6383 sum=4f5a9940
 FONT Heuristica Bold Italic
    8 pt: box=0,-2..195,9 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=613 sum=a3df600e
-  12 pt: box=1,-4..312,15 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1380 sum=22db9619
-  24 pt: box=1,-8..625,30 ave=19 maxasc=30 maxdesc=8 xh=15 pixels=5282 sum=01c94c2f
-  40 pt: box=2,-13..1035,50 ave=32 maxasc=50 maxdesc=13 xh=25 pixels=9100 sum=88273921
+  12 pt: box=1,-4..312,15 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1380 sum=0a238ef9
+  24 pt: box=1,-8..625,30 ave=19 maxasc=30 maxdesc=8 xh=15 pixels=5277 sum=a6ca4a26
+  40 pt: box=2,-13..1035,50 ave=32 maxasc=50 maxdesc=13 xh=25 pixels=9121 sum=d258b5ba
 FONT Heuristica Bold
    8 pt: box=0,-2..197,9 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=700 sum=ab070151
   12 pt: box=1,-4..315,15 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1403 sum=6bd118bc
-  24 pt: box=1,-8..630,30 ave=19 maxasc=30 maxdesc=8 xh=15 pixels=5494 sum=8d06ef53
-  40 pt: box=2,-13..1044,50 ave=31 maxasc=50 maxdesc=13 xh=25 pixels=9389 sum=b67b12b6
+  24 pt: box=1,-8..630,30 ave=19 maxasc=30 maxdesc=8 xh=15 pixels=5478 sum=e2d6f0e3
+  40 pt: box=2,-13..1044,50 ave=31 maxasc=50 maxdesc=13 xh=25 pixels=9415 sum=b0f1ba78
 FONT Bitstream Charter
    8 pt: box=0,-2..188,10 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=504 sum=7e7cf0dd
-  12 pt: box=1,-4..300,15 ave=8 maxasc=15 maxdesc=3 xh=7 pixels=828 sum=a778ff91
-  24 pt: box=1,-8..601,31 ave=17 maxasc=30 maxdesc=7 xh=15 pixels=3338 sum=c9fffeb7
-  40 pt: box=2,-13..995,51 ave=29 maxasc=51 maxdesc=12 xh=25 pixels=5778 sum=ae40585f
+  12 pt: box=1,-4..300,15 ave=8 maxasc=15 maxdesc=3 xh=7 pixels=829 sum=6711f566
+  24 pt: box=1,-8..601,31 ave=17 maxasc=30 maxdesc=7 xh=15 pixels=3344 sum=383a2555
+  40 pt: box=2,-13..995,51 ave=29 maxasc=51 maxdesc=12 xh=25 pixels=5788 sum=6bed2071
 FONT Bitstream Charter Italic
-   8 pt: box=0,-2..181,10 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=456 sum=5898bead
-  12 pt: box=0,-4..289,16 ave=8 maxasc=15 maxdesc=3 xh=7 pixels=859 sum=df3a723c
-  24 pt: box=-1,-8..578,31 ave=17 maxasc=31 maxdesc=7 xh=15 pixels=3176 sum=793b9dad
-  40 pt: box=-1,-13..957,52 ave=28 maxasc=51 maxdesc=12 xh=25 pixels=5737 sum=c7d99382
+   8 pt: box=0,-2..181,10 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=456 sum=d561dc8d
+  12 pt: box=0,-4..289,16 ave=8 maxasc=15 maxdesc=3 xh=7 pixels=861 sum=c32fbe66
+  24 pt: box=-1,-8..578,31 ave=17 maxasc=31 maxdesc=7 xh=15 pixels=3183 sum=c5cdc360
+  40 pt: box=-1,-13..957,52 ave=28 maxasc=51 maxdesc=12 xh=25 pixels=5734 sum=89ce0ce3
 FONT Bitstream Charter Bold Italic
    8 pt: box=0,-2..193,10 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=524 sum=86955601
   12 pt: box=0,-4..309,16 ave=9 maxasc=15 maxdesc=3 xh=7 pixels=1184 sum=c64d0bc5
-  24 pt: box=-1,-8..619,31 ave=18 maxasc=31 maxdesc=7 xh=15 pixels=4697 sum=a1135cb2
-  40 pt: box=-1,-13..1025,51 ave=29 maxasc=51 maxdesc=12 xh=26 pixels=8003 sum=3dca87a4
+  24 pt: box=-1,-8..619,31 ave=18 maxasc=31 maxdesc=7 xh=15 pixels=4696 sum=3a62ea3d
+  40 pt: box=-1,-13..1025,51 ave=29 maxasc=51 maxdesc=12 xh=26 pixels=8010 sum=34f58d37
 FONT Bitstream Charter Bold
-   8 pt: box=0,-2..197,10 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=521 sum=d000c442
+   8 pt: box=0,-2..197,10 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=522 sum=f5344077
   12 pt: box=0,-4..316,15 ave=9 maxasc=15 maxdesc=3 xh=7 pixels=1236 sum=07b46729
-  24 pt: box=1,-8..631,31 ave=18 maxasc=30 maxdesc=7 xh=15 pixels=4874 sum=4eb3e5d7
-  40 pt: box=2,-13..1046,51 ave=30 maxasc=51 maxdesc=12 xh=25 pixels=8076 sum=35114381
+  24 pt: box=1,-8..631,31 ave=18 maxasc=30 maxdesc=7 xh=15 pixels=4880 sum=185a3275
+  40 pt: box=2,-13..1046,51 ave=30 maxasc=51 maxdesc=12 xh=25 pixels=8088 sum=c9de519d
 FONT Droid Serif Bold Italic
    8 pt: box=0,-3..213,11 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=607 sum=afc97170
   12 pt: box=0,-5..341,17 ave=10 maxasc=17 maxdesc=4 xh=8 pixels=1508 sum=1951f859
-  24 pt: box=-1,-9..683,34 ave=20 maxasc=34 maxdesc=9 xh=17 pixels=5519 sum=50290a60
-  40 pt: box=-1,-16..1131,57 ave=34 maxasc=56 maxdesc=15 xh=28 pixels=9796 sum=1af83dd9
+  24 pt: box=-1,-9..683,34 ave=20 maxasc=34 maxdesc=9 xh=17 pixels=5523 sum=f8aa3194
+  40 pt: box=-1,-16..1131,57 ave=34 maxasc=56 maxdesc=15 xh=28 pixels=9809 sum=bdf3cfaa
 FONT Droid Serif Italic
-   8 pt: box=0,-3..198,11 ave=5 maxasc=10 maxdesc=2 xh=5 pixels=461 sum=79adf116
+   8 pt: box=0,-3..198,11 ave=5 maxasc=10 maxdesc=2 xh=5 pixels=460 sum=66944d21
   12 pt: box=0,-5..317,17 ave=9 maxasc=17 maxdesc=4 xh=8 pixels=1070 sum=66744f8b
-  24 pt: box=-1,-9..634,34 ave=19 maxasc=34 maxdesc=9 xh=17 pixels=4213 sum=77da303e
-  40 pt: box=-1,-16..1051,57 ave=31 maxasc=56 maxdesc=15 xh=28 pixels=7162 sum=4a893667
+  24 pt: box=-1,-9..634,34 ave=19 maxasc=34 maxdesc=9 xh=17 pixels=4213 sum=859d84be
+  40 pt: box=-1,-16..1051,57 ave=31 maxasc=56 maxdesc=15 xh=28 pixels=7164 sum=6c5b1531
 FONT Droid Serif Bold
-   8 pt: box=0,-3..214,11 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=655 sum=18dfd600
+   8 pt: box=0,-3..214,11 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=653 sum=56da21d6
   12 pt: box=0,-5..342,17 ave=10 maxasc=17 maxdesc=4 xh=8 pixels=1486 sum=dc12712b
-  24 pt: box=1,-9..683,34 ave=20 maxasc=34 maxdesc=9 xh=17 pixels=5630 sum=76b3fd5b
-  40 pt: box=1,-16..1132,57 ave=34 maxasc=56 maxdesc=15 xh=28 pixels=9980 sum=f7321e11
+  24 pt: box=1,-9..683,34 ave=20 maxasc=34 maxdesc=9 xh=17 pixels=5660 sum=54bbe411
+  40 pt: box=1,-16..1132,57 ave=34 maxasc=56 maxdesc=15 xh=28 pixels=9993 sum=4ef02362
 FONT Droid Serif
-   8 pt: box=0,-3..202,11 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=457 sum=64f99c82
+   8 pt: box=0,-3..202,11 ave=6 maxasc=10 maxdesc=2 xh=5 pixels=457 sum=59027282
   12 pt: box=1,-5..324,17 ave=9 maxasc=17 maxdesc=4 xh=8 pixels=1074 sum=6a8ea17f
-  24 pt: box=1,-9..648,34 ave=19 maxasc=34 maxdesc=9 xh=17 pixels=4107 sum=41aa240c
-  40 pt: box=2,-16..1073,57 ave=32 maxasc=56 maxdesc=15 xh=28 pixels=7128 sum=c99bccdd
+  24 pt: box=1,-9..648,34 ave=19 maxasc=34 maxdesc=9 xh=17 pixels=4118 sum=7a125273
+  40 pt: box=2,-16..1073,57 ave=32 maxasc=56 maxdesc=15 xh=28 pixels=7140 sum=8c1d3579
 FONT Droid Sans Mono
    8 pt: box=0,-2..222,9 ave=6 maxasc=9 maxdesc=2 xh=5 pixels=425 sum=72f0ac02
   12 pt: box=0,-4..355,15 ave=9 maxasc=14 maxdesc=3 xh=8 pixels=994 sum=56920f4f
-  24 pt: box=0,-8..711,30 ave=19 maxasc=29 maxdesc=7 xh=17 pixels=3521 sum=3febc8ba
-  40 pt: box=0,-12..1177,49 ave=31 maxasc=49 maxdesc=12 xh=28 pixels=6455 sum=9ceac788
+  24 pt: box=0,-8..711,30 ave=19 maxasc=29 maxdesc=7 xh=17 pixels=3502 sum=a8524c8b
+  40 pt: box=0,-12..1177,49 ave=31 maxasc=49 maxdesc=12 xh=28 pixels=6459 sum=0bb777fc
 FONT Droid Sans Combined
-   8 pt: box=1,-3..186,10 ave=9 maxasc=10 maxdesc=2 xh=5 pixels=426 sum=12a6a7f7
-  12 pt: box=2,-4..298,17 ave=15 maxasc=16 maxdesc=4 xh=8 pixels=1016 sum=dd006a1d
-  24 pt: box=3,-9..597,33 ave=31 maxasc=33 maxdesc=8 xh=17 pixels=3921 sum=9d3a826a
-  40 pt: box=5,-14..988,55 ave=52 maxasc=55 maxdesc=14 xh=28 pixels=6816 sum=64d15fa5
+   8 pt: box=1,-3..186,10 ave=9 maxasc=10 maxdesc=2 xh=5 pixels=427 sum=5b2b452c
+  12 pt: box=2,-4..298,17 ave=15 maxasc=16 maxdesc=4 xh=8 pixels=1022 sum=6e53ffdb
+  24 pt: box=3,-9..597,33 ave=31 maxasc=33 maxdesc=8 xh=17 pixels=3947 sum=2bfb73cc
+  40 pt: box=5,-14..988,55 ave=52 maxasc=55 maxdesc=14 xh=28 pixels=6833 sum=28b0992a
 FONT @Droid Sans Combined
-   8 pt: box=1,-3..186,10 ave=9 maxasc=10 maxdesc=2 xh=5 pixels=426 sum=12a6a7f7
-  12 pt: box=2,-4..298,17 ave=15 maxasc=16 maxdesc=4 xh=8 pixels=1016 sum=dd006a1d
-  24 pt: box=3,-9..597,33 ave=31 maxasc=33 maxdesc=8 xh=17 pixels=3921 sum=9d3a826a
-  40 pt: box=5,-14..988,55 ave=52 maxasc=55 maxdesc=14 xh=28 pixels=6816 sum=64d15fa5
+   8 pt: box=1,-3..186,10 ave=9 maxasc=10 maxdesc=2 xh=5 pixels=427 sum=5b2b452c
+  12 pt: box=2,-4..298,17 ave=15 maxasc=16 maxdesc=4 xh=8 pixels=1022 sum=6e53ffdb
+  24 pt: box=3,-9..597,33 ave=31 maxasc=33 maxdesc=8 xh=17 pixels=3947 sum=2bfb73cc
+  40 pt: box=5,-14..988,55 ave=52 maxasc=55 maxdesc=14 xh=28 pixels=6833 sum=28b0992a
 FONT Droid Sans Bold
    8 pt: box=1,-2..198,9 ave=6 maxasc=9 maxdesc=2 xh=5 pixels=477 sum=20fb7406
   12 pt: box=1,-4..318,15 ave=9 maxasc=14 maxdesc=3 xh=8 pixels=1525 sum=696c2a3e
-  24 pt: box=3,-8..635,30 ave=19 maxasc=29 maxdesc=7 xh=17 pixels=6100 sum=5c3e4b29
-  40 pt: box=5,-12..1052,49 ave=32 maxasc=49 maxdesc=12 xh=28 pixels=10429 sum=4994b826
+  24 pt: box=3,-8..635,30 ave=19 maxasc=29 maxdesc=7 xh=17 pixels=6110 sum=6c16c1bb
+  40 pt: box=5,-12..1052,49 ave=32 maxasc=49 maxdesc=12 xh=28 pixels=10439 sum=b7ef21d8
 FONT Droid Sans
-   8 pt: box=1,-2..186,9 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=405 sum=0c1c989e
+   8 pt: box=1,-2..186,9 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=405 sum=fe42e9de
   12 pt: box=2,-4..298,15 ave=9 maxasc=14 maxdesc=3 xh=8 pixels=941 sum=8de7ef16
-  24 pt: box=3,-8..596,30 ave=18 maxasc=29 maxdesc=7 xh=17 pixels=3879 sum=ba340bf8
-  40 pt: box=5,-12..987,49 ave=30 maxasc=49 maxdesc=12 xh=28 pixels=7027 sum=54200c14
+  24 pt: box=3,-8..596,30 ave=18 maxasc=29 maxdesc=7 xh=17 pixels=3880 sum=749b2d6d
+  40 pt: box=5,-12..987,49 ave=30 maxasc=49 maxdesc=12 xh=28 pixels=7031 sum=f1cedda8
 FONT Source Serif Pro Semibold
-   8 pt: box=0,-3..193,10 ave=5 maxasc=10 maxdesc=3 xh=4 pixels=559 sum=3f270ea0
-  12 pt: box=1,-5..309,17 ave=8 maxasc=16 maxdesc=5 xh=7 pixels=1177 sum=bf329c92
-  24 pt: box=1,-11..617,33 ave=17 maxasc=33 maxdesc=10 xh=15 pixels=4612 sum=25c44519
-  40 pt: box=2,-18..1022,55 ave=29 maxasc=54 maxdesc=17 xh=25 pixels=8291 sum=e389e744
+   8 pt: box=0,-3..193,10 ave=5 maxasc=10 maxdesc=3 xh=4 pixels=560 sum=c405c555
+  12 pt: box=1,-5..309,17 ave=8 maxasc=16 maxdesc=5 xh=7 pixels=1178 sum=84972ee7
+  24 pt: box=1,-11..617,33 ave=17 maxasc=33 maxdesc=10 xh=15 pixels=4623 sum=441f56c0
+  40 pt: box=2,-18..1022,55 ave=29 maxasc=54 maxdesc=17 xh=25 pixels=8296 sum=c738e86d
 FONT Source Serif Pro Light
-   8 pt: box=1,-3..189,10 ave=5 maxasc=10 maxdesc=3 xh=4 pixels=466 sum=703c5cdf
+   8 pt: box=1,-3..189,10 ave=5 maxasc=10 maxdesc=3 xh=4 pixels=469 sum=73f11f7e
   12 pt: box=1,-5..302,17 ave=8 maxasc=16 maxdesc=5 xh=7 pixels=806 sum=b99d6f03
-  24 pt: box=2,-11..605,33 ave=17 maxasc=33 maxdesc=10 xh=15 pixels=2225 sum=5e22902a
-  40 pt: box=3,-18..1002,55 ave=29 maxasc=54 maxdesc=17 xh=25 pixels=4201 sum=ba272462
+  24 pt: box=2,-11..605,33 ave=17 maxasc=33 maxdesc=10 xh=15 pixels=2234 sum=04ac8bc7
+  40 pt: box=3,-18..1002,55 ave=29 maxasc=54 maxdesc=17 xh=25 pixels=4203 sum=ffdceaac
 FONT Source Serif Pro ExtraLight
-   8 pt: box=1,-3..189,10 ave=5 maxasc=10 maxdesc=3 xh=4 pixels=459 sum=92c53eec
+   8 pt: box=1,-3..189,10 ave=5 maxasc=10 maxdesc=3 xh=4 pixels=459 sum=37c48cec
   12 pt: box=1,-5..302,17 ave=8 maxasc=16 maxdesc=5 xh=7 pixels=777 sum=21595a02
-  24 pt: box=2,-11..604,33 ave=17 maxasc=33 maxdesc=10 xh=15 pixels=1694 sum=121c8edb
-  40 pt: box=3,-18..1000,55 ave=28 maxasc=54 maxdesc=17 xh=25 pixels=3175 sum=79dcd7d8
+  24 pt: box=2,-11..604,33 ave=17 maxasc=33 maxdesc=10 xh=15 pixels=1703 sum=52e495f8
+  40 pt: box=3,-18..1000,55 ave=28 maxasc=54 maxdesc=17 xh=25 pixels=3188 sum=014f1669
 FONT Source Serif Pro Black
    8 pt: box=0,-3..199,10 ave=5 maxasc=10 maxdesc=3 xh=4 pixels=712 sum=12ecb8ad
-  12 pt: box=0,-5..318,17 ave=9 maxasc=16 maxdesc=5 xh=7 pixels=1644 sum=876212e1
-  24 pt: box=1,-11..635,33 ave=18 maxasc=33 maxdesc=10 xh=15 pixels=6175 sum=aae42110
-  40 pt: box=1,-18..1053,55 ave=30 maxasc=54 maxdesc=17 xh=25 pixels=11555 sum=4ee679a4
+  12 pt: box=0,-5..318,17 ave=9 maxasc=16 maxdesc=5 xh=7 pixels=1645 sum=b8b4de96
+  24 pt: box=1,-11..635,33 ave=18 maxasc=33 maxdesc=10 xh=15 pixels=6188 sum=dbd83141
+  40 pt: box=1,-18..1053,55 ave=30 maxasc=54 maxdesc=17 xh=25 pixels=11571 sum=d6973eb4
 FONT Source Serif Pro
    8 pt: box=0,-3..190,10 ave=5 maxasc=10 maxdesc=3 xh=4 pixels=501 sum=d4ee4d5e
   12 pt: box=1,-5..304,17 ave=8 maxasc=16 maxdesc=5 xh=7 pixels=992 sum=f85327c5
-  24 pt: box=1,-11..608,33 ave=17 maxasc=33 maxdesc=10 xh=15 pixels=3762 sum=e66d8bff
-  40 pt: box=2,-18..1007,55 ave=29 maxasc=54 maxdesc=17 xh=25 pixels=6254 sum=4f8b28eb
+  24 pt: box=1,-11..608,33 ave=17 maxasc=33 maxdesc=10 xh=15 pixels=3781 sum=29a1c24e
+  40 pt: box=2,-18..1007,55 ave=29 maxasc=54 maxdesc=17 xh=25 pixels=6261 sum=02839e7e
 FONT Source Serif Pro Bold
    8 pt: box=0,-3..196,10 ave=5 maxasc=10 maxdesc=3 xh=4 pixels=609 sum=5a8d493a
-  12 pt: box=1,-5..314,17 ave=9 maxasc=16 maxdesc=5 xh=7 pixels=1462 sum=62764013
-  24 pt: box=1,-11..627,33 ave=18 maxasc=33 maxdesc=10 xh=15 pixels=5540 sum=3099fef9
-  40 pt: box=2,-18..1039,55 ave=30 maxasc=54 maxdesc=17 xh=25 pixels=10001 sum=d350f74a
+  12 pt: box=1,-5..314,17 ave=9 maxasc=16 maxdesc=5 xh=7 pixels=1462 sum=11efbff3
+  24 pt: box=1,-11..627,33 ave=18 maxasc=33 maxdesc=10 xh=15 pixels=5544 sum=b2e3808d
+  40 pt: box=2,-18..1039,55 ave=30 maxasc=54 maxdesc=17 xh=25 pixels=10016 sum=86d9c885
 FONT Source Code Pro Semibold Italic
-   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=464 sum=33a4fe35
+   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=465 sum=78bad60a
   12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1059 sum=3011b904
-  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=3909 sum=9f23180e
-  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=7052 sum=2e78e4a1
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=3922 sum=5249703f
+  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=7062 sum=ab5451b3
 FONT Source Code Pro Semibold
-   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=475 sum=f56976bc
-  12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1108 sum=363a8069
-  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=4086 sum=534f31b3
-  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=7359 sum=ec0d2b70
+   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=475 sum=8e10e89c
+  12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1109 sum=c052637e
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=4091 sum=5318e6dc
+  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=7368 sum=52c0cd0d
 FONT Source Code Pro Medium Italic
    8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=444 sum=b43a0cd1
-  12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=945 sum=9cd0b26a
-  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=3219 sum=5c6b0394
-  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=5869 sum=c0183b56
+  12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=947 sum=be35d614
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=3228 sum=d9208e31
+  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=5879 sum=80bcad48
 FONT Source Code Pro Medium
-   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=452 sum=61444d99
+   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=458 sum=806f0517
   12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1003 sum=9005826c
-  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=3399 sum=6c54d718
-  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=6347 sum=6c5d4e0c
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=3409 sum=b282978a
+  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=6356 sum=059818c9
 FONT Source Code Pro Light Italic
-   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=430 sum=b75dfe0b
+   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=431 sum=b807b9e0
   12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=717 sum=367a7376
-  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=1624 sum=0115a37d
-  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=2955 sum=7592508c
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=1620 sum=c832c169
+  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=2972 sum=aa1879b1
 FONT Source Code Pro Light
-   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=409 sum=abe8d712
+   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=416 sum=9bdd1ac5
   12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=723 sum=50956894
-  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=1665 sum=21da97fa
-  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=3008 sum=03be36c5
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=1663 sum=4daefad0
+  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=3024 sum=5377fdf5
 FONT Source Code Pro ExtraLight Ital
-   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=421 sum=12f237ee
+   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=423 sum=e509e178
   12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=699 sum=c1224c5c
-  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=1330 sum=f70a7e1f
-  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=1921 sum=8734b6da
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=1330 sum=ffdff63f
+  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=1932 sum=d4d24361
 FONT Source Code Pro ExtraLight
-   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=414 sum=b494ff3b
-  12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=699 sum=9b574bfc
-  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=1328 sum=937df695
-  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=2064 sum=36dccf15
+   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=415 sum=4aaf4ff0
+  12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=711 sum=9930a0b8
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=1333 sum=84f0d45e
+  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=2081 sum=58df8f9a
 FONT Source Code Pro Black Italic
-   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=601 sum=55191cf2
+   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=605 sum=2bcec3c6
   12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1550 sum=db280fcb
-  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=5347 sum=6dae3ec4
-  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=9735 sum=3948f8d8
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=5347 sum=68ab06e4
+  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=9741 sum=84972d36
 FONT Source Code Pro Black
-   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=576 sum=49c9b585
-  12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1644 sum=735bfec1
-  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=5564 sum=f57f1f91
-  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=10183 sum=875a6118
+   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=578 sum=73ffa32f
+  12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1655 sum=d37ab8e8
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=5572 sum=5eeb4ef9
+  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=10197 sum=e32f6c7e
 FONT Source Code Pro
-   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=444 sum=0219f5b1
+   8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=444 sum=91e37651
   12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=898 sum=93c0e9ef
-  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=2958 sum=532dc72b
-  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=5623 sum=b3a72048
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=2958 sum=716dcbeb
+  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=5640 sum=575dd0ed
 FONT Source Code Pro Italic
    8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=439 sum=b9f21da8
   12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=838 sum=0a5546c3
-  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=2866 sum=6b7c13df
-  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=5369 sum=c68d67b2
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=2863 sum=de283c80
+  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=5371 sum=3ccc329c
 FONT Source Code Pro Bold Italic
    8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=536 sum=ff1f8b9d
   12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1417 sum=b503e722
-  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=4883 sum=babe6cb4
-  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=8514 sum=3a04568f
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=4884 sum=ce476849
+  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=8522 sum=047107d7
 FONT Source Code Pro Bold
    8 pt: box=0,-3..222,10 ave=6 maxasc=9 maxdesc=2 xh=4 pixels=543 sum=655ae050
-  12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1492 sum=8c3447e9
-  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=5073 sum=3301b42a
-  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=8887 sum=e0e2a188
+  12 pt: box=0,-4..355,16 ave=9 maxasc=15 maxdesc=4 xh=7 pixels=1495 sum=c5c332c8
+  24 pt: box=0,-9..710,31 ave=19 maxasc=31 maxdesc=8 xh=15 pixels=5091 sum=1e046ca4
+  40 pt: box=0,-14..1177,52 ave=31 maxasc=52 maxdesc=14 xh=25 pixels=8887 sum=c47c5168
 FONT Source Sans Pro Semibold Italic
    8 pt: box=0,-3..171,10 ave=4 maxasc=9 maxdesc=2 xh=4 pixels=426 sum=d646dc37
   12 pt: box=1,-4..274,16 ave=7 maxasc=15 maxdesc=4 xh=7 pixels=1034 sum=f2745437
-  24 pt: box=1,-9..548,31 ave=15 maxasc=31 maxdesc=8 xh=15 pixels=4245 sum=d59e551e
-  40 pt: box=2,-14..908,52 ave=25 maxasc=52 maxdesc=14 xh=26 pixels=8027 sum=0da2519c
+  24 pt: box=1,-9..548,31 ave=15 maxasc=31 maxdesc=8 xh=15 pixels=4241 sum=e87e4c8a
+  40 pt: box=2,-14..908,52 ave=25 maxasc=52 maxdesc=14 xh=26 pixels=8039 sum=52297a38
 FONT Source Sans Pro Semibold
    8 pt: box=1,-3..177,10 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=451 sum=5a7fc684
   12 pt: box=1,-4..283,16 ave=8 maxasc=15 maxdesc=4 xh=7 pixels=1230 sum=44946d8b
-  24 pt: box=3,-9..567,31 ave=17 maxasc=31 maxdesc=8 xh=15 pixels=4484 sum=b9c892f9
-  40 pt: box=4,-14..939,52 ave=28 maxasc=52 maxdesc=14 xh=26 pixels=8428 sum=1c70ca61
+  24 pt: box=3,-9..567,31 ave=17 maxasc=31 maxdesc=8 xh=15 pixels=4491 sum=02a5c90c
+  40 pt: box=4,-14..939,52 ave=28 maxasc=52 maxdesc=14 xh=26 pixels=8427 sum=7a5207ac
 FONT Source Sans Pro Light Italic
    8 pt: box=0,-3..160,10 ave=4 maxasc=9 maxdesc=2 xh=4 pixels=387 sum=ddb55a84
   12 pt: box=1,-4..256,16 ave=7 maxasc=15 maxdesc=4 xh=7 pixels=654 sum=de9c128b
-  24 pt: box=1,-9..512,31 ave=14 maxasc=31 maxdesc=8 xh=15 pixels=1747 sum=255ec8d4
-  40 pt: box=2,-14..848,52 ave=24 maxasc=52 maxdesc=14 xh=25 pixels=3562 sum=fe71d117
+  24 pt: box=1,-9..512,31 ave=14 maxasc=31 maxdesc=8 xh=15 pixels=1746 sum=d8781d7f
+  40 pt: box=2,-14..848,52 ave=24 maxasc=52 maxdesc=14 xh=25 pixels=3570 sum=11a450bf
 FONT Source Sans Pro Light
    8 pt: box=1,-3..166,10 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=397 sum=6813f576
   12 pt: box=2,-4..265,16 ave=8 maxasc=15 maxdesc=4 xh=7 pixels=666 sum=54c72547
-  24 pt: box=3,-9..530,31 ave=16 maxasc=31 maxdesc=8 xh=15 pixels=1788 sum=f6f6aab1
-  40 pt: box=5,-14..879,52 ave=26 maxasc=52 maxdesc=14 xh=25 pixels=3737 sum=c9157112
+  24 pt: box=3,-9..530,31 ave=16 maxasc=31 maxdesc=8 xh=15 pixels=1797 sum=74bd124e
+  40 pt: box=5,-14..879,52 ave=26 maxasc=52 maxdesc=14 xh=25 pixels=3779 sum=c087c824
 FONT Source Sans Pro ExtraLight Ital
    8 pt: box=0,-3..158,10 ave=4 maxasc=9 maxdesc=2 xh=4 pixels=382 sum=4ca7423b
   12 pt: box=1,-4..253,16 ave=7 maxasc=15 maxdesc=4 xh=7 pixels=635 sum=81edc59c
-  24 pt: box=1,-9..505,31 ave=14 maxasc=31 maxdesc=8 xh=15 pixels=1389 sum=55de9ab6
-  40 pt: box=2,-14..837,52 ave=23 maxasc=52 maxdesc=14 xh=25 pixels=2371 sum=1a7fa644
+  24 pt: box=1,-9..505,31 ave=14 maxasc=31 maxdesc=8 xh=15 pixels=1393 sum=411ecbca
+  40 pt: box=2,-14..837,52 ave=23 maxasc=52 maxdesc=14 xh=25 pixels=2377 sum=2f15aee2
 FONT Source Sans Pro ExtraLight
-   8 pt: box=1,-3..163,10 ave=4 maxasc=9 maxdesc=2 xh=4 pixels=381 sum=1ea190a6
+   8 pt: box=1,-3..163,10 ave=4 maxasc=9 maxdesc=2 xh=4 pixels=393 sum=ed2572e2
   12 pt: box=2,-4..262,16 ave=7 maxasc=15 maxdesc=4 xh=7 pixels=644 sum=1fdcced9
-  24 pt: box=3,-9..523,31 ave=15 maxasc=31 maxdesc=8 xh=15 pixels=1424 sum=7b7677f5
-  40 pt: box=5,-14..866,52 ave=26 maxasc=52 maxdesc=14 xh=25 pixels=2498 sum=ebaffc6f
+  24 pt: box=3,-9..523,31 ave=15 maxasc=31 maxdesc=8 xh=15 pixels=1440 sum=a570bcc5
+  40 pt: box=5,-14..866,52 ave=26 maxasc=52 maxdesc=14 xh=25 pixels=2512 sum=be8ea475
 FONT Source Sans Pro Black Italic
    8 pt: box=0,-3..180,10 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=576 sum=c6c4f1c5
-  12 pt: box=0,-4..288,16 ave=8 maxasc=15 maxdesc=4 xh=8 pixels=1468 sum=bfc887d1
-  24 pt: box=1,-9..577,31 ave=16 maxasc=31 maxdesc=8 xh=16 pixels=5857 sum=aba7039a
-  40 pt: box=1,-14..955,52 ave=26 maxasc=52 maxdesc=14 xh=26 pixels=10929 sum=ac28570a
+  12 pt: box=0,-4..288,16 ave=8 maxasc=15 maxdesc=4 xh=8 pixels=1467 sum=1521bdfc
+  24 pt: box=1,-9..577,31 ave=16 maxasc=31 maxdesc=8 xh=16 pixels=5860 sum=de1972f9
+  40 pt: box=1,-14..955,52 ave=26 maxasc=52 maxdesc=14 xh=26 pixels=10936 sum=afe126dd
 FONT Source Sans Pro Black
    8 pt: box=1,-3..186,10 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=580 sum=c0857e39
   12 pt: box=1,-4..298,16 ave=9 maxasc=15 maxdesc=4 xh=8 pixels=1592 sum=e79e7a5d
-  24 pt: box=2,-9..596,31 ave=18 maxasc=31 maxdesc=8 xh=16 pixels=6243 sum=202a5084
-  40 pt: box=4,-14..987,52 ave=30 maxasc=52 maxdesc=14 xh=26 pixels=11363 sum=295125e4
+  24 pt: box=2,-9..596,31 ave=18 maxasc=31 maxdesc=8 xh=16 pixels=6251 sum=63f6ceec
+  40 pt: box=4,-14..987,52 ave=30 maxasc=52 maxdesc=14 xh=26 pixels=11367 sum=d93b69d8
 FONT Source Sans Pro
    8 pt: box=1,-3..172,10 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=410 sum=6c543067
   12 pt: box=1,-4..275,16 ave=8 maxasc=15 maxdesc=4 xh=7 pixels=897 sum=84ae3f3a
-  24 pt: box=3,-9..550,31 ave=16 maxasc=31 maxdesc=8 xh=15 pixels=3275 sum=cd4efd4c
-  40 pt: box=5,-14..911,52 ave=27 maxasc=52 maxdesc=14 xh=25 pixels=6170 sum=75607a27
+  24 pt: box=3,-9..550,31 ave=16 maxasc=31 maxdesc=8 xh=15 pixels=3281 sum=fc1952ca
+  40 pt: box=5,-14..911,52 ave=27 maxasc=52 maxdesc=14 xh=25 pixels=6189 sum=e9f1f9f6
 FONT Source Sans Pro Italic
    8 pt: box=0,-3..166,10 ave=4 maxasc=9 maxdesc=2 xh=4 pixels=398 sum=fc5109cb
-  12 pt: box=1,-4..266,16 ave=7 maxasc=15 maxdesc=4 xh=7 pixels=773 sum=47ea020e
-  24 pt: box=1,-9..532,31 ave=15 maxasc=31 maxdesc=8 xh=15 pixels=3092 sum=5ba787e9
-  40 pt: box=2,-14..880,52 ave=24 maxasc=52 maxdesc=14 xh=25 pixels=5874 sum=630fd9df
+  12 pt: box=1,-4..266,16 ave=7 maxasc=15 maxdesc=4 xh=7 pixels=780 sum=db622b41
+  24 pt: box=1,-9..532,31 ave=15 maxasc=31 maxdesc=8 xh=15 pixels=3094 sum=a45fc593
+  40 pt: box=2,-14..880,52 ave=24 maxasc=52 maxdesc=14 xh=25 pixels=5877 sum=414678fe
 FONT Source Sans Pro Bold Italic
    8 pt: box=0,-3..176,10 ave=4 maxasc=9 maxdesc=2 xh=4 pixels=515 sum=69f93d84
-  12 pt: box=0,-4..282,16 ave=7 maxasc=15 maxdesc=4 xh=7 pixels=1320 sum=7e75212d
-  24 pt: box=1,-9..564,31 ave=15 maxasc=31 maxdesc=8 xh=15 pixels=5088 sum=3a755d65
-  40 pt: box=1,-14..934,52 ave=26 maxasc=52 maxdesc=14 xh=26 pixels=9590 sum=d79752f3
+  12 pt: box=0,-4..282,16 ave=7 maxasc=15 maxdesc=4 xh=7 pixels=1321 sum=9b7c3aa2
+  24 pt: box=1,-9..564,31 ave=15 maxasc=31 maxdesc=8 xh=15 pixels=5090 sum=5881922f
+  40 pt: box=1,-14..934,52 ave=26 maxasc=52 maxdesc=14 xh=26 pixels=9596 sum=6aa05a71
 FONT Source Sans Pro Bold
    8 pt: box=1,-3..182,10 ave=5 maxasc=9 maxdesc=2 xh=4 pixels=512 sum=af48a565
   12 pt: box=1,-4..291,16 ave=8 maxasc=15 maxdesc=4 xh=7 pixels=1424 sum=166bceb5
-  24 pt: box=2,-9..583,31 ave=17 maxasc=31 maxdesc=8 xh=15 pixels=5624 sum=13da32bd
-  40 pt: box=4,-14..965,52 ave=29 maxasc=52 maxdesc=14 xh=26 pixels=10175 sum=476055b0
+  24 pt: box=2,-9..583,31 ave=17 maxasc=31 maxdesc=8 xh=15 pixels=5629 sum=f8df51e6
+  40 pt: box=4,-14..965,52 ave=29 maxasc=52 maxdesc=14 xh=26 pixels=10171 sum=fd8d3d5c
 FONT Midori Sans Bold
-   8 pt: box=1,-2..175,9 ave=5 maxasc=9 maxdesc=1 xh=5 pixels=523 sum=c2427aac
-  12 pt: box=1,-3..279,15 ave=8 maxasc=14 maxdesc=3 xh=8 pixels=1369 sum=f3698b92
-  24 pt: box=3,-6..559,30 ave=16 maxasc=29 maxdesc=6 xh=17 pixels=5034 sum=98bf35d7
-  40 pt: box=4,-10..925,50 ave=26 maxasc=49 maxdesc=10 xh=28 pixels=9931 sum=d52f3fcc
+   8 pt: box=1,-2..175,9 ave=5 maxasc=9 maxdesc=1 xh=5 pixels=526 sum=3547264b
+  12 pt: box=1,-3..279,15 ave=8 maxasc=14 maxdesc=3 xh=8 pixels=1375 sum=b9a6b890
+  24 pt: box=3,-6..559,30 ave=16 maxasc=29 maxdesc=6 xh=17 pixels=5043 sum=82f1f534
+  40 pt: box=4,-10..925,50 ave=26 maxasc=49 maxdesc=10 xh=28 pixels=9940 sum=5413cc49
 FONT Midori Sans
-   8 pt: box=1,-2..166,9 ave=4 maxasc=9 maxdesc=2 xh=5 pixels=441 sum=eca0ea72
-  12 pt: box=1,-3..266,15 ave=7 maxasc=14 maxdesc=3 xh=8 pixels=815 sum=02791280
-  24 pt: box=3,-6..531,30 ave=15 maxasc=29 maxdesc=6 xh=17 pixels=3542 sum=d1e1a473
-  40 pt: box=5,-11..880,50 ave=25 maxasc=49 maxdesc=10 xh=28 pixels=6814 sum=e7964d5b
+   8 pt: box=1,-2..166,9 ave=4 maxasc=9 maxdesc=2 xh=5 pixels=443 sum=1ab2227c
+  12 pt: box=1,-3..266,15 ave=7 maxasc=14 maxdesc=3 xh=8 pixels=816 sum=3aebccd5
+  24 pt: box=3,-6..531,30 ave=15 maxasc=29 maxdesc=6 xh=17 pixels=3551 sum=1ba34790
+  40 pt: box=5,-11..880,50 ave=25 maxasc=49 maxdesc=10 xh=28 pixels=6824 sum=912c33ad
 FONT Workplace Sans Bold
-   8 pt: box=1,-2..164,10 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=462 sum=04b282eb
-  12 pt: box=1,-3..262,16 ave=8 maxasc=15 maxdesc=3 xh=8 pixels=1190 sum=e28cb623
-  24 pt: box=2,-6..525,31 ave=16 maxasc=31 maxdesc=6 xh=17 pixels=4493 sum=c99a9116
-  40 pt: box=4,-11..869,52 ave=26 maxasc=51 maxdesc=10 xh=28 pixels=9034 sum=9f999e17
+   8 pt: box=1,-2..164,10 ave=5 maxasc=9 maxdesc=2 xh=5 pixels=466 sum=1ca0d69f
+  12 pt: box=1,-3..262,16 ave=8 maxasc=15 maxdesc=3 xh=8 pixels=1190 sum=37cc9423
+  24 pt: box=2,-6..525,31 ave=16 maxasc=31 maxdesc=6 xh=17 pixels=4486 sum=906b73e3
+  40 pt: box=4,-11..869,52 ave=26 maxasc=51 maxdesc=10 xh=28 pixels=9047 sum=2dcbf488
 FONT Workplace Sans
-   8 pt: box=1,-2..156,10 ave=4 maxasc=9 maxdesc=2 xh=5 pixels=431 sum=a22820a0
-  12 pt: box=1,-3..250,16 ave=7 maxasc=15 maxdesc=3 xh=8 pixels=725 sum=bf09b53e
-  24 pt: box=3,-6..500,31 ave=15 maxasc=31 maxdesc=6 xh=17 pixels=2704 sum=b943fd75
-  40 pt: box=4,-11..828,52 ave=25 maxasc=51 maxdesc=10 xh=28 pixels=6295 sum=418715a8
+   8 pt: box=1,-2..156,10 ave=4 maxasc=9 maxdesc=2 xh=5 pixels=431 sum=d3d20600
+  12 pt: box=1,-3..250,16 ave=7 maxasc=15 maxdesc=3 xh=8 pixels=728 sum=617f5efd
+  24 pt: box=3,-6..500,31 ave=15 maxasc=31 maxdesc=6 xh=17 pixels=2707 sum=b0cfea14
+  40 pt: box=4,-11..828,52 ave=25 maxasc=51 maxdesc=10 xh=28 pixels=6315 sum=1796050c
 FONT Times New Roman MT 30
    8 pt: box=0,-5..182,12 ave=4 maxasc=12 maxdesc=5 xh=6 pixels=466 sum=3ec404bf
   12 pt: box=0,-8..291,19 ave=6 maxasc=19 maxdesc=8 xh=9 pixels=723 sum=0b4d2d34
-  24 pt: box=1,-17..582,37 ave=13 maxasc=37 maxdesc=17 xh=19 pixels=3101 sum=145597a6
-  40 pt: box=1,-28..963,62 ave=21 maxasc=62 maxdesc=28 xh=31 pixels=5556 sum=3f5cce89
+  24 pt: box=1,-17..582,37 ave=13 maxasc=37 maxdesc=17 xh=19 pixels=3110 sum=84ff2a03
+  40 pt: box=1,-28..963,62 ave=21 maxasc=62 maxdesc=28 xh=31 pixels=5561 sum=6fb5a2b2
 FONT Monotype Sans WT
    8 pt: box=1,-4..182,11 ave=4 maxasc=10 maxdesc=3 xh=5 pixels=396 sum=cdcdaea1
   12 pt: box=1,-6..291,17 ave=6 maxasc=16 maxdesc=5 xh=8 pixels=647 sum=9a4a0a18
-  24 pt: box=3,-12..583,34 ave=13 maxasc=33 maxdesc=11 xh=16 pixels=3744 sum=61a32c45
-  40 pt: box=4,-19..965,56 ave=23 maxasc=56 maxdesc=19 xh=27 pixels=7148 sum=80f2de01
+  24 pt: box=3,-12..583,34 ave=13 maxasc=33 maxdesc=11 xh=16 pixels=3747 sum=7dfa74a4
+  40 pt: box=4,-19..965,56 ave=23 maxasc=56 maxdesc=19 xh=27 pixels=7158 sum=a1fbcab3
 FONT Monotype Sans Duospace WT J
    8 pt: box=1,-3..185,10 ave=5 maxasc=9 maxdesc=3 xh=4 pixels=386 sum=4dc9db0f
   12 pt: box=1,-5..296,16 ave=8 maxasc=15 maxdesc=5 xh=7 pixels=652 sum=e18bf521
-  24 pt: box=2,-11..592,32 ave=16 maxasc=31 maxdesc=10 xh=15 pixels=2829 sum=892e5816
-  40 pt: box=4,-18..980,53 ave=26 maxasc=52 maxdesc=18 xh=26 pixels=6115 sum=3a265c24
+  24 pt: box=2,-11..592,32 ave=16 maxasc=31 maxdesc=10 xh=15 pixels=2849 sum=477fb11a
+  40 pt: box=4,-18..980,53 ave=26 maxasc=52 maxdesc=18 xh=26 pixels=6118 sum=3a33ad83
 FONT @Monotype Sans Duospace WT J
    8 pt: box=1,-3..185,10 ave=5 maxasc=9 maxdesc=3 xh=4 pixels=386 sum=4dc9db0f
   12 pt: box=1,-5..296,16 ave=8 maxasc=15 maxdesc=5 xh=7 pixels=652 sum=e18bf521
-  24 pt: box=2,-11..592,32 ave=16 maxasc=31 maxdesc=10 xh=15 pixels=2829 sum=892e5816
-  40 pt: box=4,-18..980,53 ave=26 maxasc=52 maxdesc=18 xh=26 pixels=6115 sum=3a265c24
+  24 pt: box=2,-11..592,32 ave=16 maxasc=31 maxdesc=10 xh=15 pixels=2849 sum=477fb11a
+  40 pt: box=4,-18..980,53 ave=26 maxasc=52 maxdesc=18 xh=26 pixels=6118 sum=3a33ad83
 FONT Times New Roman WT J
    8 pt: box=0,-5..182,12 ave=4 maxasc=11 maxdesc=5 xh=5 pixels=466 sum=3ec404bf
   12 pt: box=0,-8..291,19 ave=6 maxasc=18 maxdesc=8 xh=9 pixels=723 sum=0b4d2d34
-  24 pt: box=1,-17..582,37 ave=12 maxasc=37 maxdesc=16 xh=18 pixels=3101 sum=145597a6
-  40 pt: box=1,-28..963,62 ave=21 maxasc=61 maxdesc=28 xh=30 pixels=5556 sum=3f5cce89
+  24 pt: box=1,-17..582,37 ave=12 maxasc=37 maxdesc=16 xh=18 pixels=3110 sum=84ff2a03
+  40 pt: box=1,-28..963,62 ave=21 maxasc=61 maxdesc=28 xh=30 pixels=5561 sum=6fb5a2b2
 FONT @Times New Roman WT J
    8 pt: box=0,-5..182,12 ave=4 maxasc=11 maxdesc=5 xh=5 pixels=466 sum=3ec404bf
   12 pt: box=0,-8..291,19 ave=6 maxasc=18 maxdesc=8 xh=9 pixels=723 sum=0b4d2d34
-  24 pt: box=1,-17..582,37 ave=12 maxasc=37 maxdesc=16 xh=18 pixels=3101 sum=145597a6
-  40 pt: box=1,-28..963,62 ave=21 maxasc=61 maxdesc=28 xh=30 pixels=5556 sum=3f5cce89
+  24 pt: box=1,-17..582,37 ave=12 maxasc=37 maxdesc=16 xh=18 pixels=3110 sum=84ff2a03
+  40 pt: box=1,-28..963,62 ave=21 maxasc=61 maxdesc=28 xh=30 pixels=5561 sum=6fb5a2b2
 FONT Wingdings
    8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=2 xh=4 pixels=471 sum=93637aa8
   12 pt: box=0,-5..355,14 ave=9 maxasc=13 maxdesc=4 xh=6 pixels=758 sum=b287e493
@@ -429,45 +429,45 @@ FONT Symbol
   24 pt: box=1,-9..710,27 ave=19 maxasc=27 maxdesc=9 xh=13 pixels=2716 sum=7ff64dd1
   40 pt: box=2,-16..1176,45 ave=31 maxasc=44 maxdesc=15 xh=22 pixels=4626 sum=64f1819f
 FONT Courier New Italic
-   8 pt: box=0,-3..222,8 ave=6 maxasc=7 maxdesc=2 xh=3 pixels=458 sum=9eb66b57
-  12 pt: box=0,-4..355,13 ave=9 maxasc=12 maxdesc=4 xh=6 pixels=775 sum=71ba7a78
-  24 pt: box=0,-9..711,25 ave=19 maxasc=25 maxdesc=8 xh=12 pixels=1396 sum=4049d749
-  40 pt: box=0,-15..1177,42 ave=31 maxasc=42 maxdesc=14 xh=21 pixels=3118 sum=95bb1dab
+   8 pt: box=0,-3..222,8 ave=6 maxasc=7 maxdesc=2 xh=3 pixels=452 sum=7af01bb9
+  12 pt: box=0,-4..355,13 ave=9 maxasc=12 maxdesc=4 xh=6 pixels=776 sum=b1dbe5cd
+  24 pt: box=0,-9..711,25 ave=19 maxasc=25 maxdesc=8 xh=12 pixels=1404 sum=3036dbb1
+  40 pt: box=0,-15..1177,42 ave=31 maxasc=42 maxdesc=14 xh=21 pixels=3118 sum=699002ab
 FONT Courier New Bold Italic
    8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=3 xh=4 pixels=498 sum=455386ff
   12 pt: box=0,-5..355,13 ave=9 maxasc=13 maxdesc=4 xh=6 pixels=1177 sum=b76dc852
-  24 pt: box=0,-10..711,26 ave=19 maxasc=26 maxdesc=9 xh=13 pixels=4103 sum=a68083b8
-  40 pt: box=0,-16..1177,44 ave=31 maxasc=43 maxdesc=15 xh=21 pixels=7540 sum=d6a2b4a9
+  24 pt: box=0,-10..711,26 ave=19 maxasc=26 maxdesc=9 xh=13 pixels=4115 sum=ca1375d4
+  40 pt: box=0,-16..1177,44 ave=31 maxasc=43 maxdesc=15 xh=21 pixels=7556 sum=9122ed79
 FONT Courier New Bold
    8 pt: box=0,-3..222,8 ave=6 maxasc=8 maxdesc=3 xh=4 pixels=495 sum=e9448700
   12 pt: box=0,-5..355,13 ave=9 maxasc=13 maxdesc=4 xh=6 pixels=1157 sum=d98b034e
-  24 pt: box=0,-10..711,27 ave=19 maxasc=26 maxdesc=9 xh=13 pixels=3981 sum=49a15276
-  40 pt: box=0,-16..1177,44 ave=31 maxasc=44 maxdesc=15 xh=22 pixels=7361 sum=cb88e43a
+  24 pt: box=0,-10..711,27 ave=19 maxasc=26 maxdesc=9 xh=13 pixels=3989 sum=b52fda7e
+  40 pt: box=0,-16..1177,44 ave=31 maxasc=44 maxdesc=15 xh=22 pixels=7375 sum=13d6e140
 FONT Courier New
    8 pt: box=0,-3..222,8 ave=6 maxasc=7 maxdesc=2 xh=3 pixels=430 sum=d6b8940b
   12 pt: box=0,-4..355,13 ave=9 maxasc=12 maxdesc=4 xh=6 pixels=747 sum=c3594f4c
-  24 pt: box=0,-9..711,25 ave=19 maxasc=25 maxdesc=8 xh=12 pixels=1357 sum=e1cd1536
-  40 pt: box=0,-15..1177,42 ave=31 maxasc=41 maxdesc=14 xh=20 pixels=3155 sum=1fb1d5f4
+  24 pt: box=0,-9..711,25 ave=19 maxasc=25 maxdesc=8 xh=12 pixels=1357 sum=72527a56
+  40 pt: box=0,-15..1177,42 ave=31 maxasc=41 maxdesc=14 xh=20 pixels=3157 sum=8292b77e
 FONT Arial Italic
-   8 pt: box=0,-2..191,9 ave=4 maxasc=8 maxdesc=2 xh=4 pixels=452 sum=5a400d79
+   8 pt: box=0,-2..191,9 ave=4 maxasc=8 maxdesc=2 xh=4 pixels=452 sum=43a9cf59
   12 pt: box=1,-3..306,14 ave=7 maxasc=14 maxdesc=3 xh=7 pixels=775 sum=3edba118
-  24 pt: box=1,-7..612,29 ave=14 maxasc=28 maxdesc=6 xh=14 pixels=4372 sum=14e01709
-  40 pt: box=2,-11..1014,47 ave=23 maxasc=47 maxdesc=11 xh=23 pixels=7919 sum=35f91d60
+  24 pt: box=1,-7..612,29 ave=14 maxasc=28 maxdesc=6 xh=14 pixels=4369 sum=1cd0d7ca
+  40 pt: box=2,-11..1014,47 ave=23 maxasc=47 maxdesc=11 xh=23 pixels=7930 sum=41597487
 FONT Arial Bold Italic
    8 pt: box=0,-2..203,9 ave=4 maxasc=9 maxdesc=2 xh=4 pixels=458 sum=c125f917
   12 pt: box=1,-3..325,14 ave=7 maxasc=14 maxdesc=3 xh=7 pixels=1477 sum=0120018e
-  24 pt: box=1,-7..650,29 ave=15 maxasc=28 maxdesc=6 xh=14 pixels=5503 sum=8f5b9570
-  40 pt: box=2,-11..1076,48 ave=25 maxasc=47 maxdesc=11 xh=23 pixels=9458 sum=9995b4bf
+  24 pt: box=1,-7..650,29 ave=15 maxasc=28 maxdesc=6 xh=14 pixels=5515 sum=53b35f6c
+  40 pt: box=2,-11..1076,48 ave=25 maxasc=47 maxdesc=11 xh=23 pixels=9470 sum=ff5abe1b
 FONT Arial Bold
    8 pt: box=1,-2..203,9 ave=4 maxasc=9 maxdesc=2 xh=4 pixels=532 sum=eace8609
-  12 pt: box=1,-3..324,14 ave=7 maxasc=14 maxdesc=3 xh=7 pixels=1494 sum=dd180593
-  24 pt: box=2,-7..649,29 ave=15 maxasc=28 maxdesc=6 xh=14 pixels=5380 sum=bab11899
-  40 pt: box=4,-11..1075,48 ave=25 maxasc=47 maxdesc=11 xh=23 pixels=9326 sum=2b8e626b
+  12 pt: box=1,-3..324,14 ave=7 maxasc=14 maxdesc=3 xh=7 pixels=1495 sum=22b72628
+  24 pt: box=2,-7..649,29 ave=15 maxasc=28 maxdesc=6 xh=14 pixels=5387 sum=1a9dd3cc
+  40 pt: box=4,-11..1075,48 ave=25 maxasc=47 maxdesc=11 xh=23 pixels=9335 sum=c7d03a08
 FONT Arial
-   8 pt: box=1,-2..191,9 ave=4 maxasc=8 maxdesc=2 xh=4 pixels=437 sum=9219171e
-  12 pt: box=1,-3..306,14 ave=7 maxasc=14 maxdesc=3 xh=7 pixels=739 sum=01cd01a4
-  24 pt: box=3,-7..611,29 ave=14 maxasc=28 maxdesc=6 xh=14 pixels=4350 sum=a33668bb
-  40 pt: box=4,-11..1013,48 ave=23 maxasc=47 maxdesc=11 xh=23 pixels=7475 sum=683a3bb4
+   8 pt: box=1,-2..191,9 ave=4 maxasc=8 maxdesc=2 xh=4 pixels=438 sum=39a6fbd3
+  12 pt: box=1,-3..306,14 ave=7 maxasc=14 maxdesc=3 xh=7 pixels=740 sum=1f54b939
+  24 pt: box=3,-7..611,29 ave=14 maxasc=28 maxdesc=6 xh=14 pixels=4355 sum=476b06a4
+  40 pt: box=4,-11..1013,48 ave=23 maxasc=47 maxdesc=11 xh=23 pixels=7487 sum=ba524e90
 FONT Times New Roman Italic
    8 pt: box=0,-3..175,9 ave=4 maxasc=9 maxdesc=3 xh=4 pixels=410 sum=d63f3247
   12 pt: box=0,-5..279,15 ave=6 maxasc=14 maxdesc=5 xh=7 pixels=722 sum=0cfae8ff

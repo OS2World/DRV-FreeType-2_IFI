@@ -8,6 +8,6 @@ round 60
 round 70
 round 80
 round 90
-SOAK rounds=100 files=220 ms=22164
-availmem before=3571126272 after=3570683904 delta=-442368
-maxshmem before=334233600 after=334233600 delta=0
+SOAK rounds=100 files=220 ms=29254
+availmem before=3565793280 after=3565133824 delta=-659456
+maxshmem before=327417856 after=325648384 delta=-1769472

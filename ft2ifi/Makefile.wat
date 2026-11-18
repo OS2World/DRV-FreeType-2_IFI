@@ -1,7 +1,7 @@
 # Open Watcom 2.0 Makefile for FT2IFI (FT2IFI.DLL, the FreeType 2 based PM font driver)
 # Run from the ft2ifi directory (compile_wat.cmd does this).
 #
-# FreeType 2 (lib\freetype-2.5.0.1, with the OS/2 IFI additions in builds\os2) is compiled into
+# FreeType 2 (lib\freetype-2.15.0, with the OS/2 IFI additions in builds\os2) is compiled into
 # the DLL together with the driver. There is no C run-time start-up code: the DLL entry point
 # is _DLL_InitTerm, memory comes from SSAllocMem and files from the Dos* calls (ifisystem.c).
 # Needs the OS/2 Toolkit 4.5 headers and import libraries (TK) in addition to Open Watcom.
@@ -11,7 +11,7 @@ TK = C:\os2tk45
 CC = $(WATCOM)\binp\wcc386.exe
 LINK = $(WATCOM)\binp\wlink.exe
 
-FT = lib\freetype-2.5.0.1
+FT = lib\freetype-2.15.0
 BIN = bin
 OBJ = bin\obj
 DLLNAME = FT2IFI
