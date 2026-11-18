@@ -4,6 +4,11 @@ FreeType/2 is the OS/2 Presentation Manager installable font interface (IFI) dri
 TrueType fonts through the FreeType library; it replaces IBM's `TRUETYPE.DLL`. It is a user-mode DLL
 (ring 3), not a `.SYS` driver.
 
+
+> **FreeType 2 based driver.** This branch (`master`) is the FreeType 1.3.6 driver (release 1.3.6r2). A newer driver based on **FreeType 2.15.0** (OpenType/CFF support, kerning, more
+> fixes) is on the `ft2ifi` branch and in the release **2.15.0a1** (alpha): https://github.com/OS2World/DRV-FreeType-2_IFI/releases/tag/2.15.0a1, see `ft2ifi\README.md` on that branch.
+> It installs next to this one (as `FT2IFI.DLL`) and can be switched back with `UNINST.CMD`.
+
 | Field | Details |
 |---|---|
 | Version | 1.3.6r2 (BLDLEVEL `@#Necasek/Seo/KO/Taylor et al:1.3.6r2#@`) |
@@ -54,7 +59,7 @@ None: this is a user-mode DLL, it prints nothing at boot. Settings are made with
 ## Known issues
 
 - Not tested on real hardware, and `INSTALL.CMD`, `UNINST.CMD`, saving settings in `ftconfig.exe` and the help files were not tested.
-- Only TrueType, as in the shipped driver. OpenType/CFF would need the FreeType 2 based driver (`ft2ifi` in the upstream repository), not ported.
+- Only TrueType, as in the shipped driver. OpenType/CFF fonts need the FreeType 2 based driver: release 2.15.0a1 / branch `ft2ifi` of this repository.
 - The code page range 2 charset checks are disabled (as in the VisualAge build, by accident of an upstream overflow); the intended
   values are noted in `src\ifi\ftifi.h`.
 - The driver leaks memory in the shared engine at the same rate as the shipped one (about 70 KB per round of loading all 185 test fonts).
@@ -64,10 +69,13 @@ None: this is a user-mode DLL, it prints nothing at boot. Settings are made with
 
 - https://github.com/OS2World/DRV-FreeType-2_IFI
 - https://github.com/altsan/os2-freetype-ifi
+- https://github.com/OS2World/DRV-FreeType-2_IFI/releases : releases (1.3.6r2 here on `master`; 2.15.0a1 = FreeType 2.15.0 based driver, branch `ft2ifi`)
+- https://gitlab.freedesktop.org/freetype/freetype : FreeType (used by the 2.15.0a1 driver)
 
 ## Changelog
 
 Newest first; details in [doc/CHANGES.md](doc/CHANGES.md).
 
+- Also published from this repository: 2.15.0a1 (2026-11-18, alpha), the FreeType 2.15.0 based driver (branch `ft2ifi`), see above.
 - 1.3.6r2 (2026-11-18): upstream 1.3.6 built with Open Watcom 2 (`compile_wat.cmd`); clean-room IFI headers; output identical to the shipped driver; BLDLEVEL 1.3.6r2.
 - 1.3.4: original state.

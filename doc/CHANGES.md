@@ -1,5 +1,8 @@
 # Changes from the original FreeType/2
 
+This file describes version 1 (FreeType 1.3.1 based, release 1.3.6r2). The FreeType 2.15.0 based driver (release 2.15.0a1, branch `ft2ifi`) has its own notes:
+`ft2ifi\README.md` and `ft2ifi\lib\RESYNC.md` on that branch.
+
 Summary of version 1.3.6r2 (released 2026-11-18, git tag `1.3.6r2`) against FreeType/2 1.3.6 as shipped with ArcaOS:
 
 - Same source (upstream `legacy/` 1.3.6), built with Open Watcom 2 instead of IBM VisualAge (`compile_wat.cmd`, `Makefile.wat`).
