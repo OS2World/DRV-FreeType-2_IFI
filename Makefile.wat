@@ -23,7 +23,7 @@ OBJ_DIR = $(BIN_DIR)\obj
 # -4r 486 register calling, -zp1 pack structures on byte boundaries (important), -bd DLL code,
 # -zc strings in the code segment, -s no stack checks (the original was built without run-time: -Rn)
 LIBFLAGS = -zq -4r -Otexan -zp1 -bd -zc -s -w1 -I$(LIB_DIR)\arch\os2 -I$(LIB_DIR) -I$(LIB_DIR)\extend -I$(WATCOM)\h -I$(TK)\h
-IFIFLAGS = -zq -4r -zp1 -bd -zc -s -w1 -D_ULS_CALLCONV_ -DCALLCONV=_System -I$(LIB_DIR) -I$(LIB_DIR)\extend -I$(LIB_DIR)\arch\os2 -I$(IFI_DIR) -I$(WATCOM)\h -I$(TK)\h
+IFIFLAGS = -zq -4r -zp1 -bd -zc -s -w1 $(IFIEXTRA) -D_ULS_CALLCONV_ -DCALLCONV=_System -I$(LIB_DIR) -I$(LIB_DIR)\extend -I$(LIB_DIR)\arch\os2 -I$(IFI_DIR) -I$(WATCOM)\h -I$(TK)\h
 
 EXTOBJS = $(OBJ_DIR)\ftxgasp.obj $(OBJ_DIR)\ftxkern.obj $(OBJ_DIR)\ftxpost.obj $(OBJ_DIR)\ftxcmap.obj $(OBJ_DIR)\ftxwidth.obj $(OBJ_DIR)\ftxsbit.obj
 LIBOBJ = $(OBJ_DIR)\freetype.obj
@@ -32,11 +32,13 @@ DLL = $(BIN_DIR)\FreeType.dll
 
 all: $(DLL) $(BIN_DIR)\ftconfig.exe $(BIN_DIR)\ftmem.exe $(BIN_DIR)\ftconfig.hlp $(BIN_DIR)\ftconfde.hlp $(BIN_DIR)\ftconfes.hlp
 
-$(DLL): $(OBJ_DIR)\ftifi.obj $(TTF) $(IFI_DIR)\FreeType.def
+$(DLL): $(OBJ_DIR)\ftifi.obj $(TTF) $(IFI_DIR)\FreeType.def $(BIN_DIR)\lxdata.exe
 	$(LINK) @<<
 name $(DLL)
 system os2v2_dll initinstance terminstance
 option quiet,caseexact,map=$(BIN_DIR)\FreeType.map
+option start=_DLL_InitTerm
+segment type data shared
 option description '@#Necasek/Seo/KO/Taylor et al:1.3.6#@FreeType/2 installable font interface driver'
 file $(OBJ_DIR)\ftifi.obj
 library $(TTF)
@@ -45,6 +47,14 @@ library $(TK)\lib\os2386.lib
 library $(TK)\lib\libconv.lib
 export FONT_DRIVER_DISPATCH_TABLE.1=_fdhdr
 <<
+	$(BIN_DIR)\lxdata.exe $(DLL)
+
+# the linker has no DATA SINGLE for LX files: a tiny tool sets the module flag after linking
+$(BIN_DIR)\lxdata.exe: tools\lxdata.c
+	@if not exist $(BIN_DIR) mkdir $(BIN_DIR)
+	@if not exist $(OBJ_DIR) mkdir $(OBJ_DIR)
+	$(CC) -zq -4r -bt=os2 -I$(WATCOM)\h -fo=$(OBJ_DIR)\lxdata.obj tools\lxdata.c
+	$(LINK) name $@ system os2v2 option quiet file $(OBJ_DIR)\lxdata.obj
 
 $(TTF): $(LIBOBJ) $(EXTOBJS)
 	@if exist $(TTF) del $(TTF)

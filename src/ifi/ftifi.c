@@ -56,7 +56,7 @@
 /*                                                                         */
 /* For Intelligent Font Interface (IFI) specification please see IFI32.TXT */
 /* or the updated version in Lotus WordPro format.                         */
-#if 0
+#ifdef FTIFI_TRACE
 #define DEBUG
 #endif
 
@@ -449,6 +449,37 @@ PSZ pszCmbAliases = NULL;
 
 /* the list of live faces */
 static TList  liveFiles  = { NULL, NULL, 0 };
+#ifdef FTIFI_TRACE
+/* process trace: appends one line per call to \FTIFIP.LOG (works in every process) */
+static void PTrace( char *tag, ULONG a, ULONG b )
+{
+   static char hex[] = "0123456789ABCDEF";
+   char    line[96];
+   char   *q = line;
+   ULONG   v[4], i, j, w, act;
+   PTIB    ptib;
+   PPIB    ppib;
+   HFILE   h;
+   DosGetInfoBlocks( &ptib, &ppib );
+   v[0] = ppib->pib_ulpid; v[1] = (ULONG)&liveFiles; v[2] = a; v[3] = b;
+   while (*tag) *q++ = *tag++;
+   for (i = 0; i < 4; i++) {
+      *q++ = ' ';
+      for (j = 0; j < 8; j++) *q++ = hex[(v[i] >> (28 - 4*j)) & 15];
+   }
+   *q++ = 13; *q++ = 10;
+   if (!DosOpen( "\FTIFIP.LOG", &h, &act, 0, FILE_NORMAL,
+                 OPEN_ACTION_CREATE_IF_NEW | OPEN_ACTION_OPEN_IF_EXISTS,
+                 OPEN_SHARE_DENYNONE | OPEN_ACCESS_WRITEONLY, NULL )) {
+      DosSetFilePtr( h, 0, FILE_END, &w );
+      DosWrite( h, line, q - line, &w );
+      DosClose( h );
+   }
+}
+#define PTRACE(t,a,b) PTrace( t, (ULONG)(a), (ULONG)(b) )
+#else
+#define PTRACE(t,a,b)
+#endif
 
 /* the list of sleeping faces */
 static TList  idleFiles = { NULL, NULL, 0 };
@@ -2058,6 +2089,7 @@ LONG _System ConvertFontFile( PSZ  source,
 /*                                                                          */
 HFF _System LoadFontFile( PSZ file_name )
 {
+   PTRACE("LoadFF", 0, 0);
    PSZ           extension;
    PFontFile     cur_file;
    PListElement  element;
@@ -2142,6 +2174,7 @@ LONG _System QueryFaces( HFF          hff,
                          ULONG        cFontCount,
                          ULONG        cStart)
 {
+   PTRACE("QueryF", hff, cStart);
    static TT_Face_Properties   properties;
    static IFIMETRICS           ifi;   /* temporary structure */
           PFontFace            pface;
@@ -2860,6 +2893,7 @@ Fail:
 HFC _System OpenFontContext( HFF    hff,
                              ULONG  ulFont)
 {
+   PTRACE("OpenFC", hff, ulFont);
           int          i = 0;
    static TT_Instance  instance;
    static PFontFile    file;
@@ -2957,6 +2991,7 @@ Fail:
 LONG _System SetFontContext( HFC           hfc,
                              PCONTEXTINFO  pci )
 {
+   PTRACE("SetFC ", hfc, 0);
    LONG       ptsize, temp, emsize;
    PFontSize  size;
 
@@ -4188,6 +4223,7 @@ ULONG  FinalTerm(void) {
 /*  the FreeType engine and some internal structures at startup. It cleans  */
 /*  up the UCONV cache at process termination.                              */
 ULONG _System _DLL_InitTerm(ULONG hModule, ULONG ulFlag) {
+   PTRACE("InitT ", hModule, ulFlag);
    switch (ulFlag) {
       case 0:             /* initializing */
          if (++ulProcessCount == 1)

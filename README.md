@@ -7,7 +7,7 @@ TrueType fonts through the FreeType library; it replaces IBM's `TRUETYPE.DLL`. I
 | Field | Details |
 |---|---|
 | Version | 1.3.6 (BLDLEVEL `@#Necasek/Seo/KO/Taylor et al:1.3.6#@`) |
-| Status | Builds with Open Watcom 2 (all outputs). Installed on the Dev VM as the TrueType driver: PM starts, outline fonts are listed and measured. Visual rendering not checked yet. |
+| Status | Builds with Open Watcom 2 (all outputs) and works in stand-alone tests, but **does not work yet as the PM font driver**: PM processes trap because the driver data is not shared between them (see doc/CHANGES.md). Use the shipped `FREETYPE.DLL`. |
 | Tested on | ArcaOS 5.1.1 Dev VM (VirtualBox), 2026-11-17. No real hardware. |
 | License | FreeType Project License, see [LICENSE](LICENSE). The four IFI headers `src\ifi\32*.h` are clean-room replacements (see `doc/CHANGES.md`). |
 | Authors | Michal Necasek, Seo, KO Myung-Hun, Alex Taylor and others (see `src\ifi\ftifi.c`); FreeType 1.3.1 by David Turner, Robert Wilhelm, Werner Lemberg |
@@ -35,11 +35,11 @@ None: this is a user-mode DLL, it prints nothing at boot. Settings are made with
 
 ## Sample / test
 
-`test\fontlist.c` lists the fonts and measures text (see `doc/CHANGES.md`). `src\ifi\test.c` and `testconv.c` are the original test programs.
+`test\iftest.c`, `iftest2.c` test the driver without PM (build with `test\build_iftest.cmd`); `test\fontlist.c` and `fontrender.c` list and render fonts through PM (used to compare with the shipped DLL). `src\ifi\test.c` and `testconv.c` are the original test programs.
 
 ## Known issues
 
-- Rendering was only tested by listing and measuring fonts (`test\fontlist.c`); no visual check, no real hardware.
+- Does not work inside PM yet: the DLL's data is not shared between processes (original: `DATA SINGLE SHARED`).
 - Only TrueType (and what FreeType 1.3.1 supports); OpenType/CFF needs the FreeType 2 based driver
   (`ft2ifi` in the upstream repository), planned as a second phase.
 
