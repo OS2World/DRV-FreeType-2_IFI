@@ -38,25 +38,28 @@ unchanged into the standard layout (commit "Import FreeType/2 1.3.6 from upstrea
 - Remaining doubts: `IFIMETRICS_ITALIC`, `_UDC`, `_ANTI_ALIAS`, `_NO_CACHE`, `_ATOM_NAMES` and `FD_CHARATTR_*` are not
   defined because nothing uses them. The old headers stay in the git history (tag `upstream-original`).
 
-## Install test (ArcaOS Dev VM, 2026-11-17): NOT working yet
+## Install test (ArcaOS Dev VM, 2026-11-17 / 18)
 
-What was found, in order:
+Method: the DLL is copied under a test name next to the shipped one, `PM_Font_Drivers` / `TRUETYPE` in `OS2.INI` is pointed at
+it, the VM is rebooted, and `test\fontrender.exe` renders a text with every outline font into a memory bitmap and prints
+metrics, pixel counts and a checksum per font and size (`test\render_ship.txt` = shipped `FREETYPE.DLL`, `test\render_ow.txt` = this build).
 
-- First test: PM started and listed fonts, but only 21 outline fonts (the Type 1 ones) against 112 with the shipped
-  `FREETYPE.DLL`: the driver loaded **no** TrueType font. Cause: Open Watcom's DLL startup code was the entry point, so
-  `_DLL_InitTerm` (which starts the FreeType engine) never ran. Fixed with `option start=_DLL_InitTerm` in `Makefile.wat`.
-- After that all fonts load (198 listed), but any process that uses a TrueType font through GPI traps in `List_Find`
-  (read of the driver's own data, which sits at an address of another process): the driver data is not shared between the
-  PM processes. The original DLL has `DATA SINGLE SHARED`. Done so far: data object marked shared (`segment type data
-  shared`) and the module flag "single data" set after linking by `tools\lxdata.c` (the Watcom linker has no switch for it
-  in LX files). A trace (`IFIEXTRA=-DFTIFI_TRACE`, `\FTIFIP.LOG`) shows that each PM process still gets its own copy of the
-  data (different `&liveFiles` per process), so PM still crashes; with the trace build the Workplace Shell does not even start.
-- Stand-alone tests that do not need PM pass with the current DLL: `test\iftest.c` (one process: load font, query faces,
-  open context, render a glyph through the dispatch table) and `test\iftest2.c` (two processes: the child uses the font
-  handle of the parent, so the shared data works there). Build them with `test\build_iftest.cmd` / `build_iftest2.cmd`.
-- Recovery used when PM hangs: boot, press Alt+F1 right after reset, F2 (command line), rename the DLL registered under
-  `PM_Font_Drivers` / `TRUETYPE`, reboot, restore the key with `FTSETK.CMD` (helper kept outside the repo).
+Result: **identical to the shipped DLL**: 112 outline fonts, same text boxes, metrics, pixel counts and checksums for all fonts at
+8, 12, 24 and 40 pt (`diff` of the two files is empty). Not tested: real hardware, OpenType/CFF, other code pages, the install scripts.
 
-Open: why PM loads the DLL data per process; next idea is to make the object layout of the DLL identical to the original
-(four objects, constant data in a separate shared read-only object) or to find the loader rule. The Open Watcom build is
-**not usable as a replacement for the shipped driver yet**.
+Problems found on the way (all fixed):
+
+- Open Watcom's DLL start-up code was the entry point, so `_DLL_InitTerm` (it starts the FreeType engine) never ran and no TrueType
+  font loaded (21 outline fonts, all Type 1). Fixed: `option start=_DLL_InitTerm`.
+- **The internal module name of the DLL must equal the file name it is installed under.** Test copies named `FTOW.DLL`, `FTOWT.DLL`
+  etc. that kept the internal name `FreeType` made every PM process that used a TrueType font trap in `List_Find`; even a copy of the
+  shipped `FREETYPE.DLL` under the name `FTS.DLL` did the same. A build with `option modname=FTOWX` installed as `FTOWX.DLL`
+  works. `Makefile.wat` has `MODNAME = FREETYPE` (override with `wmake MODNAME=name` for test copies). The earlier theories (data not
+  shared between processes) were wrong; the data-sharing settings below are kept because the original DLL has `DATA SINGLE SHARED`,
+  but it was not tested whether they are needed.
+- `segment type data shared` and the module flag "single data" set after linking by `tools\lxdata.c` (the Watcom linker has no switch
+  for it in LX files) reproduce the original `DATA SINGLE SHARED`.
+- Handy: `test\iftest.c`, `iftest2.c`, `iftest3.c` test the driver without PM (one process, two processes, DosLoadModule);
+  `IFIEXTRA="-DFTIFI_TRACE -za99"` builds a trace version (`\FTIFI.LOG`, `\FTIFIP.LOG` per process) which can hang the Workplace Shell.
+- If PM hangs after a bad driver: reset the VM, press Alt+F1 right after the reset, F2 (command line), rename the DLL registered under
+  `TRUETYPE`, reboot, restore the key.

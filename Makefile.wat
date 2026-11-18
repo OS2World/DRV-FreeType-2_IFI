@@ -29,6 +29,8 @@ EXTOBJS = $(OBJ_DIR)\ftxgasp.obj $(OBJ_DIR)\ftxkern.obj $(OBJ_DIR)\ftxpost.obj $
 LIBOBJ = $(OBJ_DIR)\freetype.obj
 TTF = $(BIN_DIR)\libttf.lib
 DLL = $(BIN_DIR)\FreeType.dll
+# internal module name; it must equal the file name the DLL is installed under (FREETYPE.DLL)
+MODNAME = FREETYPE
 
 all: $(DLL) $(BIN_DIR)\ftconfig.exe $(BIN_DIR)\ftmem.exe $(BIN_DIR)\ftconfig.hlp $(BIN_DIR)\ftconfde.hlp $(BIN_DIR)\ftconfes.hlp
 
@@ -38,6 +40,7 @@ name $(DLL)
 system os2v2_dll initinstance terminstance
 option quiet,caseexact,map=$(BIN_DIR)\FreeType.map
 option start=_DLL_InitTerm
+option modname=$(MODNAME)
 segment type data shared
 option description '@#Necasek/Seo/KO/Taylor et al:1.3.6#@FreeType/2 installable font interface driver'
 file $(OBJ_DIR)\ftifi.obj

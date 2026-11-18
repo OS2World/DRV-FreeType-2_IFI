@@ -22,7 +22,7 @@ static void child(HFF hff)
 {
     HFC hfc; CONTEXTINFO ci; CHARATTR ca; BITMAPMETRICS bmm; static char buf[32768]; LONG rc;
     static IFIMETRICS im;
-    printf("child: using hff %lX\n", (unsigned long) hff);
+    printf("child: hff %lX &fdhdr=%lX pfddisp=%lX\n", (unsigned long) hff, (unsigned long) &fdhdr, (unsigned long) fdhdr.pfddisp);
     rc = fdhdr.pfddisp->FdQueryFaces(hff, &im, sizeof(im), 1, 0);
     printf("child: QueryFaces rc=%ld\n", rc);
     hfc = fdhdr.pfddisp->FdOpenFontContext(hff, 0);
@@ -46,7 +46,7 @@ int main(int argc, char **argv)
     setbuf(stdout, NULL);
     if (argc > 2 && !strcmp(argv[1], "child")) { child((HFF) strtoul(argv[2], NULL, 16)); return 0; }
     hff = fdhdr.pfddisp->FdLoadFontFile(FNAME);
-    printf("parent: HFF=%lX\n", (unsigned long) hff);
+    printf("parent: HFF=%lX &fdhdr=%lX pfddisp=%lX\n", (unsigned long) hff, (unsigned long) &fdhdr, (unsigned long) fdhdr.pfddisp);
     sprintf(cmd, "%s child %lX", argv[0], (unsigned long) hff);
     system(cmd);
     printf("parent: unload rc=%ld\n", (long) fdhdr.pfddisp->FdUnloadFontFile(hff));

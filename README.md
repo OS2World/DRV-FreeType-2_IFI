@@ -7,8 +7,8 @@ TrueType fonts through the FreeType library; it replaces IBM's `TRUETYPE.DLL`. I
 | Field | Details |
 |---|---|
 | Version | 1.3.6 (BLDLEVEL `@#Necasek/Seo/KO/Taylor et al:1.3.6#@`) |
-| Status | Builds with Open Watcom 2 (all outputs) and works in stand-alone tests, but **does not work yet as the PM font driver**: PM processes trap because the driver data is not shared between them (see doc/CHANGES.md). Use the shipped `FREETYPE.DLL`. |
-| Tested on | ArcaOS 5.1.1 Dev VM (VirtualBox), 2026-11-17. No real hardware. |
+| Status | Builds with Open Watcom 2 and works as the PM TrueType driver on the Dev VM: renders all 112 outline fonts with output identical to the shipped `FREETYPE.DLL`. Not tested on real hardware; the install scripts were not run with this build. |
+| Tested on | ArcaOS 5.1.1 Dev VM (VirtualBox), 2026-11-18, as a test copy next to the shipped DLL. No real hardware. |
 | License | FreeType Project License, see [LICENSE](LICENSE). The four IFI headers `src\ifi\32*.h` are clean-room replacements (see `doc/CHANGES.md`). |
 | Authors | Michal Necasek, Seo, KO Myung-Hun, Alex Taylor and others (see `src\ifi\ftifi.c`); FreeType 1.3.1 by David Turner, Robert Wilhelm, Werner Lemberg |
 | Original source | https://github.com/altsan/os2-freetype-ifi (`legacy/`, tag v1.3.6); git tag `upstream-original` = the earlier 1.3.4 snapshot |
@@ -35,11 +35,11 @@ None: this is a user-mode DLL, it prints nothing at boot. Settings are made with
 
 ## Sample / test
 
-`test\iftest.c`, `iftest2.c` test the driver without PM (build with `test\build_iftest.cmd`); `test\fontlist.c` and `fontrender.c` list and render fonts through PM (used to compare with the shipped DLL). `src\ifi\test.c` and `testconv.c` are the original test programs.
+`test\iftest*.c` test the driver without PM; `test\fontrender.c` renders every outline font through PM and prints metrics and checksums (`render_ship.txt` = shipped DLL, `render_ow.txt` = this build, identical). `src\ifi\test.c` and `testconv.c` are the original test programs.
 
 ## Known issues
 
-- Does not work inside PM yet: the DLL's data is not shared between processes (original: `DATA SINGLE SHARED`).
+- Tested only as a side-by-side copy. The DLL's internal module name must equal its file name (`MODNAME` in `Makefile.wat`, default `FREETYPE`).
 - Only TrueType (and what FreeType 1.3.1 supports); OpenType/CFF needs the FreeType 2 based driver
   (`ft2ifi` in the upstream repository), planned as a second phase.
 
