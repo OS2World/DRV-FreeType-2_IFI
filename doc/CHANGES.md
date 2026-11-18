@@ -18,7 +18,7 @@ unchanged into the standard layout (commit "Import FreeType/2 1.3.6 from upstrea
 - Result on the Dev VM: all outputs built, 0 compile errors; `FreeType.dll` 101,469 bytes (the shipped ArcaOS DLL
   is 82,402 bytes, built with VisualAge and exepack). Same imports (DOSCALLS, uconv, PMSHAPI, NLS, PMGRE) and the
   same single export (ordinal 1, `FONT_DRIVER_DISPATCH_TABLE`).
-- Not yet done: loading the DLL in the PM font engine (install test).
+- Install test: see the section below.
 
 ## Documentation
 
@@ -37,3 +37,10 @@ unchanged into the standard layout (commit "Import FreeType/2 1.3.6 from upstrea
   original 12-byte field.
 - Remaining doubts: `IFIMETRICS_ITALIC`, `_UDC`, `_ANTI_ALIAS`, `_NO_CACHE`, `_ATOM_NAMES` and `FD_CHARATTR_*` are not
   defined because nothing uses them. The old headers stay in the git history (tag `upstream-original`).
+
+## Install test (ArcaOS Dev VM, 2026-11-17)
+
+- Installed side by side: `FreeType.dll` copied to `C:\OS2\DLL\FTOW.DLL`, `PM_Font_Drivers`/`TRUETYPE` in `OS2.INI` set to `\OS2\DLL\FTOW.DLL` (original value `\OS2\DLL\FREETYPE.DLL`; the shipped 1.3.6 DLL is untouched). `OS2.INI` cannot be copied while the system runs, so recovery is restoring that one key.
+- After a reboot PM starts normally, there is no new entry in `POPUPLOG.OS2`, and `FTOW.DLL` is locked by the system (loaded).
+- `test\fontlist.c` (build with `test\build_fontlist.cmd`) lists the public fonts: 107 fonts, 21 outline fonts, including Times New Roman (regular, bold, italic, bold italic), Courier and Symbol Set. `GpiCreateLogFont` plus `GpiQueryTextBox` on 12 of them give plausible widths (Times New Roman 40 pt "Hello World" = 200, bold 210).
+- Not done: visual check of rendered text, comparison of metrics with the shipped DLL, OpenType/CFF fonts.

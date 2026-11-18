@@ -7,8 +7,8 @@ TrueType fonts through the FreeType library; it replaces IBM's `TRUETYPE.DLL`. I
 | Field | Details |
 |---|---|
 | Version | 1.3.6 (BLDLEVEL `@#Necasek/Seo/KO/Taylor et al:1.3.6#@`) |
-| Status | Builds with Open Watcom 2 (all outputs). **Not yet tested as an installed driver.** |
-| Tested on | Build only: ArcaOS 5.1.1 Dev VM, 2026-11-17 |
+| Status | Builds with Open Watcom 2 (all outputs). Installed on the Dev VM as the TrueType driver: PM starts, outline fonts are listed and measured. Visual rendering not checked yet. |
+| Tested on | ArcaOS 5.1.1 Dev VM (VirtualBox), 2026-11-17. No real hardware. |
 | License | FreeType Project License, see [LICENSE](LICENSE). The four IFI headers `src\ifi\32*.h` are clean-room replacements (see `doc/CHANGES.md`). |
 | Authors | Michal Necasek, Seo, KO Myung-Hun, Alex Taylor and others (see `src\ifi\ftifi.c`); FreeType 1.3.1 by David Turner, Robert Wilhelm, Werner Lemberg |
 | Original source | https://github.com/altsan/os2-freetype-ifi (`legacy/`, tag v1.3.6); git tag `upstream-original` = the earlier 1.3.4 snapshot |
@@ -35,11 +35,11 @@ None: this is a user-mode DLL, it prints nothing at boot. Settings are made with
 
 ## Sample / test
 
-`sample\` and `test\` are empty; `src\ifi\test.c` and `testconv.c` are the original test programs.
+`test\fontlist.c` lists the fonts and measures text (see `doc/CHANGES.md`). `src\ifi\test.c` and `testconv.c` are the original test programs.
 
 ## Known issues
 
-- Install test of the Open Watcom build not done yet.
+- Rendering was only tested by listing and measuring fonts (`test\fontlist.c`); no visual check, no real hardware.
 - Only TrueType (and what FreeType 1.3.1 supports); OpenType/CFF needs the FreeType 2 based driver
   (`ft2ifi` in the upstream repository), planned as a second phase.
 
