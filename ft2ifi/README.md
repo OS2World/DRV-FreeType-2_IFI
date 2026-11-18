@@ -1,12 +1,12 @@
 # FT2IFI: FreeType 2 based driver, Open Watcom build (alpha)
 
-Branch `ft2ifi`. This directory is the upstream `ft2ifi/` tree (https://github.com/altsan/os2-freetype-ifi, tag `v2.0.0-beta.1`: FreeType/2 IFI 2.0.0 public beta 1),
-**updated to FreeType 2.15.0** (release 2.15.0a1), with fixes and an Open Watcom 2 build. The version 1 driver (FreeType 1.3.1, release 1.3.6r2) is in the top-level directory and is not touched.
+This directory is the upstream `ft2ifi/` tree (https://github.com/altsan/os2-freetype-ifi, tag `v2.0.0-beta.1`: FreeType/2 IFI 2.0.0 public beta 1),
+**updated to FreeType 2.15.0** (release 2.15.0a1), with fixes and an Open Watcom 2 build. The version 1 driver (FreeType 1.3.1, release 1.3.6r2) is in the `..\freetype1\` directory and is not touched.
 `lib\freetype-2.15.0` is FreeType 2.15.0 reduced to the needed modules plus the OS/2 additions; see `lib\RESYNC.md`.
 
 ## Release 2.15.0a1
 
-Download: https://github.com/OS2World/DRV-FreeType-2_IFI/releases/tag/2.15.0a1 (`FT2IFI_2-15-0a1.zip`, a GitHub pre-release). Source: this branch, tag `2.15.0a1`.
+Download: https://github.com/OS2World/DRV-FreeType-2_IFI/releases/tag/2.15.0a1 (`FT2IFI_2-15-0a1.zip`, a GitHub pre-release). Source: this directory, tag `2.15.0a1`.
 
 | Field | Details |
 |---|---|
@@ -109,6 +109,6 @@ Next step (not started): update the bundled FreeType from 2.5.0.1 to 2.15.0.
 ## Links
 
 - Release 2.15.0a1: https://github.com/OS2World/DRV-FreeType-2_IFI/releases/tag/2.15.0a1
-- This repository, branch `ft2ifi`: https://github.com/OS2World/DRV-FreeType-2_IFI/tree/ft2ifi (the version 1 driver, release 1.3.6r2, is on `master`)
+- This repository: https://github.com/OS2World/DRV-FreeType-2_IFI (the version 1 driver, release 1.3.6r2, is in the `freetype1` directory of the same branch)
 - Upstream FT2IFI: https://github.com/altsan/os2-freetype-ifi
 - FreeType: https://gitlab.freedesktop.org/freetype/freetype

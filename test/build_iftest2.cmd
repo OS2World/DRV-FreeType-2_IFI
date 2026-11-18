@@ -7,7 +7,7 @@ set PATH=%WATCOM%\BINP;%WATCOM%\BINW;%PATH%
 set EDPATH=%WATCOM%\EDDAT
 set DLLNAME=%1
 if "%DLLNAME%"=="" set DLLNAME=FTT
-wcc386 -zq -4r -zp1 -bt=os2 -D_ULS_CALLCONV_ -DCALLCONV=_System -I%WATCOM%\h -IC:\os2tk45\h -Isrc\ifi -fo=test\iftest2.obj test\iftest2.c > test\build_iftest2.log 2>&1
+wcc386 -zq -4r -zp1 -bt=os2 -D_ULS_CALLCONV_ -DCALLCONV=_System -I%WATCOM%\h -IC:\os2tk45\h -Ifreetype1\src\ifi -fo=test\iftest2.obj test\iftest2.c > test\build_iftest2.log 2>&1
 if errorlevel 1 goto failed
 wlink name test\iftest2.exe system os2v2 option quiet file test\iftest2.obj import _fdhdr %DLLNAME%.FONT_DRIVER_DISPATCH_TABLE >> test\build_iftest2.log 2>&1
 if errorlevel 1 goto failed

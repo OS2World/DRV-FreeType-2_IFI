@@ -53,10 +53,10 @@ export FONT_DRIVER_DISPATCH_TABLE.1=_fdhdr
 	$(BIN_DIR)\lxdata.exe $(DLL)
 
 # the linker has no DATA SINGLE for LX files: a tiny tool sets the module flag after linking
-$(BIN_DIR)\lxdata.exe: tools\lxdata.c
+$(BIN_DIR)\lxdata.exe: ..\tools\lxdata.c
 	@if not exist $(BIN_DIR) mkdir $(BIN_DIR)
 	@if not exist $(OBJ_DIR) mkdir $(OBJ_DIR)
-	$(CC) -zq -4r -bt=os2 -I$(WATCOM)\h -fo=$(OBJ_DIR)\lxdata.obj tools\lxdata.c
+	$(CC) -zq -4r -bt=os2 -I$(WATCOM)\h -fo=$(OBJ_DIR)\lxdata.obj ..\tools\lxdata.c
 	$(LINK) name $@ system os2v2 option quiet file $(OBJ_DIR)\lxdata.obj
 
 $(TTF): $(LIBOBJ) $(EXTOBJS)

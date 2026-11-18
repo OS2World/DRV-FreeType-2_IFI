@@ -1,7 +1,7 @@
 # Changes from the original FreeType/2
 
 This file describes version 1 (FreeType 1.3.1 based, release 1.3.6r2). The FreeType 2.15.0 based driver (release 2.15.0a1, branch `ft2ifi`) has its own notes:
-`ft2ifi\README.md` and `ft2ifi\lib\RESYNC.md` on that branch.
+`ft2ifi\README.md` and `ft2ifi\lib\RESYNC.md` in the `ft2ifi\` directory.
 
 Summary of version 1.3.6r2 (released 2026-11-18, git tag `1.3.6r2`) against FreeType/2 1.3.6 as shipped with ArcaOS:
 
@@ -9,7 +9,7 @@ Summary of version 1.3.6r2 (released 2026-11-18, git tag `1.3.6r2`) against Free
 - The four IBM/Microsoft IFI headers (`src\ifi\32*.h`) are clean-room replacements.
 - Source changes: compiler guard and dispatch table casts in `ftifi.c`; the code page range 2 masks in `ftifi.h` are 0 as with the
   VisualAge build (see "Verification" below); `ftconfig.exe` is bound with `rc -n`.
-- Link settings that matter: entry point `_DLL_InitTerm`, data object shared plus the "single data" module flag (`tools\lxdata.c`),
+- Link settings that matter: entry point `_DLL_InitTerm`, data object shared plus the "single data" module flag (`..\tools\lxdata.c`),
   and the internal module name equal to the file name (`MODNAME`).
 - Tested on the ArcaOS Dev VM: output identical to the shipped DLL (112 outline fonts in PM, 185 font files at driver level), soak and
   parallel runs clean, installed with `UPDATE.CMD` and rolled back. Not tested: real hardware, `INSTALL.CMD`, `UNINST.CMD`, saving
@@ -72,7 +72,7 @@ Problems found on the way (all fixed):
   works. `Makefile.wat` has `MODNAME = FREETYPE` (override with `wmake MODNAME=name` for test copies). The earlier theories (data not
   shared between processes) were wrong; the data-sharing settings below are kept because the original DLL has `DATA SINGLE SHARED`,
   but it was not tested whether they are needed.
-- `segment type data shared` and the module flag "single data" set after linking by `tools\lxdata.c` (the Watcom linker has no switch
+- `segment type data shared` and the module flag "single data" set after linking by `..\tools\lxdata.c` (the Watcom linker has no switch
   for it in LX files) reproduce the original `DATA SINGLE SHARED`.
 - Handy: `test\iftest.c`, `iftest2.c`, `iftest3.c` test the driver without PM (one process, two processes, DosLoadModule);
   `IFIEXTRA="-DFTIFI_TRACE -za99"` builds a trace version (`\FTIFI.LOG`, `\FTIFIP.LOG` per process) which can hang the Workplace Shell.
