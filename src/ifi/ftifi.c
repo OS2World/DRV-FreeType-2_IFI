@@ -60,8 +60,8 @@
 #define DEBUG
 #endif
 
-#ifndef  __IBMC__
-   #error "Please use IBM VisualAge C++ to compile FreeType/2"
+#if !defined(__IBMC__) && !defined(__WATCOMC__)
+   #error "Please use IBM VisualAge C++ or Open Watcom to compile FreeType/2"
 #endif
 
 /* Defining the following uses UCONV.DLL instead of the built-in  */
@@ -144,18 +144,26 @@ LONG _System QueryCharAttr(HFC hfc, PCHARATTR pCharAttr,
 LONG _System QueryFullFaces(HFF hff, PVOID pBuffer, PULONG cBuflen,
                             PULONG cFontCount, ULONG cStart);
 
+/* Open Watcom reads IBM's  (* _syscall PFx)  pointer syntax differently from VisualAge, so the
+   dispatch table entries need a cast there (the functions themselves are _System as before). */
+#ifdef __WATCOMC__
+#define FDFN(t) (t)
+#else
+#define FDFN(t)
+#endif
+
 FDDISPATCH fdisp = {        /* Font driver dispatch table */
-   LoadFontFile,
-   QueryFaces,
-   UnloadFontFile,
-   OpenFontContext,
-   SetFontContext,
-   CloseFontContext,
-   QueryFaceAttr,
-   QueryCharAttr,
+   FDFN(PFDLFF) LoadFontFile,
+   FDFN(PFDQF) QueryFaces,
+   FDFN(PFDUFF) UnloadFontFile,
+   FDFN(PFDOFC) OpenFontContext,
+   FDFN(PFDSFC) SetFontContext,
+   FDFN(PFDCFC) CloseFontContext,
+   FDFN(PFDQFA) QueryFaceAttr,
+   FDFN(PFDQCA) QueryCharAttr,
    NULL,     /* this one is no more used, only the spec fails to mention it */
-   ConvertFontFile,
-   QueryFullFaces
+   FDFN(PFDCFF) ConvertFontFile,
+   FDFN(PFDQFF) QueryFullFaces
 };
 
 
@@ -164,7 +172,9 @@ FDDISPATCH fdisp = {        /* Font driver dispatch table */
 /* the single exported entry point; this way is faster than exporting every */
 /* single function and a bit more flexible                                  */
 /*                                                                          */
+#ifdef __IBMC__
 #pragma export (fdhdr, "FONT_DRIVER_DISPATCH_TABLE", 1)
+#endif   /* Open Watcom: exported by the link step, see Makefile.wat */
 FDHEADER   fdhdr =
 {  /* Font driver Header */
    sizeof(FDHEADER),
