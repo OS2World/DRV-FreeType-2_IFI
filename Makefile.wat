@@ -42,7 +42,7 @@ option quiet,caseexact,map=$(BIN_DIR)\FreeType.map
 option start=_DLL_InitTerm
 option modname=$(MODNAME)
 segment type data shared
-option description '@#Necasek/Seo/KO/Taylor et al:1.3.6#@FreeType/2 installable font interface driver'
+option description '@#Necasek/Seo/KO/Taylor et al:1.3.6r2#@FreeType/2 installable font interface driver'
 file $(OBJ_DIR)\ftifi.obj
 library $(TTF)
 library $(WATCOM)\lib386\os2\clib3r.lib
@@ -106,7 +106,7 @@ option quiet,caseexact,map=$(BIN_DIR)\ftconfig.map
 file $(OBJ_DIR)\ft2conf.obj
 library $(TK)\lib\os2386.lib
 <<
-	$(RC) -x -n $(OBJ_DIR)\resource.res $(BIN_DIR)\ftconfig.exe
+	$(RC) -n $(OBJ_DIR)\resource.res $(BIN_DIR)\ftconfig.exe
 
 $(OBJ_DIR)\ft2conf.obj: $(CFG_DIR)\ft2conf.c $(CFG_DIR)\ft2conf.h $(CFG_DIR)\resource.h
 	@if not exist $(BIN_DIR) mkdir $(BIN_DIR)

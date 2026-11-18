@@ -46,17 +46,22 @@
 #define OS2_CP1_ANSI_OEM_CHINESE_TRADITIONAL   (1 << 19)
 #define OS2_CP1_ANSI_OEM_KOREAN_WANSUNG        (1 << 20)
 #define OS2_CP1_ANSI_OEM_KOREAN_JOHAB          (1 << 21)
-#define OS2_CP2_IBM_GREEK_869                  (1 << 48)
-#define OS2_CP2_IBM_RUSSIAN_866                (1 << 49)
-#define OS2_CP2_IBM_NORDIC_865                 (1 << 50)
-#define OS2_CP2_IBM_ARABIC_864                 (1 << 51)
-#define OS2_CP2_IBM_HEBREW_862                 (1 << 53)
-#define OS2_CP2_IBM_ICELANDIC_861              (1 << 54)
-#define OS2_CP2_IBM_PORTUGUESE_860             (1 << 55)
-#define OS2_CP2_IBM_CYRILLIC_855               (1 << 57)
-#define OS2_CP2_IBM_LATIN2_852                 (1 << 58)
-#define OS2_CP2_IBM_LATIN1_850                 (1 << 62)
-#define OS2_CP2_IBM_US_437                     (1 << 63)
+/* The code page range 2 flags (bits 32..63 of the OS/2 table code page range) were written upstream
+ * as (1 << 48) ... (1 << 63), which overflows a 32 bit int. IBM VisualAge, with which the shipped driver
+ * was built, evaluates these to 0, so these checks never matched; Open Watcom wraps the shift count and
+ * would make them match (for example PC charset for fonts supporting code page 437). To keep the
+ * behaviour of the shipped driver they are 0 here. The intended values are (1 << (n - 32)). */
+#define OS2_CP2_IBM_GREEK_869                  0   /* upstream: (1 << 48) */
+#define OS2_CP2_IBM_RUSSIAN_866                0   /* upstream: (1 << 49) */
+#define OS2_CP2_IBM_NORDIC_865                 0   /* upstream: (1 << 50) */
+#define OS2_CP2_IBM_ARABIC_864                 0   /* upstream: (1 << 51) */
+#define OS2_CP2_IBM_HEBREW_862                 0   /* upstream: (1 << 53) */
+#define OS2_CP2_IBM_ICELANDIC_861              0   /* upstream: (1 << 54) */
+#define OS2_CP2_IBM_PORTUGUESE_860             0   /* upstream: (1 << 55) */
+#define OS2_CP2_IBM_CYRILLIC_855               0   /* upstream: (1 << 57) */
+#define OS2_CP2_IBM_LATIN2_852                 0   /* upstream: (1 << 58) */
+#define OS2_CP2_IBM_LATIN1_850                 0   /* upstream: (1 << 62) */
+#define OS2_CP2_IBM_US_437                     0   /* upstream: (1 << 63) */
 
 /* bit masks indicating charset support in fsCapabilities */
 #define IFIMETRICS_DBCS_JAPAN                   0x0001

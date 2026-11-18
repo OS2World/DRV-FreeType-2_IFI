@@ -1,0 +1,33 @@
+round 0
+round 10
+round 20
+round 30
+round 40
+round 50
+round 60
+round 70
+round 80
+round 90
+round 100
+round 110
+round 120
+round 130
+round 140
+round 150
+round 160
+round 170
+round 180
+round 190
+round 200
+round 210
+round 220
+round 230
+round 240
+round 250
+round 260
+round 270
+round 280
+round 290
+SOAK rounds=300 files=185 ms=30134
+availmem before=3526598656 after=3506343936 delta=-20254720
+maxshmem before=325255168 after=308215808 delta=-17039360

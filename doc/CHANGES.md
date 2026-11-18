@@ -75,3 +75,27 @@ Problems found on the way (all fixed):
 - `INSTALL.CMD` (first install: copies the DLL, creates the settings object, writes the `TRUETYPE` key) was not run: the
   key already points to `FREETYPE.DLL` on ArcaOS, and `copy` cannot overwrite the loaded DLL. `ftconfig.exe` was started
   from an ssh session but no window could be seen, so the configuration tool is untested. `UNINST.CMD` not run.
+
+## Verification of version 1.3.6r2 (2026-11-18)
+
+Version string: BLDLEVEL `@#Necasek/Seo/KO/Taylor et al:1.3.6r2#@FreeType/2 installable font interface driver` (`bldlevel` shows revision
+`1.03.6r2`).
+
+Driver-level comparison without PM, shipped `FREETYPE.DLL` against this build, same machine, same 185 TrueType files
+(`ftlist.txt`: every `.TTF`/`.TTC` on the Dev VM, 194 faces, 7 TTC faces). `test\ifidump.c` (build with `test\build_ifidump.cmd <dll> <exe>`) calls
+the IFI dispatch table of each DLL and writes a report; the two reports are **identical** (7,787 lines, `test\dump_reference.txt`):
+- IFIMETRICS (all 254 bytes, checksum) of every face, QueryFullFaces (184 files), ABC widths of 256 glyphs, kerning pairs (54 faces),
+- bitmaps (2,790) and outlines (2,796) of 8 sample glyphs at two sizes for every face.
+Found and fixed by this comparison: 57 faces differed in one byte, `fsCapabilities` bit 0x20 (PC charset). Upstream wrote the code page range 2
+masks as `(1 << 48)` ... `(1 << 63)` (`ftifi.h`), which overflows a 32 bit int: IBM VisualAge evaluates them to 0, Open Watcom wraps the shift
+count and made them match. They are 0 now (with a comment), which reproduces the shipped behaviour; the intended values are `(1 << (n - 32))`
+(a possible later change that alters font charset flags). This also removes the eight W135 compiler warnings.
+
+Soak: `ifidump <list> <out> soak <n>` loads every font, opens contexts, queries and renders, and unloads, n times. 300 rounds (55,500 file loads):
+both DLLs finish and both lose the same amount of free memory (about 20 MB, available memory counter), so this build leaks no more than the
+shipped one (the growth is in the shared engine or in the test program, not in the Open Watcom port). Three processes at once, 100 rounds each:
+no trap, no entry in `POPUPLOG.OS2`.
+
+Configuration tool: **`ftconfig.exe` bound with `rc -x` does not start on ArcaOS (SYS2070, `DRGTXT39`, error 193)**; without `-x` it starts and shows the
+Driver/Settings/About notebook. `Makefile.wat` binds with `rc -n` now (the exe is 5 KB larger). `ftmem.exe` starts (it reports that FreeType/2 is not running,
+which is right: memory tracking is not compiled in). Settings saving and the help files were not exercised.
