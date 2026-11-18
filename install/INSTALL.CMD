@@ -21,6 +21,9 @@ if rc <> 0 then do
    exit
 end
 
+call SysCreateObject "WPProgram", "Freetype/2 Settings", "<WP_DESKTOP>",,
+                     "EXENAME=ftconfig.exe;PROGTYPE=PM;", "F"
+
 app = "PM_Font_Drivers"
 key = "TRUETYPE"
 val = "\OS2\DLL\FREETYPE.DLL" || d2c(0)

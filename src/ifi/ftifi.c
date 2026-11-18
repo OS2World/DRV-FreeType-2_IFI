@@ -60,8 +60,8 @@
 #define DEBUG
 #endif
 
-#if !defined(__IBMC__) && !defined(__WATCOMC__)
-   #error "Please use IBM VisualAge C++ or Open Watcom to compile FreeType/2"
+#ifndef  __IBMC__
+   #error "Please use IBM VisualAge C++ to compile FreeType/2"
 #endif
 
 /* Defining the following uses UCONV.DLL instead of the built-in  */
@@ -144,26 +144,18 @@ LONG _System QueryCharAttr(HFC hfc, PCHARATTR pCharAttr,
 LONG _System QueryFullFaces(HFF hff, PVOID pBuffer, PULONG cBuflen,
                             PULONG cFontCount, ULONG cStart);
 
-/* Open Watcom reads IBM's  (* _syscall PFx)  pointer syntax differently from VisualAge, so the
-   dispatch table entries need a cast there (the functions themselves are _System as before). */
-#ifdef __WATCOMC__
-#define FDFN(t) (t)
-#else
-#define FDFN(t)
-#endif
-
 FDDISPATCH fdisp = {        /* Font driver dispatch table */
-   FDFN(PFDLFF) LoadFontFile,
-   FDFN(PFDQF) QueryFaces,
-   FDFN(PFDUFF) UnloadFontFile,
-   FDFN(PFDOFC) OpenFontContext,
-   FDFN(PFDSFC) SetFontContext,
-   FDFN(PFDCFC) CloseFontContext,
-   FDFN(PFDQFA) QueryFaceAttr,
-   FDFN(PFDQCA) QueryCharAttr,
+   LoadFontFile,
+   QueryFaces,
+   UnloadFontFile,
+   OpenFontContext,
+   SetFontContext,
+   CloseFontContext,
+   QueryFaceAttr,
+   QueryCharAttr,
    NULL,     /* this one is no more used, only the spec fails to mention it */
-   FDFN(PFDCFF) ConvertFontFile,
-   FDFN(PFDQFF) QueryFullFaces
+   ConvertFontFile,
+   QueryFullFaces
 };
 
 
@@ -172,9 +164,7 @@ FDDISPATCH fdisp = {        /* Font driver dispatch table */
 /* the single exported entry point; this way is faster than exporting every */
 /* single function and a bit more flexible                                  */
 /*                                                                          */
-#ifdef __IBMC__
 #pragma export (fdhdr, "FONT_DRIVER_DISPATCH_TABLE", 1)
-#endif   /* Open Watcom: exported by the link step, see Makefile.wat */
 FDHEADER   fdhdr =
 {  /* Font driver Header */
    sizeof(FDHEADER),
@@ -560,6 +550,15 @@ static  int GetOutlineLen(TT_Outline *ol);
 static  int GetOutline(TT_Outline *ol, PBYTE pb);
 
 
+/****************************************************************************/
+/*                                                                          */
+/* ReallyUnicodeName :                                                      */
+/*                                                                          */
+/* check the font family name to see if it's on our blacklist of fonts      */
+/* which lie about using Unicode names/cmaps.                               */
+/*                                                                          */
+static BOOL ReallyUnicodeName( PCH name, int len );
+
 
 /****************************************************************************/
 /*                                                                          */
@@ -576,6 +575,7 @@ BOOL IsDBCSChar(UCHAR c)
             return TRUE;
     return FALSE;
 }
+
 
 
 /****************************************************************************/
@@ -2364,12 +2364,36 @@ LONG _System QueryFaces( HFF          hff,
       }
       ifi.szFacename[FACESIZE - 1] = '\0';
 
+      /* Now we set the glyphlist to use. This involves some work... */
+
+      if ( !ReallyUnicodeName( ifi.szFacename, strlen( ifi.szFacename ))) {
+          /* Font is on blacklist of non-Unicode fonts masquerading as one */
+          switch (iLangId) {
+             case TT_MS_LANGID_JAPANESE_JAPAN:
+                pface->charMode = TRANSLATE_SJIS;
+                break;
+             case TT_MS_LANGID_CHINESE_PRC:
+             case TT_MS_LANGID_CHINESE_SINGAPORE:
+                pface->charMode = TRANSLATE_GB2312;
+                break;
+             case TT_MS_LANGID_CHINESE_TAIWAN:
+             case TT_MS_LANGID_CHINESE_HONG_KONG:
+                pface->charMode = TRANSLATE_BIG5;
+                break;
+             default:
+             case TT_MS_LANGID_KOREAN_EXTENDED_WANSUNG_KOREA:
+             case TT_MS_LANGID_KOREAN_JOHAB_KOREA:
+                pface->charMode = TRANSLATE_WANSUNG;
+                break;
+         }
+      }
+
       /* If Unicode cmap exists in font and it contains more than             */
       /* AT_LEAST_DBCS_GLYPH glyphs then do not translate between UGL and     */
       /* Unicode, but use straight Unicode.  But first check if it's a DBCS   */
       /* font and handle it properly.  (Note: fUseUnicodeEncoding==TRUE       */
       /* overrides the AT_LEAST_DBCS_GLYPH condition.)                        */
-      if ((pface->charMode == TRANSLATE_UGL) &&
+      else if ((pface->charMode == TRANSLATE_UGL) &&
           (fUseUnicodeEncoding || (properties.num_Glyphs > AT_LEAST_DBCS_GLYPH)))
       {
          LONG  specEnc = PSEID_UNICODE;
@@ -3955,6 +3979,8 @@ void    my_itoa(int num, char *cp) {
 /* GetUdcInfo determines the UDC ranges used                                */
 /*                                                                          */
 VOID    GetUdcInfo(VOID) {
+    ULONG   i;
+#if 0
     ULONG   ulUdc, ulUdcInfo, i;
     PVOID   gPtr;
     HINI    hini;
@@ -3966,9 +3992,11 @@ VOID    GetUdcInfo(VOID) {
         USHORT  usEnd;
     } USUDCRANGE;
     USUDCRANGE *pUdcTemp;
+#endif
+
+    DosQueryCp(sizeof(ulCp), (ULONG*)&ulCp, &i);  /* find out default codepage */
 
 #if 0
-    DosQueryCp(sizeof(ulCp), (ULONG*)&ulCp, &i);  /* find out default codepage */
     my_itoa((INT) ulCp, szCpStr + 2);             /* convert to ASCII          */
 
     DosQuerySysInfo(QSV_BOOT_DRIVE, QSV_BOOT_DRIVE, &i, sizeof(ULONG));
@@ -4294,19 +4322,56 @@ static void RemoveLastDBCSLead( char *str )
 /*                                                                          */
 /*   Make sure a string is really DBCS-encoded (and not a Unicode string    */
 /* that's been mis-identified as one).  This is mainly a workaround for     */
-/* some Japanese system fonts included with OS/2-J which commit just that   */
-/* crime.                                                                   */
+/* some Japanese fonts included with OS/2 which commit just that crime.     */
 /*                                                                          */
-/*   Note: this check is far from foolproof, it's just a quick-and-dirty    */
-/* sanity check.  It's mainly only effective for Japanese strings, and even */
-/* then only if they contain fullwidth-halfwidth forms, or plain ASCII.     */
+/*   This check is far from foolproof, it's just a quick-and-dirty sanity   */
+/* check.  It's mainly only effective for Japanese strings, and even then   */
+/* only if they contain fullwidth-halfwidth forms, or plain ASCII.)         */
 /*                                                                          */
+/*   Returns FALSE if the name is determined not to be DBCS-encoded.        */
+
 static BOOL CheckDBCSEnc( PCH name, int len )
 {
     int i;
-    for ( i = 0; i < len; i++ )
-        if ( name[i] == 0xFF || (i < len-1 && name[i] == 0 ))
+    for ( i = 0; i < len; i++ ) {
+        if ( name[i] == 0xFF ) // || (i < len-1 && name[i] == 0 ))
             return FALSE;
+    }
+    return TRUE;
+}
+
+
+/****************************************************************************/
+/*                                                                          */
+/* ReallyUnicodeName:                                                       */
+/*                                                                          */
+/*   Make sure a font's name and cmap are really Unicode (and not an OS/2   */
+/* codepage/glyphlist mis-identifying itself as Unicode).  This is mainly a */
+/* workaround for some badly-behaved system fonts bundled with Korean OS/2. */
+/*                                                                          */
+/*   Since there's no real way to make this determination heuristically, we */
+/* just compare the font's name against a blacklist of known offenders.     */
+/*                                                                          */
+/* Returns FALSE if the name appears on the blacklist (and should therefore */
+/* be treated as a codepage, not Unicode, string).                          */
+
+PSZ apszBrokenFontNames[] = {
+    "\xB1\xBD\xC0\xBA\xB0\xED\xB5\xF1",     /* BGOTHICH.TTF - really PMKOR */
+    "\xB1\xBD\xC0\xBA\xB8\xED\xC1\xB6",     /* BMYGJO.TTF   - really PMKOR */
+    "\xB0\xED\xB5\xF1",                     /* GOTHICH.TTF  - really PMKOR */
+    "\xB8\xED\xC1\xB6",                     /* MYGJO.TTF    - really PMKOR */
+    "\xB5\xD5\xB1\xD9\xB0\xED\xB5\xF1",     /* RGOTHICH.TTF - really PMKOR */
+};
+
+#define NUM_BROKEN_NAMES   5
+
+static BOOL ReallyUnicodeName( PCH name, int len )
+{
+    int i;
+    for ( i = 0; i < NUM_BROKEN_NAMES; i++ ) {
+        if ( len && !strcmp( (PSZ) name, apszBrokenFontNames[ i ] ))
+            return FALSE;
+    }
     return TRUE;
 }
 
@@ -4416,6 +4481,18 @@ static  char*  LookupName(TT_Face face,  int index )
       TT_Get_Name_ID( face, found, &platform, &encoding, &language, &id );
       TT_Get_Name_String( face, found, &string, &string_len );
 
+      if ( !ReallyUnicodeName( string, string_len )) {
+          /* Oops, this isn't really a Unicode string.  Not much we can do
+           * in this case except interpret it using the current codepage.
+           */
+          for (i=0, j=0; ( i<string_len ) && ( j < LONGFACESIZE - 1 ); i++)
+             if (string[i] != '\0')
+                name_buffer[j++] = string[i];
+          name_buffer[j] = '\0';
+          RemoveLastDBCSLead( name_buffer );
+          return name_buffer;
+      }
+
       switch( language )
       {
          case TT_MS_LANGID_KOREAN_EXTENDED_WANSUNG_KOREA :
@@ -4474,6 +4551,9 @@ static  char*  LookupName(TT_Face face,  int index )
     * encoding that matches the system codepage is found, OR a symbol encoding
     * is found, select it and return a copy of the string (verbatim).
     */
+   COPY("Unicode name not found!  Looking for native-language name.");
+   CAT("\r\n"); WRITE;
+
    for ( i = 0; found == -1 && i < n; i++ )
    {
       TT_Get_Name_ID( face, i, &platform, &encoding, &language, &id );
@@ -4528,10 +4608,13 @@ static  char*  LookupName(TT_Face face,  int index )
       /* Quick check to make sure it's not actually a mis-identified Unicode
        * string (workaround for RF Gothic etc.)
        */
-#if 1
       if ( !CheckDBCSEnc( string, string_len ))
       {
           TT_Get_Name_ID( face, found, &platform, &encoding, &language, &id );
+
+          COPY(" --> \"");
+          CAT( string );
+          CAT("\" actually seems to be a Unicode name."); CAT("\r\n"); WRITE;
 
           switch ( language ) {
               case TT_MS_LANGID_KOREAN_EXTENDED_WANSUNG_KOREA :
@@ -4577,8 +4660,14 @@ static  char*  LookupName(TT_Face face,  int index )
           }
       }
 #endif
-#endif
 
+      COPY(" --> Using name \"");
+      CAT( string );
+      CAT("\"\r\n"); WRITE;
+
+      /* Some of these fonts put extra 0s between each byte value, so we
+       * allow for that.
+       */
       for (i=0, j=0; ( i<string_len ) && ( j < LONGFACESIZE - 1 ); i++)
          if (string[i] != '\0')
             name_buffer[j++] = string[i];
@@ -4588,6 +4677,8 @@ static  char*  LookupName(TT_Face face,  int index )
 
       return name_buffer;
    }
+
+   COPY("No usable names found!"); CAT("\r\n");
 
    /* Not found */
    return NULL;

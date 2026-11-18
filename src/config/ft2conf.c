@@ -12,11 +12,12 @@ int main( int argc, char *argv[] )
     QMSG      qmsg;                         // message queue
     HELPINIT  helpInit;                     // help init structure
     SWP       wp;                           // window position
-    CHAR      szRes[ US_RES_MAXZ ],         // buffers for string resources
-              szError[ US_RES_MAXZ ];
+    CHAR      szRes[ US_RES_MAXZ ],         // buffer for string resources
+              szHelp[ US_HELP_MAXZ ],       // buffer for help file name
+              szError[ US_RES_MAXZ ];       // buffer for error message
     BOOL      fInitFailure = FALSE;
 
-
+//    memset( &global, 0, sizeof( FTCGLOBAL ));
     global.fInitDone = FALSE;
 
     hab = WinInitialize( 0 );
@@ -56,6 +57,7 @@ int main( int argc, char *argv[] )
     } else {
 
         // Initialize online help
+        SetHelpFile( global.iLangID, szHelp );
         if ( ! WinLoadString( hab, 0, global.iLangID + IDS_PROGRAM_TITLE, US_RES_MAXZ-1, szRes ))
             sprintf( szRes, "Help");
 
@@ -68,7 +70,7 @@ int main( int argc, char *argv[] )
         helpInit.idAccelTable             = 0;
         helpInit.idActionBar              = 0;
         helpInit.pszHelpWindowTitle       = szRes;
-        helpInit.pszHelpLibraryName       = HELP_FILE;
+        helpInit.pszHelpLibraryName       = szHelp;
 
         hwndHelp = WinCreateHelpInstance( hab, &helpInit );
         WinAssociateHelpInstance( hwndHelp, hwndFrame );
@@ -130,7 +132,7 @@ MRESULT EXPENTRY MainDlgProc( HWND hwnd, ULONG msg, MPARAM mp1, MPARAM mp2 )
             WinSetDlgItemText( hwnd, FID_TITLEBAR, szRes );
 
             // Populate the notebook
-            if ( ! PopulateNotebook( hwnd ) ) {
+            if ( ! PopulateNotebook( hwnd )) {
                 ErrorPopup("Error populating notebook.");
                 WinPostMsg( hwnd, WM_QUIT, 0, 0 );
                 return 0;
@@ -145,7 +147,6 @@ MRESULT EXPENTRY MainDlgProc( HWND hwnd, ULONG msg, MPARAM mp1, MPARAM mp2 )
 
         case WM_CONTROL:
             switch( SHORT1FROMMP( mp1 )) {
-
                 case IDD_NOTEBOOK:
                     if ( SHORT2FROMMP( mp1 ) == BKN_PAGESELECTEDPENDING ) {
                         psn = (PPAGESELECTNOTIFY) mp2;
@@ -153,7 +154,6 @@ MRESULT EXPENTRY MainDlgProc( HWND hwnd, ULONG msg, MPARAM mp1, MPARAM mp2 )
                             psn->ulPageIdNew = 0;
                     }
                     break;
-
                 default: break;
             } // end of WM_CONTROL messages
             return (MRESULT) 0;
@@ -432,9 +432,17 @@ MRESULT EXPENTRY DriverPageProc( HWND hwnd, ULONG msg, MPARAM mp1, MPARAM mp2 )
 
             // Select the current setting
             fFTStartedActive = pGlobal->fFreeTypeActive;
-            WinSendDlgItemMsg( hwnd, IDD_DRIVER, LM_SELECTITEM,
-                               MPFROMSHORT( pGlobal->fFreeTypeActive ), MPFROMSHORT( TRUE ));
-
+            if ( pGlobal->fFreeTypeActive ) {
+                WinSendDlgItemMsg( hwnd, IDD_DRIVER, LM_SELECTITEM,
+                                   MPFROMSHORT( pGlobal->fFreeTypeActive ), MPFROMSHORT( TRUE ));
+            }
+            else if ( strcmpi("TRUETYPE.DLL", pGlobal->szDriver )) {
+                WinSendDlgItemMsg( hwnd, IDD_DRIVER, LM_INSERTITEM,
+                                   MPFROMSHORT( LIT_END ), MPFROMP( pGlobal->szDriver ));
+                WinSendDlgItemMsg( hwnd, IDD_DRIVER, LM_SELECTITEM,
+                                   MPFROMSHORT( 2 ), MPFROMSHORT( TRUE ));
+            }
+            UpdateVersionDisplay( hwnd, pGlobal );
             //WinEnableControl( hwnd, ID_RESET, FALSE );
             return (MRESULT) TRUE;
 
@@ -480,7 +488,7 @@ MRESULT EXPENTRY DriverPageProc( HWND hwnd, ULONG msg, MPARAM mp1, MPARAM mp2 )
                                                                  MPFROMSHORT( LIT_CURSOR ), 0 );
                         if ( ulSel == pGlobal->fFreeTypeActive )
                             break;
-                        if ( ulSel == 0 )
+                        if ( ulSel != 1 )
                             pGlobal->fFreeTypeActive = FALSE;
                         else {
                             if ( CheckFTDLL( pGlobal ))
@@ -490,6 +498,7 @@ MRESULT EXPENTRY DriverPageProc( HWND hwnd, ULONG msg, MPARAM mp1, MPARAM mp2 )
                                             MPFROMSHORT( 0 ), MPFROMSHORT( TRUE ));
                         }
                         if ( pGlobal->fInitDone ) {
+                            UpdateVersionDisplay( hwnd, pGlobal );
                             EnableTabs( pGlobal->hwndMain, pGlobal->fFreeTypeActive );
                             ShowChanged( hwnd );
                             //WinEnableControl( hwnd, ID_RESET, TRUE );
@@ -963,6 +972,7 @@ void ReadSettings( HWND hwnd )
                 strcpy( pGlobal->szDLL, szDllPath );
         } else
             sprintf( pGlobal->szDLL, "%c:\\OS2\\DLL\\FREETYPE.DLL", ulDrv+64 );
+        strncpy( pGlobal->szDriver, psz, US_DLL_MAXZ-1 );
     }
 
     ulCount = sizeof( ulCoordinates );
@@ -1095,6 +1105,7 @@ ULONG SetLanguage( HMQ hmq )
     else if ( ISRUCODEPG(ulCP) && strnicmp(pszEnv, "RU_", 3 ) == 0 ) usCC = 7;
     else if ( strnicmp(pszEnv, "NL_", 3 ) == 0 ) usCC = 31;
     else if ( strnicmp(pszEnv, "FR_", 3 ) == 0 ) usCC = 33;
+    else if ( strnicmp(pszEnv, "ES_", 3 ) == 0 ) usCC = 34;
     else if ( strnicmp(pszEnv, "IT_", 3 ) == 0 ) usCC = 39;
     else if ( strnicmp(pszEnv, "SV_", 3 ) == 0 ) usCC = 46;
     else if ( strnicmp(pszEnv, "DE_", 3 ) == 0 ) usCC = 49;
@@ -1107,6 +1118,49 @@ ULONG SetLanguage( HMQ hmq )
     else usCC = 1;
 
     return (usCC * 100) + 10000;
+}
+
+
+/* ------------------------------------------------------------------------- *
+ * SetHelpFile                                                               *
+ *                                                                           *
+ * Determine the correct help file name for the active languge.  This will   *
+ * "ftconfig.hlp" (HELP_FILE) for English; for other languages, the "ig" is  *
+ * replaced by the two-letter language code, but only if that file exists.   *
+ *                                                                           *
+ * ARGUMENTS:                                                                *
+ *   ULONG ulID   : The language ID as returned by SetLanguage           (I) *
+ *   PSZ   achHelp: Buffer for help file name, must be >= US_HELP_MAXZ   (O) *
+ *                                                                           *
+ * RETURNS: N/A                                                              *
+ * ------------------------------------------------------------------------- */
+void SetHelpFile( ULONG ulID, PSZ achHelp )
+{
+    UCHAR  achFound[ CCHMAXPATH ] = {0};
+    ULONG  flSearch = SEARCH_IGNORENETERRS | SEARCH_ENVIRONMENT | SEARCH_CUR_DIRECTORY;
+    APIRET rc;
+
+    strncpy( achHelp, HELP_FILE, US_HELP_MAXZ-1 );
+    switch ( ulID ) {
+        case ID_BASE_RU: achHelp[6] = 'r'; achHelp[7] = 'u'; break;
+        case ID_BASE_NL: achHelp[6] = 'n'; achHelp[7] = 'l'; break;
+        case ID_BASE_FR: achHelp[6] = 'f'; achHelp[7] = 'r'; break;
+        case ID_BASE_ES: achHelp[6] = 'e'; achHelp[7] = 's'; break;
+        case ID_BASE_IT: achHelp[6] = 'i'; achHelp[7] = 't'; break;
+        case ID_BASE_SV: achHelp[6] = 's'; achHelp[7] = 'v'; break;
+        case ID_BASE_DE: achHelp[6] = 'd'; achHelp[7] = 'e'; break;
+        case ID_BASE_JA: achHelp[6] = 'j'; achHelp[7] = 'a'; break;
+        case ID_BASE_KO: achHelp[6] = 'k'; achHelp[7] = 'o'; break;
+        case ID_BASE_CN: achHelp[6] = 'c'; achHelp[7] = 'n'; break;
+        case ID_BASE_TW: achHelp[6] = 't'; achHelp[7] = 'w'; break;
+        default:         return;     // includes EN
+    }
+
+    rc = DosSearchPath( flSearch, "HELP", achHelp, achFound, sizeof( achFound ));
+    if ( rc != NO_ERROR ) {
+        // Couldn't find that help file, revert to English
+        achHelp[6] = 'i'; achHelp[7] = 'g';
+    }
 }
 
 
@@ -1167,4 +1221,107 @@ BOOL CheckFTDLL( PFTCGLOBAL pGlobal )
     return TRUE;
 }
 
+
+/* ------------------------------------------------------------------------- *
+ * UpdateVersionDisplay                                                      *
+ *                                                                           *
+ * Update the IFI version field.                                             *
+ *                                                                           *
+ * ARGUMENTS:                                                                *
+ *   HWND       hwnd   : Handle to driver page window.                       *
+ *   PFTCGLOBAL pGlobal: Pointer to global application data.                 *
+ *                                                                           *
+ * RETURNS: N/A                                                              *
+ * ------------------------------------------------------------------------- */
+void UpdateVersionDisplay( HWND hwnd, PFTCGLOBAL pGlobal )
+{
+    BLDLEVEL blinfo = {0};
+    ULONG    ulDrv;
+    CHAR     szBuf[ CCHMAXPATH ];
+    CHAR     szRes[ US_RES_MAXZ ];
+
+    if ( pGlobal->fFreeTypeActive )
+        strcpy( szBuf, pGlobal->szDLL );
+    else {
+        if ( DosQuerySysInfo( QSV_BOOT_DRIVE, QSV_BOOT_DRIVE, &ulDrv, sizeof(ULONG) ))
+            sprintf( szBuf, "\\OS2\\DLL\\TRUETYPE.DLL");
+        else
+            sprintf( szBuf, "%c:\\OS2\\DLL\\TRUETYPE.DLL", ulDrv+64 );
+    }
+
+    if ( !WinLoadString( pGlobal->hab, 0, pGlobal->iLangID + IDS_CTL_TXTVERSION,
+                         US_RES_MAXZ, szRes ))
+        strcpy( szRes, "Version %s");
+
+    if ( GetBldLevel( szBuf, &blinfo ))
+        sprintf( szBuf, szRes, blinfo.szVersion );
+    else
+        sprintf( szBuf, "");
+    WinSetDlgItemText( hwnd, IDD_TXTIFIVERSION, szBuf );
+}
+
+/* ------------------------------------------------------------------------- *
+ * GetBldLevel                                                               *
+ *                                                                           *
+ * Get the BLDLEVEL signature from a file.                                   *
+ *                                                                           *
+ * ARGUMENTS:                                                                *
+ *   PSZ       pszfile : Name of the file to query.                      (I) *
+ *   PBLDLEVEL pInfo   : Pointer to BLDLEVEL information structure.      (O) *
+ *                                                                           *
+ * RETURNS: BOOL                                                             *
+ *   TRUE if the signature was read successfully.                            *
+ *   FALSE if the signature could not be read.                               *
+ * ------------------------------------------------------------------------- */
+BOOL GetBldLevel( PSZ pszFile, PBLDLEVEL pInfo )
+{
+    CHAR achSig[ US_BLSIG_MAXZ ] = {0};
+    HPIPE hpR, hpW;
+    HFILE hfSave = -1,
+          hfNew  = HF_STDOUT;
+    ULONG ulRead = 0,
+          ulRC;
+    PSZ   psz, tok;
+
+    if ( !pszFile || !pInfo ) return FALSE;
+
+    DosDupHandle( HF_STDOUT, &hfSave ); // save handle to STDOUT
+    DosCreatePipe( &hpR, &hpW, 0 );     // create a new pipe with R/W handles
+    DosDupHandle( hpW, &hfNew );        // redirect STDOUT to our pipe
+
+    ulRC = spawnlp( P_WAIT, "bldlevel", "bldlevel", pszFile, NULL );
+
+    DosClose( hpW );
+    DosDupHandle( hfSave, &hfNew );     // restore STDOUT
+    DosRead( hpR, achSig, US_BLSIG_MAXZ, &ulRead ); // get our redirected output (1 char)
+    DosClose( hpR );
+    if ( ulRC != 0 ) return FALSE;
+
+    // Find the start of the actual signature
+    psz = strpbrk( achSig, "@#");
+    if ( !psz || ( strlen( psz ) < 3 )) return FALSE;
+    psz += 2;
+
+    if (( tok = strchr( psz, '\r')) != NULL ) *tok = 0;
+
+    // Parse the vendor name
+    tok = strtok( psz, ":");
+    strncpy( pInfo->szVendor, psz, 31 );
+
+    // Parse the version string
+    tok = strtok( NULL, "#");
+    if ( !tok ) return TRUE;
+    strncpy( pInfo->szVersion, tok, 10 );
+
+#if 0
+    if ( tok ) tok = strtok( NULL, "#");
+    if ( tok ) tok = strtok( NULL, "#");
+    if ( tok ) tok = strtok( NULL, "#");
+    if ( tok ) {
+        strncpy( pInfo->szTime, tok, 26 );
+    }
+#endif
+
+    return TRUE;
+}
 

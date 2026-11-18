@@ -2,7 +2,7 @@ This is the source code from the FreeType/2 OS/2 font driver.
 Copyright (C) 1997-1998 Michal Necasek (mike@mendelu.cz).
 Copyright (C) 2003-2004 Seo, Hyun-Tae (acrab001@hitel.net)
 Copyright (C) 2002-2007 KO Myung-Hun (komh@chollian.net)
-Copyright (C) 2010-2012 Alex Taylor (alex @ altsan . org)
+Copyright (C) 2010-2013 Alex Taylor (alex @ altsan . org)
 
 Here's a description of the files in this package :
 
@@ -19,7 +19,7 @@ Here's a description of the files in this package :
 
   lib/           Files of cross-platform FreeType library version 1.3.1
 
-  docs/          Some documentation 
+  dev-docs/      Some documentation 
 
 
 Here's how to compile the font driver.

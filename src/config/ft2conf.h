@@ -1,21 +1,25 @@
 #define INCL_DOSERRORS
 #define INCL_DOSMISC
 #define INCL_DOSNLS
+#define INCL_DOSNMPIPES
+#define INCL_DOSQUEUES
 #define INCL_DOSRESOURCES
 #define INCL_WIN
 #include <os2.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <process.h>
 #include "resource.h"
 
 // ----------------------------------------------------------------------------
 // CONSTANTS
 
+// For non-EN languages, 'ig' will be overwritten by 2-letter lang code:
 #define HELP_FILE               "ftconfig.hlp"
 
-#define SZ_VERSION              "1.03"
-#define SZ_COPYRIGHT            "(C) 2010-2012"
+#define SZ_VERSION              "1.07"
+#define SZ_COPYRIGHT            "(C) 2010-2020"
 
 // Default settings values
 #define US_CACHE_MIN            8       // minimum value for font face cache
@@ -24,6 +28,9 @@
 
 // Buffer limits
 #define US_RES_MAXZ             256     // string resource buffer size
+#define US_DLL_MAXZ             13      // DLL name length (8.3 + null)
+#define US_HELP_MAXZ            13      // Help file name length (8.3 + null)
+#define US_BLSIG_MAXZ           256     // BLDLEVEL signature buffer size
 
 // Profile (INI) file entries
 #define PRF_APP_FTIFI           "FreeType/2"            // main application
@@ -46,6 +53,8 @@
 #define PRF_KEY_TRUETYPE        "TRUETYPE"
 
 #define PRF_APP_ABRFILES        "PM_ABRFiles"
+
+#define HF_STDOUT               1   // handle to STDOUT
 
 // ----------------------------------------------------------------------------
 // MACROS
@@ -94,7 +103,18 @@ typedef struct _Global_Data {
           iDPI;                 // ...
     ULONG iLangID;              // base message ID for current language
     CHAR  szDLL[ CCHMAXPATH ];  // path of FREETYPE.DLL
+    CHAR  szDriver[ US_DLL_MAXZ ];  // name of active driver
 } FTCGLOBAL, *PFTCGLOBAL;
+
+
+typedef struct _BL_Info {
+    CHAR  szVendor[ 32 ];       // Vendor string
+    CHAR  szVersion[ 11 ];      // Revision string
+#if 0
+    CHAR  szTime[ 27 ];         // Date/time string
+    CHAR  szExtra[ 1 ];         // Additional information
+#endif
+} BLDLEVEL, *PBLDLEVEL;
 
 
 // ----------------------------------------------------------------------------
@@ -111,5 +131,8 @@ MRESULT EXPENTRY AboutPageProc( HWND hwnd, ULONG msg, MPARAM mp1, MPARAM mp2 );
 void             ReadSettings( HWND hwnd );
 void             WriteSettings( HWND hwnd, PFTCGLOBAL pGlobal );
 ULONG            SetLanguage( HMQ hmq );
+void             SetHelpFile( ULONG ulID, PSZ achHelp );
 BOOL             CheckFTDLL( PFTCGLOBAL pGlobal );
+void             UpdateVersionDisplay( HWND hwnd, PFTCGLOBAL pGlobal );
+BOOL             GetBldLevel( PSZ pszFile, PBLDLEVEL pInfo );
 

@@ -110,7 +110,7 @@ naming conventions to the four most common font "styles"&colon. Normal, Bold,
 Italic (or Oblique), and Bold Italic (or Bold Oblique).  FreeType/2 uses
 fairly intelligent logic when adjusting the font names; however, it is
 possible that this setting might result in the occasional misnamed font or
-or style.  Enabling this setting is only recommended if you are encountering
+style.  Enabling this setting is only recommended if you are encountering
 malformed text when printing under OpenOffice.
 :dt.Create simulated bold face for DBCS fonts
 :dd.This setting causes FreeType/2 to create a "fake" bold version (via
@@ -151,9 +151,21 @@ fully aware of the consequences of changing them.
 the :hp1.n:ehp1. most-recently-used font faces open in memory at any one
 time.  This setting allows you to modify the value of :hp1.n:ehp1..
 :dt.Instance resolution
-:dd.This allows you to override the default device resolution used for scaling
-glyphs on screen (in dots per inch).  The only acceptable values are 72, 96,
-and 120.  72 dpi is the default.
+:dd.This allows you to change how the font driver internally defines a 'point'
+when setting the font size.  The default value is the industry standard of 72
+points per inch.
+:p.This setting should :hp2.not:ehp2. generally be changed.  If you do change
+it, you should keep these important points in mind&colon.
+:ul.
+:li.What constitutes one 'inch' on-screen is defined by your video DPI setting;
+namely, either 96 or 120 pixels.  Depending on your screen size and resolution,
+this may not correspond exactly to one inch in physical terms.
+:li.This setting cannot alter the amount of screen space that Presentation
+Manager assigns to each character. Therefore, increasing this value may lead
+to characters appearing cropped when drawn.
+:eul.
+:p.The only acceptable values for this setting are 72, 96, and 120.
+
 :edl.
 :edl.
 
